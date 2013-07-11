@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://professor.github.io/professor/sitemap.xml 
