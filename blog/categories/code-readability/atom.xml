@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: code_readability | Todd Sedano]]></title>
+  <title><![CDATA[Category: Code Readability | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/code-readability/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-11T14:47:14-07:00</updated>
+  <updated>2013-07-11T15:32:16-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Improving code readability -- turning comments into methods]]></title>
-    <link href="http://professor.github.io/blog/2013/02/19/2013-07-11-improving-code-readability-turning-comments-into-methods/"/>
+    <link href="http://professor.github.io/blog/2013/02/19/improving-code-readability-turning-comments-into-methods/"/>
     <updated>2013-02-19T21:49:00-08:00</updated>
-    <id>http://professor.github.io/blog/2013/02/19/2013-07-11-improving-code-readability-turning-comments-into-methods</id>
-    <content type="html"><![CDATA[<p>File /Users/tsedano/Documents/rails/octopress2/sedano.io/source/downloads/code/path/to/file could not be found</p>
+    <id>http://professor.github.io/blog/2013/02/19/improving-code-readability-turning-comments-into-methods</id>
+    <content type="html"><![CDATA[<p>File /Users/tsedano/Documents/rails/octopress/sedano.org/source/downloads/code/path/to/file could not be found</p>
 
 <p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="%22http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
 
