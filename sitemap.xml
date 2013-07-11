@@ -1,16 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://professor.github.io/blog/2013/02/19/2013-07-11-improving-code-readability-turning-comments-into-methods/
+        </loc>
+        <lastmod>2013-07-11T14:44:02-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://professor.github.io/blog/2013/07/11/frustration-quote/</loc>
         <lastmod>2013-07-11T14:23:40-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2013-07-11T14:23:40-07:00</lastmod>
+        <lastmod>2013-07-11T14:44:02-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2013-07-11T14:23:40-07:00</lastmod>
+        <lastmod>2013-07-11T14:44:02-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/robots.txt</loc>

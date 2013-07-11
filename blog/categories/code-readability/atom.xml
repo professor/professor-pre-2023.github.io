@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Todd Sedano]]></title>
-  <link href="http://professor.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: code_readability | Todd Sedano]]></title>
+  <link href="http://professor.github.io/blog/categories/code-readability/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
   <updated>2013-07-11T14:45:09-07:00</updated>
   <id>http://professor.github.io/</id>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Frustration Quote]]></title>
-    <link href="http://professor.github.io/blog/2013/07/11/frustration-quote/"/>
-    <updated>2013-07-11T14:22:00-07:00</updated>
-    <id>http://professor.github.io/blog/2013/07/11/frustration-quote</id>
-    <content type="html"><![CDATA[<p>I am frustrated when my expectations do not align with reality &ndash; Todd Sedano</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Improving code readability -- turning comments into methods]]></title>
@@ -39,15 +30,14 @@
 
 <p>Here&rsquo;s the pattern</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>//determine interest rate  (comment about the code intention)
 </span><span class='line'>code
 </span><span class='line'>code
-</span><span class='line'>code</span></code></pre></td></tr></table></div></figure>
-
+</span><span class='line'>code</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <pre><code>//determine interest rate  (comment about the code intention)
 code
@@ -62,7 +52,7 @@ code
 
 <p>Here&rsquo;s the original code</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -92,41 +82,45 @@ code
 <span class='line-number'>28</span>
 <span class='line-number'>29</span>
 <span class='line-number'>30</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>bool Tictactoe::determine_game(int row, int column, char move){
-</span><span class='line'>        bool flag = true;
-</span><span class='line'>        int i;
-</span><span class='line'>    
-</span><span class='line'>        // Check the row of latest play
-</span><span class='line'>        if(!flag){
-</span><span class='line'>           flag = true;
-</span><span class='line'>           i=0;
-</span><span class='line'>           while((i&lt;dimension) && (flag==true)){
-</span><span class='line'>               if(board[row][i] != move){
-</span><span class='line'>                   flag = false;
-</span><span class='line'>               }
-</span><span class='line'>               i++;
-</span><span class='line'>           }
-</span><span class='line'>        }
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'>        // Check the column of latest play
-</span><span class='line'>        if(!flag){
-</span><span class='line'>            flag = true;
-</span><span class='line'>            i=0;
-</span><span class='line'>            while((i&lt;dimension) && (flag==true)){
-</span><span class='line'>                if(board[i][column] != move){
-</span><span class='line'>                    flag = false;
-</span><span class='line'>                }
-</span><span class='line'>                i++;
+</span><span class='line'>&lt;pre>&lt;code>bool Tictactoe::determine_game(int row, int column, char move){
+</span><span class='line'>    bool flag = true;
+</span><span class='line'>    int i;
+</span><span class='line'>
+</span><span class='line'>    // Check the row of latest play
+</span><span class='line'>    if(!flag){
+</span><span class='line'>       flag = true;
+</span><span class='line'>       i=0;
+</span><span class='line'>       while((i&lt;dimension) &amp;&amp; (flag==true)){
+</span><span class='line'>           if(board[row][i] != move){
+</span><span class='line'>               flag = false;
+</span><span class='line'>           }
+</span><span class='line'>           i++;
+</span><span class='line'>       }
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    // Check the column of latest play
+</span><span class='line'>    if(!flag){
+</span><span class='line'>        flag = true;
+</span><span class='line'>        i=0;
+</span><span class='line'>        while((i&lt;dimension) &amp;&amp; (flag==true)){
+</span><span class='line'>            if(board[i][column] != move){
+</span><span class='line'>                flag = false;
 </span><span class='line'>            }
+</span><span class='line'>            i++;
 </span><span class='line'>        }
-</span><span class='line'>        ...
-</span><span class='line'>        return flag;
-</span><span class='line'>    }</span></code></pre></td></tr></table></div></figure>
-
+</span><span class='line'>    }
+</span><span class='line'>    ...
+</span><span class='line'>    return flag;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div>
+</code></pre>
 
 <p>Here&rsquo;s the revised code.</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -135,16 +129,20 @@ code
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>bool Tictactoe::determine_game(int row, int column, char move){
-</span><span class='line'>        bool winner_found;
-</span><span class='line'>    
-</span><span class='line'>        winner_found = check_row_of_latest_play(row) ||
-</span><span class='line'>                       check_column_of_latest_play(column) ||
-</span><span class='line'>                       check_...
-</span><span class='line'>        
-</span><span class='line'>        return winner_found;
-</span><span class='line'>    }</span></code></pre></td></tr></table></div></figure>
-
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>    bool Tictactoe::determine_game(int row, int column, char move){
+</span><span class='line'>    bool winner_found;
+</span><span class='line'>
+</span><span class='line'>    winner_found = check_row_of_latest_play(row) ||
+</span><span class='line'>                   check_column_of_latest_play(column) ||
+</span><span class='line'>                   check_...
+</span><span class='line'>
+</span><span class='line'>    return winner_found;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div>
+</code></pre>
 
 <p>(Note that I have not shown other refactoring that I would do, as it would distract from the point.)</p>
 
