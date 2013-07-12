@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SEMAT | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/semat/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-11T21:19:57-07:00</updated>
+  <updated>2013-07-11T21:27:39-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -24,11 +24,11 @@
 
 <p>Here is a mock prototype of an alternative physical format for the SEMAT alphas.</p>
 
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_strip.png" alt=""/></span></span></p>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_strip_thumbnail.jpg" alt=""/></span></span></p>
 
 <p>Each alpha is a strip of cards folded much like a scroll with the &ldquo;highest&rdquo; state on the inside, and the lowest state on the outside. Starting with the &ldquo;lowest&rdquo; state, the user of SEMAT, can incrementally unfold the strip comparing the current state with the next possible state. If the next possible state is achieved, then the user can continue to unroll the strip.</p>
 
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_current_next.png" height=116 alt=""/></span></span></p>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_current_next_thumbnail.jpg" height=116 alt=""/></span></span></p>
 
 <p>Now it is impossible to accidentally loose a state in the alpha, and displaying the current state for all alphas in a project takes up roughly 1/6 of the room of the SEMAT board.</p>
 

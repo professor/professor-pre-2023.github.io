@@ -2,6 +2,12 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
+            http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity.html
+        </loc>
+        <lastmod>2013-07-11T21:22:08-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html
         </loc>
         <lastmod>2013-07-11T21:19:41-07:00</lastmod>
@@ -22,7 +28,7 @@
         <loc>
             http://professor.github.io/journal/2013/05/22/rethinking-semat-card-affordance.html
         </loc>
-        <lastmod>2013-07-11T21:09:47-07:00</lastmod>
+        <lastmod>2013-07-11T21:25:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/journal/2013/07/11/frustration-quote.html</loc>
@@ -30,11 +36,11 @@
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2013-07-11T21:19:41-07:00</lastmod>
+        <lastmod>2013-07-11T21:25:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2013-07-11T21:19:41-07:00</lastmod>
+        <lastmod>2013-07-11T21:25:59-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/robots.txt</loc>

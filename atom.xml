@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-11T21:19:57-07:00</updated>
+  <updated>2013-07-11T21:27:39-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -33,11 +33,11 @@
 
 <p>Here is a mock prototype of an alternative physical format for the SEMAT alphas.</p>
 
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_strip.png" alt=""/></span></span></p>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_strip_thumbnail.jpg" alt=""/></span></span></p>
 
 <p>Each alpha is a strip of cards folded much like a scroll with the &ldquo;highest&rdquo; state on the inside, and the lowest state on the outside. Starting with the &ldquo;lowest&rdquo; state, the user of SEMAT, can incrementally unfold the strip comparing the current state with the next possible state. If the next possible state is achieved, then the user can continue to unroll the strip.</p>
 
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_current_next.png" height=116 alt=""/></span></span></p>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_current_next_thumbnail.jpg" height=116 alt=""/></span></span></p>
 
 <p>Now it is impossible to accidentally loose a state in the alpha, and displaying the current state for all alphas in a project takes up roughly 1/6 of the room of the SEMAT board.</p>
 
@@ -268,6 +268,28 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
 
 
 <p><p>Not helpful in learning TDD: [Weighing with Stones] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata">http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata</a>&rdquo;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Software Engineering isn't a solo activity]]></title>
+    <link href="http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity.html"/>
+    <updated>2012-04-05T13:32:00-07:00</updated>
+    <id>http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity</id>
+    <content type="html"><![CDATA[<p>Often as engineers we like to go for it alone. It&rsquo;s me versus the machine. Yet, involving others can be helpful with us in our career. In my course &ldquo;craft for software development&rdquo; I challenged my students to think of ways to add a social component to their software development experience.
+Here is some of their feedback: (list is unsorted)
+1. Ask a friend to review your code
+2. Pair program with a friend
+3. Pair program with a stranger (there are websites that do this)
+4. Attend a meetup or an unconference. Meet beginners, intermediates, and experts.
+5. Find out where people in your community hang-out (mailing list, IRC, etc)
+6. See who is around you that you might not be considering. (For example, students in a different masters program, PhD students.)
+7. Post to CMU SV facebook group.
+8. Contact alumni who might know working professionals with the expertise in the field.
+9. Posting code for review online. Post on a blog and have people comment on it.
+10. Attend a &ldquo;hackathon,&rdquo; &ldquo;hackernoon,&rdquo; or spend time at a software dojo
+11. Use linked-in to do a search on appropriate skill to see who is in your network
+12. CMU has a mentoring program in the bay area</p>
 ]]></content>
   </entry>
   
