@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code Readability | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/code-readability/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-11T15:32:16-07:00</updated>
+  <updated>2013-07-11T18:30:09-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -39,20 +39,24 @@
 </span><span class='line'>code
 </span><span class='line'>code</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<pre><code>//determine interest rate  (comment about the code intention)
-code
-code
-code
-</code></pre>
-
 <p>Becomes</p>
 
-<pre><code>determine_interest_rate()
-</code></pre>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>determine_interest_rate()
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Here&rsquo;s the original code</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -84,43 +88,44 @@ code
 <span class='line-number'>30</span>
 <span class='line-number'>31</span>
 <span class='line-number'>32</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>bool Tictactoe::determine_game(int row, int column, char move){
-</span><span class='line'>    bool flag = true;
-</span><span class='line'>    int i;
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;bool Tictactoe::determine_game(int row, int column, char move){</span>
+</span><span class='line'><span class="sr">    bool flag = true;</span>
+</span><span class='line'><span class="sr">    int i;</span>
 </span><span class='line'>
-</span><span class='line'>    // Check the row of latest play
-</span><span class='line'>    if(!flag){
-</span><span class='line'>       flag = true;
-</span><span class='line'>       i=0;
-</span><span class='line'>       while((i&lt;dimension) &amp;&amp; (flag==true)){
-</span><span class='line'>           if(board[row][i] != move){
-</span><span class='line'>               flag = false;
-</span><span class='line'>           }
-</span><span class='line'>           i++;
-</span><span class='line'>       }
-</span><span class='line'>    }
+</span><span class='line'><span class="sr">    /</span><span class="o">/</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">row</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
+</span><span class='line'>       <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
+</span><span class='line'>       <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>       <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
+</span><span class='line'>           <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
+</span><span class='line'>               <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
+</span><span class='line'>           <span class="p">}</span>
+</span><span class='line'>           <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>       <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'>    // Check the column of latest play
-</span><span class='line'>    if(!flag){
-</span><span class='line'>        flag = true;
-</span><span class='line'>        i=0;
-</span><span class='line'>        while((i&lt;dimension) &amp;&amp; (flag==true)){
-</span><span class='line'>            if(board[i][column] != move){
-</span><span class='line'>                flag = false;
-</span><span class='line'>            }
-</span><span class='line'>            i++;
-</span><span class='line'>        }
-</span><span class='line'>    }
-</span><span class='line'>    ...
-</span><span class='line'>    return flag;
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class='line'>    <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">column</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
+</span><span class='line'>        <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
+</span><span class='line'>            <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">column</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
+</span><span class='line'>                <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="o">.</span><span class="n">.</span><span class="o">.</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">flag</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </code></pre>
 
 <p>Here&rsquo;s the revised code.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -131,17 +136,18 @@ code
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>    bool Tictactoe::determine_game(int row, int column, char move){
-</span><span class='line'>    bool winner_found;
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;    bool Tictactoe::determine_game(int row, int column, char move){</span>
+</span><span class='line'><span class="sr">    bool winner_found;</span>
 </span><span class='line'>
-</span><span class='line'>    winner_found = check_row_of_latest_play(row) ||
-</span><span class='line'>                   check_column_of_latest_play(column) ||
-</span><span class='line'>                   check_...
+</span><span class='line'><span class="sr">    winner_found = check_row_of_latest_play(row) ||</span>
+</span><span class='line'><span class="sr">                   check_column_of_latest_play(column) ||</span>
+</span><span class='line'><span class="sr">                   check_...</span>
 </span><span class='line'>
-</span><span class='line'>    return winner_found;
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class='line'><span class="sr">    return winner_found;</span>
+</span><span class='line'><span class="sr">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </code></pre>
 
 <p>(Note that I have not shown other refactoring that I would do, as it would distract from the point.)</p>
