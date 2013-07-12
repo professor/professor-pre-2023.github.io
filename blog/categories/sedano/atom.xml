@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Sedano | Todd Sedano]]></title>
+  <link href="http://professor.github.io/blog/categories/sedano/atom.xml" rel="self"/>
+  <link href="http://professor.github.io/"/>
+  <updated>2013-07-11T19:27:05-07:00</updated>
+  <id>http://professor.github.io/</id>
+  <author>
+    <name><![CDATA[Todd Sedano]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Frustration Quote]]></title>
+    <link href="http://professor.github.io/journal/2013/07/11/frustration-quote.html"/>
+    <updated>2013-07-11T14:22:00-07:00</updated>
+    <id>http://professor.github.io/journal/2013/07/11/frustration-quote</id>
+    <content type="html"><![CDATA[<p>I am frustrated when my expectations do not align with reality &ndash; Todd Sedano</p>
+]]></content>
+  </entry>
+  
+</feed>
