@@ -131,6 +131,232 @@
   </header>
 
 
+  <div class="entry-content">I&#8217;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See [Code Readability Process](&#8220;http://sedano.org/journal/2011/3/30/code-readability-process.html) for more details.)
+
+In reviewing one programmer&#8217;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it. 
+
+The programmer realizes that the narrative is lost in their code, and feels compelled to add these comments to help the reader understand what is going on. These comments serve as section breaks or chapter headings. 
+
+Instead, the code could be split up into smaller methods, where each method name would clearly revel the intent of the code. The comment would be better served as a method invocation. 
+
+Here&#8217;s the pattern
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>//determine interest rate  (comment about the code intention)
+</span><span class='line'>code
+</span><span class='line'>code
+</span><span class='line'>code</span></code></pre></td></tr></table></div></figure>
+
+
+Becomes
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>determine_interest_rate()</span></code></pre></td></tr></table></div></figure>
+
+Here&#8217;s the original code
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
+</span><span class='line'>        <span class="n">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">int</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">row</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
+</span><span class='line'>           <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
+</span><span class='line'>           <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>           <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
+</span><span class='line'>               <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
+</span><span class='line'>                   <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
+</span><span class='line'>               <span class="p">}</span>
+</span><span class='line'>               <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>           <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">column</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
+</span><span class='line'>            <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
+</span><span class='line'>            <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
+</span><span class='line'>                <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">column</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
+</span><span class='line'>                    <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
+</span><span class='line'>                <span class="p">}</span>
+</span><span class='line'>                <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="o">.</span><span class="n">.</span><span class="o">.</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">flag</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>	
+</span></code></pre></td></tr></table></div></figure>
+
+Here&#8217;s the revised code.
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>	    <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
+</span><span class='line'>        <span class="n">bool</span> <span class="n">winner_found</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">winner_found</span> <span class="o">=</span> <span class="n">check_row_of_latest_play</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">||</span>
+</span><span class='line'>                       <span class="n">check_column_of_latest_play</span><span class="p">(</span><span class="n">column</span><span class="p">)</span> <span class="o">||</span>
+</span><span class='line'>                       <span class="n">check_</span><span class="o">.</span><span class="n">.</span><span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">return</span> <span class="n">winner_found</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>	
+</span></code></pre></td></tr></table></div></figure>
+
+(Note that I have not shown other refactoring that I would do, as it would distract from the point.)
+
+By changing the comment to a method call, the code is now more &#8220;self documenting&#8221; and the intent is clear by the method call.
+
+When I suggested this to the programmer, she resisted the idea noting that a method call would affect performance. For a tic-tac-toe problem, this is a specious argument. However, is there merit to it? Will a modern compiler optimize this kind of refactoring? And this brings up a broader question, should we optimize code for performance or readability when we are writing it? Conventional wisdom says we should write code that is clean and easy to understand, and when we are done and have performance analysis with production data, then we know where to spend engineering effort to optimize critical sections. The one exception would be algorithm complexity and running times. (e.g. O(N) vs O(NxN) 
+
+I&#8217;m now curious, is this a &#8220;comment smell&#8221;? Can comments be indicators to us programmers that the code we just wrote isn&#8217;t very clear. The comment itself my inform us on how we need to refactor the code to make it more readable.</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/journal/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv Game for Software Engineers: Program Counter</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-27T14:06:00-07:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I invited this improv game themed around software development for some Brazilian computer science students visiting my campus. It&rsquo;s a variant of the many reaction based, warm-up games (e.g. &ldquo;Whoosh Ball&rdquo;) that encourage quick response time and discourages over-thinking or planning a response. I like playing it with software developers because it makes more sense to them than these other games.</p>
+
+<h3>Instructions</h3>
+
+<p>Have the group form a circle.</p>
+
+<p>Explain that we are going to mimic a program counter moving around the circle. Each person gets to say the instruction that the program counter is going to do. The instructions are <strong>&ldquo;Op&rdquo;</strong>, <strong>&ldquo;Loop N&rdquo;</strong>, <strong>&ldquo;Method Call&rdquo;</strong>, <strong>&ldquo;If true&rdquo;</strong>, <strong>&ldquo;If false&rdquo;</strong></p>
+
+<p><strong>&ldquo;Op&rdquo;</strong> &mdash; There are a variety of operations that a normal CPU would do, such as add, subtract, store to a register. For this game, we&rsquo;ll simplify all of these possible operations into a single command &ldquo;op&rdquo; &mdash; have the entire circle practice that command going around. Pretty simple. Let&rsquo;s make it more interesting.</p>
+
+<p><strong>&ldquo;Loop N&rdquo;</strong> &mdash; A basic control flow of most programming languages is the ability to go through a loop and do multiple instructions each time. If someone says &ldquo;loop 3&rdquo; this indicates that we are iterating over a collection with three elements. The next person says &ldquo;one&rdquo; indicating that the first set of instructions is now happening. The next person says &ldquo;two&rdquo;. The next person says &ldquo;three&rdquo;. Then we proceed as normal. (I&rsquo;ve seen one group say &ldquo;Loop Zero&rdquo; which we treated as a finished loop. It&rsquo;s just like saying &ldquo;Op&rdquo;) We do this for awhile until people get it.</p>
+
+<p><strong>&ldquo;Method Call&rdquo;</strong> and point to someone or say their name out loud &mdash; Often programs re-use code by calling a method on that section of the code. If someone says method call and points to someone we are jumping to that section of the code. (That person needs to decide which way the program counter will continue.)  We keep executing instructions until someone says <strong>&ldquo;return&rdquo;</strong> at which point the program counter goes back to the person who said &ldquo;method call&rdquo; (Sometimes people will think that it returns to the person who was pointed at, but it returns to the person who started the method call, just like a real program.) Yes, method calls can be nested multiple times and even have recursion.</p>
+
+<p>I personally like this operation. In many improv games, the equivalent operation is often a chance for the person to pass control to someone else without cost. E.g. I panic, I don&rsquo;t want this thing, I think it&rsquo;s a &ldquo;hot potato&rdquo; so I&rsquo;m going to give it to you quickly by saying &ldquo;Zoom&rdquo; so that I don&rsquo;t have to deal with it. However, in this game, there is a cost of saying &ldquo;Method Call&rdquo; for the person, they have to remember that they said it. Everyone else in the room, just really needs to track the depth or number of method calls that have been said, where as the people who say method call need to remember where they are on the stack.</p>
+
+<p><strong>&ldquo;If true&rdquo;</strong> and <strong>&ldquo;if false&rdquo;</strong> &mdash; eventually we get tired of going around in the same direction &mdash; Our program counter is pretty simple and can&rsquo;t deal with branch predictions so whenever we use the IF statement, we pay a performance penalty and skip the next step, e.g. the next person. &ldquo;If true&rdquo; then will skip the next person. &ldquo;If false&rdquo; then reverses the direction and skips the next person. (Here&rsquo;s an example, if we moving clockwise and you say &ldquo;if true&rdquo;, we skip the person to the left. If you say &ldquo;if false&rdquo;, it skips the person to the right and proceed clockwise.)</p>
+
+<p><strong>&ldquo;Cheer&rdquo;</strong> &mdash; As soon as the first mistake happens, agree upon a verbal saying that symbolizes, &ldquo;We are having fun, we made a mistake, and we get to restart!&rdquo; In my improv training that&rsquo;s been &ldquo;Ah-ooo-ga&rdquo;, the Brazilian students preferred &ldquo;Ciao!&rdquo; and I&rsquo;ve seen other positive vocalizations.</p>
+
+<h3>Other considerations</h3>
+
+<p>After introducing these instructions, I allow the group to invite any programming constructs that they can think of, and I say &ldquo;yes&rdquo; to any suggestion no how bizarre it is. Sometimes I&rsquo;ll allow the group to tweak it if it isn&rsquo;t clear. If you try something let me know.</p>
+
+<p>One variant of &ldquo;<strong>op</strong>&rdquo; is to allow them to create any normal single instruction operation. They could say &ldquo;add&rdquo;, &ldquo;store&rdquo;, &ldquo;multiply&rdquo; instead of &ldquo;op&rdquo; &mdash; I suspect that doing this might be best at the beginning, but I have not tried that experiment.</p>
+
+<p>Feel free to use this game. I&rsquo;m assuming that no-one will ever remember that I invited it. =)</p>
+
+<h3>Game History</h3>
+
+<p>On February 20, 2012, a student group from <a href="www.uniasselvi.com.br">Uniasselvi University</a>
+in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsquo;t know Portuguese, Professor Jan Charles Gross graciously translated my instructions.</p>
+
+<p><span class="full-image-block ssNonEditable"><span><img src="/images/ToddSedano%20with%20JanCharlesGross.png" alt=""/></span></span>
+Professor Gross&#8217; son, Professor Sedano, Chris Zeise, Professor Gross</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/journal/2012/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability &#8211; Turning Comments Into Methods</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-19T21:49:00-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
   <div class="entry-content"><p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="%22http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
 
 <p>In reviewing one programmer&rsquo;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it.</p>
@@ -263,162 +489,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability &#8211; Turning Comments Into Methods</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-19T21:49:00-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">I&#8217;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See [Code Readability Process](&#8220;http://sedano.org/journal/2011/3/30/code-readability-process.html) for more details.)
-
-In reviewing one programmer&#8217;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it. 
-
-The programmer realizes that the narrative is lost in their code, and feels compelled to add these comments to help the reader understand what is going on. These comments serve as section breaks or chapter headings. 
-
-Instead, the code could be split up into smaller methods, where each method name would clearly revel the intent of the code. The comment would be better served as a method invocation. 
-
-Here&#8217;s the pattern
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>//determine interest rate  (comment about the code intention)
-</span><span class='line'>code
-</span><span class='line'>code
-</span><span class='line'>code</span></code></pre></td></tr></table></div></figure>
-
-
-Becomes
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>determine_interest_rate()</span></code></pre></td></tr></table></div></figure>
-
-Here&#8217;s the original code
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>        <span class="n">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">int</span> <span class="n">i</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">row</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
-</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
-</span><span class='line'>           <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>           <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>           <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
-</span><span class='line'>               <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>                   <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
-</span><span class='line'>               <span class="p">}</span>
-</span><span class='line'>               <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>           <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">column</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
-</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
-</span><span class='line'>            <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>            <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
-</span><span class='line'>                <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">column</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>                    <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
-</span><span class='line'>                <span class="p">}</span>
-</span><span class='line'>                <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>            <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>        <span class="o">.</span><span class="n">.</span><span class="o">.</span>
-</span><span class='line'>        <span class="k">return</span> <span class="n">flag</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>	
-</span></code></pre></td></tr></table></div></figure>
-
-Here&#8217;s the revised code.
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>	    <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>        <span class="n">bool</span> <span class="n">winner_found</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="n">winner_found</span> <span class="o">=</span> <span class="n">check_row_of_latest_play</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">||</span>
-</span><span class='line'>                       <span class="n">check_column_of_latest_play</span><span class="p">(</span><span class="n">column</span><span class="p">)</span> <span class="o">||</span>
-</span><span class='line'>                       <span class="n">check_</span><span class="o">.</span><span class="n">.</span><span class="o">.</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">return</span> <span class="n">winner_found</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>	
-</span></code></pre></td></tr></table></div></figure>
-
-(Note that I have not shown other refactoring that I would do, as it would distract from the point.)
-
-By changing the comment to a method call, the code is now more &#8220;self documenting&#8221; and the intent is clear by the method call.
-
-When I suggested this to the programmer, she resisted the idea noting that a method call would affect performance. For a tic-tac-toe problem, this is a specious argument. However, is there merit to it? Will a modern compiler optimize this kind of refactoring? And this brings up a broader question, should we optimize code for performance or readability when we are writing it? Conventional wisdom says we should write code that is clean and easy to understand, and when we are done and have performance analysis with production data, then we know where to spend engineering effort to optimize critical sections. The one exception would be algorithm complexity and running times. (e.g. O(N) vs O(NxN) 
-
-I&#8217;m now curious, is this a &#8220;comment smell&#8221;? Can comments be indicators to us programmers that the code we just wrote isn&#8217;t very clear. The comment itself my inform us on how we need to refactor the code to make it more readable.</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -440,7 +510,11 @@ I&#8217;m now curious, is this a &#8220;comment smell&#8221;? Can comments be in
       </li>
     
       <li class="post">
-        <a href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability &#8211; Turning Comments Into Methods</a>
+        <a href="/journal/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv Game for Software Engineers: Program Counter</a>
+      </li>
+    
+      <li class="post">
+        <a href="/journal/2012/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability &#8211; Turning Comments Into Methods</a>
       </li>
     
   </ul>
