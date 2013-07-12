@@ -9,7 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="I&#8217;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read &hellip;">
+  <meta name="description" content="I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,15 +91,15 @@
   </header>
 
 
-<div class="entry-content">I&#8217;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See [Code Readability Process](&#8220;http://sedano.org/journal/2011/3/30/code-readability-process.html) for more details.)
+<div class="entry-content"><p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="%22http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
 
-In reviewing one programmer&#8217;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it. 
+<p>In reviewing one programmer&rsquo;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it.</p>
 
-The programmer realizes that the narrative is lost in their code, and feels compelled to add these comments to help the reader understand what is going on. These comments serve as section breaks or chapter headings. 
+<p>The programmer realizes that the narrative is lost in their code, and feels compelled to add these comments to help the reader understand what is going on. These comments serve as section breaks or chapter headings.</p>
 
-Instead, the code could be split up into smaller methods, where each method name would clearly revel the intent of the code. The comment would be better served as a method invocation. 
+<p>Instead, the code could be split up into smaller methods, where each method name would clearly revel the intent of the code. The comment would be better served as a method invocation.</p>
 
-Here&#8217;s the pattern
+<p>Here&rsquo;s the pattern</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -111,12 +111,13 @@ Here&#8217;s the pattern
 </span><span class='line'>code</span></code></pre></td></tr></table></div></figure>
 
 
-Becomes
+<p>Becomes</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>determine_interest_rate()</span></code></pre></td></tr></table></div></figure>
 
-Here&#8217;s the original code
+
+<p>Here&rsquo;s the original code</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -179,10 +180,11 @@ Here&#8217;s the original code
 </span><span class='line'>        <span class="o">.</span><span class="n">.</span><span class="o">.</span>
 </span><span class='line'>        <span class="k">return</span> <span class="n">flag</span><span class="p">;</span>
 </span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>	
+</span><span class='line'>  
 </span></code></pre></td></tr></table></div></figure>
 
-Here&#8217;s the revised code.
+
+<p>Here&rsquo;s the revised code.</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -194,7 +196,7 @@ Here&#8217;s the revised code.
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>	    <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>     <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
 </span><span class='line'>        <span class="n">bool</span> <span class="n">winner_found</span><span class="p">;</span>
 </span><span class='line'>
 </span><span class='line'>        <span class="n">winner_found</span> <span class="o">=</span> <span class="n">check_row_of_latest_play</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">||</span>
@@ -203,16 +205,18 @@ Here&#8217;s the revised code.
 </span><span class='line'>
 </span><span class='line'>        <span class="k">return</span> <span class="n">winner_found</span><span class="p">;</span>
 </span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>	
+</span><span class='line'>  
 </span></code></pre></td></tr></table></div></figure>
 
-(Note that I have not shown other refactoring that I would do, as it would distract from the point.)
 
-By changing the comment to a method call, the code is now more &#8220;self documenting&#8221; and the intent is clear by the method call.
+<p>(Note that I have not shown other refactoring that I would do, as it would distract from the point.)</p>
 
-When I suggested this to the programmer, she resisted the idea noting that a method call would affect performance. For a tic-tac-toe problem, this is a specious argument. However, is there merit to it? Will a modern compiler optimize this kind of refactoring? And this brings up a broader question, should we optimize code for performance or readability when we are writing it? Conventional wisdom says we should write code that is clean and easy to understand, and when we are done and have performance analysis with production data, then we know where to spend engineering effort to optimize critical sections. The one exception would be algorithm complexity and running times. (e.g. O(N) vs O(NxN) 
+<p>By changing the comment to a method call, the code is now more &ldquo;self documenting&rdquo; and the intent is clear by the method call.</p>
 
-I&#8217;m now curious, is this a &#8220;comment smell&#8221;? Can comments be indicators to us programmers that the code we just wrote isn&#8217;t very clear. The comment itself my inform us on how we need to refactor the code to make it more readable.</div>
+<p>When I suggested this to the programmer, she resisted the idea noting that a method call would affect performance. For a tic-tac-toe problem, this is a specious argument. However, is there merit to it? Will a modern compiler optimize this kind of refactoring? And this brings up a broader question, should we optimize code for performance or readability when we are writing it? Conventional wisdom says we should write code that is clean and easy to understand, and when we are done and have performance analysis with production data, then we know where to spend engineering effort to optimize critical sections. The one exception would be algorithm complexity and running times. (e.g. O(N) vs O(NxN)</p>
+
+<p>I&rsquo;m now curious, is this a &ldquo;comment smell&rdquo;? Can comments be indicators to us programmers that the code we just wrote isn&rsquo;t very clear. The comment itself my inform us on how we need to refactor the code to make it more readable.</p>
+</div>
 
 
   <footer>
@@ -260,7 +264,7 @@ I&#8217;m now curious, is this a &#8220;comment smell&#8221;? Can comments be in
     <p class="meta">
       
       
-        <a class="basic-alignment right" href="/journal/2013/07/11/frustration-quote.html" title="Next Post: Frustration Quote">Frustration Quote &raquo;</a>
+        <a class="basic-alignment right" href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html" title="Next Post: Improving code readability -- turning comments into methods">Improving code readability -- turning comments into methods &raquo;</a>
       
     </p>
   </footer>
@@ -282,6 +286,10 @@ I&#8217;m now curious, is this a &#8220;comment smell&#8221;? Can comments be in
         <a href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability -- Turning Comments Into Methods</a>
       </li>
     
+      <li class="post">
+        <a href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability -- Turning Comments Into Methods</a>
+      </li>
+    
   </ul>
 </section>
 
@@ -289,7 +297,7 @@ I&#8217;m now curious, is this a &#8220;comment smell&#8221;? Can comments be in
 
 <section class="googleplus">
   <h1>
-    <a href="https://plus.google.com/professor?rel=author">
+    <a href="https://plus.google.com/114255815645685356164?rel=author">
       <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
       Google+
     </a>
