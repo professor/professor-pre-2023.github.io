@@ -108,6 +108,70 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/journal/2013/05/22/rethinking-semat-card-affordance.html">Rethinking SEMAT Card Affordance</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-22T01:19:00-07:00" pubdate data-updated="true">May 22<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>A possible solution</h3>
+
+<p>While I&rsquo;m an avid player of card games and board games, the SEMAT card format does not reflect how I think about the alphas, which are a collection of states.</p>
+
+<p>Here is a mock prototype of an alternative physical format for the SEMAT alphas.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/semat_strip.png" alt=""/></span></span></p>
+
+<p>Each alpha is a strip of cards folded much like a scroll with the &ldquo;highest&rdquo; state on the inside, and the lowest state on the outside. Starting with the &ldquo;lowest&rdquo; state, the user of SEMAT, can incrementally unfold the strip comparing the current state with the next possible state. If the next possible state is achieved, then the user can continue to unroll the strip.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/semat_current_next.png" height=116 alt=""/></span></span></p>
+
+<p>Now it is impossible to accidentally loose a state in the alpha, and displaying the current state for all alphas in a project takes up roughly 1/6 of the room of the SEMAT board.</p>
+
+<p>So what do we call these new SEMAT cards? SEMAT strips, SEMAT rolls, SEMAT scrolls? I&rsquo;m open to suggestions.</p>
+
+<h3>Background &mdash; the problem</h3>
+
+<p>When I first saw a set of SEMAT cards, my instinct told me something wasn&rsquo;t quite right. I collect playing cards. I like unusual cards sets such as my agile estimation cards, XP training cards, improv feeling cards.</p>
+
+<p>When I laid out six cards for an alpha, it felt messy. I could easily get these out of order, and the order matters in a single alpha. If I piled up several alphas without a rubber band, I could easily mix them together.</p>
+
+<p>I pictured myself introducing this at a training session. With agile estimation cards, I just hand out a deck, yet for SEMAT I would want to hand one alpha at a time. If SEMAT cards were printed in a deck, taking out one alpha at a time would be time consuming.</p>
+
+<p>I do think agile estimation cards work well. There are four sets in one deck, just like regular playing cards. Assuming that my five year old daughter found the deck and randomized it, sorting it wouldn&rsquo;t take too long with four sets. However SEMAT cards, there are many alphas, and sorting it would be tedious.</p>
+
+<h3>Abacus as an alternative metaphor</h3>
+
+<p>I stared considering an abacus. Each rod of the abacus could represent an alpha. Each bead on a rod could represent a state card. The space between the beads on the left and the beads on the right could represent the current state. Yet creating an abacus for SEMAT seemed unfeasible. Then it occurred to me, I could tape the SEMAT cards into a strip.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability &#8211; Turning Comments Into Methods</a></h1>
     
     
@@ -131,7 +195,7 @@
   </header>
 
 
-  <div class="entry-content"><p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="%22http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
+  <div class="entry-content"><p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="" title="http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
 
 <p>In reviewing one programmer&rsquo;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it.</p>
 
@@ -334,6 +398,68 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html">Learning Test Driven Development (TDD) Through Katas</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-01T12:53:00-07:00" pubdate data-updated="true">Jun 1<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In my graduate course, &ldquo;craft of software development&rdquo; students created individual learning plans to accomplish their goals. Many choose to enhance their testing and design skills by focusing on Test Driven Development. (TDD)</p>
+
+<p>While the data sample is low (5 students), it appears that doing katas followed by a project is preferred to just doing katas alone. By working through a kata, you practice the the skill in a very focused, tactile manner on a small problem. Once done, you can compare many posted kata solutions on the internet and use them for reflection. Then by working on a project, you can practice TDD while dealing with domain specific issues and complexities that arise from a larger problem. One student found that re-implementing a previous project was immensely valuable, as he was able to compare his new solution to his previous implementation.</p>
+
+<p>Not all katas are created equal for the purpose of learning TDD. Some are too simple; some are too algorithmic in nature. (For these, creating the test suite is straightforward, yet improving running time is not.) Swapna Varghese ordered a set of katas for how easy they are to implement in TDD. Note that the ones at the end of the list are not necessarily better at teaching TDD, in fact, it may be hard to complete them using TDD.</p>
+
+<p>A suggested path then would be to take an easy one (e.g. one of the first three) as a warm-up exercise to validate your test environment, and then move onto some in the middle. I&rsquo;m partial towards Gilded Rose. Mars Rover was a definite favorite among my students. As with Goldlocks, it wasn&rsquo;t too simple, it wasn&rsquo;t too algorithmic, it &ldquo;was just right.&rdquo;</p>
+
+<p>Exhibit 1: Katas sorted by how easy it is to apply TDD.</p>
+
+<ol>
+<li>[Fizz Buzz] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz">http://codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz</a>&rdquo;)</li>
+<li>[Prime Factors] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/prime-factors-kata">http://craftsmanship.sv.cmu.edu/posts/prime-factors-kata</a>&rdquo;)</li>
+<li>[String Calculator] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/string-calculator">http://craftsmanship.sv.cmu.edu/posts/string-calculator</a>&rdquo;)</li>
+<li>[Gilded Rose] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/gilded-rose-kata">http://craftsmanship.sv.cmu.edu/posts/gilded-rose-kata</a>&rdquo;)</li>
+<li>[Word Wrap] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap">http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap</a>&rdquo;)</li>
+<li>[Tennis Game] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/tennis-game-kata">http://craftsmanship.sv.cmu.edu/posts/tennis-game-kata</a>&rdquo;)</li>
+<li>[Bowling Game] (&ldquo;<a href="http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata">http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata</a>&rdquo;)</li>
+<li>[Mars Rover] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/mars-rover-kata">http://craftsmanship.sv.cmu.edu/posts/mars-rover-kata</a>&rdquo;)</li>
+<li>[Roman Numerals] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals">http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals</a>&rdquo;)</li>
+<li>[Coin Change] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/coin-change-kata">http://craftsmanship.sv.cmu.edu/posts/coin-change-kata</a>&rdquo;)</li>
+<li>[Game of Life] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife">http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife</a>&rdquo;)</li>
+<li>[Potter] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/potter-kata">http://craftsmanship.sv.cmu.edu/posts/potter-kata</a>&rdquo;)</li>
+</ol>
+
+
+<p><p>Not helpful in learning TDD: [Weighing with Stones] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata">http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata</a>&rdquo;)</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -351,11 +477,19 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
       </li>
     
       <li class="post">
+        <a href="/journal/2013/05/22/rethinking-semat-card-affordance.html">Rethinking SEMAT Card Affordance</a>
+      </li>
+    
+      <li class="post">
         <a href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability &#8211; Turning Comments Into Methods</a>
       </li>
     
       <li class="post">
         <a href="/journal/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv Game for Software Engineers: Program Counter</a>
+      </li>
+    
+      <li class="post">
+        <a href="/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html">Learning Test Driven Development (TDD) Through Katas</a>
       </li>
     
   </ul>

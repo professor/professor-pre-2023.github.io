@@ -2,6 +2,12 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
+            http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html
+        </loc>
+        <lastmod>2013-07-11T21:19:41-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://professor.github.io/journal/2012/07/27/improv-game-for-software-engineers-program-counter.html
         </loc>
         <lastmod>2013-07-11T20:36:05-07:00</lastmod>
@@ -10,7 +16,13 @@
         <loc>
             http://professor.github.io/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html
         </loc>
-        <lastmod>2013-07-11T20:35:27-07:00</lastmod>
+        <lastmod>2013-07-11T21:14:46-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2013/05/22/rethinking-semat-card-affordance.html
+        </loc>
+        <lastmod>2013-07-11T21:09:47-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/journal/2013/07/11/frustration-quote.html</loc>
@@ -18,11 +30,11 @@
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2013-07-11T20:36:05-07:00</lastmod>
+        <lastmod>2013-07-11T21:19:41-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2013-07-11T20:36:05-07:00</lastmod>
+        <lastmod>2013-07-11T21:19:41-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/robots.txt</loc>
