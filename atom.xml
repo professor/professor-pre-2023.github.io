@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-11T21:27:39-07:00</updated>
+  <updated>2013-07-13T13:49:25-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -290,6 +290,104 @@ Here is some of their feedback: (list is unsorted)
 10. Attend a &ldquo;hackathon,&rdquo; &ldquo;hackernoon,&rdquo; or spend time at a software dojo
 11. Use linked-in to do a search on appropriate skill to see who is in your network
 12. CMU has a mentoring program in the bay area</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Preparing yourself for a software development career]]></title>
+    <link href="http://professor.github.io/journal/2011/12/08/preparing-yourself-for-a-software-development-career.html"/>
+    <updated>2011-12-08T14:43:00-08:00</updated>
+    <id>http://professor.github.io/journal/2011/12/08/preparing-yourself-for-a-software-development-career</id>
+    <content type="html"><![CDATA[<p>Sometimes people ask me, &ldquo;what should I do to transition from my current career into a software development career?&rdquo; Many have answered this question, but here are my suggestions.</p>
+
+<p><strong>Talk to people who are software developers.</strong> See if you will like doing what they are doing. One of my good friends entered the field not because they loved writing code, but they wanted to earn a great salary. We both finished the undergraduate computer science program at Carnegie Mellon University. He hated the courses and once he graduated, he continued to hate programming while in industry. Before you invest significant time and money into a new career check it out.</p>
+
+<p>If you are going to be writing code, then you will also be finding defects. This can be a very annoying, frustrating, and unfulfilling part of the job. For example, there&rsquo;s a new third-party library you will want to use (or a new language feature, or a new framework). You&rsquo;ll read the API and write code that should work. But it doesn&rsquo;t. How do you figure out what is going wrong. This is a hard skill to learn. Sometimes typing it into google will solve the answer, but it wont&#8217; always work and it is clear that you don&rsquo;t have enough knowledge of what is really going on. It will make you feel like an idiot. Debugging is part of the job. There are some who really enjoy figuring out why something is broken and enjoy the journey. I only enjoy the destination, working code. Teachers have to do grading. Nurses have to deal with blood. We fix defects.</p>
+
+<p><strong>Find a mentor.</strong> Find a friend who is good at software development and learn everything that they know. Write software with them. Do paired programming. If you don&rsquo;t know anyone, find some one. Go where the geeks are hanging out. Search meetup.com for groups that meet in your area. If you still can&rsquo;t find someone, it&rsquo;s probably because you aren&rsquo;t trying. If you already know a programming language, work with people in an open source project. Let them know that you want to help and could they mentor you. Several core contributors to projects began their journey this way. Learn the programming language that your mentor knows.</p>
+
+<p><strong>Learn an object-oriented programming language.</strong> Take courses at your local community college. Start going to meetups. Contribute to open source projects. If you skipped the &ldquo;find a mentor&rdquo; step because it is too hard, go back and do it. Working with open source projects can be a great way to find a mentor. Note that you don&rsquo;t necessarily need to know an &ldquo;object-oriented&rdquo; programming language, but most people in industry will expect you to know the fundamentals behind object-oriented programming, so you might as well start here.</p>
+
+<p><strong>Learn the basics.</strong> Take courses at your local community college in data structures and algorithms.</p>
+
+<p>While there are great books that will help you on your journey, reading will only get you so far. The easiest way to learn the craft of software development is by writing code with someone else. Once you start writing code and begin to get the basics, I would recommend checking out &ldquo;Apprenticeship Patterns&rdquo; and &ldquo;New Programmer&rsquo;s Survival Manual&rdquo;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Improv meets Software Engineering, what might the intersection look like?]]></title>
+    <link href="http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering.html"/>
+    <updated>2011-06-16T21:32:00-07:00</updated>
+    <id>http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering</id>
+    <content type="html"><![CDATA[<p>When I first discovered improv, I enjoyed the creative play and sheer freedom it offered me. The basic tenets of improv gave me a safe place to unleash my creativity. The right side of my brain finally had an outlet. (I couldn&rsquo;t draw or play an instrument. I did enjoy singing, but I knew not to do that in a public setting!) I enjoyed every improv exercise that was introduced to me. Finally, I had an outlet to be creative and to play.</p>
+
+<p>For the longest time, I didn&rsquo;t see how this could apply to software development. Deep down, I knew there must be a connection, but how could doing quick, fun exercises relate to software?</p>
+
+<p>I did see how improv was affecting me and my style. My public speaking confidence was increasing. I was faster with responses to tough questions. My eye contact with others was on the rise. While I&rsquo;ve been an active listener, I noticed areas that I could grow. I saw how those skills translated directly to my work. Brainstorming was more effective when we bypass the critical analytical components of the brain. Teams could be more effective if they could more readily accept ideas from teammates. (If we don&rsquo;t agree with an idea, we tend not to accept it. However we can accept an offer from someone else without agreeing with it. Even with a ridiculous suggestion, good ideas can emerge.)</p>
+
+<p>In preparing for the Applied Improvisors Network (AIN) conference of 2011, I reflected on software development and its intersection with improv. I came to a new realization, are not the agile methods aligned with the notions of improv? Let&rsquo;s look at ideas from improv and see how they map into modern software development.</p>
+
+<p>The whole improve troop owns the show. If a performer steps out on stage, they are committing to the team that they have five seconds worth of an idea and trusts that the rest of the team will help them the rest. Agile methods encourage &ldquo;whole team&rdquo; where the entire team responsible for ownership of software development and management. This encourage collective owning of the source code repository where any member of the team can make changes as well as the notion that the team can manage itself. Improvisators set out to make their partner look good. Scene work happens when the entire troupe is helping and working together. This includes knowing when to go on stage in order to further a scene along and knowing when not to go on stage because everything is going to work out fine.Software developers want their team to look good.</p>
+
+<p>Change: Improv thrives in chaotic situations. Improvisers are trained to deal with change. When improvisers are operating at the speed of thought on stage, anything can happen, and improvers try to make sense of it all. Agile methods are more ideal than traditional methods in environments where the requirements are changing. Even Extreme Programming&rsquo;s slogan is &ldquo;embrace change&rdquo;</p>
+
+<p>Improvisers learn to be loose with their own ideas. In the dynamic environment of the stage, they need to be present in the moment, dealing with what is going on. If they are thinking too much about where they want the scene to head, they will miss out on where the scene is actually going. You can observe this when a performer says something that sounds like they weren&rsquo;t listening to what was just said. The performer was &ldquo;in their head&rdquo; trying to plan ahead and missed the last offer from their peer. We see this flexibility in the agile principals. With Test Driven Development, software developers hold the code loosely. Code written yesterday might be refactored and improved today. There isn&rsquo;t this notion of ideal or prefect software that never changes. As the situation changes, so does the code.</p>
+
+<p>Improvisers work on actively listening. Extreme Programming&rsquo;s on site customer provides a direct customer voice into the software development process. As the engineer understands in real time the requirements from the customer, software is developed and refined in quick coding cycles.</p>
+
+<p>Improvisers have techniques to celebrate failure. This is imperative because improvisers will fail. In warm up games, improvisers that aren&rsquo;t failing aren&rsquo;t playing them too safely. Agile methods have quick iterations and rapid software prototyping that allows for (in a software sense) for features to be explored and &ldquo;fail.&rdquo; If something isn&rsquo;t working right it is tweaked in the next iteration. Albeit the timeframe is different. Obviously improvisers fail numerous times during a warm up and might make unusual choices on stage, where as the timeframe on requirements churn might be the next iteration typically one week to four weeks. In a paired programming setting, ideas can be tried and experimented upon. Failure in this context may happen routinely during a coding session. Coder 1: Should this be a new class or should we modify an existing class? Coder 2: I don&rsquo;t know, let&rsquo;s try option 1. After a few minutes if option 1 isn&rsquo;t working out, they can quickly switch to option 2.</p>
+
+<p>Interestingly, the improv game &ldquo;word at a time&rdquo; maps into paired programming. In &ldquo;word at a time&rdquo; a group tells a story with each person saying only one word. This exercise teaches shared ownership and the frustration of planning ahead. Variants of the game include &ldquo;one sentence at a time&rdquo; or &ldquo;1, 2, 3, 4, 3, 2, 1 words at a time.&rdquo; In paired programming, developers work on the same code at the same time. Typically the code is shown on one monitor but there are two keyboards and two mice so that at any point in time, either developer can start typing what they are thinking. There are many benefits to paired programming including high quality product with less defects, a product that is ready to be shipped sooner, team ownership of the entire code based (as opposed to code silos owned by a single programmer), shared understanding of the code base (every line of code was written by two people, if one leaves the company someone else knows what that code was doing). Often in pair programming, developers may take turns. I&rsquo;ll write a test case and my partner will make the code work. They will then write a test case, and I&rsquo;ll then get it to work. This practice is called ping-pong paired programming. This is much like &ldquo;A paragraph at a time&rdquo; The emphasis is on the dialogue between the two engineers and the code is the artifact of the conversation that happened.</p>
+
+<p>Today, I see many similarities between improv and software development. I suspect that there are new concepts in software development that might be explored given insights in improv. That is a topic of more future research.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Panel Feedback]]></title>
+    <link href="http://professor.github.io/journal/2011/06/08/panel-feedback.html"/>
+    <updated>2011-06-08T14:10:00-07:00</updated>
+    <id>http://professor.github.io/journal/2011/06/08/panel-feedback</id>
+    <content type="html"><![CDATA[<p>What did you learn from the panel, and what are you going to do about it?
+Team Couch Potatoes / AppJour / ActiveMob
+Our experience with the panel this last Wednesday was of great help in preparing us for our solicitation of feedback from potential customers. One of the more important issues we addressed was that the customer panel had a difficult time, initially, distinguishing our application from that of our competitors. We will need to do a better job addressing what makes our product unique in future pitches if we want to keep listeners engaged. We also noticed that while not everyone was interested in using our application, those that were indicated that they would also be willing to pay for it. To us this means that there is a legitimate market for our application, especially for those that are already active. This was encouraging and should help us to focus our search for user feedback in the coming weeks.
+Team four of a Kind &mdash;
+  In preparation for this week’s panel, Team 4 of a Kind planned a handful of new concepts for our pitch. We were looking to get feedback on both things that hadn’t been pitched in the past and to see if our older core features were compelling to new users.  We introduced a name change on one of our core features from Quick Workouts to Fit Quests, a Virtual Buddy, and a pitch strategy that involved having the panelists actually go through a Fit Quest. Although the panelists agreed to do the Fit Quest, there was no feedback on how the quest felt or if the naming of the quest helped differentiate itself from the competition.  A positive comment was given on the Virtual Buddy saying it gave an emotional and personal touch.  This was also the first time several of the panelists heard some of the older features as well.  One of the recurring pieces of feedback from first time viewers were that users felt our application had too much text, which suggests a lack of graphics.  A few users also suggested the use of movies both as incentives and as tutorials to workout.  Some of the same feedback that we had heard in the past that was repeated at the panel was that the fitness market already has a lot of competition and that this type of tool is too easy to cheat on. Finally, we also got feedback suggesting working out should be an individual activity and group challenges may just be a fad, which was one of our earlier discussions on deciding to emphasize quick workouts of group challenges.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Preparing for the first panel]]></title>
+    <link href="http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel.html"/>
+    <updated>2011-06-03T13:00:00-07:00</updated>
+    <id>http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel</id>
+    <content type="html"><![CDATA[<p>This is about class three (June 1st, 2011) from the course [<a href="http://www.cmu.edu/silicon-valley/academics/new-course/silicon-valley-startup-experience.html">http://www.cmu.edu/silicon-valley/academics/new-course/silicon-valley-startup-experience.html</a>] (Real World Software Engineering for Entrepreneurs (A Startup Accelerator)</p>
+
+<p>From the instructors, Scott Russell and Todd Sedano</p>
+
+<p>It&rsquo;s normal to be apprehensive about your first panel. It&rsquo;s not clear where you are headed with your idea, and you haven&rsquo;t had a chance to validate it with the marketplace. You are focused in the coding trenches trying to get something to work, it&rsquo;s time to pop out and see what the market thinks of your idea.</p>
+
+<p>When you meet with the panel, you&rsquo;ve got to tell people how it is supposed to work. You are looking for their feedback reaction. Then you will learn how far off you are. Embrace expectation failure, you need this feedback.
+The panel knows that your product is &ldquo;raw&rdquo; and not finished.
+If you think you know who your target customer is, put that forward. If you aren&rsquo;t certain, hazard a bold specific guess. &ldquo;Our customer is film lovers in their early 20&rsquo;s.&rdquo; If you know the makeup of the panel, then you can see if the panel is your target customer. When you are speaking to an intellectual group in their 40&rsquo;s, don&rsquo;t be surprised if they don&rsquo;t resonate with a product geared for Lady Gaga music fans.
+When presenting your product, don&rsquo;t focus on what the product does, but what problem you are trying to solve. Be provocative. Tell them it cures cancer. If they don&rsquo;t think your product does that, find out why. Find out how you are missing the mark. If you were selling an Recreational Vehicle (RV), you don&rsquo;t sell the customer on the miles per gallon or the capacity of the septic tank, you sell them on the vision: imagine being at the lake fishing with your family.
+Put on your sales hat and BS about what the product does. Don&rsquo;t tell them what the product is going to go. Avoid &ldquo;we working towards a release one where &hellip;..&rdquo; and &ldquo;we think that the nominal market will be.&rdquo; Instead be bold and clear. &ldquo;Our product is facebook for the medical community.&rdquo; Be laser focused. Be specific about the key core functionality. You aren&rsquo;t going to release a product that works on every phone. &ldquo;For the first release, our product works on the iPhone platform.&rdquo; If people want more and more features, it&rsquo;s ok to delay the features. You don&rsquo;t have an infinite amount of time and money to build everything.
+The common user won&rsquo;t understand technology. You can explain what it is and what it will do for them, but don&rsquo;t get lost in Acromania. &ldquo;We&rsquo;ve done the hard work to build something special.&rdquo; It was tough to do, but you are making it easy for them. It&rsquo;s a defensible asset.
+Consider how you will end your presentation. What do you want from the panel? Ask them a question. You have just spent six minutes of your valuable time presenting to this panel, what is your ask?
+ask the panel a question.
+We&rsquo;ve asked the teams to consider their strategy for their first panel. Here is a sample of their thoughts.</p>
+
+<p><strong>Team Coach Potatoes (Andrew Steele, Anooj Vagadia, Patrick Baumann, Henry Fung)</strong>
+As a development team working on an as yet unreleased product, we are looking to get as much out of Wednesday’s panel as possible. Most importantly, we will be trying to assess the feasibility of our idea and its potential worth. Part of our presentation to the panel will consist of a demo of our current features and discussion of upcoming features. We hope to gather feedback regarding which features are of value, which are not and which would be worth spending money to have. Our application is targeted specifically towards individuals who are active, which may affect the objectivity of the panel’s feedback if they are not active themselves. However, it is still important to gather feedback from non-athletes to determine if our application will be appealing or motivating to them. If the application is not appealing, we will ask if there are changes which can be made to make it more so. We look forward to Wednesday’s opportunity.</p>
+
+<p><strong>Team Four of a Kind (Alan Mak, Kevin Tsai, Matthew Lanken, Paul Wong)</strong>
+Our main strategy for the 4th week pitch is to focus on getting the panelists more involved with the theme and vision of the product. By doing so, the panelists would get a sense of why there is a need to use the product.  Several past criticisms suggest pitches didn’t have a direct and exaggerative tone suitable for marketing, and were instead received as a simple explanation of the product.  During our pitch, we plan to emphasize the magnitude and greatness of the application while being more direct in our pitch towards the panel.  We plan to pitch to them as if they were the ideal target customers, and why they need to use the application.  Aside from involving panelists with our tone, we will also introduce a few interactive gimmicks such as distribute four playable demos of the application, a tutorial that will guide users through a quick workout and allow them to follow along, and props to enhance the theme of fitness and quick workouts.  We also plan to take this opportunity to get user feedback and weigh some of the other selling points of the application such as the virtual buddy and achievements.</p>
+
+<p><strong>Team Opinionize (Gaurav Sinha, Rob Engel, Phil Melzer, Vinay Prasad)</strong>
+Our strategy in the panel pitch next week is to get more feedback about the product, its use cases and reasons why people will buy or not buy it. The other important part of our strategy is to make the most of the experience the panel brings in the room.
+We need to understand our target customers. We believe that it could be anyone who has the problem of categorizing large amounts of data but we want to narrow down on our users. Adam mentioned that our probable users could be geeks who use / edit Wikipedia articles. For this reason, we will present a case for members in the panel to use the product, based on our knowledge of their interests. Their feedback will be valuable in determining whether the product is for everyone or not.
+We want to get feedback about what makes the product viral? And why? The panel consists of people who have the experience in the market and can judge what is going to hit or what is not.
+We plan to keep our description of the product at a very high level and at the same time we would explain the concept in simple terms, which a non-geeky person can understand. Keeping the description at a high level allows room for improvement based on panel feedback. At the same time we would like to explain the concept with daily life problems as examples so that its clear to the audience. We plan to do a live demo of Opinionize with these examples, which would help the panel get a feel of the product.</p>
 ]]></content>
   </entry>
   

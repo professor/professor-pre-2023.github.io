@@ -2,6 +2,28 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
+            http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel.html
+        </loc>
+        <lastmod>2013-07-13T13:48:43-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/journal/2011/06/08/panel-feedback.html</loc>
+        <lastmod>2013-07-13T13:47:00-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering.html
+        </loc>
+        <lastmod>2013-07-13T13:39:14-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2011/12/08/preparing-yourself-for-a-software-development-career.html
+        </loc>
+        <lastmod>2013-07-13T13:33:12-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity.html
         </loc>
         <lastmod>2013-07-11T21:22:08-07:00</lastmod>
@@ -36,11 +58,11 @@
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2013-07-11T21:25:59-07:00</lastmod>
+        <lastmod>2013-07-13T13:48:43-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2013-07-11T21:25:59-07:00</lastmod>
+        <lastmod>2013-07-13T13:48:43-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/robots.txt</loc>
