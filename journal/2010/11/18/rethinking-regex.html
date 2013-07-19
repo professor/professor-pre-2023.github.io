@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Craftsmanship - Todd Sedano</title>
+  <title>Rethinking regex - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Category: Craftsmanship">
+  <meta name="description" content="What if regular expressions were easy to write? While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.ioblog/categories/craftsmanship/index.html">
+  <link rel="canonical" href="http://professor.github.io/journal/2010/11/18/rethinking-regex.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -64,83 +64,108 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Craftsmanship</h1>
+    
+      <h1 class="entry-title">Rethinking Regex</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-18T12:13:00-08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2010</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>What if regular expressions were easy to write?</p>
 
-  
-  <h2>2013</h2>
+<p>While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails was changing their ORM layer to make it easier to incrementally build the query.</p>
 
-<article>
-  
-<h1><a href="/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving code readability -- turning comments into methods</a></h1>
-<time datetime="2013-02-19T21:49:00-08:00" pubdate><span class='month'>Feb</span> <span class='day'>19</span> <span class='year'>2013</span></time>
+<p>Old: Article.find(:all, :order => &ldquo;published_at desc&rdquo;, :limit => 10)</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/code-readability/'>Code Readability</a>, <a class='category' href='/blog/categories/craftsmanship/'>Craftsmanship</a></span>
-</footer>
+<p>New: Article.order(&ldquo;published_at desc&rdquo;).limit(10)</p>
 
+<p>It occurred to me that this concept of simplifying could be applied to regular expression.</p>
 
-</article>
+<p>While I have time, I&rsquo;ll continue to build up examples of what the syntax could look like.</p>
 
+<p>Random thoughts:</p>
 
+<p>What: not a number</p>
 
-  
-  <h2>2011</h2>
-
-<article>
-  
-<h1><a href="/journal/2011/05/04/career-and-software-craftsmanship.html">Career and Software Craftsmanship</a></h1>
-<time datetime="2011-05-04T23:29:00-07:00" pubdate><span class='month'>May</span> <span class='day'>04</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/craftsmanship/'>Craftsmanship</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/journal/2011/03/30/code-readability-process.html">Code Readability Process</a></h1>
-<time datetime="2011-03-30T19:36:00-07:00" pubdate><span class='month'>Mar</span> <span class='day'>30</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/code-readability/'>Code Readability</a>, <a class='category' href='/blog/categories/craftsmanship/'>Craftsmanship</a>, <a class='category' href='/blog/categories/software-engineering/'>Software Engineering</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2010</h2>
-
-<article>
-  
-<h1><a href="/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html">Software Engineering Craft (or Software Engineering as a performance art)</a></h1>
-<time datetime="2010-05-29T14:59:00-07:00" pubdate><span class='month'>May</span> <span class='day'>29</span> <span class='year'>2010</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/craftsmanship/'>Craftsmanship</a>, <a class='category' href='/blog/categories/improv/'>Improv</a>, <a class='category' href='/blog/categories/software-engineering/'>Software Engineering</a></span>
-</footer>
-
-
-</article>
-
+<p>ie a string that can&rsquo;t be convert to a number
+A string that contains at least on character
+Regex: /^.<em>\D+.</em>$/
+Positive examples: 113t23io10908-113
+Negative examples: 13431</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Todd Sedano</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-18T12:13:00-08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/software-engineering/'>Software Engineering</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/journal/2010/11/18/rethinking-regex.html" data-via="" data-counturl="http://professor.github.io/journal/2010/11/18/rethinking-regex.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/journal/2010/06/22/transitioning-from-mysql-to-postgresql.html" title="Previous Post: Transitioning from MySQL to Postgresql">&laquo; Transitioning from MySQL to Postgresql</a>
+      
+      
+        <a class="basic-alignment right" href="/journal/2011/01/13/sitemap-powerpoint-presentation.html" title="Next Post: Sitemap Powerpoint presentation">Sitemap Powerpoint presentation &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>

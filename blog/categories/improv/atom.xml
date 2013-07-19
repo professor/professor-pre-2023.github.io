@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Improv | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/improv/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-13T13:49:25-07:00</updated>
+  <updated>2013-07-18T19:04:44-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -39,6 +39,34 @@
 <p>Interestingly, the improv game &ldquo;word at a time&rdquo; maps into paired programming. In &ldquo;word at a time&rdquo; a group tells a story with each person saying only one word. This exercise teaches shared ownership and the frustration of planning ahead. Variants of the game include &ldquo;one sentence at a time&rdquo; or &ldquo;1, 2, 3, 4, 3, 2, 1 words at a time.&rdquo; In paired programming, developers work on the same code at the same time. Typically the code is shown on one monitor but there are two keyboards and two mice so that at any point in time, either developer can start typing what they are thinking. There are many benefits to paired programming including high quality product with less defects, a product that is ready to be shipped sooner, team ownership of the entire code based (as opposed to code silos owned by a single programmer), shared understanding of the code base (every line of code was written by two people, if one leaves the company someone else knows what that code was doing). Often in pair programming, developers may take turns. I&rsquo;ll write a test case and my partner will make the code work. They will then write a test case, and I&rsquo;ll then get it to work. This practice is called ping-pong paired programming. This is much like &ldquo;A paragraph at a time&rdquo; The emphasis is on the dialogue between the two engineers and the code is the artifact of the conversation that happened.</p>
 
 <p>Today, I see many similarities between improv and software development. I suspect that there are new concepts in software development that might be explored given insights in improv. That is a topic of more future research.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Software Engineering Craft (or Software Engineering as a performance art)]]></title>
+    <link href="http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html"/>
+    <updated>2010-05-29T14:59:00-07:00</updated>
+    <id>http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art</id>
+    <content type="html"><![CDATA[<p>Experiment with full time students this summer to explore this topic.</p>
+
+<p>In a language and framework of their choice, have students select a short project to build, ie a blog website, or twitter client mobile application. Include testing. In the first session, build the project. (Time it.) Repeat again. Repeat again. Repeat again. After each session reflect on what you learned. Was there insights about the IDE? Where there key command short cuts? Do your test cases get better from defects from previous sessions, or do they get worse because of short cuts? Is there an aspect of the technology that you are deficient in that requires additional practice? (Katana example) Look for trends across the student population.</p>
+
+<p>Based upon trends across the student population, identify further areas of practice.</p>
+
+<p>Try same experiment with paired programming.</p>
+
+<p><a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+
+<p>Inspiration: improv &ndash; learning scene work or singing a song from scratch. Take an impossible task and break into small concrete steps. Slowly build upon the steps to reach the goal. Sometimes explore the concept of each step with positive and negative examples.</p>
+
+<p>Inspiration: Katana for TDD</p>
+
+<p>Inspiration: Learning to play the piano. Strength building exercises. The whole point of the exercise is to build up . Much like dance where there are patterns, technique and skill aspects to a class. The patterns make learning dancing fun and motivate the student to keep going. Playing a song is rewarding. Working on skill is tedious but makes the fun stuff more accessible and easier to accomplish.</p>
+
+<p><a href="http://rubyquiz.com/">http://rubyquiz.com/</a>
+Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+
+<p>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Engineering | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/software-engineering/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-13T13:49:25-07:00</updated>
+  <updated>2013-07-18T19:04:44-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -39,6 +39,106 @@
 <p>Interestingly, the improv game &ldquo;word at a time&rdquo; maps into paired programming. In &ldquo;word at a time&rdquo; a group tells a story with each person saying only one word. This exercise teaches shared ownership and the frustration of planning ahead. Variants of the game include &ldquo;one sentence at a time&rdquo; or &ldquo;1, 2, 3, 4, 3, 2, 1 words at a time.&rdquo; In paired programming, developers work on the same code at the same time. Typically the code is shown on one monitor but there are two keyboards and two mice so that at any point in time, either developer can start typing what they are thinking. There are many benefits to paired programming including high quality product with less defects, a product that is ready to be shipped sooner, team ownership of the entire code based (as opposed to code silos owned by a single programmer), shared understanding of the code base (every line of code was written by two people, if one leaves the company someone else knows what that code was doing). Often in pair programming, developers may take turns. I&rsquo;ll write a test case and my partner will make the code work. They will then write a test case, and I&rsquo;ll then get it to work. This practice is called ping-pong paired programming. This is much like &ldquo;A paragraph at a time&rdquo; The emphasis is on the dialogue between the two engineers and the code is the artifact of the conversation that happened.</p>
 
 <p>Today, I see many similarities between improv and software development. I suspect that there are new concepts in software development that might be explored given insights in improv. That is a topic of more future research.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Code Readability Process]]></title>
+    <link href="http://professor.github.io/journal/2011/03/30/code-readability-process.html"/>
+    <updated>2011-03-30T19:36:00-07:00</updated>
+    <id>http://professor.github.io/journal/2011/03/30/code-readability-process</id>
+    <content type="html"><![CDATA[<h2>Rationale</h2>
+
+<p>As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don&rsquo;t receive much feedback on our code when we are writing it. Some companies will do code reviews, and the code review feedback may help us write clean code, but we may not understand how other developers are confused. This process allows the programmer to see first hand, what is causing another developer difficulty when they read the code.</p>
+
+<h2>Process</h2>
+
+<p>Preparation) There are two roles, a Programmer (someone who has created code) and a Reader (someone who will review provided code). I am an observer of the process.</p>
+
+<p>The Programmer will select recent production code that they have produced. I do not need to see the code and would prefer not to see it. I&rsquo;d prefer for you to select the most recent code you have created because then you won&rsquo;t be tempted to pick &ldquo;perfect&rdquo; or &ldquo;ideal&rdquo; code. We&rsquo;re just looking for typical code and presumably whatever you wrote recently is typical.</p>
+
+<p>I&rsquo;ll prompt the Reader with some open ended questions. The job of the Programmer is to simply receive the feedback.</p>
+
+<p>Step 1) Programmer, provide some context by explaining the user story (or story card) behind the code. Describe the requirements at a high level in business terms. The Reader should have some notion of the problem the Programmer was trying to solve and the added business value.</p>
+
+<p>Step 2) Reader, read through the code and think out lowd about your initial reaction and your thought process for understanding the code. If things are clear, mention that. If something is confusing, mention the questions that you are thinking. Reason outlowd. There are no wrong answers, this is an opportunity for the Programmer to see how another developer interacts with their code. Provide them with your first impressions.</p>
+
+<p>Do this until you&rsquo;ve walked through the code and think you understand it.</p>
+
+<p>Step 3) Programmer, thank the Reader for their invaluable input. Please just say &ldquo;Thank You&rdquo; &mdash; there is no need to defend your code</p>
+
+<p>Step 4) Reader, do you see ways to refactor the code? Are there opportunities to make it more dry?</p>
+
+<p>Step 5) Reader, if the Programmer left the company and you had to maintain this code, could you do it?</p>
+
+<p>Step 6) Programmer, are there any clarifying questions that you have for the Reader about their comments? (For example, is there something may be very clear to you, but wasn&rsquo;t clear to the Reader. This is your opportunity to better understand how you could make it more clear.)</p>
+
+<p>Step 7) Programmer, reflect on this experience and describe what was the most useful aspect of it?</p>
+
+<p>Step 8) Programmer, was this worth your time?</p>
+
+<p>Step 9) Programmer, please fill in the survey response to this exercise</p>
+
+<h2>History</h2>
+
+<p>While teaching &ldquo;the craft of software development&rdquo; to my masters students, one of my students wanted to write more readable code. I challenged each student to come up with metrics to see if they were improving. The student couldn&rsquo;t think of any. I realized that he would need to show his code to another developer to find out if the code was readable. He could track the feedback as a metric as seen in the comic: <a href="http://www.osnews.com/story/19266/WTFs_m">http://www.osnews.com/story/19266/WTFs_m</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rethinking regex]]></title>
+    <link href="http://professor.github.io/journal/2010/11/18/rethinking-regex.html"/>
+    <updated>2010-11-18T12:13:00-08:00</updated>
+    <id>http://professor.github.io/journal/2010/11/18/rethinking-regex</id>
+    <content type="html"><![CDATA[<p>What if regular expressions were easy to write?</p>
+
+<p>While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails was changing their ORM layer to make it easier to incrementally build the query.</p>
+
+<p>Old: Article.find(:all, :order => &ldquo;published_at desc&rdquo;, :limit => 10)</p>
+
+<p>New: Article.order(&ldquo;published_at desc&rdquo;).limit(10)</p>
+
+<p>It occurred to me that this concept of simplifying could be applied to regular expression.</p>
+
+<p>While I have time, I&rsquo;ll continue to build up examples of what the syntax could look like.</p>
+
+<p>Random thoughts:</p>
+
+<p>What: not a number</p>
+
+<p>ie a string that can&rsquo;t be convert to a number
+A string that contains at least on character
+Regex: /^.<em>\D+.</em>$/
+Positive examples: 113t23io10908-113
+Negative examples: 13431</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Software Engineering Craft (or Software Engineering as a performance art)]]></title>
+    <link href="http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html"/>
+    <updated>2010-05-29T14:59:00-07:00</updated>
+    <id>http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art</id>
+    <content type="html"><![CDATA[<p>Experiment with full time students this summer to explore this topic.</p>
+
+<p>In a language and framework of their choice, have students select a short project to build, ie a blog website, or twitter client mobile application. Include testing. In the first session, build the project. (Time it.) Repeat again. Repeat again. Repeat again. After each session reflect on what you learned. Was there insights about the IDE? Where there key command short cuts? Do your test cases get better from defects from previous sessions, or do they get worse because of short cuts? Is there an aspect of the technology that you are deficient in that requires additional practice? (Katana example) Look for trends across the student population.</p>
+
+<p>Based upon trends across the student population, identify further areas of practice.</p>
+
+<p>Try same experiment with paired programming.</p>
+
+<p><a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+
+<p>Inspiration: improv &ndash; learning scene work or singing a song from scratch. Take an impossible task and break into small concrete steps. Slowly build upon the steps to reach the goal. Sometimes explore the concept of each step with positive and negative examples.</p>
+
+<p>Inspiration: Katana for TDD</p>
+
+<p>Inspiration: Learning to play the piano. Strength building exercises. The whole point of the exercise is to build up . Much like dance where there are patterns, technique and skill aspects to a class. The patterns make learning dancing fun and motivate the student to keep going. Playing a song is rewarding. Working on skill is tedious but makes the fun stuff more accessible and easier to accomplish.</p>
+
+<p><a href="http://rubyquiz.com/">http://rubyquiz.com/</a>
+Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+
+<p>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></p>
 ]]></content>
   </entry>
   

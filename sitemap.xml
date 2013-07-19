@@ -2,6 +2,66 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
+            http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html
+        </loc>
+        <lastmod>2013-07-14T21:57:14-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2010/06/16/what-i-learned-at-railsconf-2010-presentation.html
+        </loc>
+        <lastmod>2013-07-14T21:55:59-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2010/06/22/transitioning-from-mysql-to-postgresql.html
+        </loc>
+        <lastmod>2013-07-14T21:53:35-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/journal/2010/11/18/rethinking-regex.html</loc>
+        <lastmod>2013-07-14T21:51:39-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation.html
+        </loc>
+        <lastmod>2013-07-14T20:24:31-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2011/02/28/two-more-weeks-until-craftmanship-course-starts.html
+        </loc>
+        <lastmod>2013-07-14T20:21:44-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2011/03/14/increasing-discussion-with-a-quiet-group-of-students.html
+        </loc>
+        <lastmod>2013-07-14T20:20:40-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/journal/2011/03/16/craftsmanship-class-2.html</loc>
+        <lastmod>2013-07-14T20:18:59-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/journal/2011/03/30/code-readability-process.html</loc>
+        <lastmod>2013-07-14T20:18:15-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2011/05/04/career-and-software-craftsmanship.html
+        </loc>
+        <lastmod>2013-07-14T20:15:19-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2011/06/02/real-world-software-engineering-for-entrepreneurs-a-startup-accelerator.html
+        </loc>
+        <lastmod>2013-07-13T14:57:18-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel.html
         </loc>
         <lastmod>2013-07-13T13:48:43-07:00</lastmod>
@@ -57,15 +117,23 @@
         <lastmod>2013-07-11T20:27:19-07:00</lastmod>
     </url>
     <url>
+        <loc>http://professor.github.io/about-me/</loc>
+        <lastmod>2013-07-14T22:01:33-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2013-07-13T13:48:43-07:00</lastmod>
+        <lastmod>2013-07-14T21:57:14-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2013-07-13T13:48:43-07:00</lastmod>
+        <lastmod>2013-07-14T21:57:14-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/robots.txt</loc>
         <lastmod>2013-07-10T18:58:39-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/summer-workshops/</loc>
+        <lastmod>2013-07-14T22:02:43-07:00</lastmod>
     </url>
 </urlset>

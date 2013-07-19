@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Craftsmanship | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/craftsmanship/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-13T13:49:25-07:00</updated>
+  <updated>2013-07-18T19:04:44-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -155,6 +155,101 @@
 <p>When I suggested this to the programmer, she resisted the idea noting that a method call would affect performance. For a tic-tac-toe problem, this is a specious argument. However, is there merit to it? Will a modern compiler optimize this kind of refactoring? And this brings up a broader question, should we optimize code for performance or readability when we are writing it? Conventional wisdom says we should write code that is clean and easy to understand, and when we are done and have performance analysis with production data, then we know where to spend engineering effort to optimize critical sections. The one exception would be algorithm complexity and running times. (e.g. O(N) vs O(NxN)</p>
 
 <p>I&rsquo;m now curious, is this a &ldquo;comment smell&rdquo;? Can comments be indicators to us programmers that the code we just wrote isn&rsquo;t very clear. The comment itself my inform us on how we need to refactor the code to make it more readable.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Career and Software Craftsmanship]]></title>
+    <link href="http://professor.github.io/journal/2011/05/04/career-and-software-craftsmanship.html"/>
+    <updated>2011-05-04T23:29:00-07:00</updated>
+    <id>http://professor.github.io/journal/2011/05/04/career-and-software-craftsmanship</id>
+    <content type="html"><![CDATA[<p>Students in the craft of software development course read Sections &ldquo;Walking the long road&rdquo; and &ldquo;Draw your own map&rdquo; in the Apprenticeship Patterns book. We then discussed whether their notions of their career had been affected by the course and the readings. During our conversation, some students talked about the idea that people can&rsquo;t stay technical their entire careers. (I see this as a misperception, and discussed several people I know who are still programming late into their careers.)
+My full time students are actively interviewing for jobs when they graduate. Most had not considered looking for a job that would enhance their software craftsmanship skills, while salary, prestige of the company, and projects they were working on dominated their searching process.
+From my Improv for Software Engineers course, I have noticed that my master students who are in their 20&rsquo;s and 30&rsquo;s have a hard time picturing their future in great detail and will actively refuse to consider life later on unless coached carefully to do so. They lump ages 50 to 80 in one bucket, the distant future. In my improv exercise, I have them walk around the room and I ask them to picture life as it was when they are a certain age. For the most part, they are able to recall and relive life at the age of 7, 12, 18, 23. However, as we get into the future, it&rsquo;s harder for them, and after the age of 60 most stop the exercise and resort to comedy to deal with the tension of thinking about the distant future.
+We discussed two hypothetical job offers. One pays $20,000 more money, the other allows them to grow their software development skills. Which one would they pick?
+While the conversation was enlightening for the students, I wonder how much of this will stick when they are in the throes of making job offer decisions. (Action item) It would be interesting to survey the students the students once they are in their jobs to discover how many offers they had and what was their decision making process to get to the final offer. In other words, did our intellectual conversation about their careers have an immediate impact on their choices a few months from now?
+Here are the responses from each of my students:
+-The reading made me think about my short-tem and long-term vision of my career. I have not reached an answer, but I definitely have to think about which of the following is most important: a) advancement for position and salary b) enjoying the work and working on what I want and what interests me.
+-Before reading the Apprenticeship Patterns, I didn&rsquo;t think about actively trying to improve my skills as a software engineer / craftsman. It was all about doing just enough to get the job done!
+-The reading has made me realize that there is a huge learning curve before I could reach anywhere near to being an expert software developer
+-Thinking about where I want to be 10+ years down the line is hard; planning so far in advance is a bit undesirable. Staying technical my work like is an interesting idea.
+-Made me think long term about my career options and whether or not to stay a developer the entire way or to take other options that open up later on
+-Made me think of where I want to be in 15 years. I don&rsquo;t want to be a programmer for life.
+-The reading makes me think about whether I want to be a fully technical guy or not. It&rsquo;s hard to coordinate your interests and job requirements
+-Dream about myself 10,20,30,40 years. What if my manager asked me to fill in a management role? Should I pass for the sake of programming?
+-I always hear that you can not continue coding for living! even after I reach 40s of age. How I might change my mind about that?
+-The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Code Readability Process]]></title>
+    <link href="http://professor.github.io/journal/2011/03/30/code-readability-process.html"/>
+    <updated>2011-03-30T19:36:00-07:00</updated>
+    <id>http://professor.github.io/journal/2011/03/30/code-readability-process</id>
+    <content type="html"><![CDATA[<h2>Rationale</h2>
+
+<p>As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don&rsquo;t receive much feedback on our code when we are writing it. Some companies will do code reviews, and the code review feedback may help us write clean code, but we may not understand how other developers are confused. This process allows the programmer to see first hand, what is causing another developer difficulty when they read the code.</p>
+
+<h2>Process</h2>
+
+<p>Preparation) There are two roles, a Programmer (someone who has created code) and a Reader (someone who will review provided code). I am an observer of the process.</p>
+
+<p>The Programmer will select recent production code that they have produced. I do not need to see the code and would prefer not to see it. I&rsquo;d prefer for you to select the most recent code you have created because then you won&rsquo;t be tempted to pick &ldquo;perfect&rdquo; or &ldquo;ideal&rdquo; code. We&rsquo;re just looking for typical code and presumably whatever you wrote recently is typical.</p>
+
+<p>I&rsquo;ll prompt the Reader with some open ended questions. The job of the Programmer is to simply receive the feedback.</p>
+
+<p>Step 1) Programmer, provide some context by explaining the user story (or story card) behind the code. Describe the requirements at a high level in business terms. The Reader should have some notion of the problem the Programmer was trying to solve and the added business value.</p>
+
+<p>Step 2) Reader, read through the code and think out lowd about your initial reaction and your thought process for understanding the code. If things are clear, mention that. If something is confusing, mention the questions that you are thinking. Reason outlowd. There are no wrong answers, this is an opportunity for the Programmer to see how another developer interacts with their code. Provide them with your first impressions.</p>
+
+<p>Do this until you&rsquo;ve walked through the code and think you understand it.</p>
+
+<p>Step 3) Programmer, thank the Reader for their invaluable input. Please just say &ldquo;Thank You&rdquo; &mdash; there is no need to defend your code</p>
+
+<p>Step 4) Reader, do you see ways to refactor the code? Are there opportunities to make it more dry?</p>
+
+<p>Step 5) Reader, if the Programmer left the company and you had to maintain this code, could you do it?</p>
+
+<p>Step 6) Programmer, are there any clarifying questions that you have for the Reader about their comments? (For example, is there something may be very clear to you, but wasn&rsquo;t clear to the Reader. This is your opportunity to better understand how you could make it more clear.)</p>
+
+<p>Step 7) Programmer, reflect on this experience and describe what was the most useful aspect of it?</p>
+
+<p>Step 8) Programmer, was this worth your time?</p>
+
+<p>Step 9) Programmer, please fill in the survey response to this exercise</p>
+
+<h2>History</h2>
+
+<p>While teaching &ldquo;the craft of software development&rdquo; to my masters students, one of my students wanted to write more readable code. I challenged each student to come up with metrics to see if they were improving. The student couldn&rsquo;t think of any. I realized that he would need to show his code to another developer to find out if the code was readable. He could track the feedback as a metric as seen in the comic: <a href="http://www.osnews.com/story/19266/WTFs_m">http://www.osnews.com/story/19266/WTFs_m</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Software Engineering Craft (or Software Engineering as a performance art)]]></title>
+    <link href="http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html"/>
+    <updated>2010-05-29T14:59:00-07:00</updated>
+    <id>http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art</id>
+    <content type="html"><![CDATA[<p>Experiment with full time students this summer to explore this topic.</p>
+
+<p>In a language and framework of their choice, have students select a short project to build, ie a blog website, or twitter client mobile application. Include testing. In the first session, build the project. (Time it.) Repeat again. Repeat again. Repeat again. After each session reflect on what you learned. Was there insights about the IDE? Where there key command short cuts? Do your test cases get better from defects from previous sessions, or do they get worse because of short cuts? Is there an aspect of the technology that you are deficient in that requires additional practice? (Katana example) Look for trends across the student population.</p>
+
+<p>Based upon trends across the student population, identify further areas of practice.</p>
+
+<p>Try same experiment with paired programming.</p>
+
+<p><a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+
+<p>Inspiration: improv &ndash; learning scene work or singing a song from scratch. Take an impossible task and break into small concrete steps. Slowly build upon the steps to reach the goal. Sometimes explore the concept of each step with positive and negative examples.</p>
+
+<p>Inspiration: Katana for TDD</p>
+
+<p>Inspiration: Learning to play the piano. Strength building exercises. The whole point of the exercise is to build up . Much like dance where there are patterns, technique and skill aspects to a class. The patterns make learning dancing fun and motivate the student to keep going. Playing a song is rewarding. Working on skill is tedious but makes the fun stuff more accessible and easier to accomplish.</p>
+
+<p><a href="http://rubyquiz.com/">http://rubyquiz.com/</a>
+Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+
+<p>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></p>
 ]]></content>
   </entry>
   
