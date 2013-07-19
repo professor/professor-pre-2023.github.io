@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Engineering | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/software-engineering/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-18T19:04:44-07:00</updated>
+  <updated>2013-07-18T19:40:34-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -106,11 +106,14 @@
 
 <p>What: not a number</p>
 
-<p>ie a string that can&rsquo;t be convert to a number
-A string that contains at least on character
-Regex: /^.<em>\D+.</em>$/
-Positive examples: 113t23io10908-113
-Negative examples: 13431</p>
+<ul>
+<li>ie a string that can&rsquo;t be convert to a number</li>
+<li>A string that contains at least on character</li>
+<li>Regex: /^.<em>\D+.</em>$/</li>
+<li>Positive examples: 113t23io10908-113</li>
+<li>Negative examples: 13431</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -135,10 +138,12 @@ Negative examples: 13431</p>
 
 <p>Inspiration: Learning to play the piano. Strength building exercises. The whole point of the exercise is to build up . Much like dance where there are patterns, technique and skill aspects to a class. The patterns make learning dancing fun and motivate the student to keep going. Playing a song is rewarding. Working on skill is tedious but makes the fun stuff more accessible and easier to accomplish.</p>
 
-<p><a href="http://rubyquiz.com/">http://rubyquiz.com/</a>
-Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+<ul>
+<li><a href="http://rubyquiz.com/">http://rubyquiz.com/</a></li>
+<li>Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></li>
+<li>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></li>
+</ul>
 
-<p>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></p>
 ]]></content>
   </entry>
   

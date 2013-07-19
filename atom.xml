@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-18T19:04:44-07:00</updated>
+  <updated>2013-07-18T19:40:34-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -227,12 +227,45 @@
 
 <h3>Game History</h3>
 
-<p>On February 20, 2012, a student group from <a href="www.uniasselvi.com.br">Uniasselvi University</a>
+<p>On February 20, 2012, a student group from <a href="http://www.uniasselvi.com.br">Uniasselvi University</a>
 in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsquo;t know Portuguese, Professor Jan Charles Gross graciously translated my instructions.</p>
 
 <p><span class="full-image-block ssNonEditable"><span><img src="http://professor.github.io/images/ToddSedano%20with%20JanCharlesGross.png" alt=""/></span></span></p>
 
 <p>Professor Gross&#8217; son, Professor Sedano, Chris Zeise, Professor Gross</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TDD: small Ah-Ha moment on when to use a hash instead of an array]]></title>
+    <link href="http://professor.github.io/journal/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html"/>
+    <updated>2012-07-20T13:34:00-07:00</updated>
+    <id>http://professor.github.io/journal/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m sharing a pleasant surprise I had during a recent Test Driven Development coding session. My tests had found a design that was delightful to me. TDD suggested that I use a hash where my natural tendency is to use an array.</p>
+
+<p>For the purpose of clarity, I&rsquo;m simplifying a very complicated data structure for this example. Let&rsquo;s say we wanted to show the user the most popular cheat codes for a set of video games. For the sake of the example, let&rsquo;s assume that this information is stored in the database in a way that is rather difficult to access. Thus the need for a method &ldquo;most_popular_cheats&rdquo; to do the heavy lifting.</p>
+
+<p>Let&rsquo;s recall some popular cheat codes. Contra&rsquo;s cheat code is &ldquo;UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START&rdquo;  and Mike Tyson&rsquo;s cheat code is &ldquo;007-373-5963&rdquo;</p>
+
+<p>From the control flow, I would already know the order of the video games that needed cheat codes, and expected that the method &ldquo;most_popular_cheats&rdquo; would just return an array.</p>
+
+<p>However, as I wrote the test first, I realized that the test wouldn&rsquo;t know the exact order of the video games. After I created some test data in the database, I wasn&rsquo;t certain how they would be retrieved, would the default sorting be by ID, or by name? The test didn&rsquo;t know and I didn&rsquo;t think the test should care. If the method returned a hash, I could just see if the hash contained the key->value pairs that I expected.</p>
+
+<pre><code>Hash: {contra.id =&gt; "UP, UP….", mike_tyson.id =&gt; "007-373-6963"}
+</code></pre>
+
+<p>On previous projects, following the traditional &ldquo;code then test&rdquo; development style, I have generated two parallel arrays to solve this problem kind of problem. One that contained the answer (what is my value in my hash), and the other that contained the index (what is my key in my hash.) On those projects, it had not occurred to me that a hash was a better data structure. My tests informed me on a programming nuance that I had previously missed.</p>
+
+<p>Here&rsquo;s the simplified version of test case that lead me to this small ah-ha moment.</p>
+
+<pre><code>contra = FactoryGirl.create(:video_game_with_popular_cheats)
+mike_tyson = FactoryGirl.create(:video_game_with_popular_cheats)
+
+popular_game_cheats = Game.most_popular_cheats
+popular_game_cheats = should be_a_kind_of(Hash)
+popular_game_cheats[contra.id].should = "UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START"
+popular_game_cheats[mike_tyson.id].should = "007-373-5963"
+</code></pre>
 ]]></content>
   </entry>
   
@@ -252,22 +285,22 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
 <p>Exhibit 1: Katas sorted by how easy it is to apply TDD.</p>
 
 <ol>
-<li>[Fizz Buzz] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz">http://codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz</a>&rdquo;)</li>
-<li>[Prime Factors] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/prime-factors-kata">http://craftsmanship.sv.cmu.edu/posts/prime-factors-kata</a>&rdquo;)</li>
-<li>[String Calculator] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/string-calculator">http://craftsmanship.sv.cmu.edu/posts/string-calculator</a>&rdquo;)</li>
-<li>[Gilded Rose] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/gilded-rose-kata">http://craftsmanship.sv.cmu.edu/posts/gilded-rose-kata</a>&rdquo;)</li>
-<li>[Word Wrap] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap">http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap</a>&rdquo;)</li>
-<li>[Tennis Game] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/tennis-game-kata">http://craftsmanship.sv.cmu.edu/posts/tennis-game-kata</a>&rdquo;)</li>
-<li>[Bowling Game] (&ldquo;<a href="http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata">http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata</a>&rdquo;)</li>
-<li>[Mars Rover] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/mars-rover-kata">http://craftsmanship.sv.cmu.edu/posts/mars-rover-kata</a>&rdquo;)</li>
-<li>[Roman Numerals] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals">http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals</a>&rdquo;)</li>
-<li>[Coin Change] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/coin-change-kata">http://craftsmanship.sv.cmu.edu/posts/coin-change-kata</a>&rdquo;)</li>
-<li>[Game of Life] (&ldquo;<a href="http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife">http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife</a>&rdquo;)</li>
-<li>[Potter] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/potter-kata">http://craftsmanship.sv.cmu.edu/posts/potter-kata</a>&rdquo;)</li>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz">Fizz Buzz</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/prime-factors-kata">Prime Factors</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/string-calculator">String Calculator</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/gilded-rose-kata">Gilded Rose</a></li>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap">Word Wrap</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/tennis-game-kata">Tennis Game</a></li>
+<li><a href="" title="http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata">Bowling Game</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/mars-rover-kata">Mars Rover</a></li>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals">Roman Numerals</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/coin-change-kata">Coin Change</a></li>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife">Game of Life</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/potter-kata">Potter</a></li>
 </ol>
 
 
-<p><p>Not helpful in learning TDD: [Weighing with Stones] (&ldquo;<a href="http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata">http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata</a>&rdquo;)</p>
+<p><p>Not helpful in learning TDD: <a href="" title="http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata">Weighing with Stones</a></p>
 ]]></content>
   </entry>
   
@@ -277,19 +310,23 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
     <updated>2012-04-05T13:32:00-07:00</updated>
     <id>http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity</id>
     <content type="html"><![CDATA[<p>Often as engineers we like to go for it alone. It&rsquo;s me versus the machine. Yet, involving others can be helpful with us in our career. In my course &ldquo;craft for software development&rdquo; I challenged my students to think of ways to add a social component to their software development experience.
-Here is some of their feedback: (list is unsorted)
-1. Ask a friend to review your code
-2. Pair program with a friend
-3. Pair program with a stranger (there are websites that do this)
-4. Attend a meetup or an unconference. Meet beginners, intermediates, and experts.
-5. Find out where people in your community hang-out (mailing list, IRC, etc)
-6. See who is around you that you might not be considering. (For example, students in a different masters program, PhD students.)
-7. Post to CMU SV facebook group.
-8. Contact alumni who might know working professionals with the expertise in the field.
-9. Posting code for review online. Post on a blog and have people comment on it.
-10. Attend a &ldquo;hackathon,&rdquo; &ldquo;hackernoon,&rdquo; or spend time at a software dojo
-11. Use linked-in to do a search on appropriate skill to see who is in your network
-12. CMU has a mentoring program in the bay area</p>
+Here is some of their feedback: (list is unsorted)</p>
+
+<ol>
+<li>Ask a friend to review your code</li>
+<li>Pair program with a friend</li>
+<li>Pair program with a stranger (there are websites that do this)</li>
+<li>Attend a meetup or an unconference. Meet beginners, intermediates, and experts.</li>
+<li>Find out where people in your community hang-out (mailing list, IRC, etc)</li>
+<li>See who is around you that you might not be considering. (For example, students in a different masters program, PhD students.)</li>
+<li>Post to CMU SV facebook group.</li>
+<li>Contact alumni who might know working professionals with the expertise in the field.</li>
+<li>Posting code for review online. Post on a blog and have people comment on it.</li>
+<li>Attend a &ldquo;hackathon,&rdquo; &ldquo;hackernoon,&rdquo; or spend time at a software dojo</li>
+<li>Use linked-in to do a search on appropriate skill to see who is in your network</li>
+<li>CMU has a mentoring program in the bay area</li>
+</ol>
+
 ]]></content>
   </entry>
   
@@ -361,7 +398,7 @@ Team four of a Kind &mdash;
     <link href="http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel.html"/>
     <updated>2011-06-03T13:00:00-07:00</updated>
     <id>http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel</id>
-    <content type="html"><![CDATA[<p>This is about class three (June 1st, 2011) from the course [<a href="http://www.cmu.edu/silicon-valley/academics/new-course/silicon-valley-startup-experience.html">http://www.cmu.edu/silicon-valley/academics/new-course/silicon-valley-startup-experience.html</a>] (Real World Software Engineering for Entrepreneurs (A Startup Accelerator)</p>
+    <content type="html"><![CDATA[<p>This is about class three (June 1st, 2011) from the course <a href="Real%20World%20Software%20Engineering%20for%20Entrepreneurs%20(A%20Startup%20Accelerator">http://www.cmu.edu/silicon-valley/academics/new-course/silicon-valley-startup-experience.html</a></p>
 
 <p>From the instructors, Scott Russell and Todd Sedano</p>
 
@@ -409,12 +446,15 @@ Put on your sales hat and BS about what the product does. Don&rsquo;t tell them 
 The common user won&rsquo;t understand technology. You can explain what it is and what it will do for them, but don&rsquo;t get lost in Acromania. &ldquo;We&rsquo;ve done the hard work to build something special.&rdquo; It was tough to do, but you are making it easy for them. It&rsquo;s a defensible asset.
 Consider how you will end your presentation. What do you want from the panel? Ask them a question. You have just spent six minutes of your valuable time presenting to this panel, what is your ask?
 ask the panel a question.
-We&rsquo;ve asked the teams to consider their strategy for their first panel. Here is a sample of their thoughts.
-Team Coach Potatoes (Andrew Steele, Anooj Vagadia, Patrick Baumann, Henry Fung)
-As a development team working on an as yet unreleased product, we are looking to get as much out of Wednesday’s panel as possible. Most importantly, we will be trying to assess the feasibility of our idea and its potential worth. Part of our presentation to the panel will consist of a demo of our current features and discussion of upcoming features. We hope to gather feedback regarding which features are of value, which are not and which would be worth spending money to have. Our application is targeted specifically towards individuals who are active, which may affect the objectivity of the panel’s feedback if they are not active themselves. However, it is still important to gather feedback from non-athletes to determine if our application will be appealing or motivating to them. If the application is not appealing, we will ask if there are changes which can be made to make it more so. We look forward to Wednesday’s opportunity.
-Team Four of a Kind (Alan Mak, Kevin Tsai, Matthew Lanken, Paul Wong)
-Our main strategy for the 4th week pitch is to focus on getting the panelists more involved with the theme and vision of the product. By doing so, the panelists would get a sense of why there is a need to use the product.  Several past criticisms suggest pitches didn’t have a direct and exaggerative tone suitable for marketing, and were instead received as a simple explanation of the product.  During our pitch, we plan to emphasize the magnitude and greatness of the application while being more direct in our pitch towards the panel.  We plan to pitch to them as if they were the ideal target customers, and why they need to use the application.  Aside from involving panelists with our tone, we will also introduce a few interactive gimmicks such as distribute four playable demos of the application, a tutorial that will guide users through a quick workout and allow them to follow along, and props to enhance the theme of fitness and quick workouts.  We also plan to take this opportunity to get user feedback and weigh some of the other selling points of the application such as the virtual buddy and achievements.
-Team Opinionize (Gaurav Sinha, Rob Engel, Phil Melzer, Vinay Prasad)
+We&rsquo;ve asked the teams to consider their strategy for their first panel. Here is a sample of their thoughts.</p>
+
+<p><strong>Team Coach Potatoes (Andrew Steele, Anooj Vagadia, Patrick Baumann, Henry Fung)</strong>
+As a development team working on an as yet unreleased product, we are looking to get as much out of Wednesday’s panel as possible. Most importantly, we will be trying to assess the feasibility of our idea and its potential worth. Part of our presentation to the panel will consist of a demo of our current features and discussion of upcoming features. We hope to gather feedback regarding which features are of value, which are not and which would be worth spending money to have. Our application is targeted specifically towards individuals who are active, which may affect the objectivity of the panel’s feedback if they are not active themselves. However, it is still important to gather feedback from non-athletes to determine if our application will be appealing or motivating to them. If the application is not appealing, we will ask if there are changes which can be made to make it more so. We look forward to Wednesday’s opportunity.</p>
+
+<p><strong>Team Four of a Kind (Alan Mak, Kevin Tsai, Matthew Lanken, Paul Wong)</strong>
+Our main strategy for the 4th week pitch is to focus on getting the panelists more involved with the theme and vision of the product. By doing so, the panelists would get a sense of why there is a need to use the product.  Several past criticisms suggest pitches didn’t have a direct and exaggerative tone suitable for marketing, and were instead received as a simple explanation of the product.  During our pitch, we plan to emphasize the magnitude and greatness of the application while being more direct in our pitch towards the panel.  We plan to pitch to them as if they were the ideal target customers, and why they need to use the application.  Aside from involving panelists with our tone, we will also introduce a few interactive gimmicks such as distribute four playable demos of the application, a tutorial that will guide users through a quick workout and allow them to follow along, and props to enhance the theme of fitness and quick workouts.  We also plan to take this opportunity to get user feedback and weigh some of the other selling points of the application such as the virtual buddy and achievements.</p>
+
+<p><strong>Team Opinionize (Gaurav Sinha, Rob Engel, Phil Melzer, Vinay Prasad)</strong>
 Our strategy in the panel pitch next week is to get more feedback about the product, its use cases and reasons why people will buy or not buy it. The other important part of our strategy is to make the most of the experience the panel brings in the room.
 We need to understand our target customers. We believe that it could be anyone who has the problem of categorizing large amounts of data but we want to narrow down on our users. Adam mentioned that our probable users could be geeks who use / edit Wikipedia articles. For this reason, we will present a case for members in the panel to use the product, based on our knowledge of their interests. Their feedback will be valuable in determining whether the product is for everyone or not.
 We want to get feedback about what makes the product viral? And why? The panel consists of people who have the experience in the market and can judge what is going to hit or what is not.
@@ -450,17 +490,21 @@ My full time students are actively interviewing for jobs when they graduate. Mos
 From my Improv for Software Engineers course, I have noticed that my master students who are in their 20&rsquo;s and 30&rsquo;s have a hard time picturing their future in great detail and will actively refuse to consider life later on unless coached carefully to do so. They lump ages 50 to 80 in one bucket, the distant future. In my improv exercise, I have them walk around the room and I ask them to picture life as it was when they are a certain age. For the most part, they are able to recall and relive life at the age of 7, 12, 18, 23. However, as we get into the future, it&rsquo;s harder for them, and after the age of 60 most stop the exercise and resort to comedy to deal with the tension of thinking about the distant future.
 We discussed two hypothetical job offers. One pays $20,000 more money, the other allows them to grow their software development skills. Which one would they pick?
 While the conversation was enlightening for the students, I wonder how much of this will stick when they are in the throes of making job offer decisions. (Action item) It would be interesting to survey the students the students once they are in their jobs to discover how many offers they had and what was their decision making process to get to the final offer. In other words, did our intellectual conversation about their careers have an immediate impact on their choices a few months from now?
-Here are the responses from each of my students:
--The reading made me think about my short-tem and long-term vision of my career. I have not reached an answer, but I definitely have to think about which of the following is most important: a) advancement for position and salary b) enjoying the work and working on what I want and what interests me.
--Before reading the Apprenticeship Patterns, I didn&rsquo;t think about actively trying to improve my skills as a software engineer / craftsman. It was all about doing just enough to get the job done!
--The reading has made me realize that there is a huge learning curve before I could reach anywhere near to being an expert software developer
--Thinking about where I want to be 10+ years down the line is hard; planning so far in advance is a bit undesirable. Staying technical my work like is an interesting idea.
--Made me think long term about my career options and whether or not to stay a developer the entire way or to take other options that open up later on
--Made me think of where I want to be in 15 years. I don&rsquo;t want to be a programmer for life.
--The reading makes me think about whether I want to be a fully technical guy or not. It&rsquo;s hard to coordinate your interests and job requirements
--Dream about myself 10,20,30,40 years. What if my manager asked me to fill in a management role? Should I pass for the sake of programming?
--I always hear that you can not continue coding for living! even after I reach 40s of age. How I might change my mind about that?
--The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</p>
+Here are the responses from each of my students:</p>
+
+<ul>
+<li>The reading made me think about my short-term and long-term vision of my career. I have not reached an answer, but I definitely have to think about which of the following is most important: a) advancement for position and salary b) enjoying the work and working on what I want and what interests me.</li>
+<li>Before reading the Apprenticeship Patterns, I didn&rsquo;t think about actively trying to improve my skills as a software engineer / craftsman. It was all about doing just enough to get the job done!</li>
+<li>The reading has made me realize that there is a huge learning curve before I could reach anywhere near to being an expert software developer</li>
+<li>Thinking about where I want to be 10+ years down the line is hard; planning so far in advance is a bit undesirable. Staying technical my work like is an interesting idea.</li>
+<li>Made me think long term about my career options and whether or not to stay a developer the entire way or to take other options that open up later on</li>
+<li>Made me think of where I want to be in 15 years. I don&rsquo;t want to be a programmer for life.</li>
+<li>The reading makes me think about whether I want to be a fully technical guy or not. It&rsquo;s hard to coordinate your interests and job requirements</li>
+<li>Dream about myself 10,20,30,40 years. What if my manager asked me to fill in a management role? Should I pass for the sake of programming?</li>
+<li>I always hear that you can not continue coding for living! even after I reach 40s of age. How I might change my mind about that?</li>
+<li>The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -517,18 +561,22 @@ Random drawing on Kata implementation
 Random drawing on maiden speech
 Question for the group: how did the reading about estimation of our competence relate to this course?</p>
 
-<p>Responses include
-The kata was simple enough to let us explore our tools. Never did TDD in C++ before so it gave me time to try that out. I also liked it because it was complex enough to allow us to try complex ideas like recursion.
-The Kata had the right level of difficulty. It was a good programming (algorithms) exercise and a good TDD exercise
-Helped to start working towards the goal &ldquo;refresh &lsquo;java programming skills&rsquo; &rdquo;
-It helped me learn a new testing framework and helped get me back into programming mode after taking a few months break.
-Learning TDD in java
-Program was simple so I could concentrate on the practice
-Got me introduced to the testing framework
-Once setup was completed, it showed my that TDD is language/platform agnostic, which should be obvious but was surprising
-Learning how to do it in java using eclipse, it was easy
-first time doing TDD in Java
-learned how to use git with eclipse</p>
+<p>Responses include</p>
+
+<ul>
+<li>The kata was simple enough to let us explore our tools. Never did TDD in C++ before so it gave me time to try that out. I also liked it because it was complex enough to allow us to try complex ideas like recursion.</li>
+<li>The Kata had the right level of difficulty. It was a good programming (algorithms) exercise and a good TDD exercise</li>
+<li>Helped to start working towards the goal &ldquo;refresh &lsquo;java programming skills&rsquo; &rdquo;</li>
+<li>It helped me learn a new testing framework and helped get me back into programming mode after taking a few months break.</li>
+<li>Learning TDD in java</li>
+<li>Program was simple so I could concentrate on the practice</li>
+<li>Got me introduced to the testing framework</li>
+<li>Once setup was completed, it showed my that TDD is language/platform agnostic, which should be obvious but was surprising</li>
+<li>Learning how to do it in java using eclipse, it was easy</li>
+<li>first time doing TDD in Java</li>
+<li>learned how to use git with eclipse</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -541,31 +589,37 @@ learned how to use git with eclipse</p>
 
 <p>I&rsquo;ve been following a particular group of students through a curriculum and I know that they are &ldquo;quieter&rdquo; than previous groups. In the past, my attitude has been, &ldquo;if they don&rsquo;t want to discuss this, that&rsquo;s ok, we&rsquo;ll move on, or we&rsquo;ll end early.&rdquo; However, I&rsquo;m challenging myself to try a different approach with the goal of raising my game and being a better teacher.</p>
 
-<p>Main idea: prose a question to the group and have each person answer it on a sheet of paper. Put all the sheets into a hat. Select one member randomly (I like to use my fire dice) and have them draw the question from the hat. That person then leads a conversation around what was written on the paper. Note: you can have the students write questions on the paper, if this is the case, the person drawing the sheet out of the hat is not responsible for answering the question, they are responsible for getting the group to answer the question.
-Possible Questions</p>
+<p>Main idea: prose a question to the group and have each person answer it on a sheet of paper. Put all the sheets into a hat. Select one member randomly (I like to use my fire dice) and have them draw the question from the hat. That person then leads a conversation around what was written on the paper. Note: you can have the students write questions on the paper, if this is the case, the person drawing the sheet out of the hat is not responsible for answering the question, they are responsible for getting the group to answer the question.</p>
 
-<p>Here&rsquo;s my initial brainstorm list for possible questions for the group:
-What are some fears you have about this class?
-What is software craftsmanship?
-Who is a software role model for you and why?
-What are you strong in, how did this happen, and how can you continue to improve?
-What is something that you want to work more on? How will you improve, how will you know if you are successful?
-What is necessary to become an expert?
-The technique in action</p>
+<h2>Possible Questions</h2>
+
+<p>Here&rsquo;s my initial brainstorm list for possible questions for the group:</p>
+
+<ul>
+<li>What are some fears you have about this class?</li>
+<li>What is software craftsmanship?</li>
+<li>Who is a software role model for you and why?</li>
+<li>What are you strong in, how did this happen, and how can you continue to improve?</li>
+<li>What is something that you want to work more on? How will you improve, how will you know if you are successful?</li>
+<li>What is necessary to become an expert?</li>
+</ul>
+
+
+<h2>The technique in action</h2>
 
 <p>I choose this question for the students.
 &ldquo;What are some of your concerns about this course?&rdquo;</p>
 
 <p>Here are their answers.
--regain lost powers in terms of java programming (covered)
--finding a good mentor (covered)
--mentor does not agree to coach
--I fear running out of ideas for learning areas I wish to improve
--getting too caught up in the course
--first time the course is offered, so it might not work out as planned
--how much will it help me in the long run?
--didn&rsquo;t have any real fears up until you mentioned it!
--one fear is not meeting my goals at the end of the semester.
+* regain lost powers in terms of java programming (covered)
+* finding a good mentor (covered)
+* mentor does not agree to coach
+* I fear running out of ideas for learning areas I wish to improve
+* getting too caught up in the course
+* first time the course is offered, so it might not work out as planned
+* how much will it help me in the long run?
+* didn&rsquo;t have any real fears up until you mentioned it!
+* one fear is not meeting my goals at the end of the semester.
 I allowed a student to lead a discussion about the selected slip of paper. The class and I had a great conversation about the student&rsquo;s concern and what were some things to deal with it. I found this approach to be more engaging than going through a syllabus.
 After using this technique for a course, I noticed that most of my students didn&rsquo;t meet my expectations for a facilitator. Some would jump into giving their own answer. Others would ask a very good opening question, but then not probe for great details. In these situations when the student stopped leading, I would ask more detailed questions and explore subtle nuances.</p>
 
@@ -589,7 +643,7 @@ After using this technique for a course, I noticed that most of my students didn
     <link href="http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation.html"/>
     <updated>2011-01-13T22:54:00-08:00</updated>
     <id>http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation</id>
-    <content type="html"><![CDATA[<p><img src="http://professor.github.io/images/TalkAgenda.jpg" alt=""/></p>
+    <content type="html"><![CDATA[<p><a href="http://professor.github.io/images/TalkAgenda.jpg" border=0><img src="http://professor.github.io/images/TalkAgenda.jpg" width="75%" alt=""/></a></p>
 
 <p>I tried an experimental presentation technique today, which I call &ldquo;Sitemap Presentation.&rdquo;</p>
 
@@ -622,11 +676,14 @@ After using this technique for a course, I noticed that most of my students didn
 
 <p>What: not a number</p>
 
-<p>ie a string that can&rsquo;t be convert to a number
-A string that contains at least on character
-Regex: /^.<em>\D+.</em>$/
-Positive examples: 113t23io10908-113
-Negative examples: 13431</p>
+<ul>
+<li>ie a string that can&rsquo;t be convert to a number</li>
+<li>A string that contains at least on character</li>
+<li>Regex: /^.<em>\D+.</em>$/</li>
+<li>Positive examples: 113t23io10908-113</li>
+<li>Negative examples: 13431</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -650,15 +707,6 @@ Negative examples: 13431</p>
 <p>4) Rename column year2 to be year.5) heroku db:push mysql:&hellip;</p>
 
 <p>There are good documents here: <a href="http://docs.heroku.com/database">http://docs.heroku.com/database</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What I learned at RailsConf 2010 presentation]]></title>
-    <link href="http://professor.github.io/journal/2010/06/16/what-i-learned-at-railsconf-2010-presentation.html"/>
-    <updated>2010-06-16T21:54:00-07:00</updated>
-    <id>http://professor.github.io/journal/2010/06/16/what-i-learned-at-railsconf-2010-presentation</id>
-    <content type="html"><![CDATA[<p>[<a href="https://docs.google.com/file/d/0B6uFDOj6cDrLNTdmYWJlZTgtZmMyNC00MzFjLTk3Y2YtZDA4MDNjMjIzMTQz/edit?pli=1&amp;hl=en#">https://docs.google.com/file/d/0B6uFDOj6cDrLNTdmYWJlZTgtZmMyNC00MzFjLTk3Y2YtZDA4MDNjMjIzMTQz/edit?pli=1&amp;hl=en#</a>] (Please see this file)</p>
 ]]></content>
   </entry>
   

@@ -4,13 +4,13 @@
         <loc>
             http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html
         </loc>
-        <lastmod>2013-07-14T21:57:14-07:00</lastmod>
+        <lastmod>2013-07-18T19:38:43-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/journal/2010/06/16/what-i-learned-at-railsconf-2010-presentation.html
         </loc>
-        <lastmod>2013-07-14T21:55:59-07:00</lastmod>
+        <lastmod>2013-07-18T19:16:41-07:00</lastmod>
     </url>
     <url>
         <loc>
@@ -20,13 +20,13 @@
     </url>
     <url>
         <loc>http://professor.github.io/journal/2010/11/18/rethinking-regex.html</loc>
-        <lastmod>2013-07-14T21:51:39-07:00</lastmod>
+        <lastmod>2013-07-18T19:37:13-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation.html
         </loc>
-        <lastmod>2013-07-14T20:24:31-07:00</lastmod>
+        <lastmod>2013-07-18T19:36:15-07:00</lastmod>
     </url>
     <url>
         <loc>
@@ -38,11 +38,11 @@
         <loc>
             http://professor.github.io/journal/2011/03/14/increasing-discussion-with-a-quiet-group-of-students.html
         </loc>
-        <lastmod>2013-07-14T20:20:40-07:00</lastmod>
+        <lastmod>2013-07-18T19:35:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/journal/2011/03/16/craftsmanship-class-2.html</loc>
-        <lastmod>2013-07-14T20:18:59-07:00</lastmod>
+        <lastmod>2013-07-18T19:30:53-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/journal/2011/03/30/code-readability-process.html</loc>
@@ -52,23 +52,23 @@
         <loc>
             http://professor.github.io/journal/2011/05/04/career-and-software-craftsmanship.html
         </loc>
-        <lastmod>2013-07-14T20:15:19-07:00</lastmod>
+        <lastmod>2013-07-18T19:28:46-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/journal/2011/06/02/real-world-software-engineering-for-entrepreneurs-a-startup-accelerator.html
         </loc>
-        <lastmod>2013-07-13T14:57:18-07:00</lastmod>
+        <lastmod>2013-07-18T19:27:49-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel.html
         </loc>
-        <lastmod>2013-07-13T13:48:43-07:00</lastmod>
+        <lastmod>2013-07-18T19:26:36-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/journal/2011/06/08/panel-feedback.html</loc>
-        <lastmod>2013-07-13T13:47:00-07:00</lastmod>
+        <lastmod>2013-07-18T19:16:23-07:00</lastmod>
     </url>
     <url>
         <loc>
@@ -86,25 +86,31 @@
         <loc>
             http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity.html
         </loc>
-        <lastmod>2013-07-11T21:22:08-07:00</lastmod>
+        <lastmod>2013-07-18T19:24:38-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html
         </loc>
-        <lastmod>2013-07-11T21:19:41-07:00</lastmod>
+        <lastmod>2013-07-18T19:22:11-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/journal/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html
+        </loc>
+        <lastmod>2013-07-18T19:15:46-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/journal/2012/07/27/improv-game-for-software-engineers-program-counter.html
         </loc>
-        <lastmod>2013-07-11T20:36:05-07:00</lastmod>
+        <lastmod>2013-07-18T19:16:24-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html
         </loc>
-        <lastmod>2013-07-11T21:14:46-07:00</lastmod>
+        <lastmod>2013-07-18T19:06:29-07:00</lastmod>
     </url>
     <url>
         <loc>
@@ -114,7 +120,7 @@
     </url>
     <url>
         <loc>http://professor.github.io/journal/2013/07/11/frustration-quote.html</loc>
-        <lastmod>2013-07-11T20:27:19-07:00</lastmod>
+        <lastmod>2013-07-18T19:15:52-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/about-me/</loc>
@@ -122,11 +128,11 @@
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2013-07-14T21:57:14-07:00</lastmod>
+        <lastmod>2013-07-18T19:38:43-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2013-07-14T21:57:14-07:00</lastmod>
+        <lastmod>2013-07-18T19:38:43-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/robots.txt</loc>

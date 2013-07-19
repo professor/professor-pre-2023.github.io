@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Improv | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/improv/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-18T19:04:44-07:00</updated>
+  <updated>2013-07-18T19:40:34-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -63,10 +63,12 @@
 
 <p>Inspiration: Learning to play the piano. Strength building exercises. The whole point of the exercise is to build up . Much like dance where there are patterns, technique and skill aspects to a class. The patterns make learning dancing fun and motivate the student to keep going. Playing a song is rewarding. Working on skill is tedious but makes the fun stuff more accessible and easier to accomplish.</p>
 
-<p><a href="http://rubyquiz.com/">http://rubyquiz.com/</a>
-Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+<ul>
+<li><a href="http://rubyquiz.com/">http://rubyquiz.com/</a></li>
+<li>Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></li>
+<li>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></li>
+</ul>
 
-<p>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></p>
 ]]></content>
   </entry>
   

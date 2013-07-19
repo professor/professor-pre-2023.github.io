@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Craftsmanship | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/craftsmanship/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-18T19:04:44-07:00</updated>
+  <updated>2013-07-18T19:40:34-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -159,6 +159,39 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[TDD: small Ah-Ha moment on when to use a hash instead of an array]]></title>
+    <link href="http://professor.github.io/journal/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html"/>
+    <updated>2012-07-20T13:34:00-07:00</updated>
+    <id>http://professor.github.io/journal/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array</id>
+    <content type="html"><![CDATA[<p>I&rsquo;m sharing a pleasant surprise I had during a recent Test Driven Development coding session. My tests had found a design that was delightful to me. TDD suggested that I use a hash where my natural tendency is to use an array.</p>
+
+<p>For the purpose of clarity, I&rsquo;m simplifying a very complicated data structure for this example. Let&rsquo;s say we wanted to show the user the most popular cheat codes for a set of video games. For the sake of the example, let&rsquo;s assume that this information is stored in the database in a way that is rather difficult to access. Thus the need for a method &ldquo;most_popular_cheats&rdquo; to do the heavy lifting.</p>
+
+<p>Let&rsquo;s recall some popular cheat codes. Contra&rsquo;s cheat code is &ldquo;UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START&rdquo;  and Mike Tyson&rsquo;s cheat code is &ldquo;007-373-5963&rdquo;</p>
+
+<p>From the control flow, I would already know the order of the video games that needed cheat codes, and expected that the method &ldquo;most_popular_cheats&rdquo; would just return an array.</p>
+
+<p>However, as I wrote the test first, I realized that the test wouldn&rsquo;t know the exact order of the video games. After I created some test data in the database, I wasn&rsquo;t certain how they would be retrieved, would the default sorting be by ID, or by name? The test didn&rsquo;t know and I didn&rsquo;t think the test should care. If the method returned a hash, I could just see if the hash contained the key->value pairs that I expected.</p>
+
+<pre><code>Hash: {contra.id =&gt; "UP, UP….", mike_tyson.id =&gt; "007-373-6963"}
+</code></pre>
+
+<p>On previous projects, following the traditional &ldquo;code then test&rdquo; development style, I have generated two parallel arrays to solve this problem kind of problem. One that contained the answer (what is my value in my hash), and the other that contained the index (what is my key in my hash.) On those projects, it had not occurred to me that a hash was a better data structure. My tests informed me on a programming nuance that I had previously missed.</p>
+
+<p>Here&rsquo;s the simplified version of test case that lead me to this small ah-ha moment.</p>
+
+<pre><code>contra = FactoryGirl.create(:video_game_with_popular_cheats)
+mike_tyson = FactoryGirl.create(:video_game_with_popular_cheats)
+
+popular_game_cheats = Game.most_popular_cheats
+popular_game_cheats = should be_a_kind_of(Hash)
+popular_game_cheats[contra.id].should = "UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START"
+popular_game_cheats[mike_tyson.id].should = "007-373-5963"
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Career and Software Craftsmanship]]></title>
     <link href="http://professor.github.io/journal/2011/05/04/career-and-software-craftsmanship.html"/>
     <updated>2011-05-04T23:29:00-07:00</updated>
@@ -168,17 +201,21 @@ My full time students are actively interviewing for jobs when they graduate. Mos
 From my Improv for Software Engineers course, I have noticed that my master students who are in their 20&rsquo;s and 30&rsquo;s have a hard time picturing their future in great detail and will actively refuse to consider life later on unless coached carefully to do so. They lump ages 50 to 80 in one bucket, the distant future. In my improv exercise, I have them walk around the room and I ask them to picture life as it was when they are a certain age. For the most part, they are able to recall and relive life at the age of 7, 12, 18, 23. However, as we get into the future, it&rsquo;s harder for them, and after the age of 60 most stop the exercise and resort to comedy to deal with the tension of thinking about the distant future.
 We discussed two hypothetical job offers. One pays $20,000 more money, the other allows them to grow their software development skills. Which one would they pick?
 While the conversation was enlightening for the students, I wonder how much of this will stick when they are in the throes of making job offer decisions. (Action item) It would be interesting to survey the students the students once they are in their jobs to discover how many offers they had and what was their decision making process to get to the final offer. In other words, did our intellectual conversation about their careers have an immediate impact on their choices a few months from now?
-Here are the responses from each of my students:
--The reading made me think about my short-tem and long-term vision of my career. I have not reached an answer, but I definitely have to think about which of the following is most important: a) advancement for position and salary b) enjoying the work and working on what I want and what interests me.
--Before reading the Apprenticeship Patterns, I didn&rsquo;t think about actively trying to improve my skills as a software engineer / craftsman. It was all about doing just enough to get the job done!
--The reading has made me realize that there is a huge learning curve before I could reach anywhere near to being an expert software developer
--Thinking about where I want to be 10+ years down the line is hard; planning so far in advance is a bit undesirable. Staying technical my work like is an interesting idea.
--Made me think long term about my career options and whether or not to stay a developer the entire way or to take other options that open up later on
--Made me think of where I want to be in 15 years. I don&rsquo;t want to be a programmer for life.
--The reading makes me think about whether I want to be a fully technical guy or not. It&rsquo;s hard to coordinate your interests and job requirements
--Dream about myself 10,20,30,40 years. What if my manager asked me to fill in a management role? Should I pass for the sake of programming?
--I always hear that you can not continue coding for living! even after I reach 40s of age. How I might change my mind about that?
--The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</p>
+Here are the responses from each of my students:</p>
+
+<ul>
+<li>The reading made me think about my short-term and long-term vision of my career. I have not reached an answer, but I definitely have to think about which of the following is most important: a) advancement for position and salary b) enjoying the work and working on what I want and what interests me.</li>
+<li>Before reading the Apprenticeship Patterns, I didn&rsquo;t think about actively trying to improve my skills as a software engineer / craftsman. It was all about doing just enough to get the job done!</li>
+<li>The reading has made me realize that there is a huge learning curve before I could reach anywhere near to being an expert software developer</li>
+<li>Thinking about where I want to be 10+ years down the line is hard; planning so far in advance is a bit undesirable. Staying technical my work like is an interesting idea.</li>
+<li>Made me think long term about my career options and whether or not to stay a developer the entire way or to take other options that open up later on</li>
+<li>Made me think of where I want to be in 15 years. I don&rsquo;t want to be a programmer for life.</li>
+<li>The reading makes me think about whether I want to be a fully technical guy or not. It&rsquo;s hard to coordinate your interests and job requirements</li>
+<li>Dream about myself 10,20,30,40 years. What if my manager asked me to fill in a management role? Should I pass for the sake of programming?</li>
+<li>I always hear that you can not continue coding for living! even after I reach 40s of age. How I might change my mind about that?</li>
+<li>The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -246,10 +283,12 @@ Here are the responses from each of my students:
 
 <p>Inspiration: Learning to play the piano. Strength building exercises. The whole point of the exercise is to build up . Much like dance where there are patterns, technique and skill aspects to a class. The patterns make learning dancing fun and motivate the student to keep going. Playing a song is rewarding. Working on skill is tedious but makes the fun stuff more accessible and easier to accomplish.</p>
 
-<p><a href="http://rubyquiz.com/">http://rubyquiz.com/</a>
-Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></p>
+<ul>
+<li><a href="http://rubyquiz.com/">http://rubyquiz.com/</a></li>
+<li>Ruby Koans &ndash; <a href="http://github.com/edgecase/ruby_koans">http://github.com/edgecase/ruby_koans</a></li>
+<li>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></li>
+</ul>
 
-<p>Javascript learning &ndash; <a href="http://ejohn.org/apps/learn">http://ejohn.org/apps/learn</a></p>
 ]]></content>
   </entry>
   
