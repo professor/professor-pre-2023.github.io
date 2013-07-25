@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Engineering | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/software-engineering/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-22T19:51:19-07:00</updated>
+  <updated>2013-07-25T10:08:31-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Test Driven Development (TDD) through katas]]></title>
+    <link href="http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html"/>
+    <updated>2012-06-01T12:53:00-07:00</updated>
+    <id>http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas</id>
+    <content type="html"><![CDATA[<p>In my graduate course, &ldquo;craft of software development&rdquo; students created individual learning plans to accomplish their goals. Many choose to enhance their testing and design skills by focusing on Test Driven Development. (TDD)</p>
+
+<p>While the data sample is low (5 students), it appears that doing katas followed by a project is preferred to just doing katas alone. By working through a kata, you practice the the skill in a very focused, tactile manner on a small problem. Once done, you can compare many posted kata solutions on the internet and use them for reflection. Then by working on a project, you can practice TDD while dealing with domain specific issues and complexities that arise from a larger problem. One student found that re-implementing a previous project was immensely valuable, as he was able to compare his new solution to his previous implementation.</p>
+
+<p>Not all katas are created equal for the purpose of learning TDD. Some are too simple; some are too algorithmic in nature. (For these, creating the test suite is straightforward, yet improving running time is not.) Swapna Varghese ordered a set of katas for how easy they are to implement in TDD. Note that the ones at the end of the list are not necessarily better at teaching TDD, in fact, it may be hard to complete them using TDD.</p>
+
+<p>A suggested path then would be to take an easy one (e.g. one of the first three) as a warm-up exercise to validate your test environment, and then move onto some in the middle. I&rsquo;m partial towards Gilded Rose. Mars Rover was a definite favorite among my students. As with Goldlocks, it wasn&rsquo;t too simple, it wasn&rsquo;t too algorithmic, it &ldquo;was just right.&rdquo;</p>
+
+<p>Exhibit 1: Katas sorted by how easy it is to apply TDD.</p>
+
+<ol>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataFizzBuzz">Fizz Buzz</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/prime-factors-kata">Prime Factors</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/string-calculator">String Calculator</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/gilded-rose-kata">Gilded Rose</a></li>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap">Word Wrap</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/tennis-game-kata">Tennis Game</a></li>
+<li><a href="" title="http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata">Bowling Game</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/mars-rover-kata">Mars Rover</a></li>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals">Roman Numerals</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/coin-change-kata">Coin Change</a></li>
+<li><a href="" title="http://codingdojo.org/cgi-bin/wiki.pl?KataGameOfLife">Game of Life</a></li>
+<li><a href="" title="http://craftsmanship.sv.cmu.edu/posts/potter-kata">Potter</a></li>
+</ol>
+
+
+<p><p>Not helpful in learning TDD: <a href="" title="http://craftsmanship.sv.cmu.edu/posts/weighing-with-stones-kata">Weighing with Stones</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Improv meets Software Engineering, what might the intersection look like?]]></title>
