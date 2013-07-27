@@ -116,56 +116,95 @@ require &lsquo;gapps_openid&rsquo;</p>
 
 <p>Step 3) Add some code to your rails application.</p>
 
-<p>class SessionsController &lt; current_user =&ldquo; @account.users.authenticate(params[:name],&rdquo; required =&ldquo;&rdquo;> [&ldquo;<a href="http://axschema.org/contact/email">http://axschema.org/contact/email</a>&rdquo;, &ldquo;<a href="http://axschema.org/namePerson/first">http://axschema.org/namePerson/first</a>&rdquo;, &ldquo;<a href="http://axschema.org/namePerson/last">http://axschema.org/namePerson/last</a>&rdquo;]) do |result, identity_url, registration|</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>class SessionsController &lt; current_user =" @account.users.authenticate(params[:name]," required =""> ["http://axschema.org/contact/email", "http://axschema.org/namePerson/first", "http://axschema.org/namePerson/last"]) do |result, identity_url, registration|
+</span><span class='line'>       ax_response = OpenID::AX::FetchResponse.from_success_response(request.env[Rack::OpenID::RESPONSE])
+</span><span class='line'>         case result.status
+</span><span class='line'>         when :missing
+</span><span class='line'>           failed_login "Sorry, the OpenID server couldn't be found"
+</span><span class='line'>         when :invalid
+</span><span class='line'>           failed_login "Sorry, but this does not appear to be a valid OpenID"
+</span><span class='line'>         when :canceled
+</span><span class='line'>           failed_login "OpenID verification was canceled"
+</span><span class='line'>         when :failed
+</span><span class='line'>           failed_login "Sorry, the OpenID verification failed"
+</span><span class='line'>         when :successful
+</span><span class='line'> 
+</span><span class='line'>
+</span><span class='line'>       email = ax_response['http://axschema.org/contact/email'].first()
+</span><span class='line'>       first_name = ax_response['http://axschema.org/namePerson/first'].first()
+</span><span class='line'>       last_name = ax_response['http://axschema.org/namePerson/last'].first()
+</span><span class='line'>
+</span><span class='line'>       if result.successful?
+</span><span class='line'>         #Look up the user and if they don't exist then create the user
+</span><span class='line'>         @current_user = ...
+</span><span class='line'>         if @current_user
+</span><span class='line'>           successful_login
+</span><span class='line'>         else
+</span><span class='line'>           failed_login "Sorry, no user by that identity URL exists (#{identity_url})"
+</span><span class='line'>         end
+</span><span class='line'>       else
+</span><span class='line'>         failed_login result.message
+</span><span class='line'>       end
+</span><span class='line'>     end
+</span><span class='line'>   end
+</span><span class='line'> end
+</span><span class='line'>
+</span><span class='line'>   private
+</span><span class='line'>     def successful_login
+</span><span class='line'>       session[:user_id] = @current_user.id
+</span><span class='line'>       redirect_to(root_url)
+</span><span class='line'>     end
+</span><span class='line'>
+</span><span class='line'>     def failed_login(message)
+</span><span class='line'>       flash[:error] = message
+</span><span class='line'>       redirect_to(new_session_url)
+</span><span class='line'>     end
+</span><span class='line'> end</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>   ax_response = OpenID::AX::FetchResponse.from_success_response(request.env[Rack::OpenID::RESPONSE])
-     case result.status
-     when :missing
-       failed_login "Sorry, the OpenID server couldn't be found"
-     when :invalid
-       failed_login "Sorry, but this does not appear to be a valid OpenID"
-     when :canceled
-       failed_login "OpenID verification was canceled"
-     when :failed
-       failed_login "Sorry, the OpenID verification failed"
-     when :successful
-
-
-   email = ax_response['http://axschema.org/contact/email'].first()
-   first_name = ax_response['http://axschema.org/namePerson/first'].first()
-   last_name = ax_response['http://axschema.org/namePerson/last'].first()
-
-   if result.successful?
-     #Look up the user and if they don't exist then create the user
-     @current_user = ...
-     if @current_user
-       successful_login
-     else
-       failed_login "Sorry, no user by that identity URL exists (#{identity_url})"
-     end
-   else
-     failed_login result.message
-   end
- end
-</code></pre>
-
-<p>   end
- end</p>
-
-<p>   private</p>
-
-<pre><code> def successful_login
-   session[:user_id] = @current_user.id
-   redirect_to(root_url)
- end
-
- def failed_login(message)
-   flash[:error] = message
-   redirect_to(new_session_url)
- end
-</code></pre>
-
-<p> end</p>
 
 <p>If you are still stuck, here are some other helpful links:</p>
 
@@ -282,6 +321,10 @@ b) You&rsquo;ll need to get a ca-bundle.crt file. You should add in certificate 
 </section>
 
 
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (1)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
+</section>
 
   
 </aside>
