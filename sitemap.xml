@@ -2,47 +2,69 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
+            http://professor.github.io/toddsedano/2009/03/12/extreme-programming-after-10-years.html
+        </loc>
+        <lastmod>2013-07-26T19:48:44-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/toddsedano/2009/04/08/guidelines-for-evaluating-an-agile-maturity-model.html
+        </loc>
+        <lastmod>2013-07-26T19:49:10-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html
+        </loc>
+        <lastmod>2013-07-26T19:45:08-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/toddsedano/2010/05/28/integrating-openid.html</loc>
+        <lastmod>2013-07-26T19:42:46-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://professor.github.io/toddsedano/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html
         </loc>
-        <lastmod>2013-07-22T19:00:28-07:00</lastmod>
+        <lastmod>2013-07-26T19:38:51-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2010/06/16/what-i-learned-at-railsconf-2010-presentation.html
         </loc>
-        <lastmod>2013-07-18T19:16:41-07:00</lastmod>
+        <lastmod>2013-07-26T19:38:33-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html
         </loc>
-        <lastmod>2013-07-14T21:53:35-07:00</lastmod>
+        <lastmod>2013-07-26T19:38:07-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/toddsedano/2010/11/18/rethinking-regex.html</loc>
-        <lastmod>2013-07-18T19:37:13-07:00</lastmod>
+        <lastmod>2013-07-26T19:37:43-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2011/01/13/sitemap-powerpoint-presentation.html
         </loc>
-        <lastmod>2013-07-23T10:19:43-07:00</lastmod>
+        <lastmod>2013-07-26T19:37:30-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2011/02/28/two-more-weeks-until-craftmanship-course-starts.html
         </loc>
-        <lastmod>2013-07-14T20:21:44-07:00</lastmod>
+        <lastmod>2013-07-26T19:37:03-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2011/03/14/increasing-discussion-with-a-quiet-group-of-students.html
         </loc>
-        <lastmod>2013-07-18T19:35:27-07:00</lastmod>
+        <lastmod>2013-07-26T19:36:43-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/toddsedano/2011/03/16/craftsmanship-class-2.html</loc>
-        <lastmod>2013-07-22T19:00:05-07:00</lastmod>
+        <lastmod>2013-07-26T19:36:19-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/toddsedano/2011/03/30/code-readability-process.html</loc>
@@ -52,29 +74,29 @@
         <loc>
             http://professor.github.io/toddsedano/2011/05/04/career-and-software-craftsmanship.html
         </loc>
-        <lastmod>2013-07-18T19:28:46-07:00</lastmod>
+        <lastmod>2013-07-26T19:36:01-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2011/06/02/real-world-software-engineering-for-entrepreneurs-a-startup-accelerator.html
         </loc>
-        <lastmod>2013-07-18T19:27:49-07:00</lastmod>
+        <lastmod>2013-07-26T19:35:31-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2011/06/03/preparing-for-the-first-panel.html
         </loc>
-        <lastmod>2013-07-22T18:59:46-07:00</lastmod>
+        <lastmod>2013-07-26T19:35:37-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/toddsedano/2011/06/08/panel-feedback.html</loc>
-        <lastmod>2013-07-18T19:16:23-07:00</lastmod>
+        <lastmod>2013-07-26T19:34:47-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2011/06/16/improv-meets-software-engineering.html
         </loc>
-        <lastmod>2013-07-13T13:39:14-07:00</lastmod>
+        <lastmod>2013-07-26T19:34:27-07:00</lastmod>
     </url>
     <url>
         <loc>
@@ -86,41 +108,41 @@
         <loc>
             http://professor.github.io/toddsedano/2012/04/05/software-engineering-isnt-a-solo-activity.html
         </loc>
-        <lastmod>2013-07-18T19:24:38-07:00</lastmod>
+        <lastmod>2013-07-26T19:33:30-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2012/06/01/learning-test-driven-development-tdd-through-katas.html
         </loc>
-        <lastmod>2013-07-23T10:19:51-07:00</lastmod>
+        <lastmod>2013-07-26T19:33:03-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html
         </loc>
-        <lastmod>2013-07-18T19:15:46-07:00</lastmod>
+        <lastmod>2013-07-26T19:32:26-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html
         </loc>
-        <lastmod>2013-07-23T10:19:37-07:00</lastmod>
+        <lastmod>2013-07-26T19:31:42-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html
         </loc>
-        <lastmod>2013-07-18T19:06:29-07:00</lastmod>
+        <lastmod>2013-07-26T19:31:04-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance.html
         </loc>
-        <lastmod>2013-07-26T18:46:28-07:00</lastmod>
+        <lastmod>2013-07-26T19:30:21-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/toddsedano/2013/07/11/frustration-quote.html</loc>
-        <lastmod>2013-07-18T19:15:52-07:00</lastmod>
+        <lastmod>2013-07-26T19:31:15-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/about-me/</loc>
@@ -128,11 +150,11 @@
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2013-07-26T18:46:44-07:00</lastmod>
+        <lastmod>2013-07-26T19:49:10-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2013-07-26T18:46:44-07:00</lastmod>
+        <lastmod>2013-07-26T19:49:10-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/robots.txt</loc>

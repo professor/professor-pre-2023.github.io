@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Legitimate cross site scripting (CSX) with AJAX - Todd Sedano</title>
+  <meta name="author" content="Todd Sedano">
+
+  
+  <meta name="description" content="How do you do legitimate cross site scripting? If you control the servers involved, this is how you can do cross site scripting with AJAX. I recently &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://professor.github.io/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Todd Sedano</a></h1>
+  
+    <h2>Software Engineering, Improv, Craftsmanship</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/professor/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:professor.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Legitimate Cross Site Scripting (CSX) With AJAX</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-14T15:50:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>How do you do legitimate cross site scripting?</p>
+
+<p>If you control the servers involved, this is how you can do cross site scripting with AJAX.</p>
+
+<p>I recently came across a situation where I wanted to do an AJAX load from one server to another server. Internally to our campus, our students use a wiki and a ruby on rails web application. I wanted information contained in our rails application to show up on the wiki. My first impulse was to use jquery&rsquo;s load method, however, I received the following error:</p>
+
+<p><red>Access to restricted URI denied&#8221; code: &ldquo;1012</red></p>
+
+<p>My first work around is just to avoid the AJAX load and use an iframe. However, inspiration hit me a few weeks ago and I tried a different solution. Since the AJAX load can retrieve information from the same website, maybe I should request a special url on the same machine and use apache to hide the fact that the content is coming from a different domain name. This can be accomplished with the apache ProxyPass command.</p>
+
+<p>Let me give a concrete example. Say you have two websites: a static site that serves html pages through apache from the filesystem (<a href="http://static.sv.cmu.edu">http://static.sv.cmu.edu</a>) and a dynamic site using an application server with a database (<a href="http://dynamic.sv.cmu.edu">http://dynamic.sv.cmu.edu</a>). You want some of the information from the dynamic site to show up on the static site. You want to allow users to add comments to a static webpage where the comments are rendered by the dynamic site.
+Your first attempt might be:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$('#comments').load('http://dynamic.sv.cmu.edu/comments');</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Which results in the error.
+In static.sv.cmu.edu&rsquo;s httpd.conf file add the following line:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ProxyPass /comments http://dynamic.sv.cmu.edu/comments</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now from your browser window, test to see if you can access the dynamic data from the static machine: <a href="http://static.sv.cmu.edu/comments">http://static.sv.cmu.edu/comments</a> should give you the same information as would <a href="http://dynamic.sv.cmu.edu/comments">http://dynamic.sv.cmu.edu/comments</a>
+Now your AJAX code will work.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">&lt;/script>
+</span><span class='line'>&lt;script type="text/javascript">
+</span><span class='line'> //&lt;![CDATA[
+</span><span class='line'>$(document).ready(function(){
+</span><span class='line'> $('#comments').load('http://dynamic.sv.cmu.edu/comments');
+</span><span class='line'>});
+</span><span class='line'>//]]>
+</span><span class='line'>&lt;/script></span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Todd Sedano</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-14T15:50:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2009</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html" data-via="" data-counturl="http://professor.github.io/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/toddsedano/2009/04/08/guidelines-for-evaluating-an-agile-maturity-model.html" title="Previous Post: Guidelines for evaluating an Agile Maturity Model">&laquo; Guidelines for evaluating an Agile Maturity Model</a>
+      
+      
+        <a class="basic-alignment right" href="/toddsedano/2010/05/28/integrating-openid.html" title="Next Post: Integrating openid, google apps, and ruby on rails">Integrating openid, google apps, and ruby on rails &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/toddsedano/2013/07/11/frustration-quote.html">Frustration Quote</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2013/05/22/rethinking-semat-card-affordance.html">Rethinking SEMAT Card Affordance</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability -- Turning Comments Into Methods</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv Game for Software Engineers: Program Counter</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html">TDD: Small Ah-Ha Moment on When to Use a Hash Instead of an Array</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/114255815645685356164?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Todd Sedano -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

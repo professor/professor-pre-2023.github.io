@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Integrating openid, google apps, and ruby on rails - Todd Sedano</title>
+  <meta name="author" content="Todd Sedano">
+
+  
+  <meta name="description" content="My university uses Google Apps for Universities. We wanted users to be able to authenticate to our rails application using their Google Apps account &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://professor.github.io/toddsedano/2010/05/28/integrating-openid.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Todd Sedano</a></h1>
+  
+    <h2>Software Engineering, Improv, Craftsmanship</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/professor/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:professor.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Integrating Openid, Google Apps, and Ruby on Rails</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-28T19:40:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>My university uses Google Apps for Universities. We wanted users to be able to authenticate to our rails application using their Google Apps account. Since Google Apps now supports openid, I thought that this would be really straightforward. A friend had just installed openid on his site and it was a breeze. I thought I would just install a few gems and get on with other rails development activities. I have no intention of becoming an openid expert. Here are the steps that I followed to get it to all work together.</p>
+
+<p>Step 1) Enable Federated Login using OpenID on your Google Apps domain.</p>
+
+<p><a href="http://www.google.com/a/cpanel/">http://www.google.com/a/cpanel/</a>{your-domain}/SetupIdp</p>
+
+<p>Step 2) Download your needed gems</p>
+
+<p>a) gem install ruby-openid
+This is JanRan&rsquo;s ruby implementation of open id</p>
+
+<p>b) gem install ruby-openid-apps-discovery
+This is Google&rsquo;s extension of ruby-openid to work with Google Apps</p>
+
+<p>c) gem install rack-openid
+This is a rack wrapper around JanRan&rsquo;s open id</p>
+
+<p>d) ./script/plugin install git://github.com/rails/open_id_authentication.git
+This is Rails code to make integrating in with open id easier</p>
+
+<p>e) Modify config/environment.erb and add this line
+require &lsquo;gapps_openid&rsquo;</p>
+
+<p>Step 3) Add some code to your rails application.</p>
+
+<p>class SessionsController &lt; current_user =&ldquo; @account.users.authenticate(params[:name],&rdquo; required =&ldquo;&rdquo;> [&ldquo;<a href="http://axschema.org/contact/email">http://axschema.org/contact/email</a>&rdquo;, &ldquo;<a href="http://axschema.org/namePerson/first">http://axschema.org/namePerson/first</a>&rdquo;, &ldquo;<a href="http://axschema.org/namePerson/last">http://axschema.org/namePerson/last</a>&rdquo;]) do |result, identity_url, registration|</p>
+
+<pre><code>   ax_response = OpenID::AX::FetchResponse.from_success_response(request.env[Rack::OpenID::RESPONSE])
+     case result.status
+     when :missing
+       failed_login "Sorry, the OpenID server couldn't be found"
+     when :invalid
+       failed_login "Sorry, but this does not appear to be a valid OpenID"
+     when :canceled
+       failed_login "OpenID verification was canceled"
+     when :failed
+       failed_login "Sorry, the OpenID verification failed"
+     when :successful
+
+
+   email = ax_response['http://axschema.org/contact/email'].first()
+   first_name = ax_response['http://axschema.org/namePerson/first'].first()
+   last_name = ax_response['http://axschema.org/namePerson/last'].first()
+
+   if result.successful?
+     #Look up the user and if they don't exist then create the user
+     @current_user = ...
+     if @current_user
+       successful_login
+     else
+       failed_login "Sorry, no user by that identity URL exists (#{identity_url})"
+     end
+   else
+     failed_login result.message
+   end
+ end
+</code></pre>
+
+<p>   end
+ end</p>
+
+<p>   private</p>
+
+<pre><code> def successful_login
+   session[:user_id] = @current_user.id
+   redirect_to(root_url)
+ end
+
+ def failed_login(message)
+   flash[:error] = message
+   redirect_to(new_session_url)
+ end
+</code></pre>
+
+<p> end</p>
+
+<p>If you are still stuck, here are some other helpful links:</p>
+
+<p>To understand open id: <a href="http://www.devx.com/opensource/Article/37692/1954?pf=true">http://www.devx.com/opensource/Article/37692/1954?pf=true</a></p>
+
+<p>To get google mail to work with rails plugin: <a href="http://stackoverflow.com/questions/2492043/ruby-open-id-authentication-with-google-openid">http://stackoverflow.com/questions/2492043/ruby-open-id-authentication-with-google-openid</a></p>
+
+<p>To understand all possible AX schema fields: <a href="http://www.axschema.org/types/#sreg">http://www.axschema.org/types/#sreg</a></p>
+
+<p>Discovering end points: <a href="http://groups.google.com/group/google-federated-login-api/web/openid-discovery-for-hosted-domains">http://groups.google.com/group/google-federated-login-api/web/openid-discovery-for-hosted-domains</a></p>
+
+<p>Part 2</p>
+
+<p>If you get a warning message like this
+WARNING: making https request to <a href="https://www.google.com/accounts/o8/.well-known/host-meta?hd=">https://www.google.com/accounts/o8/.well-known/host-meta?hd=</a> without verifying server certificate; no CA path was specified.
+WARNING: making https request to <a href="https://www.google.com/accounts/o8/site-xrds?ns=2&amp;hd=">https://www.google.com/accounts/o8/site-xrds?ns=2&amp;hd=</a> without verifying server certificate; no CA path was specified.
+WARNING: making https request to <a href="https://www.google.com/a//o8/ud?be=o8">https://www.google.com/a//o8/ud?be=o8</a> without verifying server certificate; no CA path was specified.
+Generated checkid_setup request to <a href="https://www.google.com/a//o8/ud?be=o8">https://www.google.com/a//o8/ud?be=o8</a> with assocication AOQpcUfj9hGDs4DukDUrxhChnVBMbtoKAlXgvzQ1dp1L0yp6wCDxeFlx</p>
+
+<p>The fix is pretty simple.
+a) In your config/environment.rb file add the line
+OpenID.fetcher.ca_file = &ldquo;#{Rails.root}/config/ca-bundle.crt&rdquo;
+b) You&rsquo;ll need to get a ca-bundle.crt file. You should add in certificate authorities that you trust. If you are in a hurry, you can use the one in the ruby-openid-apps-discovery gem. Unpack it and find it in the lib directory. I copied mine to my application&rsquo;s config directory.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Todd Sedano</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-28T19:40:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2010/05/28/integrating-openid.html" data-via="" data-counturl="http://professor.github.io/toddsedano/2010/05/28/integrating-openid.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html" title="Previous Post: Legitimate cross site scripting (CSX) with AJAX">&laquo; Legitimate cross site scripting (CSX) with AJAX</a>
+      
+      
+        <a class="basic-alignment right" href="/toddsedano/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html" title="Next Post: Software Engineering Craft (or Software Engineering as a performance art)">Software Engineering Craft (or Software Engineering as a performance art) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/toddsedano/2013/07/11/frustration-quote.html">Frustration Quote</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2013/05/22/rethinking-semat-card-affordance.html">Rethinking SEMAT Card Affordance</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability -- Turning Comments Into Methods</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv Game for Software Engineers: Program Counter</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html">TDD: Small Ah-Ha Moment on When to Use a Hash Instead of an Array</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/114255815645685356164?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Todd Sedano -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

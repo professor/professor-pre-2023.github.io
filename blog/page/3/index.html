@@ -160,6 +160,304 @@
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2010/05/28/integrating-openid.html">Integrating Openid, Google Apps, and Ruby on Rails</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-28T19:40:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My university uses Google Apps for Universities. We wanted users to be able to authenticate to our rails application using their Google Apps account. Since Google Apps now supports openid, I thought that this would be really straightforward. A friend had just installed openid on his site and it was a breeze. I thought I would just install a few gems and get on with other rails development activities. I have no intention of becoming an openid expert. Here are the steps that I followed to get it to all work together.</p>
+
+<p>Step 1) Enable Federated Login using OpenID on your Google Apps domain.</p>
+
+<p><a href="http://www.google.com/a/cpanel/">http://www.google.com/a/cpanel/</a>{your-domain}/SetupIdp</p>
+
+<p>Step 2) Download your needed gems</p>
+
+<p>a) gem install ruby-openid
+This is JanRan&rsquo;s ruby implementation of open id</p>
+
+<p>b) gem install ruby-openid-apps-discovery
+This is Google&rsquo;s extension of ruby-openid to work with Google Apps</p>
+
+<p>c) gem install rack-openid
+This is a rack wrapper around JanRan&rsquo;s open id</p>
+
+<p>d) ./script/plugin install git://github.com/rails/open_id_authentication.git
+This is Rails code to make integrating in with open id easier</p>
+
+<p>e) Modify config/environment.erb and add this line
+require &lsquo;gapps_openid&rsquo;</p>
+
+<p>Step 3) Add some code to your rails application.</p>
+
+<p>class SessionsController &lt; current_user =&ldquo; @account.users.authenticate(params[:name],&rdquo; required =&ldquo;&rdquo;> [&ldquo;<a href="http://axschema.org/contact/email">http://axschema.org/contact/email</a>&rdquo;, &ldquo;<a href="http://axschema.org/namePerson/first">http://axschema.org/namePerson/first</a>&rdquo;, &ldquo;<a href="http://axschema.org/namePerson/last">http://axschema.org/namePerson/last</a>&rdquo;]) do |result, identity_url, registration|</p>
+
+<pre><code>   ax_response = OpenID::AX::FetchResponse.from_success_response(request.env[Rack::OpenID::RESPONSE])
+     case result.status
+     when :missing
+       failed_login "Sorry, the OpenID server couldn't be found"
+     when :invalid
+       failed_login "Sorry, but this does not appear to be a valid OpenID"
+     when :canceled
+       failed_login "OpenID verification was canceled"
+     when :failed
+       failed_login "Sorry, the OpenID verification failed"
+     when :successful
+
+
+   email = ax_response['http://axschema.org/contact/email'].first()
+   first_name = ax_response['http://axschema.org/namePerson/first'].first()
+   last_name = ax_response['http://axschema.org/namePerson/last'].first()
+
+   if result.successful?
+     #Look up the user and if they don't exist then create the user
+     @current_user = ...
+     if @current_user
+       successful_login
+     else
+       failed_login "Sorry, no user by that identity URL exists (#{identity_url})"
+     end
+   else
+     failed_login result.message
+   end
+ end
+</code></pre>
+
+<p>   end
+ end</p>
+
+<p>   private</p>
+
+<pre><code> def successful_login
+   session[:user_id] = @current_user.id
+   redirect_to(root_url)
+ end
+
+ def failed_login(message)
+   flash[:error] = message
+   redirect_to(new_session_url)
+ end
+</code></pre>
+
+<p> end</p>
+
+<p>If you are still stuck, here are some other helpful links:</p>
+
+<p>To understand open id: <a href="http://www.devx.com/opensource/Article/37692/1954?pf=true">http://www.devx.com/opensource/Article/37692/1954?pf=true</a></p>
+
+<p>To get google mail to work with rails plugin: <a href="http://stackoverflow.com/questions/2492043/ruby-open-id-authentication-with-google-openid">http://stackoverflow.com/questions/2492043/ruby-open-id-authentication-with-google-openid</a></p>
+
+<p>To understand all possible AX schema fields: <a href="http://www.axschema.org/types/#sreg">http://www.axschema.org/types/#sreg</a></p>
+
+<p>Discovering end points: <a href="http://groups.google.com/group/google-federated-login-api/web/openid-discovery-for-hosted-domains">http://groups.google.com/group/google-federated-login-api/web/openid-discovery-for-hosted-domains</a></p>
+
+<p>Part 2</p>
+
+<p>If you get a warning message like this
+WARNING: making https request to <a href="https://www.google.com/accounts/o8/.well-known/host-meta?hd=">https://www.google.com/accounts/o8/.well-known/host-meta?hd=</a> without verifying server certificate; no CA path was specified.
+WARNING: making https request to <a href="https://www.google.com/accounts/o8/site-xrds?ns=2&amp;hd=">https://www.google.com/accounts/o8/site-xrds?ns=2&amp;hd=</a> without verifying server certificate; no CA path was specified.
+WARNING: making https request to <a href="https://www.google.com/a//o8/ud?be=o8">https://www.google.com/a//o8/ud?be=o8</a> without verifying server certificate; no CA path was specified.
+Generated checkid_setup request to <a href="https://www.google.com/a//o8/ud?be=o8">https://www.google.com/a//o8/ud?be=o8</a> with assocication AOQpcUfj9hGDs4DukDUrxhChnVBMbtoKAlXgvzQ1dp1L0yp6wCDxeFlx</p>
+
+<p>The fix is pretty simple.
+a) In your config/environment.rb file add the line
+OpenID.fetcher.ca_file = &ldquo;#{Rails.root}/config/ca-bundle.crt&rdquo;
+b) You&rsquo;ll need to get a ca-bundle.crt file. You should add in certificate authorities that you trust. If you are in a hurry, you can use the one in the ruby-openid-apps-discovery gem. Unpack it and find it in the lib directory. I copied mine to my application&rsquo;s config directory.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html">Legitimate Cross Site Scripting (CSX) With AJAX</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-14T15:50:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>How do you do legitimate cross site scripting?</p>
+
+<p>If you control the servers involved, this is how you can do cross site scripting with AJAX.</p>
+
+<p>I recently came across a situation where I wanted to do an AJAX load from one server to another server. Internally to our campus, our students use a wiki and a ruby on rails web application. I wanted information contained in our rails application to show up on the wiki. My first impulse was to use jquery&rsquo;s load method, however, I received the following error:</p>
+
+<p><red>Access to restricted URI denied&#8221; code: &ldquo;1012</red></p>
+
+<p>My first work around is just to avoid the AJAX load and use an iframe. However, inspiration hit me a few weeks ago and I tried a different solution. Since the AJAX load can retrieve information from the same website, maybe I should request a special url on the same machine and use apache to hide the fact that the content is coming from a different domain name. This can be accomplished with the apache ProxyPass command.</p>
+
+<p>Let me give a concrete example. Say you have two websites: a static site that serves html pages through apache from the filesystem (<a href="http://static.sv.cmu.edu">http://static.sv.cmu.edu</a>) and a dynamic site using an application server with a database (<a href="http://dynamic.sv.cmu.edu">http://dynamic.sv.cmu.edu</a>). You want some of the information from the dynamic site to show up on the static site. You want to allow users to add comments to a static webpage where the comments are rendered by the dynamic site.
+Your first attempt might be:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$('#comments').load('http://dynamic.sv.cmu.edu/comments');</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Which results in the error.
+In static.sv.cmu.edu&rsquo;s httpd.conf file add the following line:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ProxyPass /comments http://dynamic.sv.cmu.edu/comments</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now from your browser window, test to see if you can access the dynamic data from the static machine: <a href="http://static.sv.cmu.edu/comments">http://static.sv.cmu.edu/comments</a> should give you the same information as would <a href="http://dynamic.sv.cmu.edu/comments">http://dynamic.sv.cmu.edu/comments</a>
+Now your AJAX code will work.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">&lt;/script>
+</span><span class='line'>&lt;script type="text/javascript">
+</span><span class='line'> //&lt;![CDATA[
+</span><span class='line'>$(document).ready(function(){
+</span><span class='line'> $('#comments').load('http://dynamic.sv.cmu.edu/comments');
+</span><span class='line'>});
+</span><span class='line'>//]]>
+</span><span class='line'>&lt;/script></span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2009/04/08/guidelines-for-evaluating-an-agile-maturity-model.html">Guidelines for Evaluating an Agile Maturity Model</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-04-08T01:24:00-07:00" pubdate data-updated="true">Apr 8<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When it comes to any Agile Maturity Model (AMM), it is paramount to start with the business value with respect to the framework. The framework should clearly identify the business and software engineering issues it is trying to solve.</p>
+
+<p>The framework should be simple to understand. It&rsquo;s essence should be straightforward. Practitioners should be able to start applying the concepts and see progress. Days of training should not be a pre-requisite for adoption.</p>
+
+<p>I am very reluctant to place any named method into different defined levels, unless the analysis is multi-dimentional. Let me be concrete. When an IBM employee identifies RUP as a Level 2 method and Scrum and XP as Level 1 methods, it is an open invitation for skeptics to find immediate cause to reject the maturity model as biased toward company loyalism. This is not to say that we should not compare and contrast different methods. Larman compares methods by ceremony and cycle while Cockburn scale&rsquo;s uses team size and criticality to determine a version of Crystal to use.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2009/03/12/extreme-programming-after-10-years.html">Extreme Programming: After 10 Years</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-12T19:47:00-07:00" pubdate data-updated="true">Mar 12<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>At the first keynote for SD West 2009 conference held in Santa Clara, CA, USA, Robert Martin (aka Uncle Bob) reflected on the history of the Agile movement, both what Extreme Programming and Scrum have done for the industry, and the need for Software Craftsmanship</p>
+
+<p>Ten years ago, Extreme Programming had just arrived on the scene. People&rsquo;s reactions were either excitement or revulsion. Programmers who suffered under heavy weight processes rejoiced that they could get work done. The method has a high geek factor as it gave specific guidelines on programming and testing. This made it appealing to programmers but made it difficult for project managers or businessmen to get excited about it. Those who revulsed complained that without architecture and a thorough design, the software would become a mess. Because of these two reactions, Extreme Programming received a lot of attention.</p>
+
+<p>After the birth of the agile manifesto at the Snowbird, Utah meeting, there were some unintended consequences. One was finding a better term to describe the new &ldquo;lightweight&rdquo; methods, and the term &ldquo;agile&rdquo; stuck. The success of adoption was beyond what they were expecting. Another interesting consequences was the new attention given to scrum.</p>
+
+<p>Scrum is a near perfect subset of the Extreme Programming practices. It has the many of the same project management practices (Small Releases, Release Planning, Acceptance Tests, Whole Team, Product Owner) without the technical practices (Refactoring, Simple Design, Test Driven Development, Continuous Build, Paired Programming). In short, it doesn&rsquo;t &ldquo;smell&rdquo; of geeks. Scrum made agile palatable to business people. The scrum certification process allowed agile to cross the chasm as scrum became mainstream.</p>
+
+<p>What got left behind were the engineering disciplines or &ldquo;software craftsmanship.&rdquo; With scrum, you can turn the iteration crank very quickly, yet over time, the crank can get harder to turn as a mess begins to emerge. The nay-sayers of XP were correct in this regard, without replacing architecture and design with technical practices, you do get a mess. Now there is emerging talk of craftsmanship. People are using Katas to study how to write software. They write the same piece of software over and over again to learn technical mastery of software. Last Friday, the Manifesto for Software Craftsmanship was released. Robert ended his keynote with a plug for his Clean Code book and a green Clean Code bracelet that helps remind you to leave the world of code a better place by improving each module you come across.</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
