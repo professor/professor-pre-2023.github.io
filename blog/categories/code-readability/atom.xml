@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code Readability | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/code-readability/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-25T10:08:31-07:00</updated>
+  <updated>2013-07-26T18:37:49-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Improving code readability -- turning comments into methods]]></title>
-    <link href="http://professor.github.io/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html"/>
+    <link href="http://professor.github.io/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html"/>
     <updated>2013-02-19T21:49:00-08:00</updated>
-    <id>http://professor.github.io/journal/2013/02/19/improving-code-readability-turning-comments-into-methods</id>
+    <id>http://professor.github.io/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods</id>
     <content type="html"><![CDATA[<p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="" title="http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
 
 <p>In reviewing one programmer&rsquo;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it.</p>
@@ -160,9 +160,9 @@
   
   <entry>
     <title type="html"><![CDATA[Code Readability Process]]></title>
-    <link href="http://professor.github.io/journal/2011/03/30/code-readability-process.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/03/30/code-readability-process.html"/>
     <updated>2011-03-30T19:36:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/03/30/code-readability-process</id>
+    <id>http://professor.github.io/toddsedano/2011/03/30/code-readability-process</id>
     <content type="html"><![CDATA[<h2>Rationale</h2>
 
 <p>As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don&rsquo;t receive much feedback on our code when we are writing it. Some companies will do code reviews, and the code review feedback may help us write clean code, but we may not understand how other developers are confused. This process allows the programmer to see first hand, what is causing another developer difficulty when they read the code.</p>

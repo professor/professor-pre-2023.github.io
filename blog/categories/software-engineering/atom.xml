@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Engineering | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/software-engineering/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-25T10:08:31-07:00</updated>
+  <updated>2013-07-26T18:37:49-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning Test Driven Development (TDD) through katas]]></title>
-    <link href="http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html"/>
+    <link href="http://professor.github.io/toddsedano/2012/06/01/learning-test-driven-development-tdd-through-katas.html"/>
     <updated>2012-06-01T12:53:00-07:00</updated>
-    <id>http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas</id>
+    <id>http://professor.github.io/toddsedano/2012/06/01/learning-test-driven-development-tdd-through-katas</id>
     <content type="html"><![CDATA[<p>In my graduate course, &ldquo;craft of software development&rdquo; students created individual learning plans to accomplish their goals. Many choose to enhance their testing and design skills by focusing on Test Driven Development. (TDD)</p>
 
 <p>While the data sample is low (5 students), it appears that doing katas followed by a project is preferred to just doing katas alone. By working through a kata, you practice the the skill in a very focused, tactile manner on a small problem. Once done, you can compare many posted kata solutions on the internet and use them for reflection. Then by working on a project, you can practice TDD while dealing with domain specific issues and complexities that arise from a larger problem. One student found that re-implementing a previous project was immensely valuable, as he was able to compare his new solution to his previous implementation.</p>
@@ -50,9 +50,9 @@
   
   <entry>
     <title type="html"><![CDATA[Improv meets Software Engineering, what might the intersection look like?]]></title>
-    <link href="http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/06/16/improv-meets-software-engineering.html"/>
     <updated>2011-06-16T21:32:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering</id>
+    <id>http://professor.github.io/toddsedano/2011/06/16/improv-meets-software-engineering</id>
     <content type="html"><![CDATA[<p>When I first discovered improv, I enjoyed the creative play and sheer freedom it offered me. The basic tenets of improv gave me a safe place to unleash my creativity. The right side of my brain finally had an outlet. (I couldn&rsquo;t draw or play an instrument. I did enjoy singing, but I knew not to do that in a public setting!) I enjoyed every improv exercise that was introduced to me. Finally, I had an outlet to be creative and to play.</p>
 
 <p>For the longest time, I didn&rsquo;t see how this could apply to software development. Deep down, I knew there must be a connection, but how could doing quick, fun exercises relate to software?</p>
@@ -79,9 +79,9 @@
   
   <entry>
     <title type="html"><![CDATA[Code Readability Process]]></title>
-    <link href="http://professor.github.io/journal/2011/03/30/code-readability-process.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/03/30/code-readability-process.html"/>
     <updated>2011-03-30T19:36:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/03/30/code-readability-process</id>
+    <id>http://professor.github.io/toddsedano/2011/03/30/code-readability-process</id>
     <content type="html"><![CDATA[<h2>Rationale</h2>
 
 <p>As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don&rsquo;t receive much feedback on our code when we are writing it. Some companies will do code reviews, and the code review feedback may help us write clean code, but we may not understand how other developers are confused. This process allows the programmer to see first hand, what is causing another developer difficulty when they read the code.</p>
@@ -122,9 +122,9 @@
   
   <entry>
     <title type="html"><![CDATA[Rethinking regex]]></title>
-    <link href="http://professor.github.io/journal/2010/11/18/rethinking-regex.html"/>
+    <link href="http://professor.github.io/toddsedano/2010/11/18/rethinking-regex.html"/>
     <updated>2010-11-18T12:13:00-08:00</updated>
-    <id>http://professor.github.io/journal/2010/11/18/rethinking-regex</id>
+    <id>http://professor.github.io/toddsedano/2010/11/18/rethinking-regex</id>
     <content type="html"><![CDATA[<p>What if regular expressions were easy to write?</p>
 
 <p>While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails was changing their ORM layer to make it easier to incrementally build the query.</p>
@@ -154,9 +154,9 @@
   
   <entry>
     <title type="html"><![CDATA[Software Engineering Craft (or Software Engineering as a performance art)]]></title>
-    <link href="http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html"/>
+    <link href="http://professor.github.io/toddsedano/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html"/>
     <updated>2010-05-29T14:59:00-07:00</updated>
-    <id>http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art</id>
+    <id>http://professor.github.io/toddsedano/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art</id>
     <content type="html"><![CDATA[<p>Experiment with full time students this summer to explore this topic.</p>
 
 <p>In a language and framework of their choice, have students select a short project to build, ie a blog website, or twitter client mobile application. Include testing. In the first session, build the project. (Time it.) Repeat again. Repeat again. Repeat again. After each session reflect on what you learned. Was there insights about the IDE? Where there key command short cuts? Do your test cases get better from defects from previous sessions, or do they get worse because of short cuts? Is there an aspect of the technology that you are deficient in that requires additional practice? (Katana example) Look for trends across the student population.</p>

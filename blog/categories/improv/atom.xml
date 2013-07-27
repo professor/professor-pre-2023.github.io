@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Improv | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/improv/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-25T10:08:31-07:00</updated>
+  <updated>2013-07-26T18:37:49-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Improv game for software engineers: Program Counter]]></title>
-    <link href="http://professor.github.io/journal/2012/07/27/improv-game-for-software-engineers-program-counter.html"/>
+    <link href="http://professor.github.io/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html"/>
     <updated>2012-07-27T14:06:00-07:00</updated>
-    <id>http://professor.github.io/journal/2012/07/27/improv-game-for-software-engineers-program-counter</id>
+    <id>http://professor.github.io/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter</id>
     <content type="html"><![CDATA[<p>I invited this improv game themed around software development for some Brazilian computer science students visiting my campus. It&rsquo;s a variant of the many reaction based, warm-up games (e.g. &ldquo;Whoosh Ball&rdquo;) that encourage quick response time and discourages over-thinking or planning a response. I like playing it with software developers because it makes more sense to them than these other games.</p>
 
 <h3>Instructions</h3>
@@ -59,9 +59,9 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
   
   <entry>
     <title type="html"><![CDATA[Improv meets Software Engineering, what might the intersection look like?]]></title>
-    <link href="http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/06/16/improv-meets-software-engineering.html"/>
     <updated>2011-06-16T21:32:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering</id>
+    <id>http://professor.github.io/toddsedano/2011/06/16/improv-meets-software-engineering</id>
     <content type="html"><![CDATA[<p>When I first discovered improv, I enjoyed the creative play and sheer freedom it offered me. The basic tenets of improv gave me a safe place to unleash my creativity. The right side of my brain finally had an outlet. (I couldn&rsquo;t draw or play an instrument. I did enjoy singing, but I knew not to do that in a public setting!) I enjoyed every improv exercise that was introduced to me. Finally, I had an outlet to be creative and to play.</p>
 
 <p>For the longest time, I didn&rsquo;t see how this could apply to software development. Deep down, I knew there must be a connection, but how could doing quick, fun exercises relate to software?</p>
@@ -88,9 +88,9 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
   
   <entry>
     <title type="html"><![CDATA[Sitemap Powerpoint presentation]]></title>
-    <link href="http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/01/13/sitemap-powerpoint-presentation.html"/>
     <updated>2011-01-13T22:54:00-08:00</updated>
-    <id>http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation</id>
+    <id>http://professor.github.io/toddsedano/2011/01/13/sitemap-powerpoint-presentation</id>
     <content type="html"><![CDATA[<p><a href="http://professor.github.io/images/TalkAgenda.jpg" border=0><img src="http://professor.github.io/images/TalkAgenda.jpg" width="75%" alt=""/></a></p>
 
 <p>I tried an experimental presentation technique today, which I call &ldquo;Sitemap Presentation.&rdquo;</p>
@@ -105,9 +105,9 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
   
   <entry>
     <title type="html"><![CDATA[Software Engineering Craft (or Software Engineering as a performance art)]]></title>
-    <link href="http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html"/>
+    <link href="http://professor.github.io/toddsedano/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html"/>
     <updated>2010-05-29T14:59:00-07:00</updated>
-    <id>http://professor.github.io/journal/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art</id>
+    <id>http://professor.github.io/toddsedano/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art</id>
     <content type="html"><![CDATA[<p>Experiment with full time students this summer to explore this topic.</p>
 
 <p>In a language and framework of their choice, have students select a short project to build, ie a blog website, or twitter client mobile application. Include testing. In the first session, build the project. (Time it.) Repeat again. Repeat again. Repeat again. After each session reflect on what you learned. Was there insights about the IDE? Where there key command short cuts? Do your test cases get better from defects from previous sessions, or do they get worse because of short cuts? Is there an aspect of the technology that you are deficient in that requires additional practice? (Katana example) Look for trends across the student population.</p>

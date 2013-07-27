@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-07-25T10:08:31-07:00</updated>
+  <updated>2013-07-26T18:37:49-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Frustration Quote]]></title>
-    <link href="http://professor.github.io/journal/2013/07/11/frustration-quote.html"/>
+    <link href="http://professor.github.io/toddsedano/2013/07/11/frustration-quote.html"/>
     <updated>2013-07-11T14:22:00-07:00</updated>
-    <id>http://professor.github.io/journal/2013/07/11/frustration-quote</id>
+    <id>http://professor.github.io/toddsedano/2013/07/11/frustration-quote</id>
     <content type="html"><![CDATA[<p>I am frustrated when my expectations do not align with reality &ndash; Todd Sedano</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Rethinking SEMAT card affordance]]></title>
-    <link href="http://professor.github.io/journal/2013/05/22/rethinking-semat-card-affordance.html"/>
+    <link href="http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance.html"/>
     <updated>2013-05-22T01:19:00-07:00</updated>
-    <id>http://professor.github.io/journal/2013/05/22/rethinking-semat-card-affordance</id>
+    <id>http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance</id>
     <content type="html"><![CDATA[<h3>A possible solution</h3>
 
 <p>While I&rsquo;m an avid player of card games and board games, the SEMAT card format does not reflect how I think about the alphas, which are a collection of states.</p>
@@ -61,9 +61,9 @@
   
   <entry>
     <title type="html"><![CDATA[Improving code readability -- turning comments into methods]]></title>
-    <link href="http://professor.github.io/journal/2013/02/19/improving-code-readability-turning-comments-into-methods.html"/>
+    <link href="http://professor.github.io/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html"/>
     <updated>2013-02-19T21:49:00-08:00</updated>
-    <id>http://professor.github.io/journal/2013/02/19/improving-code-readability-turning-comments-into-methods</id>
+    <id>http://professor.github.io/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods</id>
     <content type="html"><![CDATA[<p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="" title="http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
 
 <p>In reviewing one programmer&rsquo;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it.</p>
@@ -194,9 +194,9 @@
   
   <entry>
     <title type="html"><![CDATA[Improv game for software engineers: Program Counter]]></title>
-    <link href="http://professor.github.io/journal/2012/07/27/improv-game-for-software-engineers-program-counter.html"/>
+    <link href="http://professor.github.io/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html"/>
     <updated>2012-07-27T14:06:00-07:00</updated>
-    <id>http://professor.github.io/journal/2012/07/27/improv-game-for-software-engineers-program-counter</id>
+    <id>http://professor.github.io/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter</id>
     <content type="html"><![CDATA[<p>I invited this improv game themed around software development for some Brazilian computer science students visiting my campus. It&rsquo;s a variant of the many reaction based, warm-up games (e.g. &ldquo;Whoosh Ball&rdquo;) that encourage quick response time and discourages over-thinking or planning a response. I like playing it with software developers because it makes more sense to them than these other games.</p>
 
 <h3>Instructions</h3>
@@ -238,9 +238,9 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
   
   <entry>
     <title type="html"><![CDATA[TDD: small Ah-Ha moment on when to use a hash instead of an array]]></title>
-    <link href="http://professor.github.io/journal/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html"/>
+    <link href="http://professor.github.io/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html"/>
     <updated>2012-07-20T13:34:00-07:00</updated>
-    <id>http://professor.github.io/journal/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array</id>
+    <id>http://professor.github.io/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array</id>
     <content type="html"><![CDATA[<p>I&rsquo;m sharing a pleasant surprise I had during a recent Test Driven Development coding session. My tests had found a design that was delightful to me. TDD suggested that I use a hash where my natural tendency is to use an array.</p>
 
 <p>For the purpose of clarity, I&rsquo;m simplifying a very complicated data structure for this example. Let&rsquo;s say we wanted to show the user the most popular cheat codes for a set of video games. For the sake of the example, let&rsquo;s assume that this information is stored in the database in a way that is rather difficult to access. Thus the need for a method &ldquo;most_popular_cheats&rdquo; to do the heavy lifting.</p>
@@ -271,9 +271,9 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
   
   <entry>
     <title type="html"><![CDATA[Learning Test Driven Development (TDD) through katas]]></title>
-    <link href="http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas.html"/>
+    <link href="http://professor.github.io/toddsedano/2012/06/01/learning-test-driven-development-tdd-through-katas.html"/>
     <updated>2012-06-01T12:53:00-07:00</updated>
-    <id>http://professor.github.io/journal/2012/06/01/learning-test-driven-development-tdd-through-katas</id>
+    <id>http://professor.github.io/toddsedano/2012/06/01/learning-test-driven-development-tdd-through-katas</id>
     <content type="html"><![CDATA[<p>In my graduate course, &ldquo;craft of software development&rdquo; students created individual learning plans to accomplish their goals. Many choose to enhance their testing and design skills by focusing on Test Driven Development. (TDD)</p>
 
 <p>While the data sample is low (5 students), it appears that doing katas followed by a project is preferred to just doing katas alone. By working through a kata, you practice the the skill in a very focused, tactile manner on a small problem. Once done, you can compare many posted kata solutions on the internet and use them for reflection. Then by working on a project, you can practice TDD while dealing with domain specific issues and complexities that arise from a larger problem. One student found that re-implementing a previous project was immensely valuable, as he was able to compare his new solution to his previous implementation.</p>
@@ -306,9 +306,9 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
   
   <entry>
     <title type="html"><![CDATA[Software Engineering isn't a solo activity]]></title>
-    <link href="http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity.html"/>
+    <link href="http://professor.github.io/toddsedano/2012/04/05/software-engineering-isnt-a-solo-activity.html"/>
     <updated>2012-04-05T13:32:00-07:00</updated>
-    <id>http://professor.github.io/journal/2012/04/05/software-engineering-isnt-a-solo-activity</id>
+    <id>http://professor.github.io/toddsedano/2012/04/05/software-engineering-isnt-a-solo-activity</id>
     <content type="html"><![CDATA[<p>Often as engineers we like to go for it alone. It&rsquo;s me versus the machine. Yet, involving others can be helpful with us in our career. In my course &ldquo;craft for software development&rdquo; I challenged my students to think of ways to add a social component to their software development experience.
 Here is some of their feedback: (list is unsorted)</p>
 
@@ -332,9 +332,9 @@ Here is some of their feedback: (list is unsorted)</p>
   
   <entry>
     <title type="html"><![CDATA[Preparing yourself for a software development career]]></title>
-    <link href="http://professor.github.io/journal/2011/12/08/preparing-yourself-for-a-software-development-career.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/12/08/preparing-yourself-for-a-software-development-career.html"/>
     <updated>2011-12-08T14:43:00-08:00</updated>
-    <id>http://professor.github.io/journal/2011/12/08/preparing-yourself-for-a-software-development-career</id>
+    <id>http://professor.github.io/toddsedano/2011/12/08/preparing-yourself-for-a-software-development-career</id>
     <content type="html"><![CDATA[<p>Sometimes people ask me, &ldquo;what should I do to transition from my current career into a software development career?&rdquo; Many have answered this question, but here are my suggestions.</p>
 
 <p><strong>Talk to people who are software developers.</strong> See if you will like doing what they are doing. One of my good friends entered the field not because they loved writing code, but they wanted to earn a great salary. We both finished the undergraduate computer science program at Carnegie Mellon University. He hated the courses and once he graduated, he continued to hate programming while in industry. Before you invest significant time and money into a new career check it out.</p>
@@ -353,9 +353,9 @@ Here is some of their feedback: (list is unsorted)</p>
   
   <entry>
     <title type="html"><![CDATA[Improv meets Software Engineering, what might the intersection look like?]]></title>
-    <link href="http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/06/16/improv-meets-software-engineering.html"/>
     <updated>2011-06-16T21:32:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/06/16/improv-meets-software-engineering</id>
+    <id>http://professor.github.io/toddsedano/2011/06/16/improv-meets-software-engineering</id>
     <content type="html"><![CDATA[<p>When I first discovered improv, I enjoyed the creative play and sheer freedom it offered me. The basic tenets of improv gave me a safe place to unleash my creativity. The right side of my brain finally had an outlet. (I couldn&rsquo;t draw or play an instrument. I did enjoy singing, but I knew not to do that in a public setting!) I enjoyed every improv exercise that was introduced to me. Finally, I had an outlet to be creative and to play.</p>
 
 <p>For the longest time, I didn&rsquo;t see how this could apply to software development. Deep down, I knew there must be a connection, but how could doing quick, fun exercises relate to software?</p>
@@ -382,9 +382,9 @@ Here is some of their feedback: (list is unsorted)</p>
   
   <entry>
     <title type="html"><![CDATA[Panel Feedback]]></title>
-    <link href="http://professor.github.io/journal/2011/06/08/panel-feedback.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/06/08/panel-feedback.html"/>
     <updated>2011-06-08T14:10:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/06/08/panel-feedback</id>
+    <id>http://professor.github.io/toddsedano/2011/06/08/panel-feedback</id>
     <content type="html"><![CDATA[<p>What did you learn from the panel, and what are you going to do about it?
 Team Couch Potatoes / AppJour / ActiveMob
 Our experience with the panel this last Wednesday was of great help in preparing us for our solicitation of feedback from potential customers. One of the more important issues we addressed was that the customer panel had a difficult time, initially, distinguishing our application from that of our competitors. We will need to do a better job addressing what makes our product unique in future pitches if we want to keep listeners engaged. We also noticed that while not everyone was interested in using our application, those that were indicated that they would also be willing to pay for it. To us this means that there is a legitimate market for our application, especially for those that are already active. This was encouraging and should help us to focus our search for user feedback in the coming weeks.
@@ -395,9 +395,9 @@ Team four of a Kind &mdash;
   
   <entry>
     <title type="html"><![CDATA[Preparing for the first panel]]></title>
-    <link href="http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/06/03/preparing-for-the-first-panel.html"/>
     <updated>2011-06-03T13:00:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/06/03/preparing-for-the-first-panel</id>
+    <id>http://professor.github.io/toddsedano/2011/06/03/preparing-for-the-first-panel</id>
     <content type="html"><![CDATA[<p>This is about class three (June 1st, 2011) from the course <a href="Real%20World%20Software%20Engineering%20for%20Entrepreneurs%20(A%20Startup%20Accelerator">http://www.cmu.edu/silicon-valley/academics/new-course/silicon-valley-startup-experience.html</a></p>
 
 <p>From the instructors, Scott Russell and Todd Sedano</p>
@@ -430,9 +430,9 @@ We plan to keep our description of the product at a very high level and at the s
   
   <entry>
     <title type="html"><![CDATA[Real World Software Engineering for Entrepreneurs (A Startup Accelerator)]]></title>
-    <link href="http://professor.github.io/journal/2011/06/02/real-world-software-engineering-for-entrepreneurs-a-startup-accelerator.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/06/02/real-world-software-engineering-for-entrepreneurs-a-startup-accelerator.html"/>
     <updated>2011-06-02T21:48:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/06/02/real-world-software-engineering-for-entrepreneurs-a-startup-accelerator</id>
+    <id>http://professor.github.io/toddsedano/2011/06/02/real-world-software-engineering-for-entrepreneurs-a-startup-accelerator</id>
     <content type="html"><![CDATA[<p>Preparing for your first panel &ndash; Class Three &ndash; June 1, 2011</p>
 
 <p>From the instructors, Scott Russell and Todd Sedano</p>
@@ -482,9 +482,9 @@ We plan to keep our description of the product at a very high level and at the s
   
   <entry>
     <title type="html"><![CDATA[Career and Software Craftsmanship]]></title>
-    <link href="http://professor.github.io/journal/2011/05/04/career-and-software-craftsmanship.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/05/04/career-and-software-craftsmanship.html"/>
     <updated>2011-05-04T23:29:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/05/04/career-and-software-craftsmanship</id>
+    <id>http://professor.github.io/toddsedano/2011/05/04/career-and-software-craftsmanship</id>
     <content type="html"><![CDATA[<p>Students in the craft of software development course read Sections &ldquo;Walking the long road&rdquo; and &ldquo;Draw your own map&rdquo; in the Apprenticeship Patterns book. We then discussed whether their notions of their career had been affected by the course and the readings. During our conversation, some students talked about the idea that people can&rsquo;t stay technical their entire careers. (I see this as a misperception, and discussed several people I know who are still programming late into their careers.)
 My full time students are actively interviewing for jobs when they graduate. Most had not considered looking for a job that would enhance their software craftsmanship skills, while salary, prestige of the company, and projects they were working on dominated their searching process.
 From my Improv for Software Engineers course, I have noticed that my master students who are in their 20&rsquo;s and 30&rsquo;s have a hard time picturing their future in great detail and will actively refuse to consider life later on unless coached carefully to do so. They lump ages 50 to 80 in one bucket, the distant future. In my improv exercise, I have them walk around the room and I ask them to picture life as it was when they are a certain age. For the most part, they are able to recall and relive life at the age of 7, 12, 18, 23. However, as we get into the future, it&rsquo;s harder for them, and after the age of 60 most stop the exercise and resort to comedy to deal with the tension of thinking about the distant future.
@@ -510,9 +510,9 @@ Here are the responses from each of my students:</p>
   
   <entry>
     <title type="html"><![CDATA[Code Readability Process]]></title>
-    <link href="http://professor.github.io/journal/2011/03/30/code-readability-process.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/03/30/code-readability-process.html"/>
     <updated>2011-03-30T19:36:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/03/30/code-readability-process</id>
+    <id>http://professor.github.io/toddsedano/2011/03/30/code-readability-process</id>
     <content type="html"><![CDATA[<h2>Rationale</h2>
 
 <p>As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don&rsquo;t receive much feedback on our code when we are writing it. Some companies will do code reviews, and the code review feedback may help us write clean code, but we may not understand how other developers are confused. This process allows the programmer to see first hand, what is causing another developer difficulty when they read the code.</p>
@@ -553,9 +553,9 @@ Here are the responses from each of my students:</p>
   
   <entry>
     <title type="html"><![CDATA[Craftsmanship class 2]]></title>
-    <link href="http://professor.github.io/journal/2011/03/16/craftsmanship-class-2.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/03/16/craftsmanship-class-2.html"/>
     <updated>2011-03-16T20:37:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/03/16/craftsmanship-class-2</id>
+    <id>http://professor.github.io/toddsedano/2011/03/16/craftsmanship-class-2</id>
     <content type="html"><![CDATA[<p>Question for group: what did you like about the kata?
 Random drawing on Kata implementation
 Random drawing on maiden speech
@@ -582,9 +582,9 @@ Question for the group: how did the reading about estimation of our competence r
   
   <entry>
     <title type="html"><![CDATA[Increasing discussion with a quiet group of students]]></title>
-    <link href="http://professor.github.io/journal/2011/03/14/increasing-discussion-with-a-quiet-group-of-students.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/03/14/increasing-discussion-with-a-quiet-group-of-students.html"/>
     <updated>2011-03-14T12:38:00-07:00</updated>
-    <id>http://professor.github.io/journal/2011/03/14/increasing-discussion-with-a-quiet-group-of-students</id>
+    <id>http://professor.github.io/toddsedano/2011/03/14/increasing-discussion-with-a-quiet-group-of-students</id>
     <content type="html"><![CDATA[<p>Every group of students is different and has it&rsquo;s own &ldquo;feel&rdquo; &mdash; sometimes they are connected, energized, quiet, inquisitive. It may not be obvious what it is until the next group of students come and I realize that I like some aspects of the new group and miss some aspects of the older group(s).</p>
 
 <p>I&rsquo;ve been following a particular group of students through a curriculum and I know that they are &ldquo;quieter&rdquo; than previous groups. In the past, my attitude has been, &ldquo;if they don&rsquo;t want to discuss this, that&rsquo;s ok, we&rsquo;ll move on, or we&rsquo;ll end early.&rdquo; However, I&rsquo;m challenging myself to try a different approach with the goal of raising my game and being a better teacher.</p>
@@ -629,9 +629,9 @@ After using this technique for a course, I noticed that most of my students didn
   
   <entry>
     <title type="html"><![CDATA[Two more weeks until craftsmanship course starts]]></title>
-    <link href="http://professor.github.io/journal/2011/02/28/two-more-weeks-until-craftmanship-course-starts.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/02/28/two-more-weeks-until-craftmanship-course-starts.html"/>
     <updated>2011-02-28T20:24:00-08:00</updated>
-    <id>http://professor.github.io/journal/2011/02/28/two-more-weeks-until-craftmanship-course-starts</id>
+    <id>http://professor.github.io/toddsedano/2011/02/28/two-more-weeks-until-craftmanship-course-starts</id>
     <content type="html"><![CDATA[<p>I must be having the butterfly jitters before offering a new course, Special Topics Seminar: Craft of Software Development. I sat down with a google document to review everything that I wanted to do with the course. In a moment of feeling that I must have been missing something, I reviewed my original blog post about the idea. To my surprise, the ideas in my original blog post were consistent with my current ideas and still at the heart of the course design.</p>
 
 <p>I&rsquo;m using Keith Johnstone as an inspiration for this course. While I have some course structure, I want to be flexible with the delivery and reflect after each session on how the course can be better serving this particular group of students. I&rsquo;m also wanting to try some crazy in class exercises. At times, I feel that actors getting on stage is an easier art form to work with than software developers writing code. Perhaps I&rsquo;d feel differently if everyone would be working with the same programming language.</p>
@@ -640,9 +640,9 @@ After using this technique for a course, I noticed that most of my students didn
   
   <entry>
     <title type="html"><![CDATA[Sitemap Powerpoint presentation]]></title>
-    <link href="http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation.html"/>
+    <link href="http://professor.github.io/toddsedano/2011/01/13/sitemap-powerpoint-presentation.html"/>
     <updated>2011-01-13T22:54:00-08:00</updated>
-    <id>http://professor.github.io/journal/2011/01/13/sitemap-powerpoint-presentation</id>
+    <id>http://professor.github.io/toddsedano/2011/01/13/sitemap-powerpoint-presentation</id>
     <content type="html"><![CDATA[<p><a href="http://professor.github.io/images/TalkAgenda.jpg" border=0><img src="http://professor.github.io/images/TalkAgenda.jpg" width="75%" alt=""/></a></p>
 
 <p>I tried an experimental presentation technique today, which I call &ldquo;Sitemap Presentation.&rdquo;</p>
@@ -657,9 +657,9 @@ After using this technique for a course, I noticed that most of my students didn
   
   <entry>
     <title type="html"><![CDATA[Rethinking regex]]></title>
-    <link href="http://professor.github.io/journal/2010/11/18/rethinking-regex.html"/>
+    <link href="http://professor.github.io/toddsedano/2010/11/18/rethinking-regex.html"/>
     <updated>2010-11-18T12:13:00-08:00</updated>
-    <id>http://professor.github.io/journal/2010/11/18/rethinking-regex</id>
+    <id>http://professor.github.io/toddsedano/2010/11/18/rethinking-regex</id>
     <content type="html"><![CDATA[<p>What if regular expressions were easy to write?</p>
 
 <p>While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails was changing their ORM layer to make it easier to incrementally build the query.</p>
@@ -689,9 +689,9 @@ After using this technique for a course, I noticed that most of my students didn
   
   <entry>
     <title type="html"><![CDATA[Transitioning from MySQL to Postgresql]]></title>
-    <link href="http://professor.github.io/journal/2010/06/22/transitioning-from-mysql-to-postgresql.html"/>
+    <link href="http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html"/>
     <updated>2010-06-22T12:11:00-07:00</updated>
-    <id>http://professor.github.io/journal/2010/06/22/transitioning-from-mysql-to-postgresql</id>
+    <id>http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql</id>
     <content type="html"><![CDATA[<p>Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the migration, I specified it as a VARCHAR. This generated this error.</p>
 
 <p>PGError: ERROR: operator does not exist: character varying = integer\nLINE 1: &hellip;n_id = u.id)</p>
