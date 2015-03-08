@@ -9,8 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="[https://docs.google.com/file/d/0B6uFDOj6cDrLNTdmYWJlZTgtZmMyNC00MzFjLTk3Y2YtZDA4MDNjMjIzMTQz/edit?pli=1&amp;hl=en#] (Please see this file)
-">
+  <meta name="description" content="Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +65,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html">Transitioning From MySQL to Postgresql</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-22T12:11:00-07:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the migration, I specified it as a VARCHAR. This generated this error.</p>
+
+<p>PGError: ERROR: operator does not exist: character varying = integer\nLINE 1: &hellip;n_id = u.id)</p>
+
+<p>Solving it was pretty simple. In my development and production databases I did the following commands. Then did a new data push to heroku&rsquo;s postresql database.</p>
+
+<p>1) Create another column using the MySQL Administrator GUI tool. Ie year2 of type INTEGER</p>
+
+<p>2) Run the following command from MySQL Query Browser &ldquo;update courses set year2 = year&rdquo;</p>
+
+<p>3) Drop the column year.</p>
+
+<p>4) Rename column year2 to be year.5) heroku db:push mysql:&hellip;</p>
+
+<p>There are good documents here: <a href="http://docs.heroku.com/database">http://docs.heroku.com/database</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -512,6 +561,10 @@ Now your AJAX code will work.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2015/03/08/software-development-is-a-marathon-not-a-sprint.html">SE Marathon Quote</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2013/07/11/frustration-quote.html">Frustration Quote</a>
       </li>
     
@@ -525,10 +578,6 @@ Now your AJAX code will work.</p>
     
       <li class="post">
         <a href="/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv Game for Software Engineers: Program Counter</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html">TDD: Small Ah-Ha Moment on When to Use a Hash Instead of an Array</a>
       </li>
     
   </ul>
@@ -548,7 +597,7 @@ Now your AJAX code will work.</p>
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (1)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (2)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
 </section>
 
   
@@ -557,7 +606,7 @@ Now your AJAX code will work.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Todd Sedano -
+  Copyright &copy; 2015 - Todd Sedano -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

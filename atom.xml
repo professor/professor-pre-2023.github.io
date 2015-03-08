@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2013-08-05T11:42:19-07:00</updated>
+  <updated>2015-03-08T09:58:22-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SE Marathon Quote]]></title>
+    <link href="http://professor.github.io/toddsedano/2015/03/08/software-development-is-a-marathon-not-a-sprint.html"/>
+    <updated>2015-03-08T09:46:00-07:00</updated>
+    <id>http://professor.github.io/toddsedano/2015/03/08/software-development-is-a-marathon-not-a-sprint</id>
+    <content type="html"><![CDATA[<p>Software Development is a marathon, not a sprint</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Frustration Quote]]></title>
@@ -684,29 +693,6 @@ After using this technique for a course, I noticed that most of my students didn
 <li>Negative examples: 13431</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Transitioning from MySQL to Postgresql]]></title>
-    <link href="http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html"/>
-    <updated>2010-06-22T12:11:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql</id>
-    <content type="html"><![CDATA[<p>Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the migration, I specified it as a VARCHAR. This generated this error.</p>
-
-<p>PGError: ERROR: operator does not exist: character varying = integer\nLINE 1: &hellip;n_id = u.id)</p>
-
-<p>Solving it was pretty simple. In my development and production databases I did the following commands. Then did a new data push to heroku&rsquo;s postresql database.</p>
-
-<p>1) Create another column using the MySQL Administrator GUI tool. Ie year2 of type INTEGER</p>
-
-<p>2) Run the following command from MySQL Query Browser &ldquo;update courses set year2 = year&rdquo;</p>
-
-<p>3) Drop the column year.</p>
-
-<p>4) Rename column year2 to be year.5) heroku db:push mysql:&hellip;</p>
-
-<p>There are good documents here: <a href="http://docs.heroku.com/database">http://docs.heroku.com/database</a></p>
 ]]></content>
   </entry>
   
