@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2015-05-13T20:26:14-07:00</updated>
+  <updated>2015-05-13T20:28:21-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -34,7 +34,7 @@
 
 <p>Step 2) using Disk Utility, split the only partition in half. For the new partition select &ldquo;Mac OS Extended (Case-sensitive, Journaled)&rdquo;</p>
 
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/screen_shot_partition.jpg" alt=""/></span></span></p>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/screen_shot_partition.png" alt=""/></span></span></p>
 
 <p>Step 3) create a workspace directory in the new partition
 mkdir /Volumes/CASE_SENSITIVE/workspace</p>
