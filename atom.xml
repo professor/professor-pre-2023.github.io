@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2015-03-08T09:58:22-07:00</updated>
+  <updated>2015-05-13T20:22:45-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[OS X filesystem and case sensitive bugs]]></title>
+    <link href="http://professor.github.io/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs.html"/>
+    <updated>2015-05-13T20:16:00-07:00</updated>
+    <id>http://professor.github.io/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs</id>
+    <content type="html"><![CDATA[<h3>Problem:</h3>
+
+<p>On one project, our test cases would be green locally, but then fail on CI due to filesystem case sensitivity differences between OS X (our development environment) and linux (our QA and production environments.). By default, OS X treats ~/project/myFile as equals to ~/projectMyFile. Thus if the code had a typo on an import, it might pass locally when it shouldn&rsquo;t.</p>
+
+<h3>Solution:</h3>
+
+<p>I wanted to use the base pivotal OS X image and sprout wrap. The strategy is to create a case sensitive partition and symlink the workspace directory to it. Sprout wrap has issues with case sensitivity (pivotal_ide_prefs in particular), so we would run that from the user&rsquo;s home directory, but run all project materials in the case sensitive directory.</p>
+
+<p>Alternative solution: getting the pivotal OS X image on a USB key might allow us to configure the default partition&rsquo;s setting on installation.</p>
+
+<p>These steps could work with an existing machine, but I only tested on a clean install</p>
+
+<p>Step 1) install the Pivotal Labs OS X image</p>
+
+<p>Step 2) using Disk Utility, split the only partition in half. For the new partition select &ldquo;Mac OS Extended (Case-sensitive, Journaled)&rdquo;</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/sreen_shot_partition.jpg" alt=""/></span></span></p>
+
+<p>Step 3) create a workspace directory in the new partition
+mkdir /Volumes/CASE_SENSITIVE/workspace</p>
+
+<p>Step 4) symlink ~pivotal/workspace to the new partition&rsquo;s workspace directory.
+ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
+
+<p>Step 5) install sprout-wrap from ~, NOT from ~/workspace. I noticed that the pivotal_ide_prefs wouldn&rsquo;t fully work with case sensitive on. (There may be other recipes that have issues too.)</p>
+
+<p>Step 6) install your project code in ~/workspace</p>
+
+<p>Note that everything in Applications et al.  will be typical Mac Setup, but we were fine with that.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SE Marathon Quote]]></title>
@@ -661,38 +698,6 @@ After using this technique for a course, I noticed that most of my students didn
 <p>When I was creating the slides, I wanted the ability to hop around to different parts of my presentation. Yes, I could do one ordering of the topics, but I wanted to be flexible with my talk and respond to what the audience wanted. So I scanned in my diagram and used the diagram as my agenda slide. I duplicated the diagram throughout the presentation. I found that the drawing was more to my liking. I&rsquo;ve never been fond of doing an agenda slide, they always feel so boring, but this really livened it up and allowed me to see quickly where we were headed.</p>
 
 <p>In my ideal version, each part of the sitemap would be clickable. Thus I&rsquo;d have a title slide followed by an agenda slide. Whenever I clicked anywhere on my diagram, it would go off on that thread and then return to the agenda slide. If I clicked on a different part of the agenda, it would take on a different thread. I&rsquo;ll have to figure out how to do this in powerpoint / keynote.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rethinking regex]]></title>
-    <link href="http://professor.github.io/toddsedano/2010/11/18/rethinking-regex.html"/>
-    <updated>2010-11-18T12:13:00-08:00</updated>
-    <id>http://professor.github.io/toddsedano/2010/11/18/rethinking-regex</id>
-    <content type="html"><![CDATA[<p>What if regular expressions were easy to write?</p>
-
-<p>While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails was changing their ORM layer to make it easier to incrementally build the query.</p>
-
-<p>Old: Article.find(:all, :order => &ldquo;published_at desc&rdquo;, :limit => 10)</p>
-
-<p>New: Article.order(&ldquo;published_at desc&rdquo;).limit(10)</p>
-
-<p>It occurred to me that this concept of simplifying could be applied to regular expression.</p>
-
-<p>While I have time, I&rsquo;ll continue to build up examples of what the syntax could look like.</p>
-
-<p>Random thoughts:</p>
-
-<p>What: not a number</p>
-
-<ul>
-<li>ie a string that can&rsquo;t be convert to a number</li>
-<li>A string that contains at least on character</li>
-<li>Regex: /^.<em>\D+.</em>$/</li>
-<li>Positive examples: 113t23io10908-113</li>
-<li>Negative examples: 13431</li>
-</ul>
-
 ]]></content>
   </entry>
   

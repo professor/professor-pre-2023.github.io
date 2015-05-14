@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Improv - Todd Sedano</title>
+  <title>OS X filesystem and case sensitive bugs - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Category: Improv">
+  <meta name="description" content="Problem: On one project, our test cases would be green locally, but then fail on CI due to filesystem case sensitivity differences between OS X (our &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.ioblog/categories/improv/index.html">
+  <link rel="canonical" href="http://professor.github.io/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -64,83 +64,108 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Improv</h1>
+    
+      <h1 class="entry-title">OS X Filesystem and Case Sensitive Bugs</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-13T20:16:00-07:00" pubdate data-updated="true">May 13<span>th</span>, 2015</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><h3>Problem:</h3>
 
-  
-  <h2>2012</h2>
+<p>On one project, our test cases would be green locally, but then fail on CI due to filesystem case sensitivity differences between OS X (our development environment) and linux (our QA and production environments.). By default, OS X treats ~/project/myFile as equals to ~/projectMyFile. Thus if the code had a typo on an import, it might pass locally when it shouldn&rsquo;t.</p>
 
-<article>
-  
-<h1><a href="/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv game for software engineers: Program Counter</a></h1>
-<time datetime="2012-07-27T14:06:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>27</span> <span class='year'>2012</span></time>
+<h3>Solution:</h3>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/improv/'>Improv</a></span>
-</footer>
+<p>I wanted to use the base pivotal OS X image and sprout wrap. The strategy is to create a case sensitive partition and symlink the workspace directory to it. Sprout wrap has issues with case sensitivity (pivotal_ide_prefs in particular), so we would run that from the user&rsquo;s home directory, but run all project materials in the case sensitive directory.</p>
 
+<p>Alternative solution: getting the pivotal OS X image on a USB key might allow us to configure the default partition&rsquo;s setting on installation.</p>
 
-</article>
+<p>These steps could work with an existing machine, but I only tested on a clean install</p>
 
+<p>Step 1) install the Pivotal Labs OS X image</p>
 
+<p>Step 2) using Disk Utility, split the only partition in half. For the new partition select &ldquo;Mac OS Extended (Case-sensitive, Journaled)&rdquo;</p>
 
-  
-  <h2>2011</h2>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/sreen_shot_partition.jpg" alt=""/></span></span></p>
 
-<article>
-  
-<h1><a href="/toddsedano/2011/06/16/improv-meets-software-engineering.html">Improv meets Software Engineering, what might the intersection look like?</a></h1>
-<time datetime="2011-06-16T21:32:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>16</span> <span class='year'>2011</span></time>
+<p>Step 3) create a workspace directory in the new partition
+mkdir /Volumes/CASE_SENSITIVE/workspace</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/improv/'>Improv</a>, <a class='category' href='/blog/categories/software-engineering/'>Software Engineering</a></span>
-</footer>
+<p>Step 4) symlink ~pivotal/workspace to the new partition&rsquo;s workspace directory.
+ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
 
+<p>Step 5) install sprout-wrap from ~, NOT from ~/workspace. I noticed that the pivotal_ide_prefs wouldn&rsquo;t fully work with case sensitive on. (There may be other recipes that have issues too.)</p>
 
-</article>
+<p>Step 6) install your project code in ~/workspace</p>
 
-
-
-<article>
-  
-<h1><a href="/toddsedano/2011/01/13/sitemap-powerpoint-presentation.html">Sitemap Powerpoint presentation</a></h1>
-<time datetime="2011-01-13T22:54:00-08:00" pubdate><span class='month'>Jan</span> <span class='day'>13</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/improv/'>Improv</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2010</h2>
-
-<article>
-  
-<h1><a href="/toddsedano/2010/05/29/software-engineering-craft-or-software-engineering-as-a-performance-art.html">Software Engineering Craft (or Software Engineering as a performance art)</a></h1>
-<time datetime="2010-05-29T14:59:00-07:00" pubdate><span class='month'>May</span> <span class='day'>29</span> <span class='year'>2010</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/craftsmanship/'>Craftsmanship</a>, <a class='category' href='/blog/categories/improv/'>Improv</a>, <a class='category' href='/blog/categories/software-engineering/'>Software Engineering</a></span>
-</footer>
-
-
-</article>
-
+<p>Note that everything in Applications et al.  will be typical Mac Setup, but we were fine with that.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Todd Sedano</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-13T20:16:00-07:00" pubdate data-updated="true">May 13<span>th</span>, 2015</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs.html" data-via="" data-counturl="http://professor.github.io/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/toddsedano/2015/03/08/software-development-is-a-marathon-not-a-sprint.html" title="Previous Post: SE Marathon Quote">&laquo; SE Marathon Quote</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
