@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2015-05-13T20:28:21-07:00</updated>
+  <updated>2015-05-14T21:24:46-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -47,6 +47,88 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
 <p>Step 6) install your project code in ~/workspace</p>
 
 <p>Note that everything in Applications et al.  will be typical Mac Setup, but we were fine with that.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Estimated vs actual story points]]></title>
+    <link href="http://professor.github.io/toddsedano/2015/05/11/estimated-vs-actual-story-points.html"/>
+    <updated>2015-05-11T21:14:00-07:00</updated>
+    <id>http://professor.github.io/toddsedano/2015/05/11/estimated-vs-actual-story-points</id>
+    <content type="html"><![CDATA[<p>On my last project, I tried an experiment looking at estimation accuracy.</p>
+
+<p>My results run counter the conventional wisdom of software engineering research and experience, but are consistent with my experience at Pivotal. Conventional wisdom says that engineers are optimistic and horrible at estimating work which is why some managers &ldquo;double&rdquo; estimates given to them.</p>
+
+<p>On my last team, we tended to be cautious in estimating work and not overly optimistic about the risk and complexity of our work. This is similar to the &ldquo;under commit, over deliver&rdquo; adage.</p>
+
+<p>Here is how we went about collecting the data
+1) We limited our pointing scale to &ldquo;Easy&rdquo;, &ldquo;Medium&rdquo; and &ldquo;Hard&rdquo; &mdash; one of the pivots advocated this scale and I liked the simplicity of it. We mapped &ldquo;Easy&rdquo; to 1 story point, &ldquo;Medium&rdquo; to 3 story points and &ldquo;Hard&rdquo; to 8 story points. In the meeting we would hold up 1, 2, or 3 fingers, I would call out Easy/Medium/Hard and the PM would record the correct story points.</p>
+
+<p>While I don&rsquo;t have evidence for this, I felt that the IPMs were very efficient as there was less quibbling over minor point differences. We went with the majority point value. If a large number of people said Easy and a large number of people said Medium, we&rsquo;d have a discussion. If most of the team said Easy and a few number of people said Hard, we&rsquo;d have a discussion.</p>
+
+<p>2) At the end of each story, the pair would assign a Pivotal Tracker label to reflect the actual point value. We used the labels &ldquo;Actual Easy Points&rdquo; &ldquo;Actual Medium Points&rdquo; &ldquo;Actual Hard Points&rdquo;, eventually we had to add a &ldquo;Actual Zero Points&rdquo;. I asked the pair not to look at the estimate on the story while recording the actual, but there could be some anchoring bias with the data.</p>
+
+<p>3) I monitored tracker and reminded developers to put labels on stories they had finished but had not labeled.</p>
+
+<p>Periodically, I would show results to the team. (After 1 month, 2 months, and end of project.)</p>
+
+<table>
+    <tr><td>&nbsp</td>
+        <td>We were&#8230; (number of stories)</td></tr>
+    <tr><td>Estimate</td>
+        <td>Conservative</td>
+        <td>Accurate</td>
+        <td>Optimistic</td>
+    </tr>
+    <tr><td>0</td>
+        <td></td>
+        <td>5</td>
+        <td>1</td>
+    </tr>
+    <tr><td>1</td>
+        <td>7</td>
+        <td>48</td>
+        <td>5</td>
+    </tr>
+    <tr><td>3</td>
+        <td>13</td>
+        <td>14</td>
+        <td>2</td>
+    </tr>
+    <tr><td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td></td>
+    </tr>
+    <tr><td>Estimate</td>
+        <td>Conservative</td>
+        <td>Accurate</td>
+        <td>Optimistic</td>
+    </tr>
+    <tr><td>0</td>
+        <td></td>
+        <td>83.33%</td>
+        <td>16.67%</td>
+    </tr>
+    <tr><td>1</td>
+        <td>11.48%</td>
+        <td>48.28%</td>
+        <td>6.90%</td>
+    </tr>
+    <tr><td>3</td>
+        <td>44.83%</td>
+        <td>48.28%</td>
+        <td>6.90%</td>
+    </tr>
+    <tr><td>8</td>
+        <td>0.00%</td>
+        <td>100.00%</td>
+        <td>0.00%</td>
+    </tr>
+</table>
+
+
+<p></p>
 ]]></content>
   </entry>
   
@@ -681,23 +763,6 @@ After using this technique for a course, I noticed that most of my students didn
     <content type="html"><![CDATA[<p>I must be having the butterfly jitters before offering a new course, Special Topics Seminar: Craft of Software Development. I sat down with a google document to review everything that I wanted to do with the course. In a moment of feeling that I must have been missing something, I reviewed my original blog post about the idea. To my surprise, the ideas in my original blog post were consistent with my current ideas and still at the heart of the course design.</p>
 
 <p>I&rsquo;m using Keith Johnstone as an inspiration for this course. While I have some course structure, I want to be flexible with the delivery and reflect after each session on how the course can be better serving this particular group of students. I&rsquo;m also wanting to try some crazy in class exercises. At times, I feel that actors getting on stage is an easier art form to work with than software developers writing code. Perhaps I&rsquo;d feel differently if everyone would be working with the same programming language.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sitemap Powerpoint presentation]]></title>
-    <link href="http://professor.github.io/toddsedano/2011/01/13/sitemap-powerpoint-presentation.html"/>
-    <updated>2011-01-13T22:54:00-08:00</updated>
-    <id>http://professor.github.io/toddsedano/2011/01/13/sitemap-powerpoint-presentation</id>
-    <content type="html"><![CDATA[<p><a href="http://professor.github.io/images/TalkAgenda.jpg" border=0><img src="http://professor.github.io/images/TalkAgenda.jpg" width="75%" alt=""/></a></p>
-
-<p>I tried an experimental presentation technique today, which I call &ldquo;Sitemap Presentation.&rdquo;</p>
-
-<p>When I was asked to do the talk &ldquo;Entrepreneurial Opportunities in Silicon Valley&rdquo; for Carnegie Mellon University at the Pittsburgh campus, I drew out on paper my talk outline. My drawing reminded me of Kent Beck&rsquo;s notes when he was presenting at Rails Conf 2008 (?) &mdash; its much like his drawings at the beginning of his book.</p>
-
-<p>When I was creating the slides, I wanted the ability to hop around to different parts of my presentation. Yes, I could do one ordering of the topics, but I wanted to be flexible with my talk and respond to what the audience wanted. So I scanned in my diagram and used the diagram as my agenda slide. I duplicated the diagram throughout the presentation. I found that the drawing was more to my liking. I&rsquo;ve never been fond of doing an agenda slide, they always feel so boring, but this really livened it up and allowed me to see quickly where we were headed.</p>
-
-<p>In my ideal version, each part of the sitemap would be clickable. Thus I&rsquo;d have a title slide followed by an agenda slide. Whenever I clicked anywhere on my diagram, it would go off on that thread and then return to the agenda slide. If I clicked on a different part of the agenda, it would take on a different thread. I&rsquo;ll have to figure out how to do this in powerpoint / keynote.</p>
 ]]></content>
   </entry>
   
