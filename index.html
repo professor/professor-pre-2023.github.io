@@ -87,7 +87,7 @@
   
 
 
-<time datetime="2015-08-02T10:59:00-07:00" pubdate data-updated="true">Aug 2<span>nd</span>, 2015</time>
+<time datetime="2015-08-02T00:00:00-07:00" pubdate data-updated="true">Aug 2<span>nd</span>, 2015</time>
         
       </p>
     
@@ -98,23 +98,21 @@
 
 <h1>Lean Extreme Programming</h1>
 
-<p>Lean Extreme Programming (or Lean XP) is a hybrid of Lean and Extreme Programming methodologies. Lean Extreme Programming starts with all of the practices of Extreme Programming (XP) and replaces the concept of iterations with Lean’s just-in-time production philosophy manifested in pulled-based practices. This achieves a high quality, extremely readable, and well designed software with a faster ability to respond to change. In <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/B00CF6EJG8/ref=sr_1_1?ie=UTF8&amp;qid=1438569476&amp;sr=8-1&amp;keywords=extreme+programming+1st+edition">Extreme Programming</a> (1999) and <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658/ref=sr_1_1?ie=UTF8&amp;qid=1438569614&amp;sr=8-1&amp;keywords=extreme+programming+2nd+edition">Extreme Programming 2nd Edition</a> (2004) the team commits to the stories to be accomplished during an iteration (much like a sprint in Scrum.) In Lean, the work “flows” through people as people start the next needed activity. At Pivotal, we’ve customized the Extreme Programming process so that the developers accomplish the work that needs to get done at that moment in time.</p>
+<p>Lean Extreme Programming (or Lean XP) is a hybrid of Lean and Extreme Programming methodologies. Lean Extreme Programming starts with all of the practices of Extreme Programming (XP) and replaces the concept of iterations with Lean’s just-in-time production philosophy manifested in pulled-based practices. This achieves a high quality, extremely readable, and well designed software with a faster ability to respond to change.</p>
 
 <p>Lean XP continues to rely on all the technical practices of XP including pair-programming, test-driven development as well as the remaining process practices of XP including on-site customer.</p>
 
-<p>Tasks are not owned by specific individuals, people work on the next available story. In Scrum, one person owns the task for the duration of the task. At Pivotal many people might work on a single story. Consider this example of a multi-day story. On Monday Bailey and De would begin working on the next story in the backlog. On Tuesday, De and Kadeer would continue on the story. On Wednesday, Kadeer and Lesley would continue on and finish the story. For the participants, this can feel like a rely race. The entire team might even rotate through a complex story. Pivotal prefers very small stories in order to deliver value quickly, remove waste, shorten the feedback loop, and support incremental development.</p>
+<h1>Introduction</h1>
 
-<p>For coordination purposes, Pivotal records the developers currently working on the story. This provides visibility on who to ask for questions about about any of the current stories “in flight.” The team understands that the people working on the story will probably change.</p>
+<p>Overtime, Pivotal has evolved the Extreme Programming software development methodology by incorporating ideas from Lean software development and Lean Startup. Ironically, some of our terminology still reflects earlier practices and needs refreshing to reflect the way we currently work.</p>
 
-<p>In this environment, developers learn to be flexible when showing up at work, just like actors performing improvisation without a script. Imagine a developer with expectations about their work for the day. At the beginning of the day, they pair up, and the pair may discover that the team’s needs will cause the developer’s expectations to be misaligned from reality. Developers learn to loosely hold any expectations and embrace what emerges in the day. Developers can be pleasantly surprised by what emerges. “Acceptance is the answer” to many of life’s problems. A developer can express their desires to the team. Examples include “I haven’t worked on this part of the code base recently” or “I haven’t paired with this person in awhile” or “I really enjoy working on UI stories.” However, if the build is broken, or the product manager needs help in accepting a story, then the reality of the moment will trump any of the developer’s plans.</p>
+<p>In <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/B00CF6EJG8">Extreme Programming</a> (1999) and <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658">Extreme Programming 2nd Edition</a> (2004) the team commits to the stories to be accomplished during an iteration just like a sprint in Scrum. In contrast, in Lean software development, the work “flows” through people as people start the next needed activity. At Pivotal, we’ve customized the Extreme Programming process so that the developers accomplish the work that needs to get done at that moment in time.</p>
 
-<p>Improvisors practice letting go of planning through exercises that reinforce handling of chaotic situations, rewarding spontaneity, and listening. In Lean XP, we learn to listen to our pairs, our tests, our code, our stories, our product owner, and our users.</p>
+<p>Stories and tasks are not owned by specific individuals. In Scrum, one person owns the task for the duration of the task. At Pivotal, many people might work on a single story. While the team notes who is working on each story right now, the team understands that these associations will change. After finishing a task, a development pair simply works on the next available story.</p>
 
-<p>By switching from an iteration based to a just-in-time workflow,  the commitment level changes from the iteration to the story.  In Extreme Programming, there is a weekly contract between the product owner and the development team that the work for a particular week is fixed. Anything can change about the project, as long as the changes occurred between iterations. With Lean Extreme Programming, the product owner is committing to the completion of any story in flight since it was at the top of the backlog when available developers pick it up and start working on it. In practice, product owners do not cancel in-flight stories. Stories might become blocked and be un-started. Theoretically it is possible that the direction of a project changes so drastically that you might stop working on a story, but in practice this is extremely rare.</p>
+<p>Consider this example of a multi-day story: On Monday, Bailey and De begin working from the top of the backlog. On Tuesday, De and Kadeer continue on the story. On Wednesday, Kadeer and Lesley finish the story. For the participants, this can feel like a relay race. The entire team might even rotate through a complex story. Note that Pivotal prefers very small stories in order to deliver value quickly, remove engineering waste, shorten the feature feedback loop, and support iterative and incremental development.</p>
 
-<p>While there is a commitment to the story in-flight, the developers with the product manager may realize that the story needs changing. While working on a story, the developers might discover a corner case not considered by the product manager, or find a confusing user interaction flow that requires the user experience to be re-worked. For these emergent and “internal” changes, the story needs updating. (reduces the waste from more design-up-front approaches. This is an advantage of the process.) For “external” changes where the product owner changes the feature, typically the product owner creates a new story that reflects the new insight into the feature. From this perspective, there is a commitment between the product owner and the team that the stories written reflect our current understanding of the system and will not be re-written by product.</p>
-
-<h2>Litmus test for iterations</h2>
+<h1>Litmus test for Extreme Programming iterations vs Lean just-in-time delivery</h1>
 
 <p>In the movie, the Matrix, Keanu Reaves follows a discovery and evaluation process to determine if he is “The One.” While in a waiting room, he sees a boy bending spoons and wonders how that is possible. He is told that the secret is that “there is no spoon.” I had a similar revelation while working on a Pivotal Labs project. In the middle of the work week, I was reflecting on our rhythm of weekly retrospections (called “retros”) and weekly pointing meetings (called “IPMs”) and realized that there were no iterations. We were present with the features in the backlog and weren’t planning for or committing to which stories would be done in each week. I mentioned this to my pairing partner and he said, “Of course there are iterations, each Monday we start a new iteration!” The developer responsible for the success of the project (called an “anchor”) overheard this conversation and said, “Actually, since our project started on a Tuesday, I setup Pivotal Tracker to have iterations go Tuesday to Monday.” With three developers on one team, we had widely different opinions of whether we had iterations and when they started. This conversation reinforced my observation that we were not using iterations as prescribed by Extreme Programming.</p>
 
@@ -123,11 +121,31 @@
 
 <p>A Scrum team spends time managing the commitments and emotional energy. (Not sure what I want to say here.) I could imagine a team missing a commitment and then doing good work to make up for it. It’s like doing amends after making a mistake. If my team didn’t honor our commitments for a sprint, I would make sure that it made the next sprint’s deadlines. While some people rely on the presence of stress…. at some point, this does not create a sustainable workplace.</p>
 
-<p>In our situation, the team has a natural rhythm that happens to be based on the fact that we take the weekends off. We do Retros on Fridays. Why? Because after a weekend, on Monday the team is unable to remember what happened last week. Just watch the Monday standup for confirmation. The team schedules a “planning” meeting once a week to make sure that we have enough work in the backlog. If the backlog was extremely full, we could just cancel the meeting. Just because the team take Saturday and Sundays off doesn’t mean that we are doing iterations. In this case calling this an iteration its just because it is a convenient way of measuring time, and the concept of “week” is sufficient. If we worked seven days a week, I’m not sure what would happen. Measuring the passage of time is not a sufficient distinction to use the word “iteration” which has a different and specific meaning in Extreme Programing (1999, 2004).</p>
+<p>The team’s rhythm aligns with the natural rhythm of a work week. Retros are scheduled on Fridays at the end of the week. Not only does it signify closure for the week, but there are practical reasons to do this too. After a weekend off, the team forgets the details of the previous week. Just watch the Monday stand-up for confirmation as team members struggle to recall their stories from Friday. The team schedules a “planning” meeting once a week to make sure that we have enough work in the backlog. Teams typically schedule them on Mondays, Tuesdays, and Wednesdays since any day will do. If the backlog was extremely full, we could just cancel the meeting. Just because the team’s natural cadence aligns with the week does not mean we are doing Extreme Programming iterations.</p>
+
+<p>The next time you find yourself using the word “iteration”, see if the word “weekly” would do instead. “When are we having our Iteration Planning Meeting” becomes “When are we having our Weekly Planning Meeting.” “What is our velocity this iteration?” becomes “What is our velocity this week?” “How many iterations are left in this project?” becomes “How many weeks are left in this project?” The term iteration is a proxy for measuring time. Since we aren’t committing to work to be done in an iteration, the terms are practically replaceable.</p>
+
+<h1>Updating our terminology at Pivotal</h1>
+
+<p>Since Pivotal has evolved Extreme Programming iterations to incorporate Lean software development’s just-in-time practices, it is helpful to explicitly describe the way we work.</p>
+
+<p>One example is our weekly meeting for creating shared mutual understanding and pointing the next stories in the backlog. Ironically, the meeting is still called an “Iteration Planning Meeting” even though we no longer commit to which stories we are doing next week and no explicit planning happens in the meeting. It is entirely possible that the stories we do discuss might happen two or even three weeks from now, not during the next “iteration.” We could call it a “Pointing Meeting” (PM) which has the unfortunate abbreviation as Product Managers (PM). In discussing the goals of the meeting with numerous Product Managers, Anchors, and Pivots, I personally prefer the term “Shared Understanding Meeting” as it reinforces the goal of having everyone on the same page.</p>
+
+<p>Pivotal Tracker might minor updates to its messaging. Pivotal Tracker describes each week as an “iteration” and has charts that talk about “iteration velocity” (aka weekly velocity) “iteration start date” (aka week start date). Fortunately, many of the charts simply reference “Date” instead of “Iterations.” The terminology seeps more into the Help documentation than the tool itself. Since the weekly markers are not labeled as iterations, one could use tracker for quite some time without knowing that it reinforced the Extreme Programming iteration concept from 1999 and 2004.</p>
+
+<blockquote><blockquote><p>Mabye conclusion here?</p></blockquote></blockquote>
+
+<h1>Commitment level shifts from the iteration to story</h1>
+
+<p>While there is a commitment to the story in-flight, the developers with the product manager may realize that the story needs changing. While working on a story, the developers might discover a corner case not considered by the product manager, or find a confusing user interaction flow that requires the user experience to be re-worked. For these emergent and “internal” changes, the story needs updating. (reduces the waste from more design-up-front approaches. This is an advantage of the process.) For “external” changes where the product owner changes the feature, typically the product owner creates a new story that reflects the new insight into the feature. From this perspective, there is a commitment between the product owner and the team that the stories written reflect our current understanding of the system and will not be re-written by product.</p>
+
+<p>By switching from an iteration based to a just-in-time workflow,  the commitment level changes from the iteration to the story.  In Extreme Programming, there is a weekly contract between the product owner and the development team that the work for a particular week is fixed. Anything can change about the project, as long as the changes occurred between iterations. With Lean Extreme Programming, the product owner is committing to the completion of any story in flight since it was at the top of the backlog when available developers pick it up and start working on it. In practice, product owners do not cancel in-flight stories. Stories might become blocked and be un-started. Theoretically it is possible that the direction of a project changes so drastically that you might stop working on a story, but in practice this is extremely rare.</p>
 
 <h1>Being in the moment</h1>
 
-<p>The</p>
+<p>In this environment, developers learn to be flexible when showing up at work, just like actors performing improvisation without a script. Imagine a developer with expectations about their work for the day. At the beginning of the day, they pair up, and the pair may discover that the team’s needs will cause the developer’s expectations to be misaligned from reality. Developers learn to loosely hold any expectations and embrace what emerges in the day. Developers can be pleasantly surprised by what emerges. “Acceptance is the answer” to many of life’s problems. A developer can express their desires to the team. Examples include “I haven’t worked on this part of the code base recently” or “I haven’t paired with this person in awhile” or “I really enjoy working on UI stories.” However, if the build is broken, or the product manager needs help in accepting a story, then the reality of the moment will trump any of the developer’s plans.</p>
+
+<p>Improvisors practice letting go of planning through exercises that reinforce handling of chaotic situations, rewarding spontaneity, and listening. In Lean XP, we learn to listen to our pairs, our tests, our code, our stories, our product owner, and our users.</p>
 
 <p>“You Aren’t Going to Need It” (YAGNI) encapsulates part of this idea. Instead of worrying about future features, let’s focus on the current system and implementing the current feature. At its heart, its about being in the present with the code. By not committing to stories for each week, it shifts the conversation. Instead of discussing what was done last week, or what will be done next week, the team can focus on what needs to be done now.</p>
 
@@ -140,36 +158,6 @@
 <p>If everyone was committed to a task within a sprint, then explicitly coordination is required to determine which tasks should be postponed and dropped. Dependencies on those tasks could also be affected.</p>
 
 <p><strong>This simplifies the plan of work for the week</strong> Some engineering managers maintain intricate mappings of who is working on what and who is dependent upon what. If any one developer slips on their work, there is other work that is also delayed. Lean XP shifts the focus from developer dependency to story dependency. Stories that block other stories can be explicitly labeled. When the first story finishes, the second story can be unblocked and worked upon when it reaches the top of its backlog. There is no “chess” game of resource allocation and dependency management.</p>
-
-<h1>Cons</h1>
-
-<p>Any con of XP still applies to Lean XP. For example, developers who do not like the highly collaborative pair programming practice will not like Lean XP either.</p>
-
-<h1>Adoption at Pivotal</h1>
-
-<p>Our terminology does not always reflect what we do. Given Pivotal’s 15 year history with Extreme Programming, our terminology is has long routes in the foundations of Extreme Programming.</p>
-
-<p>One example is our typically weekly meeting for creating shared mutual understanding and pointing the next stories in the backlog. The meeting is still called an “Iteration Planning Meeting” or IPM, even though no planning happens in the meeting and we do not explicitly talk about the stories in the next “iteration.” We could call it a “Pointing Meeting” which unfortunately has the same abbreviation as our Product Managers.  I prefer the “Shared Understanding Meeting” as it reinforces the  goal of having everyone on the same page.</p>
-
-<p>Pivotal Tracker describes each week as an “iteration” and has charts that talk about “iteration velocity” (aka weekly velocity) “iteration start date” (aka week start date)Fortunately many of the charts simply reference “Date” instead of “Iterations”. The terminology seeps more into the Help documentation than the tool itself. Since the weekly markers are not labeled as iterations, one could use tracker for quite some time without knowing that it carried on the iteration concept from Extreme Programming 1.0 / 2.0</p>
-
-<h1>Context</h1>
-
-<p>The Pivotal practice of Extreme Programming evolves over time.
-Teams incorporate the results from new experiments to evolve our our practices over time.
-Lean Extreme Programming replaces the iteration structure of Extreme Programming with the just in time / working in the present workflow from lean.</p>
-
-<p>In Lean, work flows through the developers. After work is identified, people pick up the work, make progress, and pass it onto others if the work is not finished. Compare this to a scrum where developers are assigned tasks to accomplish a story for a particular sprint.</p>
-
-<p>In the original version of Extreme Programming,</p>
-
-<p>Lean promotes a zen-like presence with the work. A developer shows up to the office not know what they will work on, picks up the next most important bit of work and carries that further. It can feel like a rely race.</p>
-
-<h2>Reduces communication complexity</h2>
-
-<h2>IPM is now about making sure there are enough pointed stories for the developers to make progress, IPM can now be focused on shared understanding.</h2>
-
-<p>Development team</p>
 </div>
   
   
