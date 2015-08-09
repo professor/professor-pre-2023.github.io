@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2015-08-03T21:23:54-07:00</updated>
+  <updated>2015-08-09T15:28:00-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,117 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[“Renaming the Iteration Planning Meeting"]]></title>
+    <link href="http://professor.github.io/toddsedano/2015/08/08/renaming-the-iteration-planning-meeting.html"/>
+    <updated>2015-08-08T14:32:00-07:00</updated>
+    <id>http://professor.github.io/toddsedano/2015/08/08/renaming-the-iteration-planning-meeting</id>
+    <content type="html"><![CDATA[<h1>Summary</h1>
+
+<p>I suggest renaming the “Iteration” “Planning” Meeting (IPM) to accurately reflect Pivotal’s current goals and practices for that meeting.</p>
+
+<h1>Context</h1>
+
+<p>Over time, Pivotal has evolved its own form of Extreme Programming software development methodology by incorporating ideas from Lean software development and Lean Startup.</p>
+
+<p>Some of our terminology needs refreshing to reflect the way we currently work. In particular, “Iteration Planning Meeting” does not accurately reflect what typically happens in that meeting.</p>
+
+<p>In <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/B00CF6EJG8">Extreme Programming</a> (1999) and <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658">Extreme Programming 2nd Edition</a> (2004) the team commits to the stories to be accomplished during an iteration or weekly cycle just like a sprint in Scrum. Once Product identifies the stories for the week, programmers decompose the stories into tasks. Each programmer assigned a task estimates only their own task on Monday during then Iteration Planning Game (XP 1999) or Weekly Cycle meeting (XP 2004.)</p>
+
+<p>In contrast, in Lean software development, the work “flows” through people as people start the next needed activity. At Pivotal, we’ve customized the Extreme Programming process so that the developers accomplish the work that needs to get done at that moment in time. At any point in time, we can not predict who will be working on what work tomorrow, but we can say who is working on what work now. As that work is finished, we simply start the next unit of work to be done. We do not commit to which stories will be done in any given week, instead we follow a Lean’s just-in-time mechanisms for identifying what to work on next.</p>
+
+<p>At Pivotal, stories and tasks are not owned by specific individuals. In Scrum and Extreme Programming, one person owns the task for the duration of the task. At Pivotal, many people might work on a single story. While the team notes who is working on each story right now, the team understands that these associations will change. After finishing a task, a development pair simply works on the next available story.</p>
+
+<p>We’re familiar with the multi-day story: On Monday, Bailey and De begin working from the top of the backlog. On Tuesday, De and Kadeer continue on the story. On Wednesday, Kadeer and Lesley finish the story. For the participants, this can feel like a relay race. The entire team might even rotate through a complex story.</p>
+
+<p>Pivotal prefers very small stories in order to deliver value quickly, remove engineering waste, shorten the feature feedback loop, and support iterative and incremental development. The smaller stories often do preclude the need to explicitly list out any tasks. It is rare for a pair of developers to need to list out the tasks associated with a story. Usually, the pair can effortlessly figure out what needs to get done.</p>
+
+<p>We do follow a Scrum Sprint, or an Extreme Programming Iteration or an Extreme Programming Weekly Cycle. We’ve successfully incorporated Lean into the way we prepare and execute our work.</p>
+
+<h1>Is calling a “week” an “iteration” such a big deal?</h1>
+
+<h1>The concept of “week” describes the team’s work rhythm</h1>
+
+<p>The team’s rhythm aligns with the natural rhythm of a work week. Retros are scheduled on Fridays at the end of the week. The meeting signifies closure for the week. There are practical reasons to schedule the meeting on a Friday. After a weekend off, the team forgets the details of the previous week. Just watch the Monday stand-up for confirmation as team members struggle to recall their stories from Friday.</p>
+
+<p>The team schedules a “planning” meeting once a week to make sure that we have enough work in the backlog. Teams typically schedule them on Mondays, Tuesdays, and Wednesdays since any day will do. (This is unlike an Extreme Programming Iteration where these need to be scheduled at the beginning of the week so developers know who is working on what.) If the backlog was extremely full, we could just cancel the meeting. Just because the team’s natural cadence aligns with the week does not mean we are doing Extreme Programming iterations.</p>
+
+<p>The next time you find yourself using the word “iteration”, see if the word “weekly” would do instead. “What is our velocity this iteration?” becomes “What is our velocity this week?” and “How many iterations are left in this project?” becomes “How many weeks are left in this project?” The term iteration is a proxy for measuring time. Since we aren’t committing to work to be done in an iteration, our usage of the terms are interchangeable.</p>
+
+<p>In communicating our process to potential clients and the outside world, I’d prefer to be accurate in describing our work flow as a Lean just-in-time system. Using the term “iteration” potentially miscommunicates that we are committing to specific work each week.</p>
+
+<h1>Updating our terminology at Pivotal</h1>
+
+<p>Since Pivotal has evolved its own form of Extreme Programming to incorporate Lean software development’s just-in-time practices, I suggest we use the accurate terminology in describing the way we work.</p>
+
+<p>Consider our weekly meeting for creating shared mutual understanding and pointing the next stories in the backlog. Ironically, the meeting is called an “Iteration Planning Meeting” even though we do not commit to which stories we are doing next week and no explicit planning happens in the meeting. While we do point stories in the meeting, examining whether we are on track, re-prioritizing stories, and assigning work to individuals all happen outside the meeting. For us, planning happens at the product manager, client liaison, and client level as Pivotal discusses whether the project is on track and whether key features will be done by a certain date.</p>
+
+<p>During our “Iteration” “Planning” Meeting, it is entirely possible that the stories we do discuss might happen two or even three weeks from now, not during the next “iteration.”</p>
+
+<p>When I’m anchoring a project, my chief concern with our “Iteration” “Planning” Meeting is to make sure that our backlog has enough pointed stories for the next week. The team running out of work would be disastrous.</p>
+
+<p>Finding a suitable replacement name for this meeting is challenging as many of us have different, sometimes conflicting expectations and goals for the meeting. In interviewing 6 pivots and product managers,</p>
+
+<p>Common goals for the meeting:
+1) Create a shared understanding of the work that is to be done.  (Where are we headed? What will we be building? Are we building the right system?)
+2) Communicate to the PM risks and story complexity. We typically use estimation as a forcing function to have this conversation.
+3) Estimate the work
+4) Verify that each story has clear acceptance criteria</p>
+
+<p>Goals 1 and 2 are frequently cited in my interviews. Some pivots argue that we should not be pointing and thus goal 3 is not a goal for them in the meeting. Goal 4 is infrequently mentioned.</p>
+
+<p>We could call the meeting a “Pointing Meeting” (PM) which unfortunately has the same abbreviation as Product Manager (PM). In discussing the goals of the meeting with numerous Product Managers, Anchors, and Pivots, I personally prefer the term “Shared Understanding Meeting” as it reinforces the goal of getting everyone on the same page.</p>
+
+<h1>Updating Pivotal Tracker</h1>
+
+<p>Pivotal Tracker might minor updates to its messaging. Pivotal Tracker describes each week as an “iteration” and has charts that talk about “iteration velocity” (aka weekly velocity) “iteration start date” (aka week start date). Fixing this would be a simple string replacement. Fortunately, many of the charts simply reference “Date” instead of “Iterations.” The terminology seeps more into the Help documentation than the tool itself. Keeping the iteration terminology in the help documentation makes sense given that other companies use tracker, and they might have sprints or iterations. Since the weekly markers are not labeled as iterations, one could use tracker for quite some time without knowing that the tool reinforced the Extreme Programming iteration concept from 1999.</p>
+
+<h1>My own A-ha moment</h1>
+
+<p>In the movie, the Matrix, Keanu Reaves follows a discovery and evaluation process to determine if he is “The One.” While in a waiting room, he sees a boy bending spoons and wonders how that is possible. The secret is that “there is no spoon.” I had a similar revelation while working on a Pivotal Labs project. In the middle of the work week, I was reflecting on our rhythm of weekly retrospections and weekly pointing meetings and realized that there were no iterations. We did not commit to explicit work each week. Every day felt very much like the next day. We weren’t ramping up on new stories on Monday to wind them down on Friday. Instead, we were present with the features in the backlog. We weren’t planning for or committing to which stories would be done in each week. I mentioned this to my pairing partner and he said, “Of course there are iterations, each Monday we start a new iteration!” The anchor overheard this conversation and said, “Actually, since our project started on a Tuesday, I setup Pivotal Tracker to have iterations go Tuesday to Monday.” With three developers on one team, we had widely different opinions of whether we had iterations and when they started. This conversation reinforced my observation that we were not using iterations as prescribed by Extreme Programming.</p>
+
+<h1>Conclusion</h1>
+
+<p>I recommend we replace “Iteration Planning Meeting” with a phrase that accurately describes the meeting’s purpose and goals. I suggest “Shared Understanding Meeting” as a simple draft proposal which is intended to encourage discussion about its disadvantages or the purpose of generating better proposals.</p>
+
+<p>(Just for me)</p>
+
+<h1>History of Iterations and Planning in Extreme Programming</h1>
+
+<p>When Extreme Programming was introduced to the software industry, teams typically had long software development cycles. Extreme Programming’s recommendation of a 1 week to 3 week iteration ran counter to the culture at the time. After the advent of Extreme Programming and other methodologies, teams experimented with the length of the iteration. Some advocated for two week iterations, others for one week iterations.</p>
+
+<p>In Extreme Programming Explained (1999), Kent Beck introduces the Planning Game, an activity to manage the work to be done for a project. Business writes a set of stories for the next release of a product. The development team estimates each of the stories in ideal engineering time measured in days. The development team can ask business to split a story into smaller pieces. Business sorts the cards based upon business value and into three buckets (those that are required for the system to function, those that are not essential but provide large business value, and nice to haves). The development teams sorts the cards into those that they can estimate precisely, reasonably well, and not at all. Once the cards are estimated, business can either pick a date and see which cards can be completed by that date, or pick a set of cards and calculate when they will be done.</p>
+
+<p>In order to provide visibility into the progress of a release, a release is decomposed into iterations. Business decides which stories the team will implement during the next iteration based upon business value. At the beginning of each iteration, only the developers conduct an Iteration Planning Game.</p>
+
+<p>During Iteration Planning Game, the programmers decompose the stories into task cards that will accomplish the stories for that iteration. Individual programmers accept a particular task. Only that programmer estimates the task. A load factor is determined for each programmer based upon the number of ideal days of tasks the programmer was able to accomplish in recent iterations. Tasks are balanced amongst the developers based upon the estimates and load factors. (When implementing a task, the owner would grab another programmer and work on it together.)</p>
+
+<p>In Extreme Programming Explained (2nd Edition) (2004), Kent Beck has replaces the idea of iterations with a weekly cycle. The Weekly Cycle meeting has three goals
+* review progress and examine how last week actual progress matched the expected progress
+* customer chooses a week’s worth of stories to be implement this week
+* developers convert the stories into tasks. Developers sign up for tasks and estimate the ones they will be working on.</p>
+
+<p>Beck also advocates for writing automated tests for all the stories at the beginning of the week and then verify that they all pass on Friday when the stories are due.</p>
+
+<p>In Extreme Programming Explained (1999), Kent Beck describes an Ideal XP project has having
+* a short exploration phase where the product owner verifies
+customers practice writing stories
+developers experiment with unfamiliar technologies
+developers explore contrasting system architectures
+developers verify performance with realistic loads
+the team learns to trust each other,
+* planning
+* productionizing
+* maintenaince</p>
+
+<p><del> Here is the litmus test that I use for determining if a project has iterations:
+<em>Does the team commit to specific work getting done by a specific time?</em> Consider Scrum with a weekly sprint and the team’s commitment to the completion of 7 stories by Friday. If on Thursday the team is ahead of the game, then the team is free to work on chores and refactoring the code. If the team is behind and the work extends to Tuesday, then the team will need to commit to completing less work the following week. At Pivotal, the team works on the next needed story or chore. If the codebase requires a chore to be done, we do it regardless of the team’s current velocity. </del></p>
+
+<p><del> Why what we do is better
+A Scrum team spends time managing the commitments and emotional energy. (Not sure what I want to say here.) I could imagine a team missing a commitment and then doing good work to make up for it. It’s like doing amends after making a mistake. If my team didn’t honor our commitments for a sprint, I would make sure that it made the next sprint’s deadlines. While some people rely on the presence of stress…. at some point, this does not create a sustainable workplace. </del></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Lean Extreme Programming]]></title>
@@ -25,39 +136,6 @@
 <p>Lean Extreme Programming (or Lean XP) is a hybrid of Lean and Extreme Programming methodologies. Lean Extreme Programming starts with all of the practices of Extreme Programming (XP) and replaces the concept of iterations with Lean’s just-in-time production philosophy manifested in pulled-based practices. This achieves a high quality, extremely readable, and well designed software with a faster ability to respond to change.</p>
 
 <p>Lean XP continues to rely on all the technical practices of XP including pair-programming, test-driven development as well as the remaining process practices of XP including on-site customer.</p>
-
-<h1>Introduction</h1>
-
-<p>Overtime, Pivotal has evolved the Extreme Programming software development methodology by incorporating ideas from Lean software development and Lean Startup. Ironically, some of our terminology still reflects earlier practices and needs refreshing to reflect the way we currently work.</p>
-
-<p>In <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/B00CF6EJG8">Extreme Programming</a> (1999) and <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658">Extreme Programming 2nd Edition</a> (2004) the team commits to the stories to be accomplished during an iteration just like a sprint in Scrum. In contrast, in Lean software development, the work “flows” through people as people start the next needed activity. At Pivotal, we’ve customized the Extreme Programming process so that the developers accomplish the work that needs to get done at that moment in time.</p>
-
-<p>Stories and tasks are not owned by specific individuals. In Scrum, one person owns the task for the duration of the task. At Pivotal, many people might work on a single story. While the team notes who is working on each story right now, the team understands that these associations will change. After finishing a task, a development pair simply works on the next available story.</p>
-
-<p>Consider this example of a multi-day story: On Monday, Bailey and De begin working from the top of the backlog. On Tuesday, De and Kadeer continue on the story. On Wednesday, Kadeer and Lesley finish the story. For the participants, this can feel like a relay race. The entire team might even rotate through a complex story. Note that Pivotal prefers very small stories in order to deliver value quickly, remove engineering waste, shorten the feature feedback loop, and support iterative and incremental development.</p>
-
-<h1>Litmus test for Extreme Programming iterations vs Lean just-in-time delivery</h1>
-
-<p>In the movie, the Matrix, Keanu Reaves follows a discovery and evaluation process to determine if he is “The One.” While in a waiting room, he sees a boy bending spoons and wonders how that is possible. He is told that the secret is that “there is no spoon.” I had a similar revelation while working on a Pivotal Labs project. In the middle of the work week, I was reflecting on our rhythm of weekly retrospections (called “retros”) and weekly pointing meetings (called “IPMs”) and realized that there were no iterations. We were present with the features in the backlog and weren’t planning for or committing to which stories would be done in each week. I mentioned this to my pairing partner and he said, “Of course there are iterations, each Monday we start a new iteration!” The developer responsible for the success of the project (called an “anchor”) overheard this conversation and said, “Actually, since our project started on a Tuesday, I setup Pivotal Tracker to have iterations go Tuesday to Monday.” With three developers on one team, we had widely different opinions of whether we had iterations and when they started. This conversation reinforced my observation that we were not using iterations as prescribed by Extreme Programming.</p>
-
-<p>Here is the litmus test that I use for determining if the project has iterations:
-<em>Does the team commit to specific work getting done by a specific time?</em> Consider Scrum with a weekly sprint and the team’s commitment to the completion of 7 stories by Friday. If on Thursday the team is ahead of the game, then the team is free to work on chores and refactoring the code. If the team is behind and the work extends to Tuesday, then the team will need to commit to completing less work the following week. At Pivotal, the team works on the next needed story or chore. If the codebase requires a chore to be done, we do it regardless of the team’s current velocity.</p>
-
-<p>A Scrum team spends time managing the commitments and emotional energy. (Not sure what I want to say here.) I could imagine a team missing a commitment and then doing good work to make up for it. It’s like doing amends after making a mistake. If my team didn’t honor our commitments for a sprint, I would make sure that it made the next sprint’s deadlines. While some people rely on the presence of stress…. at some point, this does not create a sustainable workplace.</p>
-
-<p>The team’s rhythm aligns with the natural rhythm of a work week. Retros are scheduled on Fridays at the end of the week. Not only does it signify closure for the week, but there are practical reasons to do this too. After a weekend off, the team forgets the details of the previous week. Just watch the Monday stand-up for confirmation as team members struggle to recall their stories from Friday. The team schedules a “planning” meeting once a week to make sure that we have enough work in the backlog. Teams typically schedule them on Mondays, Tuesdays, and Wednesdays since any day will do. If the backlog was extremely full, we could just cancel the meeting. Just because the team’s natural cadence aligns with the week does not mean we are doing Extreme Programming iterations.</p>
-
-<p>The next time you find yourself using the word “iteration”, see if the word “weekly” would do instead. “When are we having our Iteration Planning Meeting” becomes “When are we having our Weekly Planning Meeting.” “What is our velocity this iteration?” becomes “What is our velocity this week?” “How many iterations are left in this project?” becomes “How many weeks are left in this project?” The term iteration is a proxy for measuring time. Since we aren’t committing to work to be done in an iteration, the terms are practically replaceable.</p>
-
-<h1>Updating our terminology at Pivotal</h1>
-
-<p>Since Pivotal has evolved Extreme Programming iterations to incorporate Lean software development’s just-in-time practices, it is helpful to explicitly describe the way we work.</p>
-
-<p>One example is our weekly meeting for creating shared mutual understanding and pointing the next stories in the backlog. Ironically, the meeting is still called an “Iteration Planning Meeting” even though we no longer commit to which stories we are doing next week and no explicit planning happens in the meeting. It is entirely possible that the stories we do discuss might happen two or even three weeks from now, not during the next “iteration.” We could call it a “Pointing Meeting” (PM) which has the unfortunate abbreviation as Product Managers (PM). In discussing the goals of the meeting with numerous Product Managers, Anchors, and Pivots, I personally prefer the term “Shared Understanding Meeting” as it reinforces the goal of having everyone on the same page.</p>
-
-<p>Pivotal Tracker might minor updates to its messaging. Pivotal Tracker describes each week as an “iteration” and has charts that talk about “iteration velocity” (aka weekly velocity) “iteration start date” (aka week start date). Fortunately, many of the charts simply reference “Date” instead of “Iterations.” The terminology seeps more into the Help documentation than the tool itself. Since the weekly markers are not labeled as iterations, one could use tracker for quite some time without knowing that it reinforced the Extreme Programming iteration concept from 1999 and 2004.</p>
-
-<blockquote><blockquote><p>Mabye conclusion here?</p></blockquote></blockquote>
 
 <h1>Commitment level shifts from the iteration to story</h1>
 
@@ -82,6 +160,8 @@
 <p>If everyone was committed to a task within a sprint, then explicitly coordination is required to determine which tasks should be postponed and dropped. Dependencies on those tasks could also be affected.</p>
 
 <p><strong>This simplifies the plan of work for the week</strong> Some engineering managers maintain intricate mappings of who is working on what and who is dependent upon what. If any one developer slips on their work, there is other work that is also delayed. Lean XP shifts the focus from developer dependency to story dependency. Stories that block other stories can be explicitly labeled. When the first story finishes, the second story can be unblocked and worked upon when it reaches the top of its backlog. There is no “chess” game of resource allocation and dependency management.</p>
+
+<p>How is a SE kanban board lean? Instead of tracking about all of the requirements of a product, we can just track the stories in the next iteration or the features in the next release?</p>
 ]]></content>
   </entry>
   
@@ -777,53 +857,6 @@ Question for the group: how did the reading about estimation of our competence r
 <li>learned how to use git with eclipse</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Increasing discussion with a quiet group of students]]></title>
-    <link href="http://professor.github.io/toddsedano/2011/03/14/increasing-discussion-with-a-quiet-group-of-students.html"/>
-    <updated>2011-03-14T12:38:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2011/03/14/increasing-discussion-with-a-quiet-group-of-students</id>
-    <content type="html"><![CDATA[<p>Every group of students is different and has it&rsquo;s own &ldquo;feel&rdquo; &mdash; sometimes they are connected, energized, quiet, inquisitive. It may not be obvious what it is until the next group of students come and I realize that I like some aspects of the new group and miss some aspects of the older group(s).</p>
-
-<p>I&rsquo;ve been following a particular group of students through a curriculum and I know that they are &ldquo;quieter&rdquo; than previous groups. In the past, my attitude has been, &ldquo;if they don&rsquo;t want to discuss this, that&rsquo;s ok, we&rsquo;ll move on, or we&rsquo;ll end early.&rdquo; However, I&rsquo;m challenging myself to try a different approach with the goal of raising my game and being a better teacher.</p>
-
-<p>Main idea: prose a question to the group and have each person answer it on a sheet of paper. Put all the sheets into a hat. Select one member randomly (I like to use my fire dice) and have them draw the question from the hat. That person then leads a conversation around what was written on the paper. Note: you can have the students write questions on the paper, if this is the case, the person drawing the sheet out of the hat is not responsible for answering the question, they are responsible for getting the group to answer the question.</p>
-
-<h2>Possible Questions</h2>
-
-<p>Here&rsquo;s my initial brainstorm list for possible questions for the group:</p>
-
-<ul>
-<li>What are some fears you have about this class?</li>
-<li>What is software craftsmanship?</li>
-<li>Who is a software role model for you and why?</li>
-<li>What are you strong in, how did this happen, and how can you continue to improve?</li>
-<li>What is something that you want to work more on? How will you improve, how will you know if you are successful?</li>
-<li>What is necessary to become an expert?</li>
-</ul>
-
-
-<h2>The technique in action</h2>
-
-<p>I choose this question for the students.
-&ldquo;What are some of your concerns about this course?&rdquo;</p>
-
-<p>Here are their answers.
-* regain lost powers in terms of java programming (covered)
-* finding a good mentor (covered)
-* mentor does not agree to coach
-* I fear running out of ideas for learning areas I wish to improve
-* getting too caught up in the course
-* first time the course is offered, so it might not work out as planned
-* how much will it help me in the long run?
-* didn&rsquo;t have any real fears up until you mentioned it!
-* one fear is not meeting my goals at the end of the semester.
-I allowed a student to lead a discussion about the selected slip of paper. The class and I had a great conversation about the student&rsquo;s concern and what were some things to deal with it. I found this approach to be more engaging than going through a syllabus.
-After using this technique for a course, I noticed that most of my students didn&rsquo;t meet my expectations for a facilitator. Some would jump into giving their own answer. Others would ask a very good opening question, but then not probe for great details. In these situations when the student stopped leading, I would ask more detailed questions and explore subtle nuances.</p>
-
-<p>All in all, I really enjoyed using this technique.</p>
 ]]></content>
   </entry>
   
