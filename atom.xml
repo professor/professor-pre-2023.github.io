@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2015-08-09T15:28:00-07:00</updated>
+  <updated>2015-08-30T11:27:57-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -28,7 +28,7 @@
 
 <p>Some of our terminology needs refreshing to reflect the way we currently work. In particular, “Iteration Planning Meeting” does not accurately reflect what typically happens in that meeting.</p>
 
-<p>In <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/B00CF6EJG8">Extreme Programming</a> (1999) and <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658">Extreme Programming 2nd Edition</a> (2004) the team commits to the stories to be accomplished during an iteration or weekly cycle just like a sprint in Scrum. Once Product identifies the stories for the week, programmers decompose the stories into tasks. Each programmer assigned a task estimates only their own task on Monday during then Iteration Planning Game (XP 1999) or Weekly Cycle meeting (XP 2004.)</p>
+<p>In <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/B00CF6EJG8">Extreme Programming</a> (1999) and <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658">Extreme Programming 2nd Edition</a> (2004) the development team commits to the stories to be accomplished during an iteration or weekly cycle just like a sprint in Scrum. The commitment can change as the week unfolds. Once Product identifies the stories for the week, programmers decompose the stories into tasks. After volunteering for a set of tasks, each programmer estimates only their tasks on Monday during an Iteration Planning Game (XP 1999) or Weekly Cycle meeting (XP 2004.)</p>
 
 <p>In contrast, in Lean software development, the work “flows” through people as people start the next needed activity. At Pivotal, we’ve customized the Extreme Programming process so that the developers accomplish the work that needs to get done at that moment in time. At any point in time, we can not predict who will be working on what work tomorrow, but we can say who is working on what work now. As that work is finished, we simply start the next unit of work to be done. We do not commit to which stories will be done in any given week, instead we follow a Lean’s just-in-time mechanisms for identifying what to work on next.</p>
 
@@ -39,8 +39,6 @@
 <p>Pivotal prefers very small stories in order to deliver value quickly, remove engineering waste, shorten the feature feedback loop, and support iterative and incremental development. The smaller stories often do preclude the need to explicitly list out any tasks. It is rare for a pair of developers to need to list out the tasks associated with a story. Usually, the pair can effortlessly figure out what needs to get done.</p>
 
 <p>We do follow a Scrum Sprint, or an Extreme Programming Iteration or an Extreme Programming Weekly Cycle. We’ve successfully incorporated Lean into the way we prepare and execute our work.</p>
-
-<h1>Is calling a “week” an “iteration” such a big deal?</h1>
 
 <h1>The concept of “week” describes the team’s work rhythm</h1>
 
@@ -62,7 +60,7 @@
 
 <p>When I’m anchoring a project, my chief concern with our “Iteration” “Planning” Meeting is to make sure that our backlog has enough pointed stories for the next week. The team running out of work would be disastrous.</p>
 
-<p>Finding a suitable replacement name for this meeting is challenging as many of us have different, sometimes conflicting expectations and goals for the meeting. In interviewing 6 pivots and product managers,</p>
+<p>Finding a suitable replacement name for this meeting is challenging as many of us have different, sometimes conflicting expectations and goals for the meeting. Here is what I have found n interviewing 10 pivots and product managers from four offices.</p>
 
 <p>Common goals for the meeting:
 1) Create a shared understanding of the work that is to be done.  (Where are we headed? What will we be building? Are we building the right system?)
@@ -85,42 +83,6 @@
 <h1>Conclusion</h1>
 
 <p>I recommend we replace “Iteration Planning Meeting” with a phrase that accurately describes the meeting’s purpose and goals. I suggest “Shared Understanding Meeting” as a simple draft proposal which is intended to encourage discussion about its disadvantages or the purpose of generating better proposals.</p>
-
-<p>(Just for me)</p>
-
-<h1>History of Iterations and Planning in Extreme Programming</h1>
-
-<p>When Extreme Programming was introduced to the software industry, teams typically had long software development cycles. Extreme Programming’s recommendation of a 1 week to 3 week iteration ran counter to the culture at the time. After the advent of Extreme Programming and other methodologies, teams experimented with the length of the iteration. Some advocated for two week iterations, others for one week iterations.</p>
-
-<p>In Extreme Programming Explained (1999), Kent Beck introduces the Planning Game, an activity to manage the work to be done for a project. Business writes a set of stories for the next release of a product. The development team estimates each of the stories in ideal engineering time measured in days. The development team can ask business to split a story into smaller pieces. Business sorts the cards based upon business value and into three buckets (those that are required for the system to function, those that are not essential but provide large business value, and nice to haves). The development teams sorts the cards into those that they can estimate precisely, reasonably well, and not at all. Once the cards are estimated, business can either pick a date and see which cards can be completed by that date, or pick a set of cards and calculate when they will be done.</p>
-
-<p>In order to provide visibility into the progress of a release, a release is decomposed into iterations. Business decides which stories the team will implement during the next iteration based upon business value. At the beginning of each iteration, only the developers conduct an Iteration Planning Game.</p>
-
-<p>During Iteration Planning Game, the programmers decompose the stories into task cards that will accomplish the stories for that iteration. Individual programmers accept a particular task. Only that programmer estimates the task. A load factor is determined for each programmer based upon the number of ideal days of tasks the programmer was able to accomplish in recent iterations. Tasks are balanced amongst the developers based upon the estimates and load factors. (When implementing a task, the owner would grab another programmer and work on it together.)</p>
-
-<p>In Extreme Programming Explained (2nd Edition) (2004), Kent Beck has replaces the idea of iterations with a weekly cycle. The Weekly Cycle meeting has three goals
-* review progress and examine how last week actual progress matched the expected progress
-* customer chooses a week’s worth of stories to be implement this week
-* developers convert the stories into tasks. Developers sign up for tasks and estimate the ones they will be working on.</p>
-
-<p>Beck also advocates for writing automated tests for all the stories at the beginning of the week and then verify that they all pass on Friday when the stories are due.</p>
-
-<p>In Extreme Programming Explained (1999), Kent Beck describes an Ideal XP project has having
-* a short exploration phase where the product owner verifies
-customers practice writing stories
-developers experiment with unfamiliar technologies
-developers explore contrasting system architectures
-developers verify performance with realistic loads
-the team learns to trust each other,
-* planning
-* productionizing
-* maintenaince</p>
-
-<p><del> Here is the litmus test that I use for determining if a project has iterations:
-<em>Does the team commit to specific work getting done by a specific time?</em> Consider Scrum with a weekly sprint and the team’s commitment to the completion of 7 stories by Friday. If on Thursday the team is ahead of the game, then the team is free to work on chores and refactoring the code. If the team is behind and the work extends to Tuesday, then the team will need to commit to completing less work the following week. At Pivotal, the team works on the next needed story or chore. If the codebase requires a chore to be done, we do it regardless of the team’s current velocity. </del></p>
-
-<p><del> Why what we do is better
-A Scrum team spends time managing the commitments and emotional energy. (Not sure what I want to say here.) I could imagine a team missing a commitment and then doing good work to make up for it. It’s like doing amends after making a mistake. If my team didn’t honor our commitments for a sprint, I would make sure that it made the next sprint’s deadlines. While some people rely on the presence of stress…. at some point, this does not create a sustainable workplace. </del></p>
 ]]></content>
   </entry>
   
