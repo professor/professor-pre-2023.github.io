@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2015-08-30T11:27:57-07:00</updated>
+  <updated>2016-01-30T15:38:15-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Origins of Lean Extreme Programming]]></title>
+    <link href="http://professor.github.io/toddsedano/2016/01/30/the-origins-of-lean-extreme-programming.html"/>
+    <updated>2016-01-30T15:31:00-08:00</updated>
+    <id>http://professor.github.io/toddsedano/2016/01/30/the-origins-of-lean-extreme-programming</id>
+    <content type="html"><![CDATA[<p>Lean Extreme Programming is the combination of practices from Extreme Programming, Kanban software development, User centered design, and Lean Start-up.</p>
+
+<p>Kent Beck&rsquo;s Extreme Programming serves as the bedrock foundation for the practices at Pivotal. The company through Rob Mee experimented and piloted these ideas which formed the DNA for our software development practices. Over time these evolved. 1) The core technical practices remain the same. 2) Managing the backlog evolved from managing commitments for an iteration to just in time scheduling of work. By creating small stories, the need for story to task decomposition disappeared. Iteration planning meeting morphed into bi-directional communication about the immediate work to be done in order to create a shared context for the whole team. This removes unnecessary team task breakdown waste, mid-week checking in on programmers waste. It enables product to change the backlog whenever necessary by shifting stability from the iteration to the story. It enables developers to be present with the work and not focused into the future.  3) While Extreme Programming shifted the definition of features from engineers to product, XP did not specify how product determines these features (See below for more details.) XP enabled the developers to focus on the how and product to focus on the what.</p>
+
+<p>When I first learned about Extreme Programming, it was described to me as &ldquo;cowboy programming&rdquo; and an excuse for developers to run amok with little discipline. I have been programming and teaching it since 2005 and can currently cannot imagine a saner way of developing software. I find it incredibly disciplined, applicable to many contexts, and I rely more heavily on it for challenging projects.</p>
+
+<p>Lean Extreme Programming&rsquo;s programming in the present comes from Kanban software&rsquo;s idea of no iterations. The team looks to design and product to periodically communicate and discuss the next bit of work to be done. Typically this happens weekly or more frequently. Since the team is not focused on a fixed amount of work for a period of time,
+changes in priority do not necessarily interrupt team productivity. If design discovers a problem with a user interaction, a story to fix the issue can be added into the backlog and prioritized as the next most important thing to be done. Problems can arise if the team has no context on the work to be done, and performing an impromptu shared understanding meeting alleviates this problem. If too much trashing happens, the team needs to understand why there are daily fluxes in prioritization.</p>
+
+<p>When I first heard about no iterations, I thought the idea was crazy. However, having experienced it myself, I appreciate the ability to show up at work and see what is the next important thing to get done.</p>
+
+<p>Lean Extreme Programming&rsquo;s validation of features by users comes from user-centered design and popularized by Lean Startup. The approach prioritizes the user&rsquo;s needs over perceived business desires and suggests that conflicts between the two should result in examining the business desires in order to align with what the consumer wants. This idea also comes from Lean Thinking which defines delivering only what the user wants as value and delivering anything that the user does not want as waste.</p>
+
+<p>Lean Software Development is not a direct influence on Lean Extreme Programming. Several of the ideas of lean thinking for reducing do show up. (Co-located teams, short feedback loops, anyone can stop software development by starting a team huddle.) Just as it is problematic to apply construction practices to software development, so to it is to apply manufacturing practices to software development. In Lean Thinking, most of the attention is on optimizing the production of identical components on an assembly line, not discussing how to optimize the design process of creating new products. While some software products are simply configured, at Pivotal, most it is rare for us to build the same component over and over again. Whenever that occurs, we design it once or refactor the code so that adding more is a trivial exercise. Since the work that we do is not repetitive like an assembly line, applying manufacturing technics to software development can be problematic.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[“Renaming the Iteration Planning Meeting"]]></title>
@@ -89,7 +111,7 @@
   <entry>
     <title type="html"><![CDATA[Lean Extreme Programming]]></title>
     <link href="http://professor.github.io/toddsedano/2015/08/02/lean-extreme-programming.html"/>
-    <updated>2015-08-02T00:00:00-07:00</updated>
+    <updated>2015-08-02T15:31:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2015/08/02/lean-extreme-programming</id>
     <content type="html"><![CDATA[<p>I’m still editing this blog post and it is subject to change. While what I want to say isn’t changing, the words that I use to say it are changing.</p>
 
@@ -790,35 +812,6 @@ Here are the responses from each of my students:</p>
 <h2>History</h2>
 
 <p>While teaching &ldquo;the craft of software development&rdquo; to my masters students, one of my students wanted to write more readable code. I challenged each student to come up with metrics to see if they were improving. The student couldn&rsquo;t think of any. I realized that he would need to show his code to another developer to find out if the code was readable. He could track the feedback as a metric as seen in the comic: <a href="http://www.osnews.com/story/19266/WTFs_m">http://www.osnews.com/story/19266/WTFs_m</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Craftsmanship class 2]]></title>
-    <link href="http://professor.github.io/toddsedano/2011/03/16/craftsmanship-class-2.html"/>
-    <updated>2011-03-16T20:37:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2011/03/16/craftsmanship-class-2</id>
-    <content type="html"><![CDATA[<p>Question for group: what did you like about the kata?
-Random drawing on Kata implementation
-Random drawing on maiden speech
-Question for the group: how did the reading about estimation of our competence relate to this course?</p>
-
-<p>Responses include</p>
-
-<ul>
-<li>The kata was simple enough to let us explore our tools. Never did TDD in C++ before so it gave me time to try that out. I also liked it because it was complex enough to allow us to try complex ideas like recursion.</li>
-<li>The Kata had the right level of difficulty. It was a good programming (algorithms) exercise and a good TDD exercise</li>
-<li>Helped to start working towards the goal &ldquo;refresh &lsquo;java programming skills&rsquo; &rdquo;</li>
-<li>It helped me learn a new testing framework and helped get me back into programming mode after taking a few months break.</li>
-<li>Learning TDD in java</li>
-<li>Program was simple so I could concentrate on the practice</li>
-<li>Got me introduced to the testing framework</li>
-<li>Once setup was completed, it showed my that TDD is language/platform agnostic, which should be obvious but was surprising</li>
-<li>Learning how to do it in java using eclipse, it was easy</li>
-<li>first time doing TDD in Java</li>
-<li>learned how to use git with eclipse</li>
-</ul>
-
 ]]></content>
   </entry>
   

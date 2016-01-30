@@ -9,7 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Summary I suggest renaming the “Iteration” “Planning” Meeting (IPM) to accurately reflect Pivotal’s current goals and practices for that meeting. &hellip;">
+  <meta name="description" content="Lean Extreme Programming is the combination of practices from Extreme Programming, Kanban software development, User centered design, and Lean Start- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,55 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2016/01/30/the-origins-of-lean-extreme-programming.html">The Origins of Lean Extreme Programming</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-30T15:31:00-08:00" pubdate data-updated="true">Jan 30<span>th</span>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Lean Extreme Programming is the combination of practices from Extreme Programming, Kanban software development, User centered design, and Lean Start-up.</p>
+
+<p>Kent Beck&rsquo;s Extreme Programming serves as the bedrock foundation for the practices at Pivotal. The company through Rob Mee experimented and piloted these ideas which formed the DNA for our software development practices. Over time these evolved. 1) The core technical practices remain the same. 2) Managing the backlog evolved from managing commitments for an iteration to just in time scheduling of work. By creating small stories, the need for story to task decomposition disappeared. Iteration planning meeting morphed into bi-directional communication about the immediate work to be done in order to create a shared context for the whole team. This removes unnecessary team task breakdown waste, mid-week checking in on programmers waste. It enables product to change the backlog whenever necessary by shifting stability from the iteration to the story. It enables developers to be present with the work and not focused into the future.  3) While Extreme Programming shifted the definition of features from engineers to product, XP did not specify how product determines these features (See below for more details.) XP enabled the developers to focus on the how and product to focus on the what.</p>
+
+<p>When I first learned about Extreme Programming, it was described to me as &ldquo;cowboy programming&rdquo; and an excuse for developers to run amok with little discipline. I have been programming and teaching it since 2005 and can currently cannot imagine a saner way of developing software. I find it incredibly disciplined, applicable to many contexts, and I rely more heavily on it for challenging projects.</p>
+
+<p>Lean Extreme Programming&rsquo;s programming in the present comes from Kanban software&rsquo;s idea of no iterations. The team looks to design and product to periodically communicate and discuss the next bit of work to be done. Typically this happens weekly or more frequently. Since the team is not focused on a fixed amount of work for a period of time,
+changes in priority do not necessarily interrupt team productivity. If design discovers a problem with a user interaction, a story to fix the issue can be added into the backlog and prioritized as the next most important thing to be done. Problems can arise if the team has no context on the work to be done, and performing an impromptu shared understanding meeting alleviates this problem. If too much trashing happens, the team needs to understand why there are daily fluxes in prioritization.</p>
+
+<p>When I first heard about no iterations, I thought the idea was crazy. However, having experienced it myself, I appreciate the ability to show up at work and see what is the next important thing to get done.</p>
+
+<p>Lean Extreme Programming&rsquo;s validation of features by users comes from user-centered design and popularized by Lean Startup. The approach prioritizes the user&rsquo;s needs over perceived business desires and suggests that conflicts between the two should result in examining the business desires in order to align with what the consumer wants. This idea also comes from Lean Thinking which defines delivering only what the user wants as value and delivering anything that the user does not want as waste.</p>
+
+<p>Lean Software Development is not a direct influence on Lean Extreme Programming. Several of the ideas of lean thinking for reducing do show up. (Co-located teams, short feedback loops, anyone can stop software development by starting a team huddle.) Just as it is problematic to apply construction practices to software development, so to it is to apply manufacturing practices to software development. In Lean Thinking, most of the attention is on optimizing the production of identical components on an assembly line, not discussing how to optimize the design process of creating new products. While some software products are simply configured, at Pivotal, most it is rare for us to build the same component over and over again. Whenever that occurs, we design it once or refactor the code so that adding more is a trivial exercise. Since the work that we do is not repetitive like an assembly line, applying manufacturing technics to software development can be problematic.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -187,7 +236,7 @@
   
 
 
-<time datetime="2015-08-02T00:00:00-07:00" pubdate data-updated="true">Aug 2<span>nd</span>, 2015</time>
+<time datetime="2015-08-02T15:31:00-07:00" pubdate data-updated="true">Aug 2<span>nd</span>, 2015</time>
         
       </p>
     
@@ -774,66 +823,6 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html">TDD: Small Ah-Ha Moment on When to Use a Hash Instead of an Array</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-20T13:34:00-07:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&rsquo;m sharing a pleasant surprise I had during a recent Test Driven Development coding session. My tests had found a design that was delightful to me. TDD suggested that I use a hash where my natural tendency is to use an array.</p>
-
-<p>For the purpose of clarity, I&rsquo;m simplifying a very complicated data structure for this example. Let&rsquo;s say we wanted to show the user the most popular cheat codes for a set of video games. For the sake of the example, let&rsquo;s assume that this information is stored in the database in a way that is rather difficult to access. Thus the need for a method &ldquo;most_popular_cheats&rdquo; to do the heavy lifting.</p>
-
-<p>Let&rsquo;s recall some popular cheat codes. Contra&rsquo;s cheat code is &ldquo;UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START&rdquo;  and Mike Tyson&rsquo;s cheat code is &ldquo;007-373-5963&rdquo;</p>
-
-<p>From the control flow, I would already know the order of the video games that needed cheat codes, and expected that the method &ldquo;most_popular_cheats&rdquo; would just return an array.</p>
-
-<p>However, as I wrote the test first, I realized that the test wouldn&rsquo;t know the exact order of the video games. After I created some test data in the database, I wasn&rsquo;t certain how they would be retrieved, would the default sorting be by ID, or by name? The test didn&rsquo;t know and I didn&rsquo;t think the test should care. If the method returned a hash, I could just see if the hash contained the key->value pairs that I expected.</p>
-
-<pre><code>Hash: {contra.id =&gt; "UP, UP….", mike_tyson.id =&gt; "007-373-6963"}
-</code></pre>
-
-<p>On previous projects, following the traditional &ldquo;code then test&rdquo; development style, I have generated two parallel arrays to solve this problem kind of problem. One that contained the answer (what is my value in my hash), and the other that contained the index (what is my key in my hash.) On those projects, it had not occurred to me that a hash was a better data structure. My tests informed me on a programming nuance that I had previously missed.</p>
-
-<p>Here&rsquo;s the simplified version of test case that lead me to this small ah-ha moment.</p>
-
-<pre><code>contra = FactoryGirl.create(:video_game_with_popular_cheats)
-mike_tyson = FactoryGirl.create(:video_game_with_popular_cheats)
-
-popular_game_cheats = Game.most_popular_cheats
-popular_game_cheats = should be_a_kind_of(Hash)
-popular_game_cheats[contra.id].should = "UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START"
-popular_game_cheats[mike_tyson.id].should = "007-373-5963"
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -849,6 +838,10 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2016/01/30/the-origins-of-lean-extreme-programming.html">The Origins of Lean Extreme Programming</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2015/08/08/renaming-the-iteration-planning-meeting.html">“Renaming the Iteration Planning Meeting&#8221;</a>
       </li>
     
@@ -862,10 +855,6 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
     
       <li class="post">
         <a href="/toddsedano/2015/05/11/estimated-vs-actual-story-points.html">Estimated vs Actual Story Points</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2015/03/08/software-development-is-a-marathon-not-a-sprint.html">SE Marathon Quote</a>
       </li>
     
   </ul>
@@ -885,7 +874,7 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (2)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/lean-extreme-programming/'>Lean Extreme Programming (1)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (2)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
 </section>
 
   
@@ -894,7 +883,7 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Todd Sedano -
+  Copyright &copy; 2016 - Todd Sedano -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
