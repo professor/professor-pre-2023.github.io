@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Sedano Quotes | Todd Sedano]]></title>
-  <link href="http://professor.github.io/blog/categories/sedano-quotes/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Pair programming | Todd Sedano]]></title>
+  <link href="http://professor.github.io/blog/categories/pair-programming/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
   <updated>2016-02-27T09:48:27-08:00</updated>
   <id>http://professor.github.io/</id>
@@ -26,24 +26,6 @@ taking advantage of the teaching opportunity.</p>
 Typically the Performer is unaware that their pair is not learning anything.</p>
 
 <p>Since one of the most effective learning technique is &ldquo;learn by doing,&rdquo; the pair is missing a great learning opportunity.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SE Marathon Quote]]></title>
-    <link href="http://professor.github.io/toddsedano/2015/03/08/software-development-is-a-marathon-not-a-sprint.html"/>
-    <updated>2015-03-08T09:46:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2015/03/08/software-development-is-a-marathon-not-a-sprint</id>
-    <content type="html"><![CDATA[<p>Software Development is a marathon, not a sprint</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Frustration Quote]]></title>
-    <link href="http://professor.github.io/toddsedano/2013/07/11/frustration-quote.html"/>
-    <updated>2013-07-11T14:22:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2013/07/11/frustration-quote</id>
-    <content type="html"><![CDATA[<p>I am frustrated when my expectations do not align with reality &ndash; Todd Sedano</p>
 ]]></content>
   </entry>
   

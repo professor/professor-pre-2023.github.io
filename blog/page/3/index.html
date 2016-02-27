@@ -9,10 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Question for group: what did you like about the kata?
-Random drawing on Kata implementation
-Random drawing on maiden speech
-Question for the group: &hellip;">
+  <meta name="description" content="Rationale As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don& &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +65,76 @@ Question for the group: &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2011/03/30/code-readability-process.html">Code Readability Process</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-30T19:36:00-07:00" pubdate data-updated="true">Mar 30<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Rationale</h2>
+
+<p>As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don&rsquo;t receive much feedback on our code when we are writing it. Some companies will do code reviews, and the code review feedback may help us write clean code, but we may not understand how other developers are confused. This process allows the programmer to see first hand, what is causing another developer difficulty when they read the code.</p>
+
+<h2>Process</h2>
+
+<p>Preparation) There are two roles, a Programmer (someone who has created code) and a Reader (someone who will review provided code). I am an observer of the process.</p>
+
+<p>The Programmer will select recent production code that they have produced. I do not need to see the code and would prefer not to see it. I&rsquo;d prefer for you to select the most recent code you have created because then you won&rsquo;t be tempted to pick &ldquo;perfect&rdquo; or &ldquo;ideal&rdquo; code. We&rsquo;re just looking for typical code and presumably whatever you wrote recently is typical.</p>
+
+<p>I&rsquo;ll prompt the Reader with some open ended questions. The job of the Programmer is to simply receive the feedback.</p>
+
+<p>Step 1) Programmer, provide some context by explaining the user story (or story card) behind the code. Describe the requirements at a high level in business terms. The Reader should have some notion of the problem the Programmer was trying to solve and the added business value.</p>
+
+<p>Step 2) Reader, read through the code and think out lowd about your initial reaction and your thought process for understanding the code. If things are clear, mention that. If something is confusing, mention the questions that you are thinking. Reason outlowd. There are no wrong answers, this is an opportunity for the Programmer to see how another developer interacts with their code. Provide them with your first impressions.</p>
+
+<p>Do this until you&rsquo;ve walked through the code and think you understand it.</p>
+
+<p>Step 3) Programmer, thank the Reader for their invaluable input. Please just say &ldquo;Thank You&rdquo; &mdash; there is no need to defend your code</p>
+
+<p>Step 4) Reader, do you see ways to refactor the code? Are there opportunities to make it more dry?</p>
+
+<p>Step 5) Reader, if the Programmer left the company and you had to maintain this code, could you do it?</p>
+
+<p>Step 6) Programmer, are there any clarifying questions that you have for the Reader about their comments? (For example, is there something may be very clear to you, but wasn&rsquo;t clear to the Reader. This is your opportunity to better understand how you could make it more clear.)</p>
+
+<p>Step 7) Programmer, reflect on this experience and describe what was the most useful aspect of it?</p>
+
+<p>Step 8) Programmer, was this worth your time?</p>
+
+<p>Step 9) Programmer, please fill in the survey response to this exercise</p>
+
+<h2>History</h2>
+
+<p>While teaching &ldquo;the craft of software development&rdquo; to my masters students, one of my students wanted to write more readable code. I challenged each student to come up with metrics to see if they were improving. The student couldn&rsquo;t think of any. I realized that he would need to show his code to another developer to find out if the code was readable. He could track the feedback as a metric as seen in the comic: <a href="http://www.osnews.com/story/19266/WTFs_m">http://www.osnews.com/story/19266/WTFs_m</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -655,87 +722,6 @@ b) You&rsquo;ll need to get a ca-bundle.crt file. You should add in certificate 
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html">Legitimate Cross Site Scripting (CSX) With AJAX</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-07-14T15:50:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>How do you do legitimate cross site scripting?</p>
-
-<p>If you control the servers involved, this is how you can do cross site scripting with AJAX.</p>
-
-<p>I recently came across a situation where I wanted to do an AJAX load from one server to another server. Internally to our campus, our students use a wiki and a ruby on rails web application. I wanted information contained in our rails application to show up on the wiki. My first impulse was to use jquery&rsquo;s load method, however, I received the following error:</p>
-
-<p><red>Access to restricted URI denied&#8221; code: &ldquo;1012</red></p>
-
-<p>My first work around is just to avoid the AJAX load and use an iframe. However, inspiration hit me a few weeks ago and I tried a different solution. Since the AJAX load can retrieve information from the same website, maybe I should request a special url on the same machine and use apache to hide the fact that the content is coming from a different domain name. This can be accomplished with the apache ProxyPass command.</p>
-
-<p>Let me give a concrete example. Say you have two websites: a static site that serves html pages through apache from the filesystem (<a href="http://static.sv.cmu.edu">http://static.sv.cmu.edu</a>) and a dynamic site using an application server with a database (<a href="http://dynamic.sv.cmu.edu">http://dynamic.sv.cmu.edu</a>). You want some of the information from the dynamic site to show up on the static site. You want to allow users to add comments to a static webpage where the comments are rendered by the dynamic site.
-Your first attempt might be:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$('#comments').load('http://dynamic.sv.cmu.edu/comments');</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Which results in the error.
-In static.sv.cmu.edu&rsquo;s httpd.conf file add the following line:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ProxyPass /comments http://dynamic.sv.cmu.edu/comments</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now from your browser window, test to see if you can access the dynamic data from the static machine: <a href="http://static.sv.cmu.edu/comments">http://static.sv.cmu.edu/comments</a> should give you the same information as would <a href="http://dynamic.sv.cmu.edu/comments">http://dynamic.sv.cmu.edu/comments</a>
-Now your AJAX code will work.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">&lt;/script>
-</span><span class='line'>&lt;script type="text/javascript">
-</span><span class='line'> //&lt;![CDATA[
-</span><span class='line'>$(document).ready(function(){
-</span><span class='line'> $('#comments').load('http://dynamic.sv.cmu.edu/comments');
-</span><span class='line'>});
-</span><span class='line'>//]]>
-</span><span class='line'>&lt;/script></span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -753,6 +739,10 @@ Now your AJAX code will work.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2016/02/27/performance-pair-programming.html">Performance Pair Programming</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2016/01/30/the-origins-of-lean-extreme-programming.html">The Origins of Lean Extreme Programming</a>
       </li>
     
@@ -766,10 +756,6 @@ Now your AJAX code will work.</p>
     
       <li class="post">
         <a href="/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs.html">OS X Filesystem and Case Sensitive Bugs</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2015/05/11/estimated-vs-actual-story-points.html">Estimated vs Actual Story Points</a>
       </li>
     
   </ul>
@@ -789,7 +775,7 @@ Now your AJAX code will work.</p>
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/lean-extreme-programming/'>Lean Extreme Programming (2)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (2)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/lean-extreme-programming/'>Lean Extreme Programming (2)</a></li><li><a href='/blog/categories/pair-programming/'>Pair programming (1)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (3)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
 </section>
 
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2016-01-30T15:39:56-08:00</updated>
+  <updated>2016-02-27T09:48:27-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Performance pair programming]]></title>
+    <link href="http://professor.github.io/toddsedano/2016/02/27/performance-pair-programming.html"/>
+    <updated>2016-02-27T09:39:00-08:00</updated>
+    <id>http://professor.github.io/toddsedano/2016/02/27/performance-pair-programming</id>
+    <content type="html"><![CDATA[<p>Performance pair programming is when one developer drives the entire implementation while the other watches.
+It is as if someone is solo programming with an audience. The performer prefers accomplishing a task more than
+taking advantage of the teaching opportunity.</p>
+
+<p>When this occurs, there is no collaboration or discussion about how to proceed. Questions that the watcher asks are often ignored.
+Typically the Performer is unaware that their pair is not learning anything.</p>
+
+<p>Since one of the most effective learning technique is &ldquo;learn by doing,&rdquo; the pair is missing a great learning opportunity.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Origins of Lean Extreme Programming]]></title>
@@ -769,49 +785,6 @@ Here are the responses from each of my students:</p>
 <li>The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Code Readability Process]]></title>
-    <link href="http://professor.github.io/toddsedano/2011/03/30/code-readability-process.html"/>
-    <updated>2011-03-30T19:36:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2011/03/30/code-readability-process</id>
-    <content type="html"><![CDATA[<h2>Rationale</h2>
-
-<p>As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don&rsquo;t receive much feedback on our code when we are writing it. Some companies will do code reviews, and the code review feedback may help us write clean code, but we may not understand how other developers are confused. This process allows the programmer to see first hand, what is causing another developer difficulty when they read the code.</p>
-
-<h2>Process</h2>
-
-<p>Preparation) There are two roles, a Programmer (someone who has created code) and a Reader (someone who will review provided code). I am an observer of the process.</p>
-
-<p>The Programmer will select recent production code that they have produced. I do not need to see the code and would prefer not to see it. I&rsquo;d prefer for you to select the most recent code you have created because then you won&rsquo;t be tempted to pick &ldquo;perfect&rdquo; or &ldquo;ideal&rdquo; code. We&rsquo;re just looking for typical code and presumably whatever you wrote recently is typical.</p>
-
-<p>I&rsquo;ll prompt the Reader with some open ended questions. The job of the Programmer is to simply receive the feedback.</p>
-
-<p>Step 1) Programmer, provide some context by explaining the user story (or story card) behind the code. Describe the requirements at a high level in business terms. The Reader should have some notion of the problem the Programmer was trying to solve and the added business value.</p>
-
-<p>Step 2) Reader, read through the code and think out lowd about your initial reaction and your thought process for understanding the code. If things are clear, mention that. If something is confusing, mention the questions that you are thinking. Reason outlowd. There are no wrong answers, this is an opportunity for the Programmer to see how another developer interacts with their code. Provide them with your first impressions.</p>
-
-<p>Do this until you&rsquo;ve walked through the code and think you understand it.</p>
-
-<p>Step 3) Programmer, thank the Reader for their invaluable input. Please just say &ldquo;Thank You&rdquo; &mdash; there is no need to defend your code</p>
-
-<p>Step 4) Reader, do you see ways to refactor the code? Are there opportunities to make it more dry?</p>
-
-<p>Step 5) Reader, if the Programmer left the company and you had to maintain this code, could you do it?</p>
-
-<p>Step 6) Programmer, are there any clarifying questions that you have for the Reader about their comments? (For example, is there something may be very clear to you, but wasn&rsquo;t clear to the Reader. This is your opportunity to better understand how you could make it more clear.)</p>
-
-<p>Step 7) Programmer, reflect on this experience and describe what was the most useful aspect of it?</p>
-
-<p>Step 8) Programmer, was this worth your time?</p>
-
-<p>Step 9) Programmer, please fill in the survey response to this exercise</p>
-
-<h2>History</h2>
-
-<p>While teaching &ldquo;the craft of software development&rdquo; to my masters students, one of my students wanted to write more readable code. I challenged each student to come up with metrics to see if they were improving. The student couldn&rsquo;t think of any. I realized that he would need to show his code to another developer to find out if the code was readable. He could track the feedback as a metric as seen in the comic: <a href="http://www.osnews.com/story/19266/WTFs_m">http://www.osnews.com/story/19266/WTFs_m</a></p>
 ]]></content>
   </entry>
   
