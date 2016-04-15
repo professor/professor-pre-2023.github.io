@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2016-02-27T09:48:27-08:00</updated>
+  <updated>2016-04-14T20:48:34-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Theory of Sustainable Software Development through Taem Code Ownership]]></title>
+    <link href="http://professor.github.io/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership.html"/>
+    <updated>2016-04-14T20:43:00-07:00</updated>
+    <id>http://professor.github.io/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership</id>
+    <content type="html"><![CDATA[<p>The theory describes how teams can continue to deliver value in spite of team disruptions. The theory is a collection of synergistic principles, policies, and practices encouraging a positive attitude towards team disruption, knowledge sharing and continuity, as well as caring about code quality. The Theory of Sustainable Software Development through Team Code Ownership is fully presented in the paper.</p>
+
+<h2>Principles</h2>
+
+<p>The theory underlying principles are as follows: <strong>Keep a Positive Attitude Toward Team Disruption</strong> by recognizing the value that new team members bring with their fresh perspectives and challenging team assumptions; <strong>Encourage Knowledge Sharing and Continuity</strong> by enabling the knowledge to spread from one developer to the next, and eventually, reach the entire team; and <strong>Care about Code Quality</strong> by recognizing that a well cared for code base makes modifications easier.</p>
+
+<h2>Policies</h2>
+
+<p><strong>Team Code Ownership</strong> empowers engineers to modify any part of the system under the team’s responsibility. When engineers agree that a section of the system needs to be changed, the team proactively and tacitly authorizes the change. <strong>Shared Schedule</strong> aligns the team’s work schedule to enable efficient daily rotation of the developers working on a track of feature development. <strong>Avoid Technical Debt</strong> enables a team to balance feature development with Continuous Refactoring. When a team is pressured to finish work by a deadline, it might be tempted to focus on feature delivery, stop refactoring, and hence take on technical debt. The team should prefer consistent software development by caretaking the code and leaving the code base in a state where any member of the team can pick up the next story for that part of the code base. This requires product and management support to avoid unnecessary thrashing of developers rushing incomplete work by taking on technical debt to deliver a feature early.</p>
+
+<h2>Removing Knowledge Silos Practices</h2>
+
+<p>By sharing knowledge throughout a team, any pair will have enough context to understand what needs to be done and know who to ask if they need more details. <strong>Continuous Pair Programming</strong> reinforces that there is no single owner for any line of written code. The team owns the code. As two developers collaborate, they generate shared context. That knowledge will spread around the team the following day via <strong>Overlapping Pair Rotation</strong> which explicitly rotates people off a track of work in order to cross-pollinate knowledge and avoid emergent knowledge silos and individual ownership. <strong>Knowledge Pollination</strong> is activities that promote knowledge sharing in unstructured ways between pairs and includes activities such as daily stand-ups, writing on whiteboards, overhearing a conversation, calling out an update to the team, or simply reaching out to others to ask questions as needed.</p>
+
+<h2>Caretaking the Code Practices</h2>
+
+<p>By caretaking the code, the team enables any pair to be able to work on any story in the backlog.  <strong>Test Driven Development (TDD) / Behavior Driven Development (BDD)</strong> creates a safety net of tests that give any pair the courage to modify the system without the fear of breaking some other part of the system unexpectedly. The tests become a specification on how each component is used. <strong>Continuous Refactoring</strong> increases code quality by increasing code discoverability (knowing where to find the responsible code), increasing code readability, and increasing the simplicity of design.  <strong>Live on Master</strong> enables the team to perform Continuous Refactoring as the code is easy to integrate. When teams have long running development branches, merge conflicts discourage Continuous Refactoring.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Performance pair programming]]></title>
@@ -757,34 +782,6 @@ Team Opinionize (Gaurav Sinha, Rob Engel, Phil Melzer, Vinay Prasad)Our strategy
 We need to understand our target customers. We believe that it could be anyone who has the problem of categorizing large amounts of data but we want to narrow down on our users. Adam mentioned that our probable users could be geeks who use / edit Wikipedia articles. For this reason, we will present a case for members in the panel to use the product, based on our knowledge of their interests. Their feedback will be valuable in determining whether the product is for everyone or not.
 We want to get feedback about what makes the product viral? And why? The panel consists of people who have the experience in the market and can judge what is going to hit or what is not.
 We plan to keep our description of the product at a very high level and at the same time we would explain the concept in simple terms, which a non-geeky person can understand. Keeping the description at a high level allows room for improvement based on panel feedback. At the same time we would like to explain the concept with daily life problems as examples so that its clear to the audience. We plan to do a live demo of Opinionize with these examples, which would help the panel get a feel of the product.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Career and Software Craftsmanship]]></title>
-    <link href="http://professor.github.io/toddsedano/2011/05/04/career-and-software-craftsmanship.html"/>
-    <updated>2011-05-04T23:29:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2011/05/04/career-and-software-craftsmanship</id>
-    <content type="html"><![CDATA[<p>Students in the craft of software development course read Sections &ldquo;Walking the long road&rdquo; and &ldquo;Draw your own map&rdquo; in the Apprenticeship Patterns book. We then discussed whether their notions of their career had been affected by the course and the readings. During our conversation, some students talked about the idea that people can&rsquo;t stay technical their entire careers. (I see this as a misperception, and discussed several people I know who are still programming late into their careers.)
-My full time students are actively interviewing for jobs when they graduate. Most had not considered looking for a job that would enhance their software craftsmanship skills, while salary, prestige of the company, and projects they were working on dominated their searching process.
-From my Improv for Software Engineers course, I have noticed that my master students who are in their 20&rsquo;s and 30&rsquo;s have a hard time picturing their future in great detail and will actively refuse to consider life later on unless coached carefully to do so. They lump ages 50 to 80 in one bucket, the distant future. In my improv exercise, I have them walk around the room and I ask them to picture life as it was when they are a certain age. For the most part, they are able to recall and relive life at the age of 7, 12, 18, 23. However, as we get into the future, it&rsquo;s harder for them, and after the age of 60 most stop the exercise and resort to comedy to deal with the tension of thinking about the distant future.
-We discussed two hypothetical job offers. One pays $20,000 more money, the other allows them to grow their software development skills. Which one would they pick?
-While the conversation was enlightening for the students, I wonder how much of this will stick when they are in the throes of making job offer decisions. (Action item) It would be interesting to survey the students the students once they are in their jobs to discover how many offers they had and what was their decision making process to get to the final offer. In other words, did our intellectual conversation about their careers have an immediate impact on their choices a few months from now?
-Here are the responses from each of my students:</p>
-
-<ul>
-<li>The reading made me think about my short-term and long-term vision of my career. I have not reached an answer, but I definitely have to think about which of the following is most important: a) advancement for position and salary b) enjoying the work and working on what I want and what interests me.</li>
-<li>Before reading the Apprenticeship Patterns, I didn&rsquo;t think about actively trying to improve my skills as a software engineer / craftsman. It was all about doing just enough to get the job done!</li>
-<li>The reading has made me realize that there is a huge learning curve before I could reach anywhere near to being an expert software developer</li>
-<li>Thinking about where I want to be 10+ years down the line is hard; planning so far in advance is a bit undesirable. Staying technical my work like is an interesting idea.</li>
-<li>Made me think long term about my career options and whether or not to stay a developer the entire way or to take other options that open up later on</li>
-<li>Made me think of where I want to be in 15 years. I don&rsquo;t want to be a programmer for life.</li>
-<li>The reading makes me think about whether I want to be a fully technical guy or not. It&rsquo;s hard to coordinate your interests and job requirements</li>
-<li>Dream about myself 10,20,30,40 years. What if my manager asked me to fill in a management role? Should I pass for the sake of programming?</li>
-<li>I always hear that you can not continue coding for living! even after I reach 40s of age. How I might change my mind about that?</li>
-<li>The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</li>
-</ul>
-
 ]]></content>
   </entry>
   

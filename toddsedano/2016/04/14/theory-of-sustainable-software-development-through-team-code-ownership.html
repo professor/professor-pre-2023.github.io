@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Rethinking SEMAT card affordance - Todd Sedano</title>
+  <title>Theory of Sustainable Software Development through Taem Code Ownership - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="A possible solution While I&rsquo;m an avid player of card games and board games, the SEMAT card format does not reflect how I think about the alphas &hellip;">
+  <meta name="description" content="The theory describes how teams can continue to deliver value in spite of team disruptions. The theory is a collection of synergistic principles, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance.html">
+  <link rel="canonical" href="http://professor.github.io/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Rethinking SEMAT Card Affordance</h1>
+      <h1 class="entry-title">Theory of Sustainable Software Development Through Taem Code Ownership</h1>
     
     
       <p class="meta">
@@ -84,42 +84,30 @@
   
 
 
-<time datetime="2013-05-22T01:19:00-07:00" pubdate data-updated="true">May 22<span>nd</span>, 2013</time>
+<time datetime="2016-04-14T20:43:00-07:00" pubdate data-updated="true">Apr 14<span>th</span>, 2016</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h3>A possible solution</h3>
+<div class="entry-content"><p>The theory describes how teams can continue to deliver value in spite of team disruptions. The theory is a collection of synergistic principles, policies, and practices encouraging a positive attitude towards team disruption, knowledge sharing and continuity, as well as caring about code quality. The Theory of Sustainable Software Development through Team Code Ownership is fully presented in the paper.</p>
 
-<p>While I&rsquo;m an avid player of card games and board games, the SEMAT card format does not reflect how I think about the alphas, which are a collection of states.</p>
+<h2>Principles</h2>
 
-<p>Here is a mock prototype of an alternative physical format for the SEMAT alphas.</p>
+<p>The theory underlying principles are as follows: <strong>Keep a Positive Attitude Toward Team Disruption</strong> by recognizing the value that new team members bring with their fresh perspectives and challenging team assumptions; <strong>Encourage Knowledge Sharing and Continuity</strong> by enabling the knowledge to spread from one developer to the next, and eventually, reach the entire team; and <strong>Care about Code Quality</strong> by recognizing that a well cared for code base makes modifications easier.</p>
 
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/semat_strip_thumbnail.jpg" alt=""/></span></span></p>
+<h2>Policies</h2>
 
-<p>Each alpha is a strip of cards folded much like a scroll with the &ldquo;highest&rdquo; state on the inside, and the lowest state on the outside. Starting with the &ldquo;lowest&rdquo; state, the user of SEMAT, can incrementally unfold the strip comparing the current state with the next possible state. If the next possible state is achieved, then the user can continue to unroll the strip.</p>
+<p><strong>Team Code Ownership</strong> empowers engineers to modify any part of the system under the team’s responsibility. When engineers agree that a section of the system needs to be changed, the team proactively and tacitly authorizes the change. <strong>Shared Schedule</strong> aligns the team’s work schedule to enable efficient daily rotation of the developers working on a track of feature development. <strong>Avoid Technical Debt</strong> enables a team to balance feature development with Continuous Refactoring. When a team is pressured to finish work by a deadline, it might be tempted to focus on feature delivery, stop refactoring, and hence take on technical debt. The team should prefer consistent software development by caretaking the code and leaving the code base in a state where any member of the team can pick up the next story for that part of the code base. This requires product and management support to avoid unnecessary thrashing of developers rushing incomplete work by taking on technical debt to deliver a feature early.</p>
 
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/semat_current_next_thumbnail.jpg" height=116 alt=""/></span></span></p>
+<h2>Removing Knowledge Silos Practices</h2>
 
-<p>Now it is impossible to accidentally loose a state in the alpha, and displaying the current state for all alphas in a project takes up roughly 1/6 of the room of the SEMAT board.</p>
+<p>By sharing knowledge throughout a team, any pair will have enough context to understand what needs to be done and know who to ask if they need more details. <strong>Continuous Pair Programming</strong> reinforces that there is no single owner for any line of written code. The team owns the code. As two developers collaborate, they generate shared context. That knowledge will spread around the team the following day via <strong>Overlapping Pair Rotation</strong> which explicitly rotates people off a track of work in order to cross-pollinate knowledge and avoid emergent knowledge silos and individual ownership. <strong>Knowledge Pollination</strong> is activities that promote knowledge sharing in unstructured ways between pairs and includes activities such as daily stand-ups, writing on whiteboards, overhearing a conversation, calling out an update to the team, or simply reaching out to others to ask questions as needed.</p>
 
-<p>So what do we call these new SEMAT cards? SEMAT strips, SEMAT rolls, SEMAT scrolls? I&rsquo;m open to suggestions.</p>
+<h2>Caretaking the Code Practices</h2>
 
-<h3>Background &mdash; the problem</h3>
-
-<p>When I first saw a set of SEMAT cards, my instinct told me something wasn&rsquo;t quite right. I collect playing cards. I like unusual cards sets such as my agile estimation cards, XP training cards, improv feeling cards.</p>
-
-<p>When I laid out six cards for an alpha, it felt messy. I could easily get these out of order, and the order matters in a single alpha. If I piled up several alphas without a rubber band, I could easily mix them together.</p>
-
-<p>I pictured myself introducing this at a training session. With agile estimation cards, I just hand out a deck, yet for SEMAT I would want to hand one alpha at a time. If SEMAT cards were printed in a deck, taking out one alpha at a time would be time consuming.</p>
-
-<p>I do think agile estimation cards work well. There are four sets in one deck, just like regular playing cards. Assuming that my five year old daughter found the deck and randomized it, sorting it wouldn&rsquo;t take too long with four sets. However SEMAT cards, there are many alphas, and sorting it would be tedious.</p>
-
-<h3>Abacus as an alternative metaphor</h3>
-
-<p>I stared considering an abacus. Each rod of the abacus could represent an alpha. Each bead on a rod could represent a state card. The space between the beads on the left and the beads on the right could represent the current state. Yet creating an abacus for SEMAT seemed unfeasible. Then it occurred to me, I could tape the SEMAT cards into a strip.</p>
+<p>By caretaking the code, the team enables any pair to be able to work on any story in the backlog.  <strong>Test Driven Development (TDD) / Behavior Driven Development (BDD)</strong> creates a safety net of tests that give any pair the courage to modify the system without the fear of breaking some other part of the system unexpectedly. The tests become a specification on how each component is used. <strong>Continuous Refactoring</strong> increases code quality by increasing code discoverability (knowing where to find the responsible code), increasing code readability, and increasing the simplicity of design.  <strong>Live on Master</strong> enables the team to perform Continuous Refactoring as the code is easy to integrate. When teams have long running development branches, merge conflicts discourage Continuous Refactoring.</p>
 </div>
 
 
@@ -142,12 +130,12 @@
   
 
 
-<time datetime="2013-05-22T01:19:00-07:00" pubdate data-updated="true">May 22<span>nd</span>, 2013</time>
+<time datetime="2016-04-14T20:43:00-07:00" pubdate data-updated="true">Apr 14<span>th</span>, 2016</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/semat/'>SEMAT</a>
+    <a class='category' href='/blog/categories/lean-extreme-programming/'>Lean Extreme Programming</a>
   
 </span>
 
@@ -156,7 +144,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance.html" data-via="" data-counturl="http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership.html" data-via="" data-counturl="http://professor.github.io/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -167,10 +155,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html" title="Previous Post: Improving code readability -- turning comments into methods">&laquo; Improving code readability -- turning comments into methods</a>
+        <a class="basic-alignment left" href="/toddsedano/2016/02/27/performance-pair-programming.html" title="Previous Post: Performance pair programming">&laquo; Performance pair programming</a>
       
-      
-        <a class="basic-alignment right" href="/toddsedano/2013/07/11/frustration-quote.html" title="Next Post: Frustration Quote">Frustration Quote &raquo;</a>
       
     </p>
   </footer>
