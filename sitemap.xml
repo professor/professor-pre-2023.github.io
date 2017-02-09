@@ -163,8 +163,10 @@
         <lastmod>2015-05-13T20:28:16-07:00</lastmod>
     </url>
     <url>
-        <loc>http://professor.github.io/toddsedano/2015/08/02/lean-extreme-programming.html</loc>
-        <lastmod>2016-01-30T15:36:27-08:00</lastmod>
+        <loc>
+            http://professor.github.io/toddsedano/2015/08/02/collaborative-software-development.html
+        </loc>
+        <lastmod>2017-02-08T21:21:56-08:00</lastmod>
     </url>
     <url>
         <loc>
@@ -174,9 +176,9 @@
     </url>
     <url>
         <loc>
-            http://professor.github.io/toddsedano/2016/01/30/the-origins-of-lean-extreme-programming.html
+            http://professor.github.io/toddsedano/2016/01/30/the-origins-of-collaborative-software-development.html
         </loc>
-        <lastmod>2016-01-30T15:39:12-08:00</lastmod>
+        <lastmod>2017-02-08T21:22:57-08:00</lastmod>
     </url>
     <url>
         <loc>
@@ -196,7 +198,13 @@
     </url>
     <url>
         <loc>http://professor.github.io/toddsedano/2016/11/07/remote-pair-programming.html</loc>
-        <lastmod>2016-11-07T09:28:37-08:00</lastmod>
+        <lastmod>2016-11-07T09:30:39-08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/toddsedano/2017/02/08/we-know-the-way-phoentic-lyrics-moana.html
+        </loc>
+        <lastmod>2017-02-08T21:17:43-08:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/about-me/</loc>
@@ -204,11 +212,11 @@
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2016-11-07T09:28:37-08:00</lastmod>
+        <lastmod>2017-02-08T21:22:57-08:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/</loc>
-        <lastmod>2016-11-07T09:28:37-08:00</lastmod>
+        <lastmod>2017-02-08T21:22:57-08:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/research.html</loc>
