@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Lean Extreme Programming | Todd Sedano]]></title>
-  <link href="http://professor.github.io/blog/categories/lean-extreme-programming/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Collaborative Software Dvelopment | Todd Sedano]]></title>
+  <link href="http://professor.github.io/blog/categories/collaborative-software-dvelopment/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-02-08T21:35:14-08:00</updated>
+  <updated>2017-05-30T09:09:54-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
