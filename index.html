@@ -9,7 +9,8 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="If you are using Grounded Theory to conduct research in software engineering, I would love to hear from you. Please contact me at [professor at gmail &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +66,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2017/07/06/effective-pair-programming-practices.html">Effective Pair Programming Practices</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-07-06T15:56:00-07:00" pubdate data-updated="true">Jul 6<span>th</span>, 2017</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -551,6 +588,8 @@ changes in priority do not necessarily interrupt team productivity. If design di
 <h1>Conclusion</h1>
 
 <p>I recommend we replace “Iteration Planning Meeting” with a phrase that accurately describes the meeting’s purpose and goals. I suggest “Shared Understanding Meeting” as a simple draft proposal which is intended to encourage discussion about its disadvantages or the purpose of generating better proposals.</p>
+
+<p>Update 5/10/2017: I now suggest &ldquo;Story Discussion Meeting&rdquo; or &ldquo;Story Estimation Meeting&rdquo;</p>
 </div>
   
   
@@ -626,70 +665,6 @@ changes in priority do not necessarily interrupt team productivity. If design di
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs.html">OS X Filesystem and Case Sensitive Bugs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-05-13T20:16:00-07:00" pubdate data-updated="true">May 13<span>th</span>, 2015</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>Problem:</h3>
-
-<p>On one project, our test cases would be green locally, but then fail on CI due to filesystem case sensitivity differences between OS X (our development environment) and linux (our QA and production environments.). By default, OS X treats ~/project/myFile as equals to ~/projectMyFile. Thus if the code had a typo on an import, it might pass locally when it shouldn&rsquo;t.</p>
-
-<h3>Solution:</h3>
-
-<p>I wanted to use the base pivotal OS X image and sprout wrap. The strategy is to create a case sensitive partition and symlink the workspace directory to it. Sprout wrap has issues with case sensitivity (pivotal_ide_prefs in particular), so we would run that from the user&rsquo;s home directory, but run all project materials in the case sensitive directory.</p>
-
-<p>Alternative solution: getting the pivotal OS X image on a USB key might allow us to configure the default partition&rsquo;s setting on installation.</p>
-
-<p>These steps could work with an existing machine, but I only tested on a clean install</p>
-
-<p>Step 1) install the Pivotal Labs OS X image</p>
-
-<p>Step 2) using Disk Utility, split the only partition in half. For the new partition select &ldquo;Mac OS Extended (Case-sensitive, Journaled)&rdquo;</p>
-
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/screen_shot_partition.png" alt=""/></span></span></p>
-
-<p>Step 3) create a workspace directory in the new partition
-mkdir /Volumes/CASE_SENSITIVE/workspace</p>
-
-<p>Step 4) symlink ~pivotal/workspace to the new partition&rsquo;s workspace directory.
-ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
-
-<p>Step 5) install sprout-wrap from ~, NOT from ~/workspace. I noticed that the pivotal_ide_prefs wouldn&rsquo;t fully work with case sensitive on. (There may be other recipes that have issues too.)</p>
-
-<p>Step 6) install your project code in ~/workspace</p>
-
-<p>Note that everything in Applications et al.  will be typical Mac Setup, but we were fine with that.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -705,6 +680,10 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2017/07/06/effective-pair-programming-practices.html">Effective Pair Programming Practices</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
       </li>
     
@@ -718,10 +697,6 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
     
       <li class="post">
         <a href="/toddsedano/2016/05/28/team-code-ownership.html">Team Code Ownership</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership.html">Theory of Sustainable Software Development Through Team Code Ownership</a>
       </li>
     
   </ul>

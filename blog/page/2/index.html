@@ -9,7 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="On my last project, I tried an experiment looking at estimation accuracy. My results run counter the conventional wisdom of software engineering &hellip;">
+  <meta name="description" content="Problem: On one project, our test cases would be green locally, but then fail on CI due to filesystem case sensitivity differences between OS X (our &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2015/05/13/os-x-filesystem-and-case-sensitive-bugs.html">OS X Filesystem and Case Sensitive Bugs</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-13T20:16:00-07:00" pubdate data-updated="true">May 13<span>th</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>Problem:</h3>
+
+<p>On one project, our test cases would be green locally, but then fail on CI due to filesystem case sensitivity differences between OS X (our development environment) and linux (our QA and production environments.). By default, OS X treats ~/project/myFile as equals to ~/projectMyFile. Thus if the code had a typo on an import, it might pass locally when it shouldn&rsquo;t.</p>
+
+<h3>Solution:</h3>
+
+<p>I wanted to use the base pivotal OS X image and sprout wrap. The strategy is to create a case sensitive partition and symlink the workspace directory to it. Sprout wrap has issues with case sensitivity (pivotal_ide_prefs in particular), so we would run that from the user&rsquo;s home directory, but run all project materials in the case sensitive directory.</p>
+
+<p>Alternative solution: getting the pivotal OS X image on a USB key might allow us to configure the default partition&rsquo;s setting on installation.</p>
+
+<p>These steps could work with an existing machine, but I only tested on a clean install</p>
+
+<p>Step 1) install the Pivotal Labs OS X image</p>
+
+<p>Step 2) using Disk Utility, split the only partition in half. For the new partition select &ldquo;Mac OS Extended (Case-sensitive, Journaled)&rdquo;</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/screen_shot_partition.png" alt=""/></span></span></p>
+
+<p>Step 3) create a workspace directory in the new partition
+mkdir /Volumes/CASE_SENSITIVE/workspace</p>
+
+<p>Step 4) symlink ~pivotal/workspace to the new partition&rsquo;s workspace directory.
+ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
+
+<p>Step 5) install sprout-wrap from ~, NOT from ~/workspace. I noticed that the pivotal_ide_prefs wouldn&rsquo;t fully work with case sensitive on. (There may be other recipes that have issues too.)</p>
+
+<p>Step 6) install your project code in ~/workspace</p>
+
+<p>Note that everything in Applications et al.  will be typical Mac Setup, but we were fine with that.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -717,54 +781,6 @@ Here is some of their feedback: (list is unsorted)</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2011/12/08/preparing-yourself-for-a-software-development-career.html">Preparing Yourself for a Software Development Career</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-08T14:43:00-08:00" pubdate data-updated="true">Dec 8<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Sometimes people ask me, &ldquo;what should I do to transition from my current career into a software development career?&rdquo; Many have answered this question, but here are my suggestions.</p>
-
-<p><strong>Talk to people who are software developers.</strong> See if you will like doing what they are doing. One of my good friends entered the field not because they loved writing code, but they wanted to earn a great salary. We both finished the undergraduate computer science program at Carnegie Mellon University. He hated the courses and once he graduated, he continued to hate programming while in industry. Before you invest significant time and money into a new career check it out.</p>
-
-<p>If you are going to be writing code, then you will also be finding defects. This can be a very annoying, frustrating, and unfulfilling part of the job. For example, there&rsquo;s a new third-party library you will want to use (or a new language feature, or a new framework). You&rsquo;ll read the API and write code that should work. But it doesn&rsquo;t. How do you figure out what is going wrong. This is a hard skill to learn. Sometimes typing it into google will solve the answer, but it wont&#8217; always work and it is clear that you don&rsquo;t have enough knowledge of what is really going on. It will make you feel like an idiot. Debugging is part of the job. There are some who really enjoy figuring out why something is broken and enjoy the journey. I only enjoy the destination, working code. Teachers have to do grading. Nurses have to deal with blood. We fix defects.</p>
-
-<p><strong>Find a mentor.</strong> Find a friend who is good at software development and learn everything that they know. Write software with them. Do paired programming. If you don&rsquo;t know anyone, find some one. Go where the geeks are hanging out. Search meetup.com for groups that meet in your area. If you still can&rsquo;t find someone, it&rsquo;s probably because you aren&rsquo;t trying. If you already know a programming language, work with people in an open source project. Let them know that you want to help and could they mentor you. Several core contributors to projects began their journey this way. Learn the programming language that your mentor knows.</p>
-
-<p><strong>Learn an object-oriented programming language.</strong> Take courses at your local community college. Start going to meetups. Contribute to open source projects. If you skipped the &ldquo;find a mentor&rdquo; step because it is too hard, go back and do it. Working with open source projects can be a great way to find a mentor. Note that you don&rsquo;t necessarily need to know an &ldquo;object-oriented&rdquo; programming language, but most people in industry will expect you to know the fundamentals behind object-oriented programming, so you might as well start here.</p>
-
-<p><strong>Learn the basics.</strong> Take courses at your local community college in data structures and algorithms.</p>
-
-<p>While there are great books that will help you on your journey, reading will only get you so far. The easiest way to learn the craft of software development is by writing code with someone else. Once you start writing code and begin to get the basics, I would recommend checking out &ldquo;Apprenticeship Patterns&rdquo; and &ldquo;New Programmer&rsquo;s Survival Manual&rdquo;</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -782,6 +798,10 @@ Here is some of their feedback: (list is unsorted)</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2017/07/06/effective-pair-programming-practices.html">Effective Pair Programming Practices</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
       </li>
     
@@ -795,10 +815,6 @@ Here is some of their feedback: (list is unsorted)</p>
     
       <li class="post">
         <a href="/toddsedano/2016/05/28/team-code-ownership.html">Team Code Ownership</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership.html">Theory of Sustainable Software Development Through Team Code Ownership</a>
       </li>
     
   </ul>
