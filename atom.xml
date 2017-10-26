@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-10-22T07:58:01-07:00</updated>
+  <updated>2017-10-26T14:19:20-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -14,9 +14,9 @@
 
   
   <entry>
-    <title type="html"><![CDATA[considerate pair programming]]></title>
+    <title type="html"><![CDATA[Considerate Pair Programming]]></title>
     <link href="http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming.html"/>
-    <updated>2017-10-22T07:35:00-07:00</updated>
+    <updated>2017-10-22T00:00:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming</id>
     <content type="html"><![CDATA[<p>Considerate Pair Programming Strategies, Techniques, and Tips</p>
 
@@ -27,8 +27,6 @@
 <p>Continuous Pair programming with Overlapping Pair Rotations remove knowledge silos to increase teams&#8217; resiliency to team disruption [<a href="https://www.researchgate.net/publication/304014117_Sustainable_Software_Development_through_Overlapping_Pair_Rotation?ev=prf_high">reference</a>]  and builds collective code ownership [<a href="https://www.researchgate.net/publication/301612260_Practice_and_Perception_of_Team_Code_Ownership?ev=prf_high">reference</a>] as described in Sustainable Software Development.</p>
 
 <p>Pair programming is a complex practice requiring skill to master. Although Pair Programming has been around for 20 years and is well researched, some teams simply drop engineers onto a team expecting them to figure Pair Programming out.</p>
-
-<p>&lt;<insert story>></p>
 
 <p>As a practitioner, I am still discovering ways that I can improve the pair programming dynamic.</p>
 
@@ -74,11 +72,15 @@
 
 <p>Example of simultaneously standing and sitting: On one project we used varidesks to allow each person to be able to stand or sit. Often I would mirror my partner. If they stood, I stood. The first several times where one of us was standing, and the other was sitting felt unequal. After acknowledging the differences, and practicing it both ways, I am now ok with the dynamic. However, when beginning pairing relationships, I would prefer to describe my experience and check-in with my pair before creating a physical power imbalance.</p>
 
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/bad-pairing-setup-depth.jpg" alt="Developer pair programming"/></span></span></p>
+
+<p>Imbalance in desk depth.</p>
+
 <p>Anti-pattern: For one project, the table did not have a straight edge. One side of the table had more depth and the other side was shallower. The side with more desk spaces felt like the dominant side, whereas the side with less desk space felt less important and inferior.</p>
 
-<p><picture></p>
-
 <p><img src="null" alt="" /></p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/bad-pairing-setup-width.jpg" alt="Developer pair programming"/></span></span></p>
 
 <p>Imbalance in sharing space.</p>
 
@@ -229,6 +231,8 @@
 <p>How: Purcahse a set of Mixed Emotion feeling cards available at <a target="_blank" href="[https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9](https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9)">amazon.com</a> The cards are playful and helpful in getting in touch with emotions.</p>
 
 <p><img src="null" alt="" /></p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/mixed-emotions.png" alt="Mixed Emotions Card Deck"/></span></span></p>
 
 <p>Here is an example interaction: &ldquo;Are you willing to try an experiment with me? This exercise might help me identify some emotions that I am feeling. We each will look through a deck of cards and pull out one or two feeling cards with which we strongly identify. There are a lot of cards in this deck. Maybe you take the top half, and I will take the bottom half. Once we go through our decks, we then will switch. If we both want to select the same card, that is fine. There is just one in the deck though. Are you ok with this experiment?&rdquo;</p>
 
