@@ -1,3 +1,15 @@
+<hr />
+
+<p>layout: post</p>
+
+<p>title: &ldquo;Considerate Pair Programming Strategies, Techniques, and Tips&rdquo;</p>
+
+<p>date: 2017-10-22 08:37</p>
+
+<p>comments: false</p>
+
+<h2>categories: pair-programming</h2>
+
 <p>Considerate Pair Programming Strategies, Techniques, and Tips</p>
 
 <h1>Why we pair</h1>
@@ -138,7 +150,7 @@
 
 <p>If you find that you are not getting any constructive feedback, perhaps your pair is not comfortable giving feedback with you. Work with your manager. Your manager could ask for feedback on your behalf.</p>
 
-<p>When I stop receiving constructive feedback, I ask <strong>&ldquo;How was today less than exceptional?&rdquo;</strong> Experiencing an exceptional day is rare. The question sets the bar high, allowing your pair to voice any small improvement.</p>
+<p>When I stop receiving constructive feedback, I ask <strong>&ldquo;How was today less than exceptional?&rdquo;</strong> or <strong>&ldquo;What was less than extraordinary about today?&rdquo;</strong> [<a href="https://itscoffeeti.me/the-art-of-getting-magical-feedback-aa0e48052564">reference</a>] Experiencing an exceptional day is rare. The question sets the bar high, allowing your pair to voice any small improvement.</p>
 
 <h3>End of Day Wrap Up</h3>
 
@@ -175,6 +187,10 @@
 <p>When: Discuss this topic when you are suffering from long feedback loops. If there is waiting time, we can use this opportunity to improve the situation and reduce waiting time in the future.</p>
 
 <p>On my first Pivotal project, our test suite took about ten minutes to run. On our last week of the project, my pair and I decided to speed it up. In looking at the tests, we discovered that two of them took the majority of the time. One test grew the size of a cluster. One test created a cluster. One test destroyed a cluster. All of the other tests assumed that a cluster existed. By resequencing our test cases, we were able to speed up our tests significantly. We attempted to always leave a cluster up. By running all the quick tests first, if a test failed we would find it quickly. We then would then grow the cluster, destroy the cluster, and create a cluster thus leaving it in a state for the next test run. This resequencing decreased the test suite running time to a few minutes. We lamented that we had not made the change earlier. By removing waiting time, you enable your team to deliver faster.</p>
+
+<p><strong>Setting a learning goal</strong></p>
+
+<p>At the start of the day you can set a learning goal. &ldquo;Let us work on understanding Test Driven Development today&rdquo; or &ldquo;Let us work on keyboard skills.&rdquo; Try to frame it so that it is more collaborative. At the end of the day, each person provides feedback about the goal. Allowing your pair to know what kind of feedback ahead of time gives them a chance to observe you in action.</p>
 
 <h2>Looking for Gold</h2>
 

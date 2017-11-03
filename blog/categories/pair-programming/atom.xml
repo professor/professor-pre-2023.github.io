@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Pair programming | Todd Sedano]]></title>
+  <title><![CDATA[Category: pair-programming | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/pair-programming/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-10-26T14:26:09-07:00</updated>
+  <updated>2017-11-03T11:49:36-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -14,18 +14,58 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Performance pair programming]]></title>
-    <link href="http://professor.github.io/toddsedano/2016/02/27/performance-pair-programming.html"/>
-    <updated>2016-02-27T09:39:00-08:00</updated>
-    <id>http://professor.github.io/toddsedano/2016/02/27/performance-pair-programming</id>
-    <content type="html"><![CDATA[<p>Performance pair programming is when one developer drives the entire implementation while the other watches.
-It is as if someone is solo programming with an audience. The performer prefers accomplishing a task more than
-taking advantage of the teaching opportunity.</p>
+    <title type="html"><![CDATA[Remote Pair Programming]]></title>
+    <link href="http://professor.github.io/toddsedano/2016/11/07/remote-pair-programming.html"/>
+    <updated>2016-11-07T08:37:00-08:00</updated>
+    <id>http://professor.github.io/toddsedano/2016/11/07/remote-pair-programming</id>
+    <content type="html"><![CDATA[<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/remote_pair_programming.png" alt="Developer pair programming"/></span></span></p>
 
-<p>When this occurs, there is no collaboration or discussion about how to proceed. Questions that the watcher asks are often ignored.
-Typically the Performer is unaware that their pair is not learning anything.</p>
+<p>While at Pivotal, I have iterated on remote pair programming while working on two distributed teams. This shares what I have learned about remote pairing.</p>
 
-<p>Since one of the most effective learning technique is &ldquo;learn by doing,&rdquo; the pair is missing a great learning opportunity.</p>
+<h2>Best Practices</h2>
+
+<ol>
+<li><p>Periodically check in with your pair about the audio, video, and screen sharing quality. Fix issues promptly. If you are experiencing issues, bring them up. Quickly iterating is the key to improving the remote pairing experience.</p></li>
+<li><p>Setup a video feed (zoom, appear.in, hangout, slack) that is always on and instant messaging (slack) in the secondary window. Much of communication is nonverbal. Seeing my partner excited or frustrated is super helpful.</p></li>
+<li><p>Leave the video feed running during breaks. This allows each person to see what is happening at the other end. If my pair is in an office, I might see that my pair is talking to another member of the team.</p></li>
+<li><p>In the office, leave the microphone open. This allows a remote person to feel connected to the office vibe when their pair is away from the desk. Osmatic communication can still happen.</p></li>
+<li><p>When a team is distributed between two offices but pairing locally, setup a remote video feed. This allows either office to get the attention of the other office by waving frantically. (Often pairs do not check slack frequently while pairing.)</p></li>
+<li><p>Use screenhero for screen sharing and zoom for video and audio. The audio in screenhero does not work as well as zoom or appear.in</p></li>
+<li><p>Have all pairs join the same appear.in channel. Mute everyone but your pair. Whenever you need a team huddle, just enable everyone&rsquo;s channel. This reduces the friction for team huddles.</p></li>
+</ol>
+
+
+<p>Here the team is in one channel with multiple conversations. Note that the team has an extra camera setup to see what is happening in the aisle:
+<span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/BradyBunch.jpg" alt="Brady Bunch View"/></span></span></p>
+
+<ol>
+<li><p>Ask for feedback about the development environment. While Pivotal uses <a href="https://github.com/pivotal/workstation-setup">workstation-setup</a> for consistent development environments, the screen resolution difference between a laptop and an iMac makes that combination super tricky. I prefer iMac to iMac.</p></li>
+<li><p>If you are working across timezones, have empathy and be mindful of break times and lunch time.</p></li>
+</ol>
+
+
+<h2>Equipment</h2>
+
+<ol>
+<li><p>Use a two display system. One screen is shared. The other is for supporting remote pairing.</p></li>
+<li><p>In the office, use an audio splitter. Have two headsets on the splitter. When another co-workes interrupts you, ask them to join the conversation. Having a second headset makes this easy. At the minimum, use a splitter to reduce friction.
+I use <a target="_blank" href="https://www.amazon.com/gp/product/B001B19FDK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B001B19FDK&linkCode=as2&tag=sedano-20&linkId=9c25b8c1f4b2016f14cf44493e4534c0">
+Scotch 35 Electrical Tape</a> on <a target="_blank" href="https://www.amazon.com/gp/product/B00009WQSR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00009WQSR&linkCode=as2&tag=sedano-20&linkId=a3ffc4031a37c84f5b5fc2e011e4f92a">black Belkin Speaker and Headphone Splitter</a> <img src="http://professor.github.io/images/audio-splitters.jpg" alt="" width=75%/></p></li>
+<li><p>In the office, use an expensive headset with a boom microphone.</p></li>
+</ol>
+
+
+<p>My personal favorite is the <a target="_blank" href="https://www.amazon.com/gp/product/B008O515CK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008O515CK&linkCode=as2&tag=sedano-20&linkId=78f3f782ad8a23da600b02fde69940c9">Sennheiser PC 363D Headset</a> (shown on the left).
+<span class="thumbnail-image-block ssNonEditable"><span><a target="_blank" href="https://www.amazon.com/gp/product/B008O515CK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008O515CK&linkCode=as2&tag=sedano-20&linkId=78f3f782ad8a23da600b02fde69940c9">
+<img src="http://professor.github.io/images/Sennheiser-PC-363D.jpg" alt="" style="height:350px"/></span></span></a><a target="_blank" href="https://www.amazon.com/gp/product/B015ZKJIYI/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B015ZKJIYI&linkCode=as2&tag=sedano-20&linkId=4dfc5dff322538bbbb30bb7d8c8c0478"><img src="http://professor.github.io/images/Sennheiser-PC-350-Special-2015.jpg" style="height:350px" /></a></p>
+
+<p><img src="http://professor.github.io//ir-na.amazon-adsystem.com/e/ir?t=sedano-20&l=am2&o=1&a=B008O515CK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<img src="http://professor.github.io//ir-na.amazon-adsystem.com/e/ir?t=sedano-20&l=am2&o=1&a=B015ZKJIYI" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+
+<p>In the office setting, avoid using earbud headsets as they tend to let in too much office noise. If you prefer these, check in with your pair about audio quality.
+<span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/no_ear_buds.png" alt=""/></span></span></p>
+
+<p>I updated this page on 10/3/2017 with the reasons behind the recommendations.</p>
 ]]></content>
   </entry>
   
