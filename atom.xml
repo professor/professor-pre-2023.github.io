@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-03T15:53:21-07:00</updated>
+  <updated>2017-11-03T15:56:31-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -201,23 +201,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Considerate Pair Programming]]></title>
+    <title type="html"><![CDATA[Considerate Pair Programming - Part 2 - Strategies for Success]]></title>
     <link href="http://professor.github.io/toddsedano/2017/10/23/considerate-pair-programming.html"/>
-    <updated>2017-10-23T00:00:00-07:00</updated>
+    <updated>2017-10-23T08:37:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/10/23/considerate-pair-programming</id>
-    <content type="html"><![CDATA[<hr />
-
-<p>layout: post</p>
-
-<p>title: &ldquo;Considerate Pair Programming &ndash; Part 2 &ndash; Strategies for Success&rdquo;</p>
-
-<p>date: 2017-10-23 08:37</p>
-
-<p>comments: false</p>
-
-<h2>categories: [Pair programming]</h2>
-
-<p>This is a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
+    <content type="html"><![CDATA[<p>This is a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
 
 <p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part 1</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
 
@@ -406,21 +394,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Considerate Pair Programming]]></title>
+    <title type="html"><![CDATA[Considerate Pair Programming - Part 1 - Setting up the Work Environment]]></title>
     <link href="http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming.html"/>
-    <updated>2017-10-22T00:00:00-07:00</updated>
+    <updated>2017-10-22T08:37:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming</id>
-    <content type="html"><![CDATA[<p>layout: post</p>
-
-<p>title: &ldquo;Considerate Pair Programming &ndash; Part 1 &ndash; Setting up the Work Environment&rdquo;</p>
-
-<p>date: 2017-10-22 08:37</p>
-
-<p>comments: false</p>
-
-<p>categories: [Pair programming]</p>
-
-<p>This is a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
+    <content type="html"><![CDATA[<p>This is a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
 
 <p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part 1</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
 
