@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Pair programming | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/pair-programming/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-03T16:18:14-07:00</updated>
+  <updated>2017-11-03T16:28:03-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -212,9 +212,9 @@
 <p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part 2</a> covers <em>Strategies for Success</em> including</p>
 
 <ul>
-<li>welcoming interactions at different parts of the day,</li>
-<li>reflecting on the pair programming experience, and</li>
-<li>reframing interactions for growing collaboration.</li>
+<li><p>welcoming interactions at different parts of the day,</p></li>
+<li><p>reflecting on the pair programming experience, and</p></li>
+<li><p>reframing interactions for growing collaboration.</p></li>
 </ul>
 
 
@@ -405,11 +405,16 @@
 
 <p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part 1</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
 
-<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part 2</a> covers <em>Strategies for Success</em> including
-* welcoming interactions at different parts of the day,
-* reflecting on the pair programming experience, and
-* reframing interactions for growing collaboration.
-<a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part 3</a> covers what to do <em>When Things Go Weird</em></p>
+<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part 2</a> covers <em>Strategies for Success</em> including</p>
+
+<ul>
+<li><p>welcoming interactions at different parts of the day,</p></li>
+<li><p>reflecting on the pair programming experience, and</p></li>
+<li><p>reframing interactions for growing collaboration.</p></li>
+</ul>
+
+
+<p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part 3</a> covers what to do <em>When Things Go Weird</em></p>
 
 <p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
 
