@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-03T15:56:31-07:00</updated>
+  <updated>2017-11-03T15:58:17-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -404,12 +404,9 @@
 
 <p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part 2</a> covers <em>Strategies for Success</em> including</p>
 
-<ul>
-<li> welcoming interactions at different parts of the day,</li>
-<li> reflecting on the pair programming experience, and</li>
-<li> reframing interactions for growing collaboration.</li>
-</ul>
-
+<p><sub> * welcoming interactions at different parts of the day,
+<sub> * reflecting on the pair programming experience, and
+<sub> * reframing interactions for growing collaboration.</p>
 
 <p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part 3</a> covers what to do <em>When Things Go Weird</em></p>
 
