@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-03T11:49:36-07:00</updated>
+  <updated>2017-11-03T11:54:54-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -14,23 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Considerate Pair Programming]]></title>
+    <title type="html"><![CDATA[Considerate Pair Programming Strategies, Techniques, and Tips]]></title>
     <link href="http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming.html"/>
-    <updated>2017-10-22T00:00:00-07:00</updated>
+    <updated>2017-10-22T08:37:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming</id>
-    <content type="html"><![CDATA[<hr />
-
-<p>layout: post</p>
-
-<p>title: &ldquo;Considerate Pair Programming Strategies, Techniques, and Tips&rdquo;</p>
-
-<p>date: 2017-10-22 08:37</p>
-
-<p>comments: false</p>
-
-<h2>categories: pair-programming</h2>
-
-<p>Considerate Pair Programming Strategies, Techniques, and Tips</p>
+    <content type="html"><![CDATA[<p>Considerate Pair Programming Strategies, Techniques, and Tips</p>
 
 <h1>Why we pair</h1>
 
