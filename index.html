@@ -479,6 +479,822 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/toddsedano/2017/10/22/considerate-pair-programming.html">Considerate Pair Programming Strategies, Techniques, and Tips</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-10-22T08:37:00-07:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2017</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Why we pair</h1>
+
+<p>Hi. I have come to love Pair Programming. I enjoy the collaboration, cross-training, and better solutions that emerge while I pair.</p>
+
+<p>Continuous Pair programming with Overlapping Pair Rotations remove knowledge silos to increase teams&#8217; resiliency to team disruption [<a href="https://www.researchgate.net/publication/304014117_Sustainable_Software_Development_through_Overlapping_Pair_Rotation?ev=prf_high">reference</a>]  and builds collective code ownership [<a href="https://www.researchgate.net/publication/301612260_Practice_and_Perception_of_Team_Code_Ownership?ev=prf_high">reference</a>] as described in Sustainable Software Development.</p>
+
+<p>Pair programming is a complex practice requiring skill to master. Although Pair Programming has been around for 20 years and is well researched, some teams simply drop engineers onto a team expecting them to figure Pair Programming out.</p>
+
+<p>As a practitioner, I am still discovering ways that I can improve the pair programming dynamic.</p>
+
+<p>This article describes 1) several techniques that can improve your pair programming experience, 2) strategies on what to do when things get frustrating or go wrong, and 3) concludes with success stories of converting difficult pair-programming relationships into successful pair-programming relationships.</p>
+
+<p>Like any relationship, such as friendships, family dynamics, dating, or marriage, when pairing works well, it is an amazing experience, when pairing falls apart, it can be frustrating and occasionally super hurtful. Unfortunate dynamics can happen while pairing.</p>
+
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have a challenging experience, I would like to hear what it was like for you and how you went about solving it.</p>
+
+<p>Pairing exposes both our strengths and our weakness. How we handle our weaknesses may have a direct impact on the pairing relationship. One of us might not be comfortable exposing our weaknesses. If we are experiencing imposter syndrome, that we are not qualified for the job we have, we might fear that our partner is going to find out that we are faking it.</p>
+
+<p>I have been on a journey to be a better pair. While at Pivotal over 3.5 years, I have paired with ~39 pivots and ~ 20 client developers. I am grateful to each person who has helped me better understand myself and have helped me assemble and create these techniques. If you paired with me and I did not apply the technique, it may be because I learned it later.</p>
+
+<h2>Overarching goal</h2>
+
+<p>We want to create a welcoming and safe environment for both pairs.</p>
+
+<h1>Strategies for Success</h1>
+
+<p>In my software development practice, I rely on several techniques for increasing the probability of success with a pairing relationship.</p>
+
+<p>This section discusses setting up the work environment, welcoming interactions at different parts of the day, reflecting on the pair programming experience, and reframing interactions for growing collaboration.</p>
+
+<p>This article contains a toolbox of techniques. Feel free to pick a few to try out and then revisit the list in a few weeks.</p>
+
+<h2>Setting up the Work Environment</h2>
+
+<p><strong>The computer</strong></p>
+
+<p>What: Configure the work environment to make pair programming effective. Set up a pairing workstation with two monitors, two keyboards, two mice, and one computer. Make sure there is ample room for two people to work side by side at one desk. Ideally, all the team&rsquo;s machines are similar in configuration enabling frictionless pair rotations. Pivotal uses <a href="workstation-setup">https://github.com/pivotal/workstation-setup</a> when adding new machines to a team to provide a consistent experience with common tools.</p>
+
+<p>Why: a welcoming environment that enables both pairs to work efficiently improves productivity.</p>
+
+<p>Anti-pattern: Avoid using individual laptops for pair programming. After seven projects using pairing workstations, I joined a team that used laptops with external monitors for pairing. The team did not view laptops as communal team property. Each person configured their laptop differently suiting their personal development process. My pairs ignored my feedback about the development environment.  I felt like an unwelcomed guest in someone else&rsquo;s home.</p>
+
+<p><strong>The physical environment</strong></p>
+
+<p>What: Create a conducive work environment that treats each person as an equal.</p>
+
+<p>Why: Small physical differences can create power imbalances.</p>
+
+<p>Example: On one project, we had a window seat. We intentionally rotated everyone through the more desirable location.</p>
+
+<p>Example of simultaneously standing and sitting: On one project we used varidesks to allow each person to be able to stand or sit. Often I would mirror my partner. If they stood, I stood. The first several times where one of us was standing, and the other was sitting felt unequal. After acknowledging the differences, and practicing it both ways, I am now ok with the dynamic. However, when beginning pairing relationships, I would prefer to describe my experience and check-in with my pair before creating a physical power imbalance.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/bad-pairing-setup-depth.jpg" alt="Developer pair programming"/></span></span></p>
+
+<p>Imbalance in desk depth.</p>
+
+<p>Anti-pattern: For one project, the table did not have a straight edge. One side of the table had more depth and the other side was shallower. The side with more desk spaces felt like the dominant side, whereas the side with less desk space felt less important and inferior.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/bad-pairing-setup-width.jpg" alt="Developer pair programming"/></span></span></p>
+
+<p>Imbalance in sharing space.</p>
+
+<p>Anti-pattern: I saw two people pairing in this space. The person on the left has ⅓ of the space. The person on the right has ⅔ of the space. Interestingly, the desk&rsquo;s seam is exactly between the two monitors which may explain this odd configuration.</p>
+
+<p>(I only saw these two people in this space for one day. They were visitors to the building and had planned to talk to one of them the next time I saw them. If I had a do-over, I would like to have raised this issue with them.)</p>
+
+<h2>Welcoming Interactions at Different Parts of the Day</h2>
+
+<h3>Introduction and First Impressions</h3>
+
+<p><strong>&ldquo;I am looking forward to pairing with you.&rdquo; </strong></p>
+
+<p>What: Start your day by making your pair feel welcomed. If you are excited to pair, then mention the reasons. Humans can spot when we are insincere, so only say it if you mean it.</p>
+
+<p>Why: We want our pair to feel welcomed.</p>
+
+<p>When: I use this periodically so that it does not seem formulaic. When pairing with a stranger outside of work, I will include a handshake and introduce myself. &ldquo;Hi, I&rsquo;m Todd, and I&rsquo;m looking forward to pairing with you…&rdquo;</p>
+
+<p><strong>&ldquo;What is your ideal pairing day?&rdquo;</strong></p>
+
+<p>What: I ask my pair to tell me about their ideal pairing day. Some people have never considered the question and are surprised by it. Some need clarification about what I am asking. I will respond with &ldquo;After a day of pairing, when you leave work energized, what caused you to be energizing?&rdquo; or &ldquo;What enables you to have a successful day of pair programming? What do you need from me?&rdquo;</p>
+
+<p>Why: If you both have different goals for the day, talking it out may help you understand your pair&rsquo;s motivations.</p>
+
+<p>When: I only do this when I start pairing with a person for the first time.</p>
+
+<p>The common responses are</p>
+
+<blockquote><p><sub>1. I love it when we deliver lots of stories (these tended to come from client developers);</p>
+
+<p><sub>2. I love it when we solve a hard problem;</p>
+
+<p><sub>3. I love it when my pair and I are on the same page working harmoniously.</p></blockquote>
+
+<h3>Starting a Day</h3>
+
+<p><strong>&ldquo;How is it going?&rdquo;</strong> or <strong>&ldquo;What did you do over the weekend?&rdquo; </strong></p>
+
+<p>What: Take a moment to find out how your partner is doing.</p>
+
+<p>Why: When starting a day with my pair, it is super tempting to jump into the work immediately. We may be eager to start delivering value. I find that I need to stop myself and acknowledge our humanity. I enjoy just checking in with my partner. In American culture, &ldquo;How is it going?&rdquo; can be a throw-away greeting, so I look my pair in the eye and ask &ldquo;How is it going?&rdquo; in a way that communicates that I am honestly interested and curious about their wellbeing.</p>
+
+<p>We are integrated people. Things that happen at home affect us at work and things that happen at work affect us at home. A harrowing adventure on a commute may affect us emotionally and may affect the dynamic between the pair.</p>
+
+<p><strong>&ldquo;I am concerned about _____&rdquo; / Addressing Concerns</strong></p>
+
+<p>What: Reveal any concerns that you have about the day. Discuss anything that might affect the pairing relationship. Your concerns could include the story, the work, or the pairing.</p>
+
+<p>Why: Our feelings or anxiety may affect the pairing relationship. Discussing our feelings helps remove the energy around that feeling. See the section on Sensing Strong Feelings for more details.</p>
+
+<p>Examples: Here are some examples from my experience:</p>
+
+<blockquote><p><sub>* &ldquo;I am anxious about getting to the root cause of [this tricky technical issue],&rdquo;</p>
+
+<p><sub>* &ldquo;I just had this difficult conversation outside of work and I can tell it&rsquo;s affecting my mood,&rdquo; or</p>
+
+<p><sub>* &ldquo;I am worried that this feature is taking too long to finish.&rdquo;</p></blockquote>
+
+<p>Example: One of my pair types at 110 words per minute. Maximum my typing speed is 55 words per minute. I was intimidated by his typing speed. I felt like I was slowing us down. I felt that I had to type faster to be valuable. After a few pairing sessions, I acknowledging what I was feeling. Neither of us changed our behavior, but I was no longer intimidated. It became a non-issue.  Acknowledging the situation allowed me to appreciate how he brought this fantastic skill to us as a pair.</p>
+
+<h3>Mid Afternoon Check In</h3>
+
+<p><strong>&ldquo;How is today going for you?&rdquo; </strong>or<strong> &ldquo;What could I be doing differently?</strong>&rdquo;</p>
+
+<p>What:  Check in with your partner about how things are going.</p>
+
+<p>Why: Check-ins can decrease the feedback loop. Hypothetically, say you are bothering your pair. How long will it take them to give you unsolicited feedback? A week? A month? Maybe never? It takes courage to provide unsolicited feedback. By broaching the topic and asking for feedback, you can reduce your feedback cycle.</p>
+
+<p>When: About 2/3rds of the way through the workday. I prefer mid-day so that when I receive feedback, I have a chance to practice changing it immediately with that person. At Pivotal, we daily rotate with whom we pair. Asking at the end of the day requires me to wait several days before I have a chance to course correct. I set the alarm on my phone that goes off two hours before the end of the day.</p>
+
+<p>Examples: I have received feedback on keyboard sharing, improvements to my development flow, and an ask for me to be more assertive. I even discovered that I chew gum too loudly.</p>
+
+<p>If your pair might not be comfortable giving feedback, remind them how valuable the feedback is: <strong>&ldquo;I value your feedback as it helps me grow. Please tell me one thing that I could be doing differently.&rdquo; </strong>When hearing feedback, say<strong> &ldquo;Thank you.&rdquo;</strong> Do not argue about it as this appears defensive and your pair may not want to provide feedback again. It is fine to ask clarifying questions for the purpose of understanding their point of view.</p>
+
+<p>If you find that you are not getting any constructive feedback, perhaps your pair is not comfortable giving feedback with you. Work with your manager. Your manager could ask for feedback on your behalf.</p>
+
+<p>When I stop receiving constructive feedback, I ask <strong>&ldquo;How was today less than exceptional?&rdquo;</strong> or <strong>&ldquo;What was less than extraordinary about today?&rdquo;</strong> [<a href="https://itscoffeeti.me/the-art-of-getting-magical-feedback-aa0e48052564">reference</a>] Experiencing an exceptional day is rare. The question sets the bar high, allowing your pair to voice any small improvement.</p>
+
+<h3>End of Day Wrap Up</h3>
+
+<p><strong>Thank your pair for their contributions.</strong></p>
+
+<p>What: Mention particular accomplishments or strengths. Bring up unique ideas they offered.</p>
+
+<p>Acknowledge if you accomplished more with your pair than you would have without them. Feel free to acknowledge the hard parts of the day. <strong>&ldquo;Even though dealing with the build system was frustrating, I enjoyed pairing with you.&rdquo;</strong></p>
+
+<p>Why: This gift ends your pair&rsquo;s day on a high note. This action helps us practice gratitude. On a frustrating day, it is nice to acknowledge the pleasant parts.</p>
+
+<p>When: I aim to do this about five to ten minutes before the end of the day so that I am not keeping my pair past the end of a workday. Some situations will preempt you from doing this action: the team may call a team huddle at the end of the day or you may be working on an energizing story and you both want to finish some part of the work. If I aim to do this every day, then I hope to achieve a good balance with the other interruptions.</p>
+
+<p>The goal is to wrap things up and end the day on a positive note. I try to avoid rehashing or starting a day&rsquo;s reflection; I practice at the Mid Afternoon Check-in instead. I want my pair to feel appreciated and for them to know that I look forward to our next session.</p>
+
+<h2>Reflecting on the Process / Conversations about the process</h2>
+
+<p><strong>&ldquo;How do we improve our development environment?&rdquo;</strong></p>
+
+<p>What: Reflect about the development process.</p>
+
+<p>Why: We want to have efficient development environments. Often an improvement in one development environment benefits the entire team. Discussing the development environment reveals concerns about the setup.</p>
+
+<p>When: periodically</p>
+
+<p>Example: How do we decide which editor to use? At Pivotal, the most common editors are Vim or one of the JetBrains products (IntelliJ, CLion, Gogland, RubyMine, PyCharm, etc.). What do we do when one pair prefers Vim and the other prefers a JetBrains editor? When an expert with a technology is pairing with someone learning the technology, I recommend using the editor that the novice knows best.  The technology might be programming language (c, python, go) or a framework (spring, rails). This strategy allows the novice to focus on learning the technology and the expert has a chance to learn the less familiar development environment. At Pivotal, learning more Vim or more JetBrains makes each engineer a more well-rounded engineer.</p>
+
+<p><strong>&ldquo;How do we reduce feedback time?&rdquo;</strong></p>
+
+<p>What: Discuss the waste from long feedback cycles [<a href="https://www.researchgate.net/publication/313360479_Software_Development_Waste">reference</a>]</p>
+
+<p>Why: We want to have fast feedback loops. Unfortunately, there can be many technical obstacles that get in the way.</p>
+
+<p>When: Discuss this topic when you are suffering from long feedback loops. If there is waiting time, we can use this opportunity to improve the situation and reduce waiting time in the future.</p>
+
+<p>On my first Pivotal project, our test suite took about ten minutes to run. On our last week of the project, my pair and I decided to speed it up. In looking at the tests, we discovered that two of them took the majority of the time. One test grew the size of a cluster. One test created a cluster. One test destroyed a cluster. All of the other tests assumed that a cluster existed. By resequencing our test cases, we were able to speed up our tests significantly. We attempted to always leave a cluster up. By running all the quick tests first, if a test failed we would find it quickly. We then would then grow the cluster, destroy the cluster, and create a cluster thus leaving it in a state for the next test run. This resequencing decreased the test suite running time to a few minutes. We lamented that we had not made the change earlier. By removing waiting time, you enable your team to deliver faster.</p>
+
+<p><strong>Setting a learning goal</strong></p>
+
+<p>At the start of the day you can set a learning goal. &ldquo;Let us work on understanding Test Driven Development today&rdquo; or &ldquo;Let us work on keyboard skills.&rdquo; Try to frame it so that it is more collaborative. At the end of the day, each person provides feedback about the goal. Allowing your pair to know what kind of feedback ahead of time gives them a chance to observe you in action.</p>
+
+<h2>Looking for Gold</h2>
+
+<p>What: In the improv game called  &ldquo;That&rsquo;s Brilliant!,&rdquo; a team member offers a terrible, impractical solution for a problem.  The group then uses the suggestion to look for divergent ideas that could help us solve the problem. The team mines the ridiculous suggestion looking for gold. This game trains the team to stop, consider, unpack, and explore suggestions offered by teammates.</p>
+
+<p>Why: I am strongly tempted to disregard an absurd suggestion from my partner and move on to more &ldquo;fruitful&rdquo; ideas. When I do this, I am discounting my partner&rsquo;s suggestions and treating their ideas as worthless. If I do this too often, my partner may feel unheard and disrespected.</p>
+
+<p>When: When my partner offers an idea that is entirely off the wall and will not possibly work. When I see myself discounting my partner, I try to stop myself, and mine for gold.</p>
+
+<h2>Traveling Together</h2>
+
+<p>What: Sometimes the path forward and the answer is clear to us, but not to our partner. It is tempting to &ldquo;get it done&rdquo; and drag our partner along.</p>
+
+<p>Why: Leaving your partner behind creates a tension in the relationship. Perhaps you feel that the work needs to get done today and the team cannot afford to be slowed down by your partner. In this situation, the team is missing out on a great cross-training opportunity.</p>
+
+<p>When: If you sense that your partner is not comfortable with a decision, check in with them first. Avoid plowing forward.</p>
+
+<p>How can two walk together, unless they agree to do so? [<a href="https://www.biblegateway.com/passage/?search=amos+3%3A3&amp;version=NKJV">reference</a>]</p>
+
+<p>Example: One time I thought the next step was super easy. My partner was not understanding my suggestion. I said, &ldquo;let me try and see if it just works.&rdquo; Unfortunately, it turned out not to be so simple. After going down several layers, I realized that I needed to stop, start-over, and involve my partner in solving the problem.</p>
+
+<p>If the person is not contributing to the team, involve your manager. One member of the team does not decide who belongs on the team.</p>
+
+<h2>Processing Strong Feelings</h2>
+
+<p>What: I use a set of playing cards to help me or my partner process strong emotions.</p>
+
+<p>Why: Some projects are stressful. Life happens; events outside work may affect our emotions. Research shows that the verbalization of feelings reduces the power of the feelings. The utilization of different parts of the brain helps the processing of feelings.</p>
+
+<p>When:  If you observe in yourself or perceive in your partner, intense emotions that could affect the pairing dynamic, then consider this technique. Once I felt discombobulated and had difficulty in naming unfamiliar emotions, this exercise helped us understand what I was feeling.</p>
+
+<p>&ldquo;A growing body of research has revealed that labeling an emotion, or putting one&rsquo;s feelings into words, can help to downregulate that affect&rdquo; [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4721564/">reference</a>]. &ldquo;The results indicated that affect labeling, relative to other forms of encoding, diminished the response of the amygdala and other limbic regions to negative emotional images. …. These results suggest that affect labeling may diminish emotional reactivity along a pathway from RVLPFC to MPFC to the amygdala.&rdquo; [<a href="https://pdfs.semanticscholar.org/5a46/0556d7278bd4f960a92d19b42c9347b35812.pdf">reference</a>].</p>
+
+<p>How: Purcahse a set of Mixed Emotion feeling cards available at <a target="_blank" href="[https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9](https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9)">amazon.com</a> The cards are playful and helpful in getting in touch with emotions.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><a target="_blank" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9"><img src="/images/mixed-emotions.png" alt="Mixed Emotions Card Deck"/></a></span></span></p>
+
+<p>Here is an example interaction: &ldquo;Are you willing to try an experiment with me? This exercise might help me identify some emotions that I am feeling. We each will look through a deck of cards and pull out one or two feeling cards with which we strongly identify. There are a lot of cards in this deck. Maybe you take the top half, and I will take the bottom half. Once we go through our decks, we then will switch. If we both want to select the same card, that is fine. There is just one in the deck though. Are you ok with this experiment?&rdquo;</p>
+
+<p>Go about picking your cards. When you both are done, explain why you identified with each of your cards. For your partner&rsquo;s turn, try to make it as safe as possible. &ldquo;I would like to know why you are feeling each of those emotions, but only share to the depth that you feel comfortable.&rdquo; Some people will be eager to share their feelings and will even want to go first.</p>
+
+<p>Example: One project had an aggressive deadline with a client who would refuse to prioritize the work to be done. The team suffered psychological distress [<a href="https://www.researchgate.net/publication/313360479_Software_Development_Waste">reference</a>]. Several times I used this exercise to discuss my feelings and de-stress. Once I was not sure what my emotions were; the 60 cards helped me identify what I was feeling. After doing this exercise, I felt more in touch with myself, more at ease, and more connected with my partner.</p>
+
+<h1>When Things Go Wrong / Weird</h1>
+
+<p>Since pairing is a relational practice relying on imperfect communication, misunderstandings and slights can emerge. In this section, I list out several strategies for coping with a situation that is getting tense, de-escalating a situation that is tense, and how to re-engage with your partner after a tense situation.</p>
+
+<p>What could go wrong with pairing?  Here are some situations that have bothered me.</p>
+
+<blockquote><p><sub>* You come across some code that is difficult to read. Your partner tells you not to refactor the code.</p>
+
+<p><sub>* Your partner dominates the keyboard for most of the day.</p>
+
+<p><sub>* Your partner does all the work without involving you.</p>
+
+<p><sub>* Your partner tells you how horrible is the code that you helped work on the previous day.</p>
+
+<p><sub>* You discuss a situation and agree to a plan, but then your partner starts doing his / her own thing anyway.</p></blockquote>
+
+<h2>Improving communication when things are starting to get tense</h2>
+
+<p><strong>Repeat to understand</strong></p>
+
+<p>What: Take a moment to make sure you understand your partner&rsquo;s idea. Repeat back or summarize what you just heard. &ldquo;I hear you saying that we should….&rdquo;</p>
+
+<p>Why: This technique helps me understand if I am hearing what my pair is trying to say. I have experienced several cases where each of us thinks we are clearly communicating an idea, but one of us is fundamentally misunderstanding what the other is saying. People have different communication styles. Some prefer precise, detailed language while others prefer abstract communication. This technique can help bridge a communication gap when people of different communication styles pair.</p>
+
+<p>When: Try this technique when you and your pair are not on the same page. If my partner says something that I think is utterly ridiculous, I might use this method to verify that I heard the suggestion correctly. In this situation, I do try to embrace empathy and not be sarcastic in repeating back what was said.</p>
+
+<p><strong>Summarize current situation</strong> or <strong>review how we got here</strong></p>
+
+<p>What: Describe where we are at or recall the journey.</p>
+
+<p>Why: Sometimes it is easy to get caught up in arguing about the trees without seeing the forest. By reviewing our thought process on how we got here, we recall our decision-making process and refocus on our goals.</p>
+
+<p>When: When the path forward is not obvious or we are no longer certain which problem we are solving.</p>
+
+<p><strong>Advocate your partner&rsquo;s solution</strong></p>
+
+<p>What: Articulate your partner&rsquo;s solution and describe what you like about it.</p>
+
+<p>Why: This will showcase that there are merits in what your partner&rsquo;s solution. By taking your partner&rsquo;s point of view, you adopt a more flexible position and might let go ownership of your solution.</p>
+
+<p>On several occasions, my partner and I have switched positions when I have used this technique. I want to do their idea, and they want to do my idea.</p>
+
+<p><strong>Explore alternative solutions</strong></p>
+
+<p>What: List out everything that could possibly work. Verbalize half-baked ideas.</p>
+
+<p>Why: We want to find the best possible technical solution. Premature convergence happens when we latch onto an idea before we have explored many divergent ideas.</p>
+
+<p>When: Sometimes we get bogged down on own perspective on how to solve an idea. By exploring alternative approaches, we unstick ourselves.</p>
+
+<p><strong>Bring in the team</strong></p>
+
+<p>What: Ask your team for their opinion. Try to present both ideas fairly. Experiment with each person advocating for the other person&rsquo;s idea.</p>
+
+<p>Why: Involving multiple perspectives shifts the focus from &ldquo;you versus me.&rdquo; The team may bring additional insights and solutions. If two people cannot agree, it is probably worth taking the time for the team to help solve it.</p>
+
+<p>If five people on a six-person team agree on a solution, there&rsquo;s more weight behind the team making the decision. For the dissenting point of view, mention that the team will try the solution and revisit the decision later if it does not work out. View this situation as a learning opportunity. On several occasions, I have thought something could not possibly work only to be pleasantly surprised that I was wrong.</p>
+
+<p>When: After exploring alternative solutions, if the pair cannot agree on how to make forward progress. I tend to reach for this technique first when the decision affects everyone on the team.</p>
+
+<p><strong>Try one solution</strong> or <strong>try both solutions</strong></p>
+
+<p>What: Trying one or both solutions.</p>
+
+<p>Why: We can waste time in over-discussing solutions. Implementing a solution reveals new information. Sometimes we can quickly realize that a solution will need additional adaptations or simply will not work.</p>
+
+<p>When: If it is easy to try one or both solutions and there is no clear winner.</p>
+
+<h2>De-escalating a tense situation</h2>
+
+<p><strong>&ldquo;I could really use a break.&rdquo; / Take a Break</strong></p>
+
+<p>What: Suggest taking a break.</p>
+
+<p>Why: If your pair pushed one of your buttons, you might need some time to decompress.</p>
+
+<p>When: If you find yourself getting annoyed or your pair getting annoyed with you. If you see a pair on your team struggling with cooperation, suggest that the entire team take a break. &ldquo;Let us all play ping pong.&rdquo;</p>
+
+<p>Example: In the Palo Alto office, it is super easy to get outside and enjoy nature. Sometimes I just need to sit in the sun, feel its warmth, and realize that this moment will pass. When my partner pushes one of my buttons, I might use an affirmation to ground myself: &ldquo;I add value to the team&rdquo; or &ldquo;I am wonderfully made&rdquo; or &ldquo;My opinions have merit.&rdquo; For me, the best affirmations are ones that I know to be true, but I am not feeling it to be true right now.</p>
+
+<p><strong>&ldquo;Tell me about one of your passions.&rdquo;</strong></p>
+
+<p>What: Get to know your partner in a different setting.</p>
+
+<p>Why: Often we are so focused on delivering stories, that we do not take the time to know our pairs. Find a neutral topic on which you can relate. Reframe the situation to realize that you are pairing with a human, full of aspirations, goals, and needs. Connecting helps us see our partner as a person and grounds us in their humanity.</p>
+
+<p>Example: When I taught at Carnegie Mellon University, two of my master students struggled with collaborating. One evening they had dinner and discovered that they loved the same sports team. Building connection points can shift the relationship from &ldquo;me versus them&rdquo; attitude.</p>
+
+<p>By using this technique, I have learned how to brew coffee, how the bit-coin block-chain works, and my pair&rsquo;s dream to work at Space-X.</p>
+
+<p><strong>Talk to a trusted friend</strong></p>
+
+<p>What: Sometimes venting to a friend helps.</p>
+
+<p>Why: I am biased by my own point of view and I can lose perspective. Talking to a friend helps separate my hang-ups from the dynamic with my pair.  Our friend may provide perspective that we are missing.</p>
+
+<h2>How to re-engage</h2>
+
+<p><strong>Bring it up. Acknowledge the situation.</strong></p>
+
+<p>What: Have the courage to discuss the issue with your pair.</p>
+
+<p>Why: Discussing an issue allows you both to work through it. Your pair might not be aware of the issue. Your pair might have been ok with the dynamic. Discussing it allows you both to resolve the problem.</p>
+
+<p>When: Talk about it later when you and your pair are in a good space.</p>
+
+<p>Example: &ldquo;Earlier today it seemed like you and I were not on the same page. For me, it felt awkward. Is there anything we could have done differently?&rdquo;</p>
+
+<p><strong>&ldquo;When you… I make up … And I feel…&rdquo;</strong></p>
+
+<p>What: In the first blank, you specify the observed behavior. In the second blank, you describe how you interpret the situation; since this is all in your head, you likely are projecting motive onto the other person. In the third blank, you describe how this makes you feel.</p>
+
+<p>Why: This technique initiates the conversation about an observed behavior, but instead of blaming the other person, the technique focuses on how the behavior is affecting you. Talking about yourself hopefully reduces the chance of putting the other person on the defensive.</p>
+
+<p>Example: &ldquo;When you interrupt me before I have made my point, I make up in my head that you don&rsquo;t care about my point of view, and I feel disrespected.&rdquo;</p>
+
+<p><strong>See the person&rsquo;s strengths</strong></p>
+
+<p>What: List out the skills that your partner brings to the relationship.</p>
+
+<p>Why: The pairing relationship is probably not all negative. Try to reframe the problem into an opportunity. How can we leverage each other&rsquo;s strengths? We each bring so much to the pairing relationship.</p>
+
+<p>Example: I enjoy trying a solution and when it is not working moving onto another solution. One of my pairs loves going deep into solving any technical problem. He enjoys figuring out how everything works. I quickly get frustrated when things do not work. At first, this dynamic caused tension. When something was not working, he wanted to go deep into the bowels of the technology to solve it whereas I wanted to move onto a more promising idea. In time, I learned to see the benefit of combining our strengths. I learned to be more patient, trusting my partner&rsquo;s strength. We would explore a topic more than I was comfortable. Likewise, I could also serve my partner by suggesting it was time to try a new idea. I could pull the &ldquo;ripcord&rdquo; and abort an idea that was no longer promising. We successfully combined his strength of a &ldquo;deep dive&rdquo; with my strength of &ldquo;generalizing for the big picture.&rdquo; Once I saw how we complimented each other, I began to enjoy this aspect of our pairing dynamic and looked forward to pairing with him.</p>
+
+<p>Example: On one project, I noticed that my pair was not listening to me and literally did all the typing. I felt discouraged and invaluable. (I call this dynamic &ldquo;Performance Pair Programming&rdquo; where one person performs coding for the audience of their pair.) One day while remote pairing, I was curious how long he would go on before noticing that I was not involved. I started to solo on my computer working on chores that needed to get done. Several hours past and my pair never noticed that I was disengaged. Later in the day, I mentally rejoined what he was working. As I was feeling guilty about what I had done, I acknowledged to my pair what happened and how I was not proud of my passive-aggressive behavior.</p>
+
+<p>However, things did not get better. I still did not want to pair with him. Because of the large team size, I successfully navigated the pair rotation so that I did not pair with him for a couple of months. To help my attitude, I started praising to the team his contributions. By vocalizing his contributions, I eventually realized that this individual was incredibly smart. 99.5% of what he said was accurate, and he was often 5 steps ahead of everyone else in his thinking. I started paying attention to his perspective. When he disagreed with the team, I would want to know why. I became grateful that he was on our team. I made a special trip to his office to pair with him in person. Because my attitude had shifted so much, I had a fantastic time pairing with him that day and for the remainder of my time on that project.</p>
+
+<p><strong>Antipattern &ndash; Ignore it. </strong></p>
+
+<p>What: Pretend that it did not happen.</p>
+
+<p>Why: This is a tempting technique because it seems the easiest. Sometimes things can resolve themselves. However, small issues tend to grow into large issues.</p>
+
+<h2>Lacking Emotional Intelligence (EQ)</h2>
+
+<p>If you are not aware of how your actions affect the mood of emotions of your partner, then I would recommend training. I have paired with some super smart people who were blind to how their actions caused me pain.</p>
+
+<p>While I was pairing with someone with low emotional intelligence, he did all the tying and this made me grumpy. When I realized that my pair was unaffected by my mood, I discovered that I had to do less emotional work. If I was having a bad day, my pair was not bothered.</p>
+
+<p>Amazon sells <a target="_blank" href="https://www.amazon.com/gp/product/1507750455/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1507750455&linkCode=as2&tag=sedano-20&linkId=6a2cd6fc2a6d4384bb53ba9330b90dfd">Enhancing Emotional Intelligence: Mindfulness-Based Strategies for Success &amp; Happiness</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=sedano-20&l=am2&o=1&a=1507750455" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+
+<p>Stanford University has a course called <a href="https://continuingstudies.stanford.edu/courses/professional-and-personal-development/enhancing-emotional-intelligence/20171_PDV-77">Enhancing Emotional Intelligence</a>.</p>
+
+<h1>Remote Pairing</h1>
+
+<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
+
+<h1>Summary</h1>
+
+<p>I have developed these strategies from working through bad pairing experiences. Many of these strategies attempt to be preventative maintenance, things we can do to avoid the issue entirely.</p>
+
+<p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2017/10/22/considerate-pair-programming.html">Considerate Pair Programming Strategies, Techniques, and Tips</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-10-22T08:37:00-07:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2017</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Why we pair</h1>
+
+<p>Hi. I have come to love Pair Programming. I enjoy the collaboration, cross-training, and better solutions that emerge while I pair.</p>
+
+<p>Continuous Pair programming with Overlapping Pair Rotations remove knowledge silos to increase teams&#8217; resiliency to team disruption [<a href="https://www.researchgate.net/publication/304014117_Sustainable_Software_Development_through_Overlapping_Pair_Rotation?ev=prf_high">reference</a>]  and builds collective code ownership [<a href="https://www.researchgate.net/publication/301612260_Practice_and_Perception_of_Team_Code_Ownership?ev=prf_high">reference</a>] as described in Sustainable Software Development.</p>
+
+<p>Pair programming is a complex practice requiring skill to master. Although Pair Programming has been around for 20 years and is well researched, some teams simply drop engineers onto a team expecting them to figure Pair Programming out.</p>
+
+<p>As a practitioner, I am still discovering ways that I can improve the pair programming dynamic.</p>
+
+<p>This article describes 1) several techniques that can improve your pair programming experience, 2) strategies on what to do when things get frustrating or go wrong, and 3) concludes with success stories of converting difficult pair-programming relationships into successful pair-programming relationships.</p>
+
+<p>Like any relationship, such as friendships, family dynamics, dating, or marriage, when pairing works well, it is an amazing experience, when pairing falls apart, it can be frustrating and occasionally super hurtful. Unfortunate dynamics can happen while pairing.</p>
+
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have a challenging experience, I would like to hear what it was like for you and how you went about solving it.</p>
+
+<p>Pairing exposes both our strengths and our weakness. How we handle our weaknesses may have a direct impact on the pairing relationship. One of us might not be comfortable exposing our weaknesses. If we are experiencing imposter syndrome, that we are not qualified for the job we have, we might fear that our partner is going to find out that we are faking it.</p>
+
+<p>I have been on a journey to be a better pair. While at Pivotal over 3.5 years, I have paired with ~39 pivots and ~ 20 client developers. I am grateful to each person who has helped me better understand myself and have helped me assemble and create these techniques. If you paired with me and I did not apply the technique, it may be because I learned it later.</p>
+
+<h2>Overarching goal</h2>
+
+<p>We want to create a welcoming and safe environment for both pairs.</p>
+
+<h1>Strategies for Success</h1>
+
+<p>In my software development practice, I rely on several techniques for increasing the probability of success with a pairing relationship.</p>
+
+<p>This section discusses setting up the work environment, welcoming interactions at different parts of the day, reflecting on the pair programming experience, and reframing interactions for growing collaboration.</p>
+
+<p>This article contains a toolbox of techniques. Feel free to pick a few to try out and then revisit the list in a few weeks.</p>
+
+<h2>Setting up the Work Environment</h2>
+
+<p><strong>The computer</strong></p>
+
+<p>What: Configure the work environment to make pair programming effective. Set up a pairing workstation with two monitors, two keyboards, two mice, and one computer. Make sure there is ample room for two people to work side by side at one desk. Ideally, all the team&rsquo;s machines are similar in configuration enabling frictionless pair rotations. Pivotal uses <a href="workstation-setup">https://github.com/pivotal/workstation-setup</a> when adding new machines to a team to provide a consistent experience with common tools.</p>
+
+<p>Why: a welcoming environment that enables both pairs to work efficiently improves productivity.</p>
+
+<p>Anti-pattern: Avoid using individual laptops for pair programming. After seven projects using pairing workstations, I joined a team that used laptops with external monitors for pairing. The team did not view laptops as communal team property. Each person configured their laptop differently suiting their personal development process. My pairs ignored my feedback about the development environment.  I felt like an unwelcomed guest in someone else&rsquo;s home.</p>
+
+<p><strong>The physical environment</strong></p>
+
+<p>What: Create a conducive work environment that treats each person as an equal.</p>
+
+<p>Why: Small physical differences can create power imbalances.</p>
+
+<p>Example: On one project, we had a window seat. We intentionally rotated everyone through the more desirable location.</p>
+
+<p>Example of simultaneously standing and sitting: On one project we used varidesks to allow each person to be able to stand or sit. Often I would mirror my partner. If they stood, I stood. The first several times where one of us was standing, and the other was sitting felt unequal. After acknowledging the differences, and practicing it both ways, I am now ok with the dynamic. However, when beginning pairing relationships, I would prefer to describe my experience and check-in with my pair before creating a physical power imbalance.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/bad-pairing-setup-depth.jpg" alt="Developer pair programming"/></span></span></p>
+
+<p>Imbalance in desk depth.</p>
+
+<p>Anti-pattern: For one project, the table did not have a straight edge. One side of the table had more depth and the other side was shallower. The side with more desk spaces felt like the dominant side, whereas the side with less desk space felt less important and inferior.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/bad-pairing-setup-width.jpg" alt="Developer pair programming"/></span></span></p>
+
+<p>Imbalance in sharing space.</p>
+
+<p>Anti-pattern: I saw two people pairing in this space. The person on the left has ⅓ of the space. The person on the right has ⅔ of the space. Interestingly, the desk&rsquo;s seam is exactly between the two monitors which may explain this odd configuration.</p>
+
+<p>(I only saw these two people in this space for one day. They were visitors to the building and had planned to talk to one of them the next time I saw them. If I had a do-over, I would like to have raised this issue with them.)</p>
+
+<h2>Welcoming Interactions at Different Parts of the Day</h2>
+
+<h3>Introduction and First Impressions</h3>
+
+<p><strong>&ldquo;I am looking forward to pairing with you.&rdquo; </strong></p>
+
+<p>What: Start your day by making your pair feel welcomed. If you are excited to pair, then mention the reasons. Humans can spot when we are insincere, so only say it if you mean it.</p>
+
+<p>Why: We want our pair to feel welcomed.</p>
+
+<p>When: I use this periodically so that it does not seem formulaic. When pairing with a stranger outside of work, I will include a handshake and introduce myself. &ldquo;Hi, I&rsquo;m Todd, and I&rsquo;m looking forward to pairing with you…&rdquo;</p>
+
+<p><strong>&ldquo;What is your ideal pairing day?&rdquo;</strong></p>
+
+<p>What: I ask my pair to tell me about their ideal pairing day. Some people have never considered the question and are surprised by it. Some need clarification about what I am asking. I will respond with &ldquo;After a day of pairing, when you leave work energized, what caused you to be energizing?&rdquo; or &ldquo;What enables you to have a successful day of pair programming? What do you need from me?&rdquo;</p>
+
+<p>Why: If you both have different goals for the day, talking it out may help you understand your pair&rsquo;s motivations.</p>
+
+<p>When: I only do this when I start pairing with a person for the first time.</p>
+
+<p>The common responses are</p>
+
+<blockquote><p><sub>1. I love it when we deliver lots of stories (these tended to come from client developers);</p>
+
+<p><sub>2. I love it when we solve a hard problem;</p>
+
+<p><sub>3. I love it when my pair and I are on the same page working harmoniously.</p></blockquote>
+
+<h3>Starting a Day</h3>
+
+<p><strong>&ldquo;How is it going?&rdquo;</strong> or <strong>&ldquo;What did you do over the weekend?&rdquo; </strong></p>
+
+<p>What: Take a moment to find out how your partner is doing.</p>
+
+<p>Why: When starting a day with my pair, it is super tempting to jump into the work immediately. We may be eager to start delivering value. I find that I need to stop myself and acknowledge our humanity. I enjoy just checking in with my partner. In American culture, &ldquo;How is it going?&rdquo; can be a throw-away greeting, so I look my pair in the eye and ask &ldquo;How is it going?&rdquo; in a way that communicates that I am honestly interested and curious about their wellbeing.</p>
+
+<p>We are integrated people. Things that happen at home affect us at work and things that happen at work affect us at home. A harrowing adventure on a commute may affect us emotionally and may affect the dynamic between the pair.</p>
+
+<p><strong>&ldquo;I am concerned about _____&rdquo; / Addressing Concerns</strong></p>
+
+<p>What: Reveal any concerns that you have about the day. Discuss anything that might affect the pairing relationship. Your concerns could include the story, the work, or the pairing.</p>
+
+<p>Why: Our feelings or anxiety may affect the pairing relationship. Discussing our feelings helps remove the energy around that feeling. See the section on Sensing Strong Feelings for more details.</p>
+
+<p>Examples: Here are some examples from my experience:</p>
+
+<blockquote><p><sub>* &ldquo;I am anxious about getting to the root cause of [this tricky technical issue],&rdquo;</p>
+
+<p><sub>* &ldquo;I just had this difficult conversation outside of work and I can tell it&rsquo;s affecting my mood,&rdquo; or</p>
+
+<p><sub>* &ldquo;I am worried that this feature is taking too long to finish.&rdquo;</p></blockquote>
+
+<p>Example: One of my pair types at 110 words per minute. Maximum my typing speed is 55 words per minute. I was intimidated by his typing speed. I felt like I was slowing us down. I felt that I had to type faster to be valuable. After a few pairing sessions, I acknowledging what I was feeling. Neither of us changed our behavior, but I was no longer intimidated. It became a non-issue.  Acknowledging the situation allowed me to appreciate how he brought this fantastic skill to us as a pair.</p>
+
+<h3>Mid Afternoon Check In</h3>
+
+<p><strong>&ldquo;How is today going for you?&rdquo; </strong>or<strong> &ldquo;What could I be doing differently?</strong>&rdquo;</p>
+
+<p>What:  Check in with your partner about how things are going.</p>
+
+<p>Why: Check-ins can decrease the feedback loop. Hypothetically, say you are bothering your pair. How long will it take them to give you unsolicited feedback? A week? A month? Maybe never? It takes courage to provide unsolicited feedback. By broaching the topic and asking for feedback, you can reduce your feedback cycle.</p>
+
+<p>When: About 2/3rds of the way through the workday. I prefer mid-day so that when I receive feedback, I have a chance to practice changing it immediately with that person. At Pivotal, we daily rotate with whom we pair. Asking at the end of the day requires me to wait several days before I have a chance to course correct. I set the alarm on my phone that goes off two hours before the end of the day.</p>
+
+<p>Examples: I have received feedback on keyboard sharing, improvements to my development flow, and an ask for me to be more assertive. I even discovered that I chew gum too loudly.</p>
+
+<p>If your pair might not be comfortable giving feedback, remind them how valuable the feedback is: <strong>&ldquo;I value your feedback as it helps me grow. Please tell me one thing that I could be doing differently.&rdquo; </strong>When hearing feedback, say<strong> &ldquo;Thank you.&rdquo;</strong> Do not argue about it as this appears defensive and your pair may not want to provide feedback again. It is fine to ask clarifying questions for the purpose of understanding their point of view.</p>
+
+<p>If you find that you are not getting any constructive feedback, perhaps your pair is not comfortable giving feedback with you. Work with your manager. Your manager could ask for feedback on your behalf.</p>
+
+<p>When I stop receiving constructive feedback, I ask <strong>&ldquo;How was today less than exceptional?&rdquo;</strong> or <strong>&ldquo;What was less than extraordinary about today?&rdquo;</strong> [<a href="https://itscoffeeti.me/the-art-of-getting-magical-feedback-aa0e48052564">reference</a>] Experiencing an exceptional day is rare. The question sets the bar high, allowing your pair to voice any small improvement.</p>
+
+<h3>End of Day Wrap Up</h3>
+
+<p><strong>Thank your pair for their contributions.</strong></p>
+
+<p>What: Mention particular accomplishments or strengths. Bring up unique ideas they offered.</p>
+
+<p>Acknowledge if you accomplished more with your pair than you would have without them. Feel free to acknowledge the hard parts of the day. <strong>&ldquo;Even though dealing with the build system was frustrating, I enjoyed pairing with you.&rdquo;</strong></p>
+
+<p>Why: This gift ends your pair&rsquo;s day on a high note. This action helps us practice gratitude. On a frustrating day, it is nice to acknowledge the pleasant parts.</p>
+
+<p>When: I aim to do this about five to ten minutes before the end of the day so that I am not keeping my pair past the end of a workday. Some situations will preempt you from doing this action: the team may call a team huddle at the end of the day or you may be working on an energizing story and you both want to finish some part of the work. If I aim to do this every day, then I hope to achieve a good balance with the other interruptions.</p>
+
+<p>The goal is to wrap things up and end the day on a positive note. I try to avoid rehashing or starting a day&rsquo;s reflection; I practice at the Mid Afternoon Check-in instead. I want my pair to feel appreciated and for them to know that I look forward to our next session.</p>
+
+<h2>Reflecting on the Process / Conversations about the process</h2>
+
+<p><strong>&ldquo;How do we improve our development environment?&rdquo;</strong></p>
+
+<p>What: Reflect about the development process.</p>
+
+<p>Why: We want to have efficient development environments. Often an improvement in one development environment benefits the entire team. Discussing the development environment reveals concerns about the setup.</p>
+
+<p>When: periodically</p>
+
+<p>Example: How do we decide which editor to use? At Pivotal, the most common editors are Vim or one of the JetBrains products (IntelliJ, CLion, Gogland, RubyMine, PyCharm, etc.). What do we do when one pair prefers Vim and the other prefers a JetBrains editor? When an expert with a technology is pairing with someone learning the technology, I recommend using the editor that the novice knows best.  The technology might be programming language (c, python, go) or a framework (spring, rails). This strategy allows the novice to focus on learning the technology and the expert has a chance to learn the less familiar development environment. At Pivotal, learning more Vim or more JetBrains makes each engineer a more well-rounded engineer.</p>
+
+<p><strong>&ldquo;How do we reduce feedback time?&rdquo;</strong></p>
+
+<p>What: Discuss the waste from long feedback cycles [<a href="https://www.researchgate.net/publication/313360479_Software_Development_Waste">reference</a>]</p>
+
+<p>Why: We want to have fast feedback loops. Unfortunately, there can be many technical obstacles that get in the way.</p>
+
+<p>When: Discuss this topic when you are suffering from long feedback loops. If there is waiting time, we can use this opportunity to improve the situation and reduce waiting time in the future.</p>
+
+<p>On my first Pivotal project, our test suite took about ten minutes to run. On our last week of the project, my pair and I decided to speed it up. In looking at the tests, we discovered that two of them took the majority of the time. One test grew the size of a cluster. One test created a cluster. One test destroyed a cluster. All of the other tests assumed that a cluster existed. By resequencing our test cases, we were able to speed up our tests significantly. We attempted to always leave a cluster up. By running all the quick tests first, if a test failed we would find it quickly. We then would then grow the cluster, destroy the cluster, and create a cluster thus leaving it in a state for the next test run. This resequencing decreased the test suite running time to a few minutes. We lamented that we had not made the change earlier. By removing waiting time, you enable your team to deliver faster.</p>
+
+<p><strong>Setting a learning goal</strong></p>
+
+<p>At the start of the day you can set a learning goal. &ldquo;Let us work on understanding Test Driven Development today&rdquo; or &ldquo;Let us work on keyboard skills.&rdquo; Try to frame it so that it is more collaborative. At the end of the day, each person provides feedback about the goal. Allowing your pair to know what kind of feedback ahead of time gives them a chance to observe you in action.</p>
+
+<h2>Looking for Gold</h2>
+
+<p>What: In the improv game called  &ldquo;That&rsquo;s Brilliant!,&rdquo; a team member offers a terrible, impractical solution for a problem.  The group then uses the suggestion to look for divergent ideas that could help us solve the problem. The team mines the ridiculous suggestion looking for gold. This game trains the team to stop, consider, unpack, and explore suggestions offered by teammates.</p>
+
+<p>Why: I am strongly tempted to disregard an absurd suggestion from my partner and move on to more &ldquo;fruitful&rdquo; ideas. When I do this, I am discounting my partner&rsquo;s suggestions and treating their ideas as worthless. If I do this too often, my partner may feel unheard and disrespected.</p>
+
+<p>When: When my partner offers an idea that is entirely off the wall and will not possibly work. When I see myself discounting my partner, I try to stop myself, and mine for gold.</p>
+
+<h2>Traveling Together</h2>
+
+<p>What: Sometimes the path forward and the answer is clear to us, but not to our partner. It is tempting to &ldquo;get it done&rdquo; and drag our partner along.</p>
+
+<p>Why: Leaving your partner behind creates a tension in the relationship. Perhaps you feel that the work needs to get done today and the team cannot afford to be slowed down by your partner. In this situation, the team is missing out on a great cross-training opportunity.</p>
+
+<p>When: If you sense that your partner is not comfortable with a decision, check in with them first. Avoid plowing forward.</p>
+
+<p>How can two walk together, unless they agree to do so? [<a href="https://www.biblegateway.com/passage/?search=amos+3%3A3&amp;version=NKJV">reference</a>]</p>
+
+<p>Example: One time I thought the next step was super easy. My partner was not understanding my suggestion. I said, &ldquo;let me try and see if it just works.&rdquo; Unfortunately, it turned out not to be so simple. After going down several layers, I realized that I needed to stop, start-over, and involve my partner in solving the problem.</p>
+
+<p>If the person is not contributing to the team, involve your manager. One member of the team does not decide who belongs on the team.</p>
+
+<h2>Processing Strong Feelings</h2>
+
+<p>What: I use a set of playing cards to help me or my partner process strong emotions.</p>
+
+<p>Why: Some projects are stressful. Life happens; events outside work may affect our emotions. Research shows that the verbalization of feelings reduces the power of the feelings. The utilization of different parts of the brain helps the processing of feelings.</p>
+
+<p>When:  If you observe in yourself or perceive in your partner, intense emotions that could affect the pairing dynamic, then consider this technique. Once I felt discombobulated and had difficulty in naming unfamiliar emotions, this exercise helped us understand what I was feeling.</p>
+
+<p>&ldquo;A growing body of research has revealed that labeling an emotion, or putting one&rsquo;s feelings into words, can help to downregulate that affect&rdquo; [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4721564/">reference</a>]. &ldquo;The results indicated that affect labeling, relative to other forms of encoding, diminished the response of the amygdala and other limbic regions to negative emotional images. …. These results suggest that affect labeling may diminish emotional reactivity along a pathway from RVLPFC to MPFC to the amygdala.&rdquo; [<a href="https://pdfs.semanticscholar.org/5a46/0556d7278bd4f960a92d19b42c9347b35812.pdf">reference</a>].</p>
+
+<p>How: Purcahse a set of Mixed Emotion feeling cards available at <a target="_blank" href="[https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9](https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9)">amazon.com</a> The cards are playful and helpful in getting in touch with emotions.</p>
+
+<p><span class="thumbnail-image-block ssNonEditable"><span><a target="_blank" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=sedano-20&keywords=0970164017&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0bdefc57e9d9437c06f6d2a26d5589a9"><img src="/images/mixed-emotions.png" alt="Mixed Emotions Card Deck"/></a></span></span></p>
+
+<p>Here is an example interaction: &ldquo;Are you willing to try an experiment with me? This exercise might help me identify some emotions that I am feeling. We each will look through a deck of cards and pull out one or two feeling cards with which we strongly identify. There are a lot of cards in this deck. Maybe you take the top half, and I will take the bottom half. Once we go through our decks, we then will switch. If we both want to select the same card, that is fine. There is just one in the deck though. Are you ok with this experiment?&rdquo;</p>
+
+<p>Go about picking your cards. When you both are done, explain why you identified with each of your cards. For your partner&rsquo;s turn, try to make it as safe as possible. &ldquo;I would like to know why you are feeling each of those emotions, but only share to the depth that you feel comfortable.&rdquo; Some people will be eager to share their feelings and will even want to go first.</p>
+
+<p>Example: One project had an aggressive deadline with a client who would refuse to prioritize the work to be done. The team suffered psychological distress [<a href="https://www.researchgate.net/publication/313360479_Software_Development_Waste">reference</a>]. Several times I used this exercise to discuss my feelings and de-stress. Once I was not sure what my emotions were; the 60 cards helped me identify what I was feeling. After doing this exercise, I felt more in touch with myself, more at ease, and more connected with my partner.</p>
+
+<h1>When Things Go Wrong / Weird</h1>
+
+<p>Since pairing is a relational practice relying on imperfect communication, misunderstandings and slights can emerge. In this section, I list out several strategies for coping with a situation that is getting tense, de-escalating a situation that is tense, and how to re-engage with your partner after a tense situation.</p>
+
+<p>What could go wrong with pairing?  Here are some situations that have bothered me.</p>
+
+<blockquote><p><sub>* You come across some code that is difficult to read. Your partner tells you not to refactor the code.</p>
+
+<p><sub>* Your partner dominates the keyboard for most of the day.</p>
+
+<p><sub>* Your partner does all the work without involving you.</p>
+
+<p><sub>* Your partner tells you how horrible is the code that you helped work on the previous day.</p>
+
+<p><sub>* You discuss a situation and agree to a plan, but then your partner starts doing his / her own thing anyway.</p></blockquote>
+
+<h2>Improving communication when things are starting to get tense</h2>
+
+<p><strong>Repeat to understand</strong></p>
+
+<p>What: Take a moment to make sure you understand your partner&rsquo;s idea. Repeat back or summarize what you just heard. &ldquo;I hear you saying that we should….&rdquo;</p>
+
+<p>Why: This technique helps me understand if I am hearing what my pair is trying to say. I have experienced several cases where each of us thinks we are clearly communicating an idea, but one of us is fundamentally misunderstanding what the other is saying. People have different communication styles. Some prefer precise, detailed language while others prefer abstract communication. This technique can help bridge a communication gap when people of different communication styles pair.</p>
+
+<p>When: Try this technique when you and your pair are not on the same page. If my partner says something that I think is utterly ridiculous, I might use this method to verify that I heard the suggestion correctly. In this situation, I do try to embrace empathy and not be sarcastic in repeating back what was said.</p>
+
+<p><strong>Summarize current situation</strong> or <strong>review how we got here</strong></p>
+
+<p>What: Describe where we are at or recall the journey.</p>
+
+<p>Why: Sometimes it is easy to get caught up in arguing about the trees without seeing the forest. By reviewing our thought process on how we got here, we recall our decision-making process and refocus on our goals.</p>
+
+<p>When: When the path forward is not obvious or we are no longer certain which problem we are solving.</p>
+
+<p><strong>Advocate your partner&rsquo;s solution</strong></p>
+
+<p>What: Articulate your partner&rsquo;s solution and describe what you like about it.</p>
+
+<p>Why: This will showcase that there are merits in what your partner&rsquo;s solution. By taking your partner&rsquo;s point of view, you adopt a more flexible position and might let go ownership of your solution.</p>
+
+<p>On several occasions, my partner and I have switched positions when I have used this technique. I want to do their idea, and they want to do my idea.</p>
+
+<p><strong>Explore alternative solutions</strong></p>
+
+<p>What: List out everything that could possibly work. Verbalize half-baked ideas.</p>
+
+<p>Why: We want to find the best possible technical solution. Premature convergence happens when we latch onto an idea before we have explored many divergent ideas.</p>
+
+<p>When: Sometimes we get bogged down on own perspective on how to solve an idea. By exploring alternative approaches, we unstick ourselves.</p>
+
+<p><strong>Bring in the team</strong></p>
+
+<p>What: Ask your team for their opinion. Try to present both ideas fairly. Experiment with each person advocating for the other person&rsquo;s idea.</p>
+
+<p>Why: Involving multiple perspectives shifts the focus from &ldquo;you versus me.&rdquo; The team may bring additional insights and solutions. If two people cannot agree, it is probably worth taking the time for the team to help solve it.</p>
+
+<p>If five people on a six-person team agree on a solution, there&rsquo;s more weight behind the team making the decision. For the dissenting point of view, mention that the team will try the solution and revisit the decision later if it does not work out. View this situation as a learning opportunity. On several occasions, I have thought something could not possibly work only to be pleasantly surprised that I was wrong.</p>
+
+<p>When: After exploring alternative solutions, if the pair cannot agree on how to make forward progress. I tend to reach for this technique first when the decision affects everyone on the team.</p>
+
+<p><strong>Try one solution</strong> or <strong>try both solutions</strong></p>
+
+<p>What: Trying one or both solutions.</p>
+
+<p>Why: We can waste time in over-discussing solutions. Implementing a solution reveals new information. Sometimes we can quickly realize that a solution will need additional adaptations or simply will not work.</p>
+
+<p>When: If it is easy to try one or both solutions and there is no clear winner.</p>
+
+<h2>De-escalating a tense situation</h2>
+
+<p><strong>&ldquo;I could really use a break.&rdquo; / Take a Break</strong></p>
+
+<p>What: Suggest taking a break.</p>
+
+<p>Why: If your pair pushed one of your buttons, you might need some time to decompress.</p>
+
+<p>When: If you find yourself getting annoyed or your pair getting annoyed with you. If you see a pair on your team struggling with cooperation, suggest that the entire team take a break. &ldquo;Let us all play ping pong.&rdquo;</p>
+
+<p>Example: In the Palo Alto office, it is super easy to get outside and enjoy nature. Sometimes I just need to sit in the sun, feel its warmth, and realize that this moment will pass. When my partner pushes one of my buttons, I might use an affirmation to ground myself: &ldquo;I add value to the team&rdquo; or &ldquo;I am wonderfully made&rdquo; or &ldquo;My opinions have merit.&rdquo; For me, the best affirmations are ones that I know to be true, but I am not feeling it to be true right now.</p>
+
+<p><strong>&ldquo;Tell me about one of your passions.&rdquo;</strong></p>
+
+<p>What: Get to know your partner in a different setting.</p>
+
+<p>Why: Often we are so focused on delivering stories, that we do not take the time to know our pairs. Find a neutral topic on which you can relate. Reframe the situation to realize that you are pairing with a human, full of aspirations, goals, and needs. Connecting helps us see our partner as a person and grounds us in their humanity.</p>
+
+<p>Example: When I taught at Carnegie Mellon University, two of my master students struggled with collaborating. One evening they had dinner and discovered that they loved the same sports team. Building connection points can shift the relationship from &ldquo;me versus them&rdquo; attitude.</p>
+
+<p>By using this technique, I have learned how to brew coffee, how the bit-coin block-chain works, and my pair&rsquo;s dream to work at Space-X.</p>
+
+<p><strong>Talk to a trusted friend</strong></p>
+
+<p>What: Sometimes venting to a friend helps.</p>
+
+<p>Why: I am biased by my own point of view and I can lose perspective. Talking to a friend helps separate my hang-ups from the dynamic with my pair.  Our friend may provide perspective that we are missing.</p>
+
+<h2>How to re-engage</h2>
+
+<p><strong>Bring it up. Acknowledge the situation.</strong></p>
+
+<p>What: Have the courage to discuss the issue with your pair.</p>
+
+<p>Why: Discussing an issue allows you both to work through it. Your pair might not be aware of the issue. Your pair might have been ok with the dynamic. Discussing it allows you both to resolve the problem.</p>
+
+<p>When: Talk about it later when you and your pair are in a good space.</p>
+
+<p>Example: &ldquo;Earlier today it seemed like you and I were not on the same page. For me, it felt awkward. Is there anything we could have done differently?&rdquo;</p>
+
+<p><strong>&ldquo;When you… I make up … And I feel…&rdquo;</strong></p>
+
+<p>What: In the first blank, you specify the observed behavior. In the second blank, you describe how you interpret the situation; since this is all in your head, you likely are projecting motive onto the other person. In the third blank, you describe how this makes you feel.</p>
+
+<p>Why: This technique initiates the conversation about an observed behavior, but instead of blaming the other person, the technique focuses on how the behavior is affecting you. Talking about yourself hopefully reduces the chance of putting the other person on the defensive.</p>
+
+<p>Example: &ldquo;When you interrupt me before I have made my point, I make up in my head that you don&rsquo;t care about my point of view, and I feel disrespected.&rdquo;</p>
+
+<p><strong>See the person&rsquo;s strengths</strong></p>
+
+<p>What: List out the skills that your partner brings to the relationship.</p>
+
+<p>Why: The pairing relationship is probably not all negative. Try to reframe the problem into an opportunity. How can we leverage each other&rsquo;s strengths? We each bring so much to the pairing relationship.</p>
+
+<p>Example: I enjoy trying a solution and when it is not working moving onto another solution. One of my pairs loves going deep into solving any technical problem. He enjoys figuring out how everything works. I quickly get frustrated when things do not work. At first, this dynamic caused tension. When something was not working, he wanted to go deep into the bowels of the technology to solve it whereas I wanted to move onto a more promising idea. In time, I learned to see the benefit of combining our strengths. I learned to be more patient, trusting my partner&rsquo;s strength. We would explore a topic more than I was comfortable. Likewise, I could also serve my partner by suggesting it was time to try a new idea. I could pull the &ldquo;ripcord&rdquo; and abort an idea that was no longer promising. We successfully combined his strength of a &ldquo;deep dive&rdquo; with my strength of &ldquo;generalizing for the big picture.&rdquo; Once I saw how we complimented each other, I began to enjoy this aspect of our pairing dynamic and looked forward to pairing with him.</p>
+
+<p>Example: On one project, I noticed that my pair was not listening to me and literally did all the typing. I felt discouraged and invaluable. (I call this dynamic &ldquo;Performance Pair Programming&rdquo; where one person performs coding for the audience of their pair.) One day while remote pairing, I was curious how long he would go on before noticing that I was not involved. I started to solo on my computer working on chores that needed to get done. Several hours past and my pair never noticed that I was disengaged. Later in the day, I mentally rejoined what he was working. As I was feeling guilty about what I had done, I acknowledged to my pair what happened and how I was not proud of my passive-aggressive behavior.</p>
+
+<p>However, things did not get better. I still did not want to pair with him. Because of the large team size, I successfully navigated the pair rotation so that I did not pair with him for a couple of months. To help my attitude, I started praising to the team his contributions. By vocalizing his contributions, I eventually realized that this individual was incredibly smart. 99.5% of what he said was accurate, and he was often 5 steps ahead of everyone else in his thinking. I started paying attention to his perspective. When he disagreed with the team, I would want to know why. I became grateful that he was on our team. I made a special trip to his office to pair with him in person. Because my attitude had shifted so much, I had a fantastic time pairing with him that day and for the remainder of my time on that project.</p>
+
+<p><strong>Antipattern &ndash; Ignore it. </strong></p>
+
+<p>What: Pretend that it did not happen.</p>
+
+<p>Why: This is a tempting technique because it seems the easiest. Sometimes things can resolve themselves. However, small issues tend to grow into large issues.</p>
+
+<h2>Lacking Emotional Intelligence (EQ)</h2>
+
+<p>If you are not aware of how your actions affect the mood of emotions of your partner, then I would recommend training. I have paired with some super smart people who were blind to how their actions caused me pain.</p>
+
+<p>While I was pairing with someone with low emotional intelligence, he did all the tying and this made me grumpy. When I realized that my pair was unaffected by my mood, I discovered that I had to do less emotional work. If I was having a bad day, my pair was not bothered.</p>
+
+<p>Amazon sells <a target="_blank" href="https://www.amazon.com/gp/product/1507750455/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1507750455&linkCode=as2&tag=sedano-20&linkId=6a2cd6fc2a6d4384bb53ba9330b90dfd">Enhancing Emotional Intelligence: Mindfulness-Based Strategies for Success &amp; Happiness</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=sedano-20&l=am2&o=1&a=1507750455" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+
+<p>Stanford University has a course called <a href="https://continuingstudies.stanford.edu/courses/professional-and-personal-development/enhancing-emotional-intelligence/20171_PDV-77">Enhancing Emotional Intelligence</a>.</p>
+
+<h1>Remote Pairing</h1>
+
+<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
+
+<h1>Summary</h1>
+
+<p>I have developed these strategies from working through bad pairing experiences. Many of these strategies attempt to be preventative maintenance, things we can do to avoid the issue entirely.</p>
+
+<p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a></h1>
     
     
@@ -883,178 +1699,6 @@ changes in priority do not necessarily interrupt team productivity. If design di
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2015/08/08/renaming-the-iteration-planning-meeting.html">“Renaming the Iteration Planning Meeting&#8221;</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-08-08T14:32:00-07:00" pubdate data-updated="true">Aug 8<span>th</span>, 2015</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Summary</h1>
-
-<p>I suggest renaming the “Iteration” “Planning” Meeting (IPM) to accurately reflect Pivotal’s current goals and practices for that meeting.</p>
-
-<h1>Context</h1>
-
-<p>Over time, Pivotal has evolved its own form of Extreme Programming software development methodology by incorporating ideas from Lean Thinking from manufacturing and Lean Startup.</p>
-
-<p>Some of our terminology needs refreshing to reflect the way we currently work. In particular, “Iteration Planning Meeting” does not accurately reflect what typically happens in that meeting.</p>
-
-<p>In <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/B00CF6EJG8">Extreme Programming</a> (1999) and <a href="http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658">Extreme Programming 2nd Edition</a> (2004) the development team commits to the stories to be accomplished during an iteration or weekly cycle just like a sprint in Scrum. The commitment can change as the week unfolds. Once Product identifies the stories for the week, programmers decompose the stories into tasks. After volunteering for a set of tasks, each programmer estimates only their tasks on Monday during an Iteration Planning Game (XP 1999) or Weekly Cycle meeting (XP 2004.)</p>
-
-<p>In contrast, Pivotal follows a &ldquo;continuous flow&rdquo; where the work “flows” through people as people start the next needed story in the backlog. We limit work in progress to a story per pair of programmers. At Pivotal, we’ve customized the Extreme Programming process so that the developers accomplish the work that needs to get done at that moment in time. At any point in time, we can not predict who will be working on what work tomorrow, but we can say who is working on what work now. As that work is finished, we simply start the next unit of work to be done. We do not commit to which stories will be done in any given week, instead we follow a Lean Thinking’s just-in-time mechanisms for identifying what to work on next.</p>
-
-<p>At Pivotal, stories and tasks are not owned by specific individuals. In Scrum and Extreme Programming, one person owns the task for the duration of the task. At Pivotal, many people might work on a single story. While the team notes who is working on each story right now, the team understands that these associations will change. After finishing a task, a development pair simply works on the next available story.</p>
-
-<p>We’re familiar with the multi-day story: On Monday, Bailey and De begin working from the top of the backlog. On Tuesday, De and Kadeer continue on the story. On Wednesday, Kadeer and Lesley finish the story. For the participants, this can feel like a relay race. The entire team might even rotate through a complex story.</p>
-
-<p>Pivotal prefers very small stories in order to deliver value quickly, remove engineering waste, shorten the feature feedback loop, and support iterative and incremental development. The smaller stories often do preclude the need to explicitly list out any tasks. It is rare for a pair of developers to need to list out the tasks associated with a story. Usually, the pair can effortlessly figure out what needs to get done.</p>
-
-<p>We do not follow a Scrum Sprint, or an Extreme Programming Iteration or an Extreme Programming Weekly Cycle. We’ve successfully incorporated Lean into the way we prepare and execute our work.</p>
-
-<h1>The concept of “week” describes the team’s work rhythm</h1>
-
-<p>The team’s rhythm aligns with the natural rhythm of a work week. Retros are scheduled on Fridays at the end of the week. The meeting signifies closure for the week. There are practical reasons to schedule the meeting on a Friday. After a weekend off, the team forgets the details of the previous week. Just watch the Monday stand-up for confirmation as team members struggle to recall their stories from Friday.</p>
-
-<p>The team schedules a “shared understanding” meeting once a week in order to 1) share context from product and design with the engineers. While the engineers are busy implementing stories, product and design are looking into the future work, specifying what needs to be done. This sharing of context helps anyone on the team pick up any story in the backlog. 2) The meeting provides feedback from enginering to product about the complexity and risk of the work. A story that seems simple to product might be expensive to impement. This emergent conversation allows product an opportunity to course correct to a simpler solution.</p>
-
-<p>The meenting typically covers enough stories to make sure that we have enough work in the backlog. Teams typically schedule them on Mondays, Tuesdays, and Wednesdays since any day will do. (This is unlike an Extreme Programming Iteration where these need to be scheduled at the beginning of the week so developers know who is working on what.) If the backlog was extremely full, we could just cancel the meeting. Just because the team’s natural cadence aligns with the week does not mean we are doing Extreme Programming iterations.</p>
-
-<p>The next time you find yourself using the word “iteration”, see if the word “weekly” would do instead. “What is our velocity this iteration?” becomes “What is our velocity this week?” and “How many iterations are left in this project?” becomes “How many weeks are left in this project?” The term iteration is a proxy for measuring time. Since we aren’t committing to work to be done in an iteration, our usage of the terms are interchangeable.</p>
-
-<p>In communicating our process to potential clients and the outside world, I’d prefer to be accurate in describing our work flow as a Lean just-in-time system. Using the term “iteration” potentially miscommunicates that we are committing to specific work each week.</p>
-
-<h1>Updating our terminology at Pivotal</h1>
-
-<p>Since Pivotal has evolved its own form of Extreme Programming to incorporate Lean’s just-in-time practices, I suggest we use the accurate terminology in describing the way we work.</p>
-
-<p>Consider our weekly meeting for creating shared mutual understanding and pointing the next stories in the backlog. Ironically, the meeting is called an “Iteration Planning Meeting” even though we do not commit to which stories we are doing next week and no explicit planning happens in the meeting. While we do point stories in the meeting, examining whether we are on track, re-prioritizing stories, and assigning work to individuals all happen outside the meeting. For us, planning happens at the product manager, client liaison, and client level as Pivotal discusses whether the project is on track and whether key features will be done by a certain date.</p>
-
-<p>During our “Iteration” “Planning” Meeting, it is entirely possible that the stories we do discuss might happen two or even three weeks from now, not during the next “iteration.”</p>
-
-<p>When I’m anchoring a project, my chief concern with our “Iteration” “Planning” Meeting is to make sure that our backlog has enough pointed stories for the next week. The team running out of work would be disastrous.</p>
-
-<p>Finding a suitable replacement name for this meeting is challenging as many of us have different, sometimes conflicting expectations and goals for the meeting. Here is what I have found n interviewing 10 pivots and product managers from four offices.</p>
-
-<p>Common goals for the meeting:
-1) Create a shared understanding of the work that is to be done.  (Where are we headed? What will we be building? Are we building the right system?)
-2) Communicate to the PM risks and story complexity. We typically use estimation as a forcing function to have this conversation.
-3) Estimate the work
-4) Verify that each story has clear acceptance criteria</p>
-
-<p>Goals 1 and 2 are frequently cited in my interviews. Some pivots argue that we should not be pointing and thus goal 3 is not a goal for them in the meeting. Goal 4 is infrequently mentioned.</p>
-
-<p>We could call the meeting a “Pointing Meeting” (PM) which unfortunately has the same abbreviation as Product Manager (PM). In discussing the goals of the meeting with numerous Product Managers, Anchors, and Pivots, I personally prefer the term “Shared Understanding Meeting” as it reinforces the goal of getting everyone on the same page.</p>
-
-<h1>Updating Pivotal Tracker</h1>
-
-<p>Pivotal Tracker might minor updates to its messaging. Pivotal Tracker describes each week as an “iteration” and has charts that talk about “iteration velocity” (aka weekly velocity) “iteration start date” (aka week start date). Fixing this would be a simple string replacement. Fortunately, many of the charts simply reference “Date” instead of “Iterations.” The terminology seeps more into the Help documentation than the tool itself. Keeping the iteration terminology in the help documentation makes sense given that other companies use tracker, and they might have sprints or iterations. Since the weekly markers are not labeled as iterations, one could use tracker for quite some time without knowing that the tool reinforced the Extreme Programming iteration concept from 1999.</p>
-
-<h1>My own A-ha moment</h1>
-
-<p>In the movie, the Matrix, Keanu Reaves follows a discovery and evaluation process to determine if he is “The One.” While in a waiting room, he sees a boy bending spoons and wonders how that is possible. The secret is that “there is no spoon.” I had a similar revelation while working on a Pivotal Labs project. In the middle of the work week, I was reflecting on our rhythm of weekly retrospections and weekly pointing meetings and realized that there were no iterations. We did not commit to explicit work each week. Every day felt very much like the next day. We weren’t ramping up on new stories on Monday to wind them down on Friday. Instead, we were present with the features in the backlog. We weren’t planning for or committing to which stories would be done in each week. I mentioned this to my pairing partner and he said, “Of course there are iterations, each Monday we start a new iteration!” The anchor overheard this conversation and said, “Actually, since our project started on a Tuesday, I setup Pivotal Tracker to have iterations go Tuesday to Monday.” With three developers on one team, we had widely different opinions of whether we had iterations and when they started. This conversation reinforced my observation that we were not using iterations as prescribed by Extreme Programming.</p>
-
-<h1>Conclusion</h1>
-
-<p>I recommend we replace “Iteration Planning Meeting” with a phrase that accurately describes the meeting’s purpose and goals. I suggest “Shared Understanding Meeting” as a simple draft proposal which is intended to encourage discussion about its disadvantages or the purpose of generating better proposals.</p>
-
-<p>Update 5/10/2017: I now suggest &ldquo;Story Discussion Meeting&rdquo; or &ldquo;Story Estimation Meeting&rdquo;</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2015/08/02/collaborative-software-development.html">Collaborative Software Development</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-08-02T15:31:00-07:00" pubdate data-updated="true">Aug 2<span>nd</span>, 2015</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I’m still editing this blog post and it is subject to change. While what I want to say isn’t changing, the words that I use to say it are changing.</p>
-
-<h1>Collaborative Software Development</h1>
-
-<p>Collaborative Software Development is an evolution of Extreme Programming method with iteration-less development. Collaborative Software Development starts with all of the practices of Extreme Programming (XP) and replaces the concept of iterations with Lean Thinking’s just-in-time production philosophy manifested in pulled-based practices. This achieves a high quality, extremely readable, and well designed software with a faster ability to respond to change.</p>
-
-<p>Collaborative Software Development continues to rely on all the technical practices of XP including pair-programming, test-driven development as well as the remaining process practices of XP including on-site customer.</p>
-
-<h1>Commitment level shifts from the iteration to story</h1>
-
-<p>While there is a commitment to the story in-flight, the developers with the product manager may realize that the story needs changing. While working on a story, the developers might discover a corner case not considered by the product manager, or find a confusing user interaction flow that requires the user experience to be re-worked. For these emergent and “internal” changes, the story needs updating. (reduces the waste from more design-up-front approaches. This is an advantage of the process.) For “external” changes where the product owner changes the feature, typically the product owner creates a new story that reflects the new insight into the feature. From this perspective, there is a commitment between the product owner and the team that the stories written reflect our current understanding of the system and will not be re-written by product.</p>
-
-<p>By switching from an iteration based to a just-in-time workflow, the commitment level changes from the iteration to the story.  In Extreme Programming, there is a weekly contract between the product owner and the development team that the work for a particular week is fixed. Anything can change about the project, as long as the changes occurred between iterations. With Collaborative Software Development, the product owner is committing to the completion of any story in flight since it was at the top of the backlog when available developers pick it up and start working on it. In practice, product owners do not cancel in-flight stories. Stories might become blocked and be un-started. Theoretically it is possible that the direction of a project changes so drastically that you might stop working on a story, but in practice this is extremely rare.</p>
-
-<h1>Being in the moment</h1>
-
-<p>In this environment, developers learn to be flexible when showing up at work, just like actors performing improvisation without a script. Imagine a developer with expectations about their work for the day. At the beginning of the day, they pair up, and the pair may discover that the team’s needs will cause the developer’s expectations to be misaligned from reality. Developers learn to loosely hold any expectations and embrace what emerges in the day. Developers can be pleasantly surprised by what emerges. “Acceptance is the answer” to many of life’s problems. A developer can express their desires to the team. Examples include “I haven’t worked on this part of the code base recently” or “I haven’t paired with this person in awhile” or “I really enjoy working on UI stories.” However, if the build is broken, or the product manager needs help in accepting a story, then the reality of the moment will trump any of the developer’s plans.</p>
-
-<p>Improvisors practice letting go of planning through exercises that reinforce handling of chaotic situations, rewarding spontaneity, and listening. In Lean XP, we learn to listen to our pairs, our tests, our code, our stories, our product owner, and our users.</p>
-
-<p>“You Aren’t Going to Need It” (YAGNI) encapsulates part of this idea. Instead of worrying about future features, let’s focus on the current system and implementing the current feature. At its heart, its about being in the present with the code. By not committing to stories for each week, it shifts the conversation. Instead of discussing what was done last week, or what will be done next week, the team can focus on what needs to be done now.</p>
-
-<h1>Pros</h1>
-
-<p><strong>This approach encourages flexibility in the developers.</strong> I don’t know what I’m working on today. If I do have plans, I need to be willing to let go.</p>
-
-<p><strong>This approach allows for quick re-distribution of the work.</strong> As developers finish a story, they will pick up the next important one. The PM can re-prioritize the backlog at any point and know that the most important story will be worked on as soon as a pair finishes their current work.</p>
-
-<p>If everyone was committed to a task within a sprint, then explicitly coordination is required to determine which tasks should be postponed and dropped. Dependencies on those tasks could also be affected.</p>
-
-<p><strong>This simplifies the plan of work for the week</strong> Some engineering managers maintain intricate mappings of who is working on what and who is dependent upon what. If any one developer slips on their work, there is other work that is also delayed. Lean XP shifts the focus from developer dependency to story dependency. Stories that block other stories can be explicitly labeled. When the first story finishes, the second story can be unblocked and worked upon when it reaches the top of its backlog. There is no “chess” game of resource allocation and dependency management.</p>
-
-<p>How is a SE kanban board lean? Instead of tracking about all of the requirements of a product, we can just track the stories in the next iteration or the features in the next release?</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1074,19 +1718,19 @@ changes in priority do not necessarily interrupt team productivity. If design di
       </li>
     
       <li class="post">
+        <a href="/toddsedano/2017/10/22/considerate-pair-programming.html">Considerate Pair Programming Strategies, Techniques, and Tips</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2017/10/22/considerate-pair-programming.html">Considerate Pair Programming Strategies, Techniques, and Tips</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
       </li>
     
       <li class="post">
         <a href="/toddsedano/2017/02/08/we-know-the-way-phonetic-lyrics-moana.html">We Know the Way - Phonetic Lyrics - Moana</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2016/11/07/remote-pair-programming.html">Remote Pair Programming</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2016/05/28/team-code-ownership.html">Team Code Ownership</a>
       </li>
     
   </ul>
@@ -1106,7 +1750,7 @@ changes in priority do not necessarily interrupt team productivity. If design di
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/collaborative-software-development/'>Collaborative Software Development (2)</a></li><li><a href='/blog/categories/collaborative-software-dvelopment/'>Collaborative Software Dvelopment (1)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/pair-programming/'>Pair programming (1)</a></li><li><a href='/blog/categories/pair-programming/'>pair-programming (2)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (3)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/collaborative-software-development/'>Collaborative Software Development (2)</a></li><li><a href='/blog/categories/collaborative-software-dvelopment/'>Collaborative Software Dvelopment (1)</a></li><li><a href='/blog/categories/craftsmanship/'>Craftsmanship (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/pair-programming/'>Pair programming (2)</a></li><li><a href='/blog/categories/pair-programming/'>pair-programming (3)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (3)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
 </section>
 
   
