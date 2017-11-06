@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-06T15:25:57-08:00</updated>
+  <updated>2017-11-06T15:55:16-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -18,28 +18,9 @@
     <link href="http://professor.github.io/toddsedano/2017/10/24/considerate-pair-programming.html"/>
     <updated>2017-10-24T08:37:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/10/24/considerate-pair-programming</id>
-    <content type="html"><![CDATA[<p>This is a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
+    <content type="html"><![CDATA[<h2>When Pair Programming Goes Wrong / Weird</h2>
 
-<p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part 1</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
-
-<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part 2</a> covers <em>Strategies for Success</em> including</p>
-
-<ul>
-<li><p>welcoming interactions at different parts of the day,</p></li>
-<li><p>reflecting on the pair programming experience, and</p></li>
-<li><p>reframing interactions for growing collaboration.</p></li>
-</ul>
-
-
-<p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part 3</a> covers what to do <em>When Things Go Weird</em></p>
-
-<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
-
-<p><em>Remember that our overarching goal is to to create a welcoming and safe environment for both pairs.</em></p>
-
-<h2>When Things Go Wrong / Weird</h2>
-
-<p>Since pairing is a relational practice relying on imperfect communication, misunderstandings and slights can emerge. In this section, I list out several strategies for coping with a situation that is getting tense, de-escalating a situation that is tense, and how to re-engage with your partner after a tense situation.</p>
+<p>Since pairing is a relational practice relying on imperfect communication, misunderstandings and slights can emerge.</p>
 
 <p>What could go wrong with pairing?  Here are some situations that have bothered me.</p>
 
@@ -51,6 +32,30 @@
 <li><p>You discuss a situation and agree to a plan, but then your partner starts doing his / her own thing anyway.</p></li>
 </ul>
 
+
+<p>In this section, I list out several strategies for coping with a situation that is getting tense, de-escalating a situation that is tense, and how to re-engage with your partner after a tense situation.</p>
+
+<!-- more -->
+
+
+<p>This is Part Three in a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
+
+<p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part One</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
+
+<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part Two</a> covers <em>Strategies for Success</em> including</p>
+
+<ul>
+<li><p>welcoming interactions at different parts of the day,</p></li>
+<li><p>reflecting on the pair programming experience, and</p></li>
+<li><p>reframing interactions for growing collaboration.</p></li>
+</ul>
+
+
+<p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part Three</a> covers what to do <em>When Things Go Weird</em></p>
+
+<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
+
+<p><em>Remember that our overarching goal is to to create a welcoming and safe environment for both pairs.</em></p>
 
 <h2>Improving communication when things are starting to get tense</h2>
 
@@ -201,29 +206,24 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Considerate Pair Programming]]></title>
+    <title type="html"><![CDATA[Considerate Pair Programming - Part 2 - Strategies for Success]]></title>
     <link href="http://professor.github.io/toddsedano/2017/10/23/considerate-pair-programming.html"/>
-    <updated>2017-10-23T00:00:00-07:00</updated>
+    <updated>2017-10-23T08:37:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/10/23/considerate-pair-programming</id>
-    <content type="html"><![CDATA[<hr />
+    <content type="html"><![CDATA[<h2>Strategies for Success in Pair Programming</h2>
 
-<p>layout: post</p>
+<p>In my software development practice, I rely on several techniques for increasing the probability of success with a pairing relationship.</p>
 
-<p>title: &ldquo;Considerate Pair Programming &ndash; Part 2 &ndash; Strategies for Success&rdquo;</p>
+<p>This article contains a toolbox of techniques. Feel free to pick a few to try out and then revisit the list in a few weeks.</p>
 
-<p>date: 2017-10-23 08:37</p>
+<!-- more -->
 
-<p>comments: false</p>
-
-<p>categories: [Pair programming]</p>
-
-<h2>excerpt: &ldquo;In my software development practice, I rely on several techniques for increasing the probability of success with a pairing relationship. This article contains a toolbox of techniques. Feel free to pick a few to try out and then revisit the list in a few weeks.&rdquo;</h2>
 
 <p>This is a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
 
-<p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part 1</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
+<p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part One</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
 
-<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part 2</a> covers <em>Strategies for Success</em> including</p>
+<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part Two</a> covers <em>Strategies for Success</em> including</p>
 
 <ul>
 <li><p>welcoming interactions at different parts of the day,</p></li>
@@ -232,17 +232,11 @@
 </ul>
 
 
-<p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part 3</a> covers what to do <em>When Things Go Weird</em></p>
+<p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part Three</a> covers what to do <em>When Things Go Weird</em></p>
 
 <p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
 
 <p><em>Remember that our overarching goal is to to create a welcoming and safe environment for both pairs.</em></p>
-
-<h2>Strategies for Success</h2>
-
-<p>In my software development practice, I rely on several techniques for increasing the probability of success with a pairing relationship.</p>
-
-<p>This article contains a toolbox of techniques. Feel free to pick a few to try out and then revisit the list in a few weeks.</p>
 
 <h2>Welcoming Interactions at Different Parts of the Day</h2>
 
@@ -415,24 +409,7 @@
     <link href="http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming.html"/>
     <updated>2017-10-22T08:37:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/10/22/considerate-pair-programming</id>
-    <content type="html"><![CDATA[<p>This is a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
-
-<p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part 1</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
-
-<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part 2</a> covers <em>Strategies for Success</em> including</p>
-
-<ul>
-<li><p>welcoming interactions at different parts of the day,</p></li>
-<li><p>reflecting on the pair programming experience, and</p></li>
-<li><p>reframing interactions for growing collaboration.</p></li>
-</ul>
-
-
-<p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part 3</a> covers what to do <em>When Things Go Weird</em></p>
-
-<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
-
-<h2>Why We Pair</h2>
+    <content type="html"><![CDATA[<h2>Why We Pair</h2>
 
 <p>Hi. I have come to love Pair Programming. I enjoy the collaboration, cross-training, and better solutions that emerge while I pair.</p>
 
@@ -451,6 +428,26 @@
 <p>Pairing exposes both our strengths and our weakness. How we handle our weaknesses may have a direct impact on the pairing relationship. One of us might not be comfortable exposing our weaknesses. If we are experiencing imposter syndrome, that we are not qualified for the job we have, we might fear that our partner is going to find out that we are faking it.</p>
 
 <p>I have been on a journey to be a better pair. While at Pivotal over 3.5 years, I have paired with ~39 pivots and ~ 20 client developers. I am grateful to each person who has helped me better understand myself and have helped me assemble and create these techniques. If you paired with me and I did not apply the technique, it may be because I learned it later.</p>
+
+<!-- more -->
+
+
+<p>This is Part One in a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
+
+<p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part One</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
+
+<p><a href="http://sedano.org/toddsedano/2017/10/23/considerate-pair-programming.html">Part Two</a> covers <em>Strategies for Success</em> including</p>
+
+<ul>
+<li><p>welcoming interactions at different parts of the day,</p></li>
+<li><p>reflecting on the pair programming experience, and</p></li>
+<li><p>reframing interactions for growing collaboration.</p></li>
+</ul>
+
+
+<p><a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html">Part Three</a> covers what to do <em>When Things Go Weird</em></p>
+
+<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
 
 <p><em>Our overarching goal is to create a welcoming and safe environment for both pairs.</em></p>
 
