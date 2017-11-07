@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Considerate Pair Programming - Part 3 - When Things Go Weird - Todd Sedano</title>
+  <title>Considerate Pair Programming - Part 1 - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="When Pair Programming Goes Wrong / Weird Since pairing is a relational practice relying on imperfect communication, misunderstandings and slights can &hellip;">
+  <meta name="description" content="Why We Pair Hi. I have come to love Pair Programming. I enjoy the collaboration, cross-training, and better solutions that emerge while I pair. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Considerate Pair Programming - Part 3 - When Things Go Weird</h1>
+      <h1 class="entry-title">Considerate Pair Programming - Part 1</h1>
     
     
       <p class="meta">
@@ -91,27 +91,30 @@
   </header>
 
 
-<div class="entry-content"><h2>When Pair Programming Goes Wrong / Weird</h2>
+<div class="entry-content"><h2>Why We Pair</h2>
 
-<p>Since pairing is a relational practice relying on imperfect communication, misunderstandings and slights can emerge.</p>
+<p>Hi. I have come to love Pair Programming. I enjoy the collaboration, cross-training, and better solutions that emerge while I pair.</p>
 
-<p>What could go wrong with pairing?  Here are some situations that have bothered me.</p>
+<p>Continuous Pair programming with Overlapping Pair Rotations remove knowledge silos to increase teams&#8217; resiliency to team disruption [<a href="https://www.researchgate.net/publication/304014117_Sustainable_Software_Development_through_Overlapping_Pair_Rotation?ev=prf_high">reference</a>]  and builds collective code ownership [<a href="https://www.researchgate.net/publication/301612260_Practice_and_Perception_of_Team_Code_Ownership?ev=prf_high">reference</a>] as described in Sustainable Software Development.</p>
 
-<ul>
-<li><p>You come across some code that is difficult to read. Your partner tells you not to refactor the code.</p></li>
-<li><p>Your partner dominates the keyboard for most of the day.</p></li>
-<li><p>Your partner does all the work without involving you.</p></li>
-<li><p>Your partner tells you how horrible is the code that you helped work on the previous day.</p></li>
-<li><p>You discuss a situation and agree to a plan, but then your partner starts doing his / her own thing anyway.</p></li>
-</ul>
+<p>Pair programming is a complex practice requiring skill to master. Although Pair Programming has been around for 20 years and is well researched, some teams simply drop engineers onto a team expecting them to figure Pair Programming out.</p>
 
+<p>As a practitioner, I am still discovering ways that I can improve the pair programming dynamic.</p>
 
-<p>In this section, I list out several strategies for coping with a situation that is getting tense, de-escalating a situation that is tense, and how to re-engage with your partner after a tense situation.</p>
+<p>This article describes 1) several techniques that can improve your pair programming experience, 2) strategies on what to do when things get frustrating or go wrong, and 3) concludes with success stories of converting difficult pair-programming relationships into successful pair-programming relationships.</p>
+
+<p>Like any relationship, such as friendships, family dynamics, dating, or marriage, when pairing works well, it is an amazing experience, when pairing falls apart, it can be frustrating and occasionally super hurtful. Unfortunate dynamics can happen while pairing.</p>
+
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have a challenging experience, I would like to hear what it was like for you and how you went about solving it.</p>
+
+<p>Pairing exposes both our strengths and our weakness. How we handle our weaknesses may have a direct impact on the pairing relationship. One of us might not be comfortable exposing our weaknesses. If we are experiencing imposter syndrome, that we are not qualified for the job we have, we might fear that our partner is going to find out that we are faking it.</p>
+
+<p>I have been on a journey to be a better pair. While at Pivotal over 3.5 years, I have paired with ~39 pivots and ~ 20 client developers. I am grateful to each person who has helped me better understand myself and have helped me assemble and create these techniques. If you paired with me and I did not apply the technique, it may be because I learned it later.</p>
 
 <!-- more -->
 
 
-<p>This is Part Three in a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
+<p>This is Part One in a three part series covering strategies, techniques, and tips for Considerate Pair Programming.</p>
 
 <p><a href="http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html">Part One</a> covers <em>Why We Pair</em> and <em>Setting up the Work Environment</em> for success.</p>
 
@@ -128,151 +131,47 @@
 
 <p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
 
-<p><em>Remember that our overarching goal is to to create a welcoming and safe environment for both pairs.</em></p>
+<p><em>Our overarching goal is to create a welcoming and safe environment for both pairs.</em></p>
 
-<h2>Improving communication when things are starting to get tense</h2>
+<h2>Setting up the Work Environment</h2>
 
-<p><strong>Repeat to understand</strong></p>
+<p><strong>The computer</strong></p>
 
-<p>What: Take a moment to make sure you understand your partner&rsquo;s idea. Repeat back or summarize what you just heard. &ldquo;I hear you saying that we should….&rdquo;</p>
+<p>What: Configure the work environment to make pair programming effective. Set up a pairing workstation with two monitors, two keyboards, two mice, and one computer. Make sure there is ample room for two people to work side by side at one desk. Ideally, all the team&rsquo;s machines are similar in configuration enabling frictionless pair rotations. Pivotal uses <a href="workstation-setup">https://github.com/pivotal/workstation-setup</a> when adding new machines to a team to provide a consistent experience with common tools.</p>
 
-<p>Why: This technique helps me understand if I am hearing what my pair is trying to say. I have experienced several cases where each of us thinks we are clearly communicating an idea, but one of us is fundamentally misunderstanding what the other is saying. People have different communication styles. Some prefer precise, detailed language while others prefer abstract communication. This technique can help bridge a communication gap when people of different communication styles pair.</p>
+<p>Why: a welcoming environment that enables both pairs to work efficiently improves productivity.</p>
 
-<p>When: Try this technique when you and your pair are not on the same page. If my partner says something that I think is utterly ridiculous, I might use this method to verify that I heard the suggestion correctly. In this situation, I do try to embrace empathy and not be sarcastic in repeating back what was said.</p>
+<p>Anti-pattern: Avoid using individual laptops for pair programming. After seven projects using pairing workstations, I joined a team that used laptops with external monitors for pairing. The team did not view laptops as communal team property. Each person configured their laptop differently suiting their personal development process. One pair ignored my feedback about the development environment.  At the time, I felt like an unwelcomed guest in someone else&rsquo;s home.</p>
 
-<p><strong>Summarize current situation</strong> or <strong>review how we got here</strong></p>
+<p><strong>The physical environment</strong></p>
 
-<p>What: Describe where we are at or recall the journey.</p>
+<p>What: Create a conducive work environment that treats each person as an equal.</p>
 
-<p>Why: Sometimes it is easy to get caught up in arguing about the trees without seeing the forest. By reviewing our thought process on how we got here, we recall our decision-making process and refocus on our goals.</p>
+<p>Why: Small physical differences can create power imbalances.</p>
 
-<p>When: When the path forward is not obvious or we are no longer certain which problem we are solving.</p>
+<p>Example: On one project, we had a window seat. We intentionally rotated everyone through the more desirable location.</p>
 
-<p><strong>Advocate your partner&rsquo;s solution</strong></p>
+<p>Example of simultaneously standing and sitting: On one project we used varidesks to allow each person to be able to stand or sit whenever they felt like it. Often I would mirror my partner. If they stood, I stood. If they sat, I sat. At some point, I broke away from this rhythm. Initially, the status dynamic felt unequal whenever one of us stood and the other sat. After acknowledging the differences, and practicing it both ways, I am now ok with the dynamic. However, when beginning new pairing relationships, I would prefer to describe my experience and check-in with my pair before creating a potential power imbalance.</p>
 
-<p>What: Articulate your partner&rsquo;s solution and describe what you like about it.</p>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/bad-pairing-setup-depth.jpg" alt="Developer pair programming"/></span></span></p>
 
-<p>Why: This will showcase that there are merits in what your partner&rsquo;s solution. By taking your partner&rsquo;s point of view, you adopt a more flexible position and might let go ownership of your solution.</p>
+<p>Imbalance in desk depth.</p>
 
-<p>On several occasions, my partner and I have switched positions when I have used this technique. I want to do their idea, and they want to do my idea.</p>
+<p>Anti-pattern: For one project, the table did not have a straight edge. One side of the table had more depth and the other side was shallower.  The difference was 15 centimeters (6 inches). The side with more desk spaces felt like the dominant side, whereas the side with less desk space felt less important and inferior.</p>
 
-<p><strong>Explore alternative solutions</strong></p>
+<p><span class="thumbnail-image-block ssNonEditable"><span><img src="/images/bad-pairing-setup-width.jpg" alt="Developer pair programming"/></span></span></p>
 
-<p>What: List out everything that could possibly work. Verbalize half-baked ideas.</p>
+<p>Imbalance in sharing space.</p>
 
-<p>Why: We want to find the best possible technical solution. Premature convergence happens when we latch onto an idea before we have explored many divergent ideas.</p>
+<p>Anti-pattern: I saw two people pairing in this space. The person on the left has ⅓ of the space. The person on the right has ⅔ of the space. Interestingly, the desk&rsquo;s seam is exactly between the two monitors which may explain this odd configuration.</p>
 
-<p>When: Sometimes we get bogged down on own perspective on how to solve an idea. By exploring alternative approaches, we unstick ourselves.</p>
+<p>(I only saw these two people in this space for one day. They were visitors to the building and had planned to talk to one of them the next time I saw them. If I had a do-over, I would like to have raised this issue with them.)</p>
 
-<p><strong>Bring in the team</strong></p>
-
-<p>What: Ask your team for their opinion. Try to present both ideas fairly. Experiment with each person advocating for the other person&rsquo;s idea.</p>
-
-<p>Why: Involving multiple perspectives shifts the focus from &ldquo;you versus me.&rdquo; The team may bring additional insights and solutions. If two people cannot agree, it is probably worth taking the time for the team to help solve it.</p>
-
-<p>If five people on a six-person team agree on a solution, there&rsquo;s more weight behind the team making the decision. For the dissenting point of view, mention that the team will try the solution and revisit the decision later if it does not work out. View this situation as a learning opportunity. On several occasions, I have thought something could not possibly work only to be pleasantly surprised that I was wrong.</p>
-
-<p>When: After exploring alternative solutions, if the pair cannot agree on how to make forward progress. I tend to reach for this technique first when the decision affects everyone on the team.</p>
-
-<p>One software engineer said, &ldquo;I have found bringing in the team works in principle for building consensus. I once had an issue where it left the dissenting developer feeling bitter, and resentful. He went behind everyone&rsquo;s backs to reverse the team design decision.&rdquo;</p>
-
-<p><strong>Try one solution</strong> or <strong>try both solutions</strong></p>
-
-<p>What: Trying one or both solutions.</p>
-
-<p>Why: We can waste time in over-discussing solutions. Implementing a solution reveals new information. Sometimes we can quickly realize that a solution will need additional adaptations or simply will not work.</p>
-
-<p>When: If it is easy to try one or both solutions and there is no clear winner.</p>
-
-<h2>De-escalating a tense situation</h2>
-
-<p><strong>&ldquo;I could really use a break.&rdquo; / Take a Break</strong></p>
-
-<p>What: Suggest taking a break.</p>
-
-<p>Why: If your pair pushed one of your buttons, you might need some time to decompress.</p>
-
-<p>When: If you find yourself getting annoyed or your pair getting annoyed with you. If you see a pair on your team struggling with cooperation, suggest that the entire team take a break. &ldquo;Let us all play ping pong.&rdquo;</p>
-
-<p>Example: In the Palo Alto office, it is super easy to get outside and enjoy nature. Sometimes I just need to sit in the sun, feel its warmth, and realize that this moment will pass. When my partner pushes one of my buttons, I might use an affirmation to ground myself: &ldquo;I add value to the team&rdquo; or &ldquo;I am wonderfully made&rdquo; or &ldquo;My opinions have merit.&rdquo; For me, the best affirmations are ones that I know to be true, but I am not feeling it to be true right now.</p>
-
-<p><strong>&ldquo;Tell me about one of your passions.&rdquo;</strong></p>
-
-<p>What: Get to know your partner in a different setting.</p>
-
-<p>Why: Often we are so focused on delivering stories, that we do not take the time to know our pairs. Find a neutral topic on which you can relate. Reframe the situation to realize that you are pairing with a human, full of aspirations, goals, and needs. Connecting helps us see our partner as a person and grounds us in their humanity.</p>
-
-<p>Example: When I taught at Carnegie Mellon University, two of my master students struggled with collaborating. One evening they had dinner and discovered that they loved the same sports team. Building connection points can shift the relationship from &ldquo;me versus them&rdquo; attitude.</p>
-
-<p>By using this technique, I have learned how to brew coffee, how the bitcoin block-chain works, and my pair&rsquo;s dream to work at Space-X.</p>
-
-<p><strong>Talk to a trusted friend</strong></p>
-
-<p>What: Sometimes venting to a friend helps.</p>
-
-<p>Why: I am biased by my own point of view and I can lose perspective. Talking to a friend helps separate my hang-ups from the dynamic with my pair.  Our friend may provide perspective that we are missing.</p>
-
-<h2>How to re-engage</h2>
-
-<p><strong>Bring it up. Acknowledge the situation.</strong></p>
-
-<p>What: Have the courage to discuss the issue with your pair.</p>
-
-<p>Why: Discussing an issue allows you both to work through it. Your pair might not be aware of the issue. Your pair might have been ok with the dynamic. Discussing it allows you both to resolve the problem.</p>
-
-<p>When: Talk about it later when you and your pair are in a good space.</p>
-
-<p>Example: &ldquo;Earlier today it seemed like you and I were not on the same page. For me, it felt awkward. Is there anything we could have done differently?&rdquo;</p>
-
-<p><strong>&ldquo;When you… I make up … And I feel…&rdquo;</strong></p>
-
-<p>What: In the first blank, you specify the observed behavior. In the second blank, you describe how you interpret the situation; since this is all in your head, you likely are projecting motive onto the other person. In the third blank, you describe how this makes you feel.</p>
-
-<p>Why: This technique initiates the conversation about an observed behavior, but instead of blaming the other person, the technique focuses on how the behavior is affecting you. Talking about yourself hopefully reduces the chance of putting the other person on the defensive.</p>
-
-<p>Example: &ldquo;When you interrupt me before I have made my point, I make up in my head that you don&rsquo;t care about my point of view, and I feel disrespected.&rdquo;</p>
-
-<p><strong>See the person&rsquo;s strengths</strong></p>
-
-<p>What: List out the skills that your partner brings to the relationship.</p>
-
-<p>Why: The pairing relationship is probably not all negative. Try to reframe the problem into an opportunity. How can we leverage each other&rsquo;s strengths? We each bring so much to the pairing relationship.</p>
-
-<p>Example: I enjoy trying a solution and when it is not working moving onto another solution. One of my pairs loves going deep into solving any technical problem. He enjoys figuring out how everything works. I quickly get frustrated when things do not work. At first, this dynamic caused tension. When something was not working, he wanted to go deep into the bowels of the technology to solve it whereas I wanted to move onto a more promising idea. In time, I learned to see the benefit of combining our strengths. I learned to be more patient, trusting my partner&rsquo;s strength. We would explore a topic more than I was comfortable. Likewise, I could also serve my partner by suggesting it was time to try a new idea. I could pull the &ldquo;ripcord&rdquo; and abort an idea that was no longer promising. We successfully combined his strength of a &ldquo;deep dive&rdquo; with my strength of &ldquo;generalizing for the big picture.&rdquo; Once I saw how we complimented each other, I began to enjoy this aspect of our pairing dynamic and looked forward to pairing with him.</p>
-
-<p>Example: On one project, I noticed that my pair was not listening to me and literally did all the typing. I felt discouraged and invaluable. (I call this dynamic &ldquo;Performance Pair Programming&rdquo; where one person performs coding for the audience of their pair.) One day while remote pairing, I was curious how long he would go on before noticing that I was not involved. I started to solo on my computer working on chores that needed to get done. Several hours past and my pair never noticed that I was disengaged. Later in the day, I mentally rejoined what he was working. As I was feeling guilty about what I had done, I acknowledged to my pair what happened and how I was not proud of my passive-aggressive behavior.</p>
-
-<p>However, things did not get better. I still did not want to pair with him. Because of the large team size, I successfully navigated the pair rotation so that I did not pair with him for a couple of months. To help my attitude, I started praising to the team his contributions. By vocalizing his contributions, I eventually realized that this individual was incredibly smart. 99.5% of what he said was accurate, and he was often 5 steps ahead of everyone else in his thinking. I started paying attention to his perspective. When he disagreed with the team, I would want to know why. I became grateful that he was on our team. I made a special trip to his office to pair with him in person. Because my attitude had shifted so much, I had a fantastic time pairing with him that day and for the remainder of my time on that project.</p>
-
-<p><strong>Antipattern &ndash; Ignore it. </strong></p>
-
-<p>What: Pretend that it did not happen.</p>
-
-<p>Why: This is a tempting technique because it seems the easiest. Sometimes things can resolve themselves. However, small issues tend to grow into large issues.</p>
-
-<h2>Lacking Emotional Intelligence (EQ)</h2>
-
-<p>If you are not aware of how your actions affect the mood of emotions of your partner, then I would recommend training. I have paired with some super smart people who were blind to how their actions caused me pain.</p>
-
-<p>While I was pairing with someone with low emotional intelligence, he did all the typing and this made me grumpy. When I realized that my pair was unaffected by my mood, I discovered that I had to do less emotional work. If I was having a bad day, my pair was not bothered.</p>
-
-<p>Amazon sells <a target="_blank" href="https://www.amazon.com/gp/product/1507750455/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1507750455&linkCode=as2&tag=sedano-20&linkId=6a2cd6fc2a6d4384bb53ba9330b90dfd">Enhancing Emotional Intelligence: Mindfulness-Based Strategies for Success &amp; Happiness</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=sedano-20&l=am2&o=1&a=1507750455" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
-
-<p>Stanford University has a course called <a href="https://continuingstudies.stanford.edu/courses/professional-and-personal-development/enhancing-emotional-intelligence/20171_PDV-77">Enhancing Emotional Intelligence</a>.</p>
-
-<h2>One Pair Teams</h2>
-
-<p>Sometimes it is necessary for two people to pair for long periods of time. Perhaps there are only two developers on the team or there are two product designers collaborating together. In these &ldquo;pair marriages&rdquo; extra attention to these techniques is helpful.</p>
-
-<p>One software engineer said, &ldquo;I have found it almost always leads to some tense periods throughout the project and makes everything this article says even more relevant. It is important for the pair going into a single pair project to know what they are getting into. It makes it easier to realize that things will be rough not because of you or your pair, but because being pair-married is inherently rough. However, I have also been rewarded with some great, lasting relationships from single pair projects.&rdquo;</p>
-
-<h2>Remote Pairing</h2>
-
-<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
+<p>Here’s an example which equalizes the physical environment. It does not matter which side you pick for the day. <span class="thumbnail-image-block ssNonEditable"><span><img src="/images/good-pairing-setup.jpg" alt="Developer pair programming"/></span></span></p>
 
 <h2>Summary</h2>
 
-<p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
+<p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.</p>
 </div>
@@ -322,7 +221,7 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/toddsedano/2017/10/23/considerate-pair-programming.html" title="Previous Post: Considerate Pair Programming - Part 2 - Strategies for Success">&laquo; Considerate Pair Programming - Part 2 - Strategies for Success</a>
+        <a class="basic-alignment left" href="/toddsedano/2017/10/23/considerate-pair-programming.html" title="Previous Post: Considerate Pair Programming - Part 2">&laquo; Considerate Pair Programming - Part 2</a>
       
       
     </p>
@@ -338,15 +237,15 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 3 - When Things Go Weird</a>
+        <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 1</a>
       </li>
     
       <li class="post">
-        <a href="/toddsedano/2017/10/23/considerate-pair-programming.html">Considerate Pair Programming - Part 2 - Strategies for Success</a>
+        <a href="/toddsedano/2017/10/23/considerate-pair-programming.html">Considerate Pair Programming - Part 2</a>
       </li>
     
       <li class="post">
-        <a href="/toddsedano/2017/10/22/considerate-pair-programming.html">Considerate Pair Programming - Part 1 - Setting Up the Work Environment</a>
+        <a href="/toddsedano/2017/10/22/considerate-pair-programming.html">Considerate Pair Programming - Part 3</a>
       </li>
     
       <li class="post">
