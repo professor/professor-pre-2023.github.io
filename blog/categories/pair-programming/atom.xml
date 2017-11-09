@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Pair programming | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/pair-programming/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-09T11:25:35-08:00</updated>
+  <updated>2017-11-09T11:31:22-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -94,7 +94,7 @@
 
 <p>(I only saw these two people in this space for one day. They were visitors to the building and had planned to talk to one of them the next time I saw them. If I had a do-over, I would like to have raised this issue with them.)</p>
 
-<p>Here’s an example which equalizes the physical environment. It does not matter which side you pick for the day. <span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/good-pairing-setup.jpg" alt="Developer pair programming"/></span></span></p>
+<p>Here’s an example which equalizes the physical environment. It does not matter which side you pick for the day. <span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/good-pairing-setup2.jpg" alt="Developer pair programming"/></span></span></p>
 
 <h2>Summary</h2>
 
@@ -300,7 +300,7 @@
 <p>I have developed these strategies from working through bad pairing experiences. Many of these strategies attempt to be preventative maintenance, things we can do to avoid the issue entirely.</p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
-<a href="http://sedano.org/book"><img src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
+<a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
 ]]></content>
   </entry>
   
