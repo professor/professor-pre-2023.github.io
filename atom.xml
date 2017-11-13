@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-12T14:52:56-08:00</updated>
+  <updated>2017-11-13T15:08:58-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -30,9 +30,7 @@
 
 <p>This article describes 1) several techniques that can improve your pair programming experience, 2) strategies on what to do when things get frustrating or go wrong, and 3) concludes with success stories of converting difficult pair-programming relationships into successful pair-programming relationships.</p>
 
-<p>Like any relationship, such as friendships, family dynamics, dating, or marriage, when pairing works well, it is an amazing experience, when pairing falls apart, it can be frustrating and occasionally super hurtful. Unfortunate dynamics can happen while pairing.</p>
-
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have a challenging experience, I would like to hear what it was like for you and how you went about solving it.</p>
+<p>Like any relationship, such as friendships, family dynamics, dating, or marriage, when pairing works well, it is an amazing experience, when pairing falls apart, it can be frustrating and occasionally super hurtful. While unfortunate dynamics can happen while pairing, I have experienced the joy of finding each other in the rift.</p>
 
 <p>Pairing exposes both our strengths and our weakness. How we handle our weaknesses may have a direct impact on the pairing relationship. One of us might not be comfortable exposing our weaknesses. If we are experiencing imposter syndrome, that we are not qualified for the job we have, we might fear that our partner is going to find out that we are faking it.</p>
 
@@ -64,7 +62,7 @@
 
 <p><strong>The computer</strong></p>
 
-<p>What: Configure the work environment to make pair programming effective. Set up a pairing workstation with two monitors, two keyboards, two mice, and one computer. Make sure there is ample room for two people to work side by side at one desk. Ideally, all the team&rsquo;s machines are similar in configuration enabling frictionless pair rotations. Pivotal uses <a href="workstation-setup">https://github.com/pivotal/workstation-setup</a> when adding new machines to a team to provide a consistent experience with common tools.</p>
+<p>What: Configure the work environment to make pair programming effective. Set up a pairing workstation with two monitors, two keyboards, two mice, and one computer. Make sure there is ample room for two people to work side by side at one desk. Ideally, all the team&rsquo;s machines are similar in configuration enabling frictionless pair rotations. Pivotal uses <a href="https://github.com/pivotal/workstation-setup">workstation-setup</a> when adding new machines to a team to provide a consistent experience with common tools.</p>
 
 <p>Why: a welcoming environment that enables both pairs to work efficiently improves productivity.</p>
 
@@ -96,9 +94,13 @@
 
 <p>Here’s an example which equalizes the physical environment. It does not matter which side you pick for the day. <span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/good-pairing-setup.jpg" alt="Developer pair programming"/></span></span></p>
 
+<p>Thank you to John Ryan and Ian Ornstein for their feedback on this series.</p>
+
 <h2>Summary</h2>
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
+
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have a challenging experience, I would like to hear what it was like for you and how you went about solving it.</p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
