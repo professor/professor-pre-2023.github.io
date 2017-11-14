@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Pair programming | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/pair-programming/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2017-11-13T15:08:58-08:00</updated>
+  <updated>2017-11-13T20:02:18-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -82,7 +82,7 @@
 
 <p>Imbalance in desk depth.</p>
 
-<p>Anti-pattern: For one project, the table did not have a straight edge. One side of the table had more depth and the other side was shallower.  The difference was 15 centimeters (6 inches). The side with more desk spaces felt like the dominant side, whereas the side with less desk space felt less important and inferior.</p>
+<p>Anti-pattern: For one project, the table did not have a straight edge. One side of the table had more depth and the other side was shallower.  The difference was 15 centimeters (6 inches). The side with more desk spaces felt like the dominant side, whereas the side with less desk space felt less important and inferior. Possible solutions include changing team space or buying replacement desk pieces for that cubicle vendor.</p>
 
 <p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/bad-pairing-setup-width.jpg" alt="Developer pair programming"/></span></span></p>
 
@@ -120,6 +120,8 @@
 
 <p>This article contains a toolbox of techniques. Feel free to pick a few to try out and then revisit the list in a few weeks.</p>
 
+<p><em>Become invested in your pair’s success</em> is my major take-away for you. When I am taking care of myself and looking out for my pair, an incredible friendship can form. Consider “what are my pairs strengths? And how do they map to my weaknesses?” and vice-versa. Have I <em>always</em> been invested in my pair&rsquo;s success? No. My pairs probably have stories on how I could have improved in my pairing. Shifting from “what is in it for me” to “what is in it for us” enables new pairing dynamics.</p>
+
 <!-- more -->
 
 
@@ -148,7 +150,7 @@
 
 <p><strong>&ldquo;I am looking forward to pairing with you.&rdquo; </strong></p>
 
-<p>What: Start your day by making your pair feel welcomed. If you are excited to pair, then mention the reasons. Humans can spot when we are insincere, so only say it if you mean it.</p>
+<p>What: Start your day by making your pair feel welcomed. If you are excited to pair, then mention the reasons. People can spot when others are insincere, so only say it if you mean it.</p>
 
 <p>Why: We want our pair to feel welcomed.</p>
 
@@ -198,13 +200,15 @@
 
 <p>Example: One of my pair types at 110 words per minute. Maximum my typing speed is 55 words per minute. I was intimidated by his typing speed. I felt like I was slowing us down. I felt that I had to type faster to be valuable. After a few pairing sessions, I acknowledging what I was feeling. Neither of us changed our behavior, but I was no longer intimidated. It became a non-issue.  Acknowledging the situation allowed me to appreciate how he brought this fantastic skill to us as a pair.</p>
 
+<p>One of my friends calls this <strong>&ldquo;Name the Dragon.&rdquo;</strong> Example: &ldquo;Hey, I am feeling really edgy today because my whole day has been the opposite of what I&rsquo;ve planned, from the moment I woke up&hellip; it&rsquo;s not you, it&rsquo;s me.&rdquo;</p>
+
 <h3>Mid Afternoon Check In</h3>
 
 <p><strong>&ldquo;How is today going for you?&rdquo; </strong>or<strong> &ldquo;What could I be doing differently?</strong>&rdquo;</p>
 
 <p>What:  Check in with your partner about how things are going.</p>
 
-<p>Why: Check-ins can decrease the feedback loop. Hypothetically, say you are bothering your pair. How long will it take them to give you unsolicited feedback? A week? A month? Maybe never? It takes courage to provide unsolicited feedback. By broaching the topic and asking for feedback, you can reduce your feedback cycle.</p>
+<p>Why: Check-ins shorten the feedback loop. Hypothetically, say you are bothering your pair. How long will it take them to give you unsolicited feedback? A week? A month? Maybe never? It takes courage to provide unsolicited feedback. By broaching the topic and asking for feedback, you can reduce your feedback cycle.</p>
 
 <p>When: About 2/3rds of the way through the workday. I prefer mid-day so that when I receive feedback, I have a chance to practice changing it immediately with that person. At Pivotal, we daily rotate with whom we pair. Asking at the end of the day requires me to wait several days before I have a chance to course correct. I set the alarm on my phone that goes off two hours before the end of the day.</p>
 
@@ -353,6 +357,10 @@
 
 <p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
 
+<p>Choosing to pair program makes the fundamental assumption that each person in the pairing brings value.  Because technology changes so frequently, even someone new to a technology brings value because an expert programmer could not have seen everything. The “magic” of pairing is bringing together the disjoint experiences and knowledge. If one person is not fully engaged (either by choice or by exclusion) then the pair is not likely getting the value of the investment.</p>
+
+<p><em>Taking a genuine interest in the other person</em> is a key take-away from this section. Sometimes this is easy. With some people we have an obvious overlap of personality, perspective, experience, or values. Sometimes this is hard. Your pair is not your enemy. We might need to make some conscious effort, e.g. focusing on the most respectable thing about that person and make many of your interactions with them about that.</p>
+
 <p><em>Remember that our overarching goal is to to create a welcoming and safe environment for both pairs.</em></p>
 
 <h2>Improving communication when things are starting to get tense</h2>
@@ -453,7 +461,7 @@
 
 <p>What: In the first blank, you specify the observed behavior. In the second blank, you describe how you interpret the situation; since this is all in your head, you likely are projecting motive onto the other person. In the third blank, you describe how this makes you feel.</p>
 
-<p>Why: This technique initiates the conversation about an observed behavior, but instead of blaming the other person, the technique focuses on how the behavior is affecting you. Talking about yourself hopefully reduces the chance of putting the other person on the defensive.</p>
+<p>Why: This technique initiates the conversation about an observed behavior, but instead of blaming the other person, the technique focuses on how the behavior is affecting you. Talking about yourself, using “I” language, hopefully reduces the chance of putting the other person on the defensive. We are experts of our experiences.</p>
 
 <p>Example: &ldquo;When you interrupt me before I have made my point, I make up in my head that you don&rsquo;t care about my point of view, and I feel disrespected.&rdquo;</p>
 
@@ -490,10 +498,6 @@
 <p>Sometimes it is necessary for two people to pair for long periods of time. Perhaps there are only two developers on the team or there are two product designers collaborating together. In these &ldquo;pair marriages&rdquo; extra attention to these techniques is helpful.</p>
 
 <p>One software engineer said, &ldquo;I have found it almost always leads to some tense periods throughout the project and makes everything this article says even more relevant. It is important for the pair going into a single pair project to know what they are getting into. It makes it easier to realize that things will be rough not because of you or your pair, but because being pair-married is inherently rough. However, I have also been rewarded with some great, lasting relationships from single pair projects.&rdquo;</p>
-
-<h2>Remote Pairing</h2>
-
-<p>Remote pairing presents its own set of challenges. See <a href="http://sedano.org/toddsedano/2016/11/07/remote-pair-programming.html">my remote pairing blog post</a> for techniques to improve remote pairing effectiveness.</p>
 
 <h2>Summary</h2>
 
