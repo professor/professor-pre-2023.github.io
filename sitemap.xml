@@ -232,7 +232,7 @@
     </url>
     <url>
         <loc>http://professor.github.io/about-me/</loc>
-        <lastmod>2013-07-26T19:55:20-07:00</lastmod>
+        <lastmod>2018-01-11T09:12:33-08:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/blog/archives/</loc>
@@ -257,5 +257,9 @@
     <url>
         <loc>http://professor.github.io/summer-workshops/</loc>
         <lastmod>2013-07-14T22:02:43-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/workshops/</loc>
+        <lastmod>2018-01-11T09:33:11-08:00</lastmod>
     </url>
 </urlset>
