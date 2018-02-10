@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Mismanaging the backlog - Todd Sedano</title>
+  <meta name="author" content="Todd Sedano">
+
+  
+  <meta name="description" content="Mismanaging the Backlog *The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.* Mismanaging the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-109684943-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Todd Sedano</a></h1>
+  
+    <h2>Software Engineering, Improv, Craft of Software Development</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/professor/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:professor.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/workshops">Workshops</a></li>
+
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Mismanaging the Backlog</h1>
+    
+  </header>
+  
+  <p align="center">
+
+*The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.*
+</p>
+
+
+<p>Mismanaging the backlog includes all the waste associated with poor prioritization. One kind of prioritization problem specific to agile software development is <em>backlog inversion</em>, which occurs when the team starts working on stories that have not been prioritized recently.  For instance, on Monday, the product manager examines the backlog and re-prioritizes the next seven stories. The team finishes those seven stories and begins working on stories eight, nine and ten. Since these stories have not been prioritized recently, the team might unknowingly be working on low priority stories.</p>
+
+<p>We observed the following causes of &ldquo;mismanaging the backlog&rdquo; waste:</p>
+
+<ul>
+<li><p>Backlog inversion</p></li>
+<li><p>Working on too many features simultaneously</p></li>
+<li><p>Duplicated work</p></li>
+<li><p>Not enough ready stories</p></li>
+<li><p>Imbalance of feature work and bug fixing</p></li>
+<li><p>Delaying testing or critical bug fixing</p></li>
+<li><p>Capricious thrashing</p></li>
+</ul>
+
+
+<p>Duplication of work can happen when individuals and teams are not effectively communicating. For one project&mdash;-a multi-node database cluster&mdash;-coordination happened between 15 development teams with 74 software engineers. Over time, they developed 16 different ways to provision a cluster using scripts, docker, custom tools, bosh, and terraform. Developing a single comprehensive solution would have taken one team slightly more time but save substantial resources overall.</p>
+
+<p>At Pivotal, product managers typically write the user stories. We observed engineers sometimes resorting to writing stories instead of the product manager. This happened when the backlog was empty or when they knew something needed to be done, but no corresponding story had been written. Here, engineers writing stories often indicated prioritization problems, or the product manager not staying far enough ahead of development.</p>
+
+<p>Solutions for avoiding or reducing this waste include:</p>
+
+<ul>
+<li><p>Prioritizing the backlog several times a week</p></li>
+<li><p>Minimizing work in progress by finishing features before starting new ones</p></li>
+<li><p>Updating the backlog with current work in progress</p></li>
+<li><p>Writing enough stories to stay ahead of development</p></li>
+<li><p>Routinely working on bug fixes while doing feature development</p></li>
+<li><p>Receiving feedback from users before making changes</p></li>
+</ul>
+
+
+<p>This waste is also related a tension: <strong>intransigence versus capricious trashing</strong>. Responding to change quickly is a core tenet of agile development and often thought of as the opposite of refusing to change. However, responding to change is more like a middle ground between intransigence (unreasonably refusing to change) and thrashing (changing features too often, especially arbitrarily alternating between equally good alternatives). As an example of trashing, on one project, the launch was delayed while the business fiddled with the sequence and number of steps in the user registration process.</p>
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2017/10/23/considerate-pair-programming.html">Considerate Pair Programming - Part 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2017/10/22/considerate-pair-programming.html">Considerate Pair Programming - Part 3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
+      </li>
+    
+      <li class="post">
+        <a href="/toddsedano/2017/02/08/we-know-the-way-phonetic-lyrics-moana.html">We Know the Way - Phonetic Lyrics - Moana</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/114255815645685356164?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/collaborative-software-development/'>Collaborative Software Development (3)</a></li><li><a href='/blog/categories/craft-of-software/'>Craft of Software (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/pair-programming/'>Pair programming (5)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (3)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li></ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Todd Sedano -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
