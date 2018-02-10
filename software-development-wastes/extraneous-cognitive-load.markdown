@@ -1,4 +1,9 @@
- Extraneous cognitive load
+ ---
+ layout: page
+ title: Extraneous cognitive load
+ author: Todd Sedano, Paul Ralph, Cécile Péraire
+ footer: true 
+ ---
  
  <p align="center">
  

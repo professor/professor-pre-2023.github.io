@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mismanaging the backlog - Todd Sedano</title>
+  <title>Ineffective communication - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Mismanaging the Backlog *The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.* Mismanaging the &hellip;">
+  <meta name="description" content="Ineffective Communication *The cost of incomplete, incorrect, misleading, inefficient, or absent communication among project stakeholders.* &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html">
+  <link rel="canonical" href="http://professor.github.io/software-development-wastes/ineffective-communication.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -81,48 +81,39 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Mismanaging the Backlog</h1>
+    <h1 class="entry-title">Ineffective Communication</h1>
     
   </header>
   
   <p align="center">
 
-*The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.*
+*The cost of incomplete, incorrect, misleading, inefficient, or absent communication among project stakeholders.*
+
 </p>
 
 
-<p>Mismanaging the backlog includes all the waste associated with poor prioritization. One kind of prioritization problem specific to agile software development is <em>backlog inversion</em>, which occurs when the team starts working on stories that have not been prioritized recently.  For instance, on Monday, the product manager examines the backlog and re-prioritizes the next seven stories. The team finishes those seven stories and begins working on stories eight, nine and ten. Since these stories have not been prioritized recently, the team might unknowingly be working on low priority stories.</p>
+<p>Ineffective communication is intrinsically wasteful. For example, suppose a product manager notices a bug and adds it to the backlog, but does not explain how to reproduce it. The team ends up sleuthing&mdash;-either experimenting with different possible combinations or asking the product manager for additional details. As another example, suppose a developer changes key configuration information that affects all other developers on the team. Instead of telling everyone that they need to pull the latest code, the developer posts about the change via asynchronous communication (e.g. Slack). Some developers do not see this communication and wonder why their code stops working. They waste time trying to figure out the solution when the answer was already known to the team.</p>
 
-<p>We observed the following causes of &ldquo;mismanaging the backlog&rdquo; waste:</p>
+<p>Ineffective might lead to the other kinds of waste. For instance, ineffective communication resulting in delays might lead to the waiting waste. Ineffective communication resulting in misunderstanding user or business needs might lead to building the wrong feature or product, or misunderstanding the existing solution might lead to building an overly complex solution and extraneous cognitive load. Ineffective communication resulting in poor decision-making might lead to mismanaging the backlog. Ineffective communication resulting in technical mistakes might lead to defects and rework. Ineffective communication resulting in misunderstandings among team members might lead to conflicts and psychological distress. These are just a few examples highlighting the importance of effective communication and how poor communication have the potential of generating waste.</p>
+
+<p>We observed the following causes of &ldquo;ineffective communication&rdquo; waste:</p>
 
 <ul>
-<li><p>Backlog inversion</p></li>
-<li><p>Working on too many features simultaneously</p></li>
-<li><p>Duplicated work</p></li>
-<li><p>Not enough ready stories</p></li>
-<li><p>Imbalance of feature work and bug fixing</p></li>
-<li><p>Delaying testing or critical bug fixing</p></li>
-<li><p>Capricious thrashing</p></li>
+<li><p>Team size is too large.</p></li>
+<li><p>Asynchronous communication, which is especially problematic for distributed teams, distributed stakeholders and in situations where there are dependencies between teams or opaque processes outside the team.</p></li>
+<li><p>Imbalance. This happens when one person is dominating the conversation or is not listening.</p></li>
+<li><p>Inefficient meetings. This includes lack of focus during meetings, skipping retros, not discussing blockers each day, meetings running over (e.g. long stand-ups).</p></li>
 </ul>
 
 
-<p>Duplication of work can happen when individuals and teams are not effectively communicating. For one project&mdash;-a multi-node database cluster&mdash;-coordination happened between 15 development teams with 74 software engineers. Over time, they developed 16 different ways to provision a cluster using scripts, docker, custom tools, bosh, and terraform. Developing a single comprehensive solution would have taken one team slightly more time but save substantial resources overall.</p>
-
-<p>At Pivotal, product managers typically write the user stories. We observed engineers sometimes resorting to writing stories instead of the product manager. This happened when the backlog was empty or when they knew something needed to be done, but no corresponding story had been written. Here, engineers writing stories often indicated prioritization problems, or the product manager not staying far enough ahead of development.</p>
-
-<p>Solutions for avoiding or reducing this waste include:</p>
+<p>Like stress, copious research has investigated communication effectiveness, and a complete account is beyond the scope of this chapter. However, we can make some simple recommendations:</p>
 
 <ul>
-<li><p>Prioritizing the backlog several times a week</p></li>
-<li><p>Minimizing work in progress by finishing features before starting new ones</p></li>
-<li><p>Updating the backlog with current work in progress</p></li>
-<li><p>Writing enough stories to stay ahead of development</p></li>
-<li><p>Routinely working on bug fixes while doing feature development</p></li>
-<li><p>Receiving feedback from users before making changes</p></li>
+<li><p>Synchronous (especially face-to-face) communication seems more effective for most people, most of the time.</p></li>
+<li><p>Conversational turn-taking, where participants take turns speaking one at a time, leads to better shared understanding.</p></li>
+<li><p>More powerful participants (e.g. white male project manager) interrupting less powerful participants (e.g. non-white female junior developer) has a chilling effect on diversity of thought and quality of group decision-making. Other participants can mitigate interruptions by returning to the interrupted speaker by, for example, saying &ldquo;Can we come back to what Alexis was saying about&hellip;&rdquo;</p></li>
 </ul>
 
-
-<p>This waste is also related a tension: <strong>intransigence versus capricious trashing</strong>. Responding to change quickly is a core tenet of agile development and often thought of as the opposite of refusing to change. However, responding to change is more like a middle ground between intransigence (unreasonably refusing to change) and thrashing (changing features too often, especially arbitrarily alternating between equally good alternatives). As an example of trashing, on one project, the launch was delayed while the business fiddled with the sequence and number of steps in the user registration process.</p>
 
   
     <footer>
@@ -148,7 +139,7 @@
       
         <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/ineffective-communication.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/ineffective-communication.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>

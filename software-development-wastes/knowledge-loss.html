@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mismanaging the backlog - Todd Sedano</title>
+  <title>Knowledge loss - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Mismanaging the Backlog *The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.* Mismanaging the &hellip;">
+  <meta name="description" content="Knowledge Loss *The cost of re-acquiring information that the team once knew.* A team can lose knowledge when a person with unique knowledge leaves &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html">
+  <link rel="canonical" href="http://professor.github.io/software-development-wastes/knowledge-loss.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -81,48 +81,30 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Mismanaging the Backlog</h1>
+    <h1 class="entry-title">Knowledge Loss</h1>
     
   </header>
   
   <p align="center">
 
-*The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.*
+*The cost of re-acquiring information that the team once knew.*
+
 </p>
 
 
-<p>Mismanaging the backlog includes all the waste associated with poor prioritization. One kind of prioritization problem specific to agile software development is <em>backlog inversion</em>, which occurs when the team starts working on stories that have not been prioritized recently.  For instance, on Monday, the product manager examines the backlog and re-prioritizes the next seven stories. The team finishes those seven stories and begins working on stories eight, nine and ten. Since these stories have not been prioritized recently, the team might unknowingly be working on low priority stories.</p>
+<p>A team can lose knowledge when a person with unique knowledge leaves the team or organization, when an artifact containing unique knowledge is lost, or when people forget what they once knew. Regardless of how the knowledge was lost, the cost of re-acquiring it is a kind of waste.</p>
 
-<p>We observed the following causes of &ldquo;mismanaging the backlog&rdquo; waste:</p>
+<p>We observed the following causes of &ldquo;knowledge loss&rdquo; waste:</p>
 
 <ul>
-<li><p>Backlog inversion</p></li>
-<li><p>Working on too many features simultaneously</p></li>
-<li><p>Duplicated work</p></li>
-<li><p>Not enough ready stories</p></li>
-<li><p>Imbalance of feature work and bug fixing</p></li>
-<li><p>Delaying testing or critical bug fixing</p></li>
-<li><p>Capricious thrashing</p></li>
+<li><p>Team churn (that is, staff rotating on and off a team)</p></li>
+<li><p>Knowledge silos (that is, where important information is sequestered within one group or system)</p></li>
 </ul>
 
 
-<p>Duplication of work can happen when individuals and teams are not effectively communicating. For one project&mdash;-a multi-node database cluster&mdash;-coordination happened between 15 development teams with 74 software engineers. Over time, they developed 16 different ways to provision a cluster using scripts, docker, custom tools, bosh, and terraform. Developing a single comprehensive solution would have taken one team slightly more time but save substantial resources overall.</p>
+<p>We observed the following tension in relation to this waste: <strong>sharing through interaction vs. documenting.</strong> There are two broad approaches to preserving knowledge and preventing its loss: documentation and interpersonal interaction. One of the key insights of the agile literature is that sharing knowledge face-to-face is usually more effective than sharing knowledge through written documents. Indeed, documentation often quickly becomes outdated and unreliable.</p>
 
-<p>At Pivotal, product managers typically write the user stories. We observed engineers sometimes resorting to writing stories instead of the product manager. This happened when the backlog was empty or when they knew something needed to be done, but no corresponding story had been written. Here, engineers writing stories often indicated prioritization problems, or the product manager not staying far enough ahead of development.</p>
-
-<p>Solutions for avoiding or reducing this waste include:</p>
-
-<ul>
-<li><p>Prioritizing the backlog several times a week</p></li>
-<li><p>Minimizing work in progress by finishing features before starting new ones</p></li>
-<li><p>Updating the backlog with current work in progress</p></li>
-<li><p>Writing enough stories to stay ahead of development</p></li>
-<li><p>Routinely working on bug fixes while doing feature development</p></li>
-<li><p>Receiving feedback from users before making changes</p></li>
-</ul>
-
-
-<p>This waste is also related a tension: <strong>intransigence versus capricious trashing</strong>. Responding to change quickly is a core tenet of agile development and often thought of as the opposite of refusing to change. However, responding to change is more like a middle ground between intransigence (unreasonably refusing to change) and thrashing (changing features too often, especially arbitrarily alternating between equally good alternatives). As an example of trashing, on one project, the launch was delayed while the business fiddled with the sequence and number of steps in the user registration process.</p>
+<p>In Sedano et al. (2016), we propose several practices for encouraging knowledge sharing and continuity including continuous pair programming, overlapping pair rotation, and knowledge pollination (e.g. stand-up meetings). although  we have not observed it directly, code review may also help knowledge sharing and prevent knowledge loss.</p>
 
   
     <footer>
@@ -148,7 +130,7 @@
       
         <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/knowledge-loss.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/knowledge-loss.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mismanaging the backlog - Todd Sedano</title>
+  <title>Psychological distress - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Mismanaging the Backlog *The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.* Mismanaging the &hellip;">
+  <meta name="description" content="Psychological Distress *The costs of burdening the team with unhelpful stress.* Stress can be beneficial (&ldquo;eustress&rdquo;) or harmful (&ldquo &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html">
+  <link rel="canonical" href="http://professor.github.io/software-development-wastes/psychological-distress.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -81,48 +81,43 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Mismanaging the Backlog</h1>
+    <h1 class="entry-title">Psychological Distress</h1>
     
   </header>
   
   <p align="center">
 
-*The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.*
+*The costs of burdening the team with unhelpful stress.*
+
 </p>
 
 
-<p>Mismanaging the backlog includes all the waste associated with poor prioritization. One kind of prioritization problem specific to agile software development is <em>backlog inversion</em>, which occurs when the team starts working on stories that have not been prioritized recently.  For instance, on Monday, the product manager examines the backlog and re-prioritizes the next seven stories. The team finishes those seven stories and begins working on stories eight, nine and ten. Since these stories have not been prioritized recently, the team might unknowingly be working on low priority stories.</p>
+<p>Stress can be beneficial (&ldquo;eustress&rdquo;) or harmful (&ldquo;distress&rdquo;). For instance, a little pressure from knowing that the client has high expectations can motivate a team to deliver a better product. Contrastingly, worrying about a sick family member, being yelled at by an angry client, or thinking you might lose your job can reduce performance.</p>
 
-<p>We observed the following causes of &ldquo;mismanaging the backlog&rdquo; waste:</p>
+<p>Psychological distress can be either harmful stress or just too much stress. How much stress is too much depends on the person, but everyone has a limit after which more stress lowers performance. Both distress or extreme stress are distracting and draining. Stress can make people feel anxious, overwhelmed and unmotivated. We therefore see psychological distress as intrinsically wasteful.</p>
+
+<p>Different people find different experiences distressing. However, some common distress-inducing experiences we have observed include:</p>
 
 <ul>
-<li><p>Backlog inversion</p></li>
-<li><p>Working on too many features simultaneously</p></li>
-<li><p>Duplicated work</p></li>
-<li><p>Not enough ready stories</p></li>
-<li><p>Imbalance of feature work and bug fixing</p></li>
-<li><p>Delaying testing or critical bug fixing</p></li>
-<li><p>Capricious thrashing</p></li>
+<li><p>Low team morale</p></li>
+<li><p>Rush mode</p></li>
+<li><p>Interpersonal or team conflict</p></li>
+<li><p>Inter-team conflict</p></li>
 </ul>
 
 
-<p>Duplication of work can happen when individuals and teams are not effectively communicating. For one project&mdash;-a multi-node database cluster&mdash;-coordination happened between 15 development teams with 74 software engineers. Over time, they developed 16 different ways to provision a cluster using scripts, docker, custom tools, bosh, and terraform. Developing a single comprehensive solution would have taken one team slightly more time but save substantial resources overall.</p>
+<p>For example, we observed stress resulting from snarky remarks about other teams or other developers on mailing lists, including &ldquo;Wow! 22 commits with zero pull requests there.&rdquo;</p>
 
-<p>At Pivotal, product managers typically write the user stories. We observed engineers sometimes resorting to writing stories instead of the product manager. This happened when the backlog was empty or when they knew something needed to be done, but no corresponding story had been written. Here, engineers writing stories often indicated prioritization problems, or the product manager not staying far enough ahead of development.</p>
+<p>Another example was a countdown to a release date written on an office whiteboard. The team felt that over-emphasizing the deadline was increasing stress and leading to poor technical decisions. Eventually the countdown was erased from the whiteboard.</p>
 
-<p>Solutions for avoiding or reducing this waste include:</p>
+<p>A wealth of research investigates the nature, causes and effects of stress. A full treatment of stress in software engineering would fill a large book. The present study, in contrast, supports only a few basic recommendations for detecting and reducing stress:</p>
 
 <ul>
-<li><p>Prioritizing the backlog several times a week</p></li>
-<li><p>Minimizing work in progress by finishing features before starting new ones</p></li>
-<li><p>Updating the backlog with current work in progress</p></li>
-<li><p>Writing enough stories to stay ahead of development</p></li>
-<li><p>Routinely working on bug fixes while doing feature development</p></li>
-<li><p>Receiving feedback from users before making changes</p></li>
+<li><p>In our experience, detecting distress is not difficult&mdash;-simply asking team members, &ldquo;How are things going?&rdquo; is usually sufficient.</p></li>
+<li><p>Stress related to deadlines can sometimes be mitigated by reducing scope or extending the deadline.</p></li>
+<li><p>Stress related to interpersonal conflict can be mitigated by facilitated mediation.</p></li>
 </ul>
 
-
-<p>This waste is also related a tension: <strong>intransigence versus capricious trashing</strong>. Responding to change quickly is a core tenet of agile development and often thought of as the opposite of refusing to change. However, responding to change is more like a middle ground between intransigence (unreasonably refusing to change) and thrashing (changing features too often, especially arbitrarily alternating between equally good alternatives). As an example of trashing, on one project, the launch was delayed while the business fiddled with the sequence and number of steps in the user registration process.</p>
 
   
     <footer>
@@ -148,7 +143,7 @@
       
         <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/psychological-distress.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/psychological-distress.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
