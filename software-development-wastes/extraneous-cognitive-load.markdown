@@ -1,15 +1,11 @@
  ---
  layout: page
- title: Extraneous cognitive load
+ title: "Extraneous cognitive load"
  author: Todd Sedano, Paul Ralph, Cécile Péraire
  footer: true 
  ---
  
- <p align="center">
- 
  *The costs of unnecessary mental effort.*
- 
- </p>
  
  Human beings have limited working memory and mental resources. Technically, cognitive load refers to how much working memory a task requires. Here, however, we are using extraneous cognitive load more generally to mean the costs of making something unnecessarily mentally taxing.
  
@@ -41,3 +37,4 @@
  
  * Improve the development flow including better scripts and tools
 
+For more details, read this [ICSE paper](https://www.researchgate.net/publication/313360479_Software_Development_Waste) or return to the list [software development wastes](index)
