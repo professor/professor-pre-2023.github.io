@@ -9,7 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Why We Pair Hi. I have come to love Pair Programming. I enjoy the collaboration, cross-training, and better solutions that emerge while I pair. &hellip;">
+  <meta name="description" content="Title: The illusion of requirements; the requirements myth &ldquo;Requirements&rdquo; is a pre-agile construct based on our false belief that &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,101 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2018/02/19/illusion-of-requirements.html">Illusion of Requirements</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2018-02-19T07:58:00-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2018</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Title: The illusion of requirements; the requirements myth</p>
+
+<p>&ldquo;Requirements&rdquo; is a pre-agile construct based on our false belief that building software was somehow like the construction of buildings.</p>
+
+<p>&ldquo;Requirements&rdquo; limits the development team into thinking the end product is fixed and that the team&rsquo;s goal is to implement a specification.</p>
+
+<p>Agile development teams expect features to change over time. Even with thorough user research and validation, the product will change as soon as we receive user feedback. Even during the implementation of a user story, an emergent conversation on the team might change its acceptance criteria.</p>
+
+<p>In contrast, features are a construct of preferences. Many preferences may stay the same, some will change over time, and most are made up on the spot <a href="http://www.cambridge.org/id/academic/subjects/psychology/cognition/construction-preference">Lichtenstein and Slovic 2006</a>.</p>
+
+<h2>A simple example</h2>
+
+<p>Let’s consider a simple and common feature request: &ldquo;the user logs into the system with a username and password.&rdquo; If we consider this request to be fixed, we might not consider alternative solutions.</p>
+
+<ul>
+<li> Some websites support magic links. You don’t type in a password, the system emails you an authentication link.</li>
+<li> Some websites require two-factor authentication.</li>
+<li> Some websites rely on a third-party single sign-on such as Google, Facebook, or Okta.</li>
+</ul>
+
+
+<p>Several of these solutions also attempt to solve the problem of users creating easy to guess or easy to break passwords.</p>
+
+<p>Treating authentication as a &ldquo;requirement&rdquo; misses these opportunities.</p>
+
+<h2>System characteristics</h2>
+
+<p>How then do we deal with performance, scalability, availability, recoverability?</p>
+
+<p>Pre-agile has the notion of &ldquo;non-functional requirements&rdquo; which describe system characteristics or product quality characteristics.</p>
+
+<h3>Performance</h3>
+
+<p>Before agile, I wrote my share of statements like &ldquo;the web page should load in under 0.5 seconds.&rdquo; In reflection, my non-functional &ldquo;requirements&rdquo; were arbitrary limitations on the system.</p>
+
+<p>Here&rsquo;s the typical workflow for agile software development.
+   * Conduct user research and validation to determine appropriate feature for the opportunity
+   * Build a minimal implementation of the feature
+   * Verify that the feature matches the opportunity, if not iterate
+   * Improve performance where needed
+This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a href="http://wiki.c2.com/?PrematureOptimization">http://wiki.c2.com/?PrematureOptimization</a>)</p>
+
+<h3>Availability and Recoverability</h3>
+
+<p>Many of the system characteristics such as availability can influence Service Level Agreements. Pre-agile treats these as guarantees. If we build the system just right, we can guarantee that we will achieve a particular outcome. Agile treats these as goals. If we want to prove ourselves that the system handles disruptions, then we introduce disruptions much like Netflix Chaos Monkey. We keep iterating on the product and deployment process until we achieve the goal.</p>
+
+<h2>Avoid pre-agile constructs</h2>
+
+<p>It can be hard to remove bias from pre-agile constructs. If you see yourself or your team using the following words, pause and reconsider your options:
+   * specifications,
+   * requirements,
+   * the system shall&hellip;</p>
+
+<h2>In Summary</h2>
+
+<p>Avoid limiting yourself with pre-agile concepts. Recognize the flexibility of features in building software.</p>
+
+<p>Here&rsquo;s an <a href="https://www.researchgate.net/publication/265416695_Requirements_Fixation">academic paper</a> demonstrating the negative impacts of framing potential system functionality as &ldquo;requirements.&rdquo;</p>
+
+<p>For more information about the construction of preferences see <a href="http://www.cambridge.org/id/academic/subjects/psychology/cognition/construction-preference">http://www.cambridge.org/id/academic/subjects/psychology/cognition/construction-preference</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -593,49 +688,6 @@ Or download the pdf: <a href="https://goo.gl/LXPg36">https://goo.gl/LXPg36</a></
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2016/02/27/performance-pair-programming.html">Performance Pair Programming</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2016-02-27T09:39:00-08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2016</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Performance pair programming is when one developer drives the entire implementation while the other watches.
-It is as if someone is solo programming with an audience. The performer prefers accomplishing a task more than
-taking advantage of the teaching opportunity.</p>
-
-<p>When this occurs, there is no collaboration or discussion about how to proceed. Questions that the watcher asks are often ignored.
-Typically the Performer is unaware that their pair is not learning anything.</p>
-
-<p>Since one of the most effective learning technique is &ldquo;learn by doing,&rdquo; the pair is missing a great learning opportunity.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -651,6 +703,10 @@ Typically the Performer is unaware that their pair is not learning anything.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2018/02/19/illusion-of-requirements.html">Illusion of Requirements</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 1</a>
       </li>
     
@@ -664,10 +720,6 @@ Typically the Performer is unaware that their pair is not learning anything.</p>
     
       <li class="post">
         <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2017/05/20/software-development-wastes.html">Software Development Wastes</a>
       </li>
     
   </ul>

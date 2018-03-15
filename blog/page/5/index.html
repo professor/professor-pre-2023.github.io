@@ -9,7 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="When it comes to any Agile Maturity Model (AMM), it is paramount to start with the business value with respect to the framework. The framework should &hellip;">
+  <meta name="description" content="How do you do legitimate cross site scripting? If you control the servers involved, this is how you can do cross site scripting with AJAX. I recently &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,87 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2009/07/14/legitimate-cross-site-scripting-csx-with-ajax.html">Legitimate Cross Site Scripting (CSX) With AJAX</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-14T15:50:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>How do you do legitimate cross site scripting?</p>
+
+<p>If you control the servers involved, this is how you can do cross site scripting with AJAX.</p>
+
+<p>I recently came across a situation where I wanted to do an AJAX load from one server to another server. Internally to our campus, our students use a wiki and a ruby on rails web application. I wanted information contained in our rails application to show up on the wiki. My first impulse was to use jquery&rsquo;s load method, however, I received the following error:</p>
+
+<p><red>Access to restricted URI denied&#8221; code: &ldquo;1012</red></p>
+
+<p>My first work around is just to avoid the AJAX load and use an iframe. However, inspiration hit me a few weeks ago and I tried a different solution. Since the AJAX load can retrieve information from the same website, maybe I should request a special url on the same machine and use apache to hide the fact that the content is coming from a different domain name. This can be accomplished with the apache ProxyPass command.</p>
+
+<p>Let me give a concrete example. Say you have two websites: a static site that serves html pages through apache from the filesystem (<a href="http://static.sv.cmu.edu">http://static.sv.cmu.edu</a>) and a dynamic site using an application server with a database (<a href="http://dynamic.sv.cmu.edu">http://dynamic.sv.cmu.edu</a>). You want some of the information from the dynamic site to show up on the static site. You want to allow users to add comments to a static webpage where the comments are rendered by the dynamic site.
+Your first attempt might be:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$('#comments').load('http://dynamic.sv.cmu.edu/comments');</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Which results in the error.
+In static.sv.cmu.edu&rsquo;s httpd.conf file add the following line:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ProxyPass /comments http://dynamic.sv.cmu.edu/comments</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now from your browser window, test to see if you can access the dynamic data from the static machine: <a href="http://static.sv.cmu.edu/comments">http://static.sv.cmu.edu/comments</a> should give you the same information as would <a href="http://dynamic.sv.cmu.edu/comments">http://dynamic.sv.cmu.edu/comments</a>
+Now your AJAX code will work.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">&lt;/script>
+</span><span class='line'>&lt;script type="text/javascript">
+</span><span class='line'> //&lt;![CDATA[
+</span><span class='line'>$(document).ready(function(){
+</span><span class='line'> $('#comments').load('http://dynamic.sv.cmu.edu/comments');
+</span><span class='line'>});
+</span><span class='line'>//]]>
+</span><span class='line'>&lt;/script></span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -179,6 +260,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2018/02/19/illusion-of-requirements.html">Illusion of Requirements</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 1</a>
       </li>
     
@@ -192,10 +277,6 @@
     
       <li class="post">
         <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2017/05/20/software-development-wastes.html">Software Development Wastes</a>
       </li>
     
   </ul>

@@ -9,7 +9,8 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Collaborative Software Development is the combination of practices from Extreme Programming, Kanban software development, User centered design, and &hellip;">
+  <meta name="description" content="Performance pair programming is when one developer drives the entire implementation while the other watches.
+It is as if someone is solo programming &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +80,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2016/02/27/performance-pair-programming.html">Performance Pair Programming</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-02-27T09:39:00-08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Performance pair programming is when one developer drives the entire implementation while the other watches.
+It is as if someone is solo programming with an audience. The performer prefers accomplishing a task more than
+taking advantage of the teaching opportunity.</p>
+
+<p>When this occurs, there is no collaboration or discussion about how to proceed. Questions that the watcher asks are often ignored.
+Typically the Performer is unaware that their pair is not learning anything.</p>
+
+<p>Since one of the most effective learning technique is &ldquo;learn by doing,&rdquo; the pair is missing a great learning opportunity.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -770,77 +814,6 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html">Improv Game for Software Engineers: Program Counter</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-27T14:06:00-07:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I invited this improv game themed around software development for some Brazilian computer science students visiting my campus. It&rsquo;s a variant of the many reaction based, warm-up games (e.g. &ldquo;Whoosh Ball&rdquo;) that encourage quick response time and discourages over-thinking or planning a response. I like playing it with software developers because it makes more sense to them than these other games.</p>
-
-<h3>Instructions</h3>
-
-<p>Have the group form a circle.</p>
-
-<p>Explain that we are going to mimic a program counter moving around the circle. Each person gets to say the instruction that the program counter is going to do. The instructions are <strong>&ldquo;Op&rdquo;</strong>, <strong>&ldquo;Loop N&rdquo;</strong>, <strong>&ldquo;Method Call&rdquo;</strong>, <strong>&ldquo;If true&rdquo;</strong>, <strong>&ldquo;If false&rdquo;</strong></p>
-
-<p><strong>&ldquo;Op&rdquo;</strong> &mdash; There are a variety of operations that a normal CPU would do, such as add, subtract, store to a register. For this game, we&rsquo;ll simplify all of these possible operations into a single command &ldquo;op&rdquo; &mdash; have the entire circle practice that command going around. Pretty simple. Let&rsquo;s make it more interesting.</p>
-
-<p><strong>&ldquo;Loop N&rdquo;</strong> &mdash; A basic control flow of most programming languages is the ability to go through a loop and do multiple instructions each time. If someone says &ldquo;loop 3&rdquo; this indicates that we are iterating over a collection with three elements. The next person says &ldquo;one&rdquo; indicating that the first set of instructions is now happening. The next person says &ldquo;two&rdquo;. The next person says &ldquo;three&rdquo;. Then we proceed as normal. (I&rsquo;ve seen one group say &ldquo;Loop Zero&rdquo; which we treated as a finished loop. It&rsquo;s just like saying &ldquo;Op&rdquo;) We do this for awhile until people get it.</p>
-
-<p><strong>&ldquo;Method Call&rdquo;</strong> and point to someone or say their name out loud &mdash; Often programs re-use code by calling a method on that section of the code. If someone says method call and points to someone we are jumping to that section of the code. (That person needs to decide which way the program counter will continue.)  We keep executing instructions until someone says <strong>&ldquo;return&rdquo;</strong> at which point the program counter goes back to the person who said &ldquo;method call&rdquo; (Sometimes people will think that it returns to the person who was pointed at, but it returns to the person who started the method call, just like a real program.) Yes, method calls can be nested multiple times and even have recursion.</p>
-
-<p>I personally like this operation. In many improv games, the equivalent operation is often a chance for the person to pass control to someone else without cost. E.g. I panic, I don&rsquo;t want this thing, I think it&rsquo;s a &ldquo;hot potato&rdquo; so I&rsquo;m going to give it to you quickly by saying &ldquo;Zoom&rdquo; so that I don&rsquo;t have to deal with it. However, in this game, there is a cost of saying &ldquo;Method Call&rdquo; for the person, they have to remember that they said it. Everyone else in the room, just really needs to track the depth or number of method calls that have been said, where as the people who say method call need to remember where they are on the stack.</p>
-
-<p><strong>&ldquo;If true&rdquo;</strong> and <strong>&ldquo;if false&rdquo;</strong> &mdash; eventually we get tired of going around in the same direction &mdash; Our program counter is pretty simple and can&rsquo;t deal with branch predictions so whenever we use the IF statement, we pay a performance penalty and skip the next step, e.g. the next person. &ldquo;If true&rdquo; then will skip the next person. &ldquo;If false&rdquo; then reverses the direction and skips the next person. (Here&rsquo;s an example, if we moving clockwise and you say &ldquo;if true&rdquo;, we skip the person to the left. If you say &ldquo;if false&rdquo;, it skips the person to the right and proceed clockwise.)</p>
-
-<p><strong>&ldquo;Cheer&rdquo;</strong> &mdash; As soon as the first mistake happens, agree upon a verbal saying that symbolizes, &ldquo;We are having fun, we made a mistake, and we get to restart!&rdquo; In my improv training that&rsquo;s been &ldquo;Ah-ooo-ga&rdquo;, the Brazilian students preferred &ldquo;Ciao!&rdquo; and I&rsquo;ve seen other positive vocalizations.</p>
-
-<h3>Other considerations</h3>
-
-<p>After introducing these instructions, I allow the group to invite any programming constructs that they can think of, and I say &ldquo;yes&rdquo; to any suggestion no how bizarre it is. Sometimes I&rsquo;ll allow the group to tweak it if it isn&rsquo;t clear. If you try something let me know.</p>
-
-<p>One variant of &ldquo;<strong>op</strong>&rdquo; is to allow them to create any normal single instruction operation. They could say &ldquo;add&rdquo;, &ldquo;store&rdquo;, &ldquo;multiply&rdquo; instead of &ldquo;op&rdquo; &mdash; I suspect that doing this might be best at the beginning, but I have not tried that experiment.</p>
-
-<p>Feel free to use this game. I&rsquo;m assuming that no-one will ever remember that I invited it. =)</p>
-
-<h3>Game History</h3>
-
-<p>On February 20, 2012, a student group from <a href="http://www.uniasselvi.com.br">Uniasselvi University</a>
-in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsquo;t know Portuguese, Professor Jan Charles Gross graciously translated my instructions.</p>
-
-<p><span class="full-image-block ssNonEditable"><span><img src="/images/ToddSedano%20with%20JanCharlesGross.png" alt=""/></span></span></p>
-
-<p>Professor Gross&#8217; son, Professor Sedano, Chris Zeise, Professor Gross</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -858,6 +831,10 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2018/02/19/illusion-of-requirements.html">Illusion of Requirements</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 1</a>
       </li>
     
@@ -871,10 +848,6 @@ in Brazil visited Carnegie Mellon University in Silicon Valley. Since I don&rsqu
     
       <li class="post">
         <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2017/05/20/software-development-wastes.html">Software Development Wastes</a>
       </li>
     
   </ul>
