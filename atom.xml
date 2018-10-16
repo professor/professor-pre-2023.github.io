@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-04-19T16:23:54-07:00</updated>
+  <updated>2018-10-16T08:16:18-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -168,7 +168,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#112;&#114;&#x6f;&#x66;&#101;&#115;&#115;&#111;&#x72;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x70;&#x72;&#x6f;&#x66;&#x65;&#115;&#x73;&#111;&#114;&#64;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x70;&#114;&#111;&#102;&#101;&#115;&#115;&#x6f;&#x72;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#112;&#114;&#111;&#x66;&#101;&#115;&#x73;&#111;&#x72;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -571,12 +571,202 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#112;&#x72;&#x6f;&#102;&#101;&#x73;&#x73;&#x6f;&#x72;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;">&#112;&#114;&#111;&#x66;&#101;&#115;&#x73;&#111;&#114;&#64;&#x67;&#109;&#97;&#105;&#108;&#46;&#99;&#x6f;&#109;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x70;&#114;&#x6f;&#x66;&#x65;&#x73;&#115;&#111;&#x72;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#112;&#x72;&#111;&#x66;&#101;&#x73;&#x73;&#x6f;&#114;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
 
 <p><sup>Surviving Disruption with Sustainable Software Development &trade;</sup></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sustainable Software Development compared to Extreme Programming]]></title>
+    <link href="http://professor.github.io/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming.html"/>
+    <updated>2017-07-14T08:05:00-07:00</updated>
+    <id>http://professor.github.io/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming</id>
+    <content type="html"><![CDATA[<p>This table compares Sustainable Software Development to Extreme Programming</p>
+
+<table>
+  <tr>
+    <td>Sustainable Software Development</td>
+    <td>XP 1.0</td>
+    <td>XP 2.0 Primary Practices</td>
+  </tr>
+  <tr>
+    <td><evolved>
+      Shared Schedule, Be Present</td>
+    <td></td>
+    <td>Sit Together</td>
+  </tr>
+  <tr>
+    <td><same>
+      Balanced Team</td>
+    <td></td>
+    <td>Whole Team (Balanced Team)</td>
+  </tr>
+  <tr>
+    <td><mostly missing>
+      Managing a Backlog</td>
+    <td></td>
+    <td>Informative Workspace</td>
+  </tr>
+  <tr>
+    <td> Share Schedule </td>
+    <td>40-hour week</td>
+    <td>Energized Work</td>
+  </tr>
+  <tr>
+    <td>(Remove Knowledge Silos) Continuous Pair Programming</td>
+    <td>Pair Programming</td>
+    <td>Pair Programming</td>
+  </tr>
+  <tr>
+    <td>(Remove Knowledge Silos) Overlapping Pair Rotations</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>(Remove Knowledge Silos) Knowledge Pollination</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Managing a Backlog</td>
+    <td></td>
+    <td>Stories</td>
+  </tr>
+  <tr>
+    <td>Shared Understanding Meetings</td>
+    <td>Iteration Planning Meetings</td>
+    <td>Weekly Cycle</td>
+  </tr>
+  <tr>
+    <td><Road Mapping></td>
+    <td>Planning Game
+Small Releases</td>
+    <td>Quarterly Cycle</td>
+  </tr>
+  <tr>
+    <td><Gone>
+      not needed when there is no commitment to each week</td>
+    <td></td>
+    <td>Slack</td>
+  </tr>
+  <tr>
+    <td><Morphed into short feedback loops></td>
+    <td></td>
+    <td>Ten-minute Build</td>
+  </tr>
+  <tr>
+    <td>Live on Master</td>
+    <td>Continuous Integration</td>
+    <td>Continuous Integration</td>
+  </tr>
+  <tr>
+    <td>(Caretaking the Code) TDD / BDD</td>
+    <td>Testing</td>
+    <td>Test-First Programming</td>
+  </tr>
+  <tr>
+    <td>(Caretaking the Code) Continuous Refactoring</td>
+    <td>Simple Design
+Refactoring</td>
+    <td>Incremental Design</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Metaphor</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Coding standards</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Retro</td>
+    <td>N/A</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>1.0</td>
+    <td>2.0 Corollary Practices</td>
+  </tr>
+  <tr>
+    <td><Morphed>
+      User Research, User Interviews, User Validation
+      <It is impractical to have an onsite customer. It is necessary to have an onsite product owner, covered in balanced team.></td>
+    <td>On-site customer</td>
+    <td>Real Customer Involvement</td>
+  </tr>
+  <tr>
+    <td><Gone>
+      This is a specific tactic for replacing legacy systems</td>
+    <td></td>
+    <td>Incremental Deployment</td>
+  </tr>
+  <tr>
+    <td>????</td>
+    <td></td>
+    <td>Team Continuity</td>
+  </tr>
+  <tr>
+    <td><Replaced with moving engineers where needed.  Allocations and considerations for forming a team. This seems related to Balanced Team></td>
+    <td></td>
+    <td>Shrinking Teams</td>
+  </tr>
+  <tr>
+    <td>???? We rarely do this, it depends on situation.</td>
+    <td></td>
+    <td>Root-cause analysis</td>
+  </tr>
+  <tr>
+    <td>Team Code Ownership</td>
+    <td>Collective ownership</td>
+    <td>Shared Code</td>
+  </tr>
+  <tr>
+    <td>Caring about Code Quality
+      <Subsumed by synchronous communication, intention revealing code></td>
+    <td></td>
+    <td>Code and Tests</td>
+  </tr>
+  <tr>
+    <td>Live on Master</td>
+    <td></td>
+    <td>Single Code Base (branches live a few hours at most)</td>
+  </tr>
+  <tr>
+    <td>Frequent Releases
+      <Subsumed by short feedback cycles>
+      Each team releases when features are done or at a given cadence</td>
+    <td></td>
+    <td>Daily Deployment</td>
+  </tr>
+  <tr>
+    <td>Flexible Scope Contracts </td>
+    <td></td>
+    <td>Negotiated Scope Contract</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Pay-per-use</td>
+  </tr>
+  <tr>
+    <td>Avoid Technical Debt</td>
+    <td></td>
+    <td>??</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
 ]]></content>
   </entry>
   
@@ -1111,139 +1301,6 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
 <h3>Abacus as an alternative metaphor</h3>
 
 <p>I stared considering an abacus. Each rod of the abacus could represent an alpha. Each bead on a rod could represent a state card. The space between the beads on the left and the beads on the right could represent the current state. Yet creating an abacus for SEMAT seemed unfeasible. Then it occurred to me, I could tape the SEMAT cards into a strip.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Improving code readability -- turning comments into methods]]></title>
-    <link href="http://professor.github.io/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html"/>
-    <updated>2013-02-19T21:49:00-08:00</updated>
-    <id>http://professor.github.io/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods</id>
-    <content type="html"><![CDATA[<p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="" title="http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
-
-<p>In reviewing one programmer&rsquo;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it.</p>
-
-<p>The programmer realizes that the narrative is lost in their code, and feels compelled to add these comments to help the reader understand what is going on. These comments serve as section breaks or chapter headings.</p>
-
-<p>Instead, the code could be split up into smaller methods, where each method name would clearly revel the intent of the code. The comment would be better served as a method invocation.</p>
-
-<p>Here&rsquo;s the pattern</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>//determine interest rate  (comment about the code intention)
-</span><span class='line'>code
-</span><span class='line'>code
-</span><span class='line'>code</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Becomes</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>determine_interest_rate()</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here&rsquo;s the original code</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>        <span class="n">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">int</span> <span class="n">i</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">row</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
-</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
-</span><span class='line'>           <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>           <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>           <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
-</span><span class='line'>               <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>                   <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
-</span><span class='line'>               <span class="p">}</span>
-</span><span class='line'>               <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>           <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">column</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
-</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
-</span><span class='line'>            <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>            <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
-</span><span class='line'>                <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">column</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>                    <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
-</span><span class='line'>                <span class="p">}</span>
-</span><span class='line'>                <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>            <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>        <span class="o">.</span><span class="n">.</span><span class="o">.</span>
-</span><span class='line'>        <span class="k">return</span> <span class="n">flag</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here&rsquo;s the revised code.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>     <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>        <span class="n">bool</span> <span class="n">winner_found</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="n">winner_found</span> <span class="o">=</span> <span class="n">check_row_of_latest_play</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">||</span>
-</span><span class='line'>                       <span class="n">check_column_of_latest_play</span><span class="p">(</span><span class="n">column</span><span class="p">)</span> <span class="o">||</span>
-</span><span class='line'>                       <span class="n">check_</span><span class="o">.</span><span class="n">.</span><span class="o">.</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">return</span> <span class="n">winner_found</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>(Note that I have not shown other refactoring that I would do, as it would distract from the point.)</p>
-
-<p>By changing the comment to a method call, the code is now more &ldquo;self documenting&rdquo; and the intent is clear by the method call.</p>
-
-<p>When I suggested this to the programmer, she resisted the idea noting that a method call would affect performance. For a tic-tac-toe problem, this is a specious argument. However, is there merit to it? Will a modern compiler optimize this kind of refactoring? And this brings up a broader question, should we optimize code for performance or readability when we are writing it? Conventional wisdom says we should write code that is clean and easy to understand, and when we are done and have performance analysis with production data, then we know where to spend engineering effort to optimize critical sections. The one exception would be algorithm complexity and running times. (e.g. O(N) vs O(NxN)</p>
-
-<p>I&rsquo;m now curious, is this a &ldquo;comment smell&rdquo;? Can comments be indicators to us programmers that the code we just wrote isn&rsquo;t very clear. The comment itself my inform us on how we need to refactor the code to make it more readable.</p>
 ]]></content>
   </entry>
   

@@ -9,7 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Rationale As software developers, we want to create clean code, code that is easy for other software developers to read. Ironically, we often don& &hellip;">
+  <meta name="description" content="Students in the craft of software development course read Sections &ldquo;Walking the long road&rdquo; and &ldquo;Draw your own map&rdquo; in the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,61 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2011/05/04/career-and-software-craftsmanship.html">Career and Software Craftsmanship</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-04T23:29:00-07:00" pubdate data-updated="true">May 4<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Students in the craft of software development course read Sections &ldquo;Walking the long road&rdquo; and &ldquo;Draw your own map&rdquo; in the Apprenticeship Patterns book. We then discussed whether their notions of their career had been affected by the course and the readings. During our conversation, some students talked about the idea that people can&rsquo;t stay technical their entire careers. (I see this as a misperception, and discussed several people I know who are still programming late into their careers.)
+My full time students are actively interviewing for jobs when they graduate. Most had not considered looking for a job that would enhance their software craftsmanship skills, while salary, prestige of the company, and projects they were working on dominated their searching process.
+From my Improv for Software Engineers course, I have noticed that my master students who are in their 20&rsquo;s and 30&rsquo;s have a hard time picturing their future in great detail and will actively refuse to consider life later on unless coached carefully to do so. They lump ages 50 to 80 in one bucket, the distant future. In my improv exercise, I have them walk around the room and I ask them to picture life as it was when they are a certain age. For the most part, they are able to recall and relive life at the age of 7, 12, 18, 23. However, as we get into the future, it&rsquo;s harder for them, and after the age of 60 most stop the exercise and resort to comedy to deal with the tension of thinking about the distant future.
+We discussed two hypothetical job offers. One pays $20,000 more money, the other allows them to grow their software development skills. Which one would they pick?
+While the conversation was enlightening for the students, I wonder how much of this will stick when they are in the throes of making job offer decisions. (Action item) It would be interesting to survey the students the students once they are in their jobs to discover how many offers they had and what was their decision making process to get to the final offer. In other words, did our intellectual conversation about their careers have an immediate impact on their choices a few months from now?
+Here are the responses from each of my students:</p>
+
+<ul>
+<li>The reading made me think about my short-term and long-term vision of my career. I have not reached an answer, but I definitely have to think about which of the following is most important: a) advancement for position and salary b) enjoying the work and working on what I want and what interests me.</li>
+<li>Before reading the Apprenticeship Patterns, I didn&rsquo;t think about actively trying to improve my skills as a software engineer / craftsman. It was all about doing just enough to get the job done!</li>
+<li>The reading has made me realize that there is a huge learning curve before I could reach anywhere near to being an expert software developer</li>
+<li>Thinking about where I want to be 10+ years down the line is hard; planning so far in advance is a bit undesirable. Staying technical my work like is an interesting idea.</li>
+<li>Made me think long term about my career options and whether or not to stay a developer the entire way or to take other options that open up later on</li>
+<li>Made me think of where I want to be in 15 years. I don&rsquo;t want to be a programmer for life.</li>
+<li>The reading makes me think about whether I want to be a fully technical guy or not. It&rsquo;s hard to coordinate your interests and job requirements</li>
+<li>Dream about myself 10,20,30,40 years. What if my manager asked me to fill in a management role? Should I pass for the sake of programming?</li>
+<li>I always hear that you can not continue coding for living! even after I reach 40s of age. How I might change my mind about that?</li>
+<li>The reading talks about setting long term goals. This led me to reset my current goal (which is short term.)</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -564,178 +619,6 @@ After using this technique for a course, I noticed that most of my students didn
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2010/05/28/integrating-openid.html">Integrating Openid, Google Apps, and Ruby on Rails</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-28T19:40:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>My university uses Google Apps for Universities. We wanted users to be able to authenticate to our rails application using their Google Apps account. Since Google Apps now supports openid, I thought that this would be really straightforward. A friend had just installed openid on his site and it was a breeze. I thought I would just install a few gems and get on with other rails development activities. I have no intention of becoming an openid expert. Here are the steps that I followed to get it to all work together.</p>
-
-<p>Step 1) Enable Federated Login using OpenID on your Google Apps domain.</p>
-
-<p><a href="http://www.google.com/a/cpanel/">http://www.google.com/a/cpanel/</a>{your-domain}/SetupIdp</p>
-
-<p>Step 2) Download your needed gems</p>
-
-<p>a) gem install ruby-openid
-This is JanRan&rsquo;s ruby implementation of open id</p>
-
-<p>b) gem install ruby-openid-apps-discovery
-This is Google&rsquo;s extension of ruby-openid to work with Google Apps</p>
-
-<p>c) gem install rack-openid
-This is a rack wrapper around JanRan&rsquo;s open id</p>
-
-<p>d) ./script/plugin install git://github.com/rails/open_id_authentication.git
-This is Rails code to make integrating in with open id easier</p>
-
-<p>e) Modify config/environment.erb and add this line
-require &lsquo;gapps_openid&rsquo;</p>
-
-<p>Step 3) Add some code to your rails application.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>class SessionsController &lt; current_user =" @account.users.authenticate(params[:name]," required =""> ["http://axschema.org/contact/email", "http://axschema.org/namePerson/first", "http://axschema.org/namePerson/last"]) do |result, identity_url, registration|
-</span><span class='line'>       ax_response = OpenID::AX::FetchResponse.from_success_response(request.env[Rack::OpenID::RESPONSE])
-</span><span class='line'>         case result.status
-</span><span class='line'>         when :missing
-</span><span class='line'>           failed_login "Sorry, the OpenID server couldn't be found"
-</span><span class='line'>         when :invalid
-</span><span class='line'>           failed_login "Sorry, but this does not appear to be a valid OpenID"
-</span><span class='line'>         when :canceled
-</span><span class='line'>           failed_login "OpenID verification was canceled"
-</span><span class='line'>         when :failed
-</span><span class='line'>           failed_login "Sorry, the OpenID verification failed"
-</span><span class='line'>         when :successful
-</span><span class='line'> 
-</span><span class='line'>
-</span><span class='line'>       email = ax_response['http://axschema.org/contact/email'].first()
-</span><span class='line'>       first_name = ax_response['http://axschema.org/namePerson/first'].first()
-</span><span class='line'>       last_name = ax_response['http://axschema.org/namePerson/last'].first()
-</span><span class='line'>
-</span><span class='line'>       if result.successful?
-</span><span class='line'>         #Look up the user and if they don't exist then create the user
-</span><span class='line'>         @current_user = ...
-</span><span class='line'>         if @current_user
-</span><span class='line'>           successful_login
-</span><span class='line'>         else
-</span><span class='line'>           failed_login "Sorry, no user by that identity URL exists (#{identity_url})"
-</span><span class='line'>         end
-</span><span class='line'>       else
-</span><span class='line'>         failed_login result.message
-</span><span class='line'>       end
-</span><span class='line'>     end
-</span><span class='line'>   end
-</span><span class='line'> end
-</span><span class='line'>
-</span><span class='line'>   private
-</span><span class='line'>     def successful_login
-</span><span class='line'>       session[:user_id] = @current_user.id
-</span><span class='line'>       redirect_to(root_url)
-</span><span class='line'>     end
-</span><span class='line'>
-</span><span class='line'>     def failed_login(message)
-</span><span class='line'>       flash[:error] = message
-</span><span class='line'>       redirect_to(new_session_url)
-</span><span class='line'>     end
-</span><span class='line'> end</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If you are still stuck, here are some other helpful links:</p>
-
-<p>To understand open id: <a href="http://www.devx.com/opensource/Article/37692/1954?pf=true">http://www.devx.com/opensource/Article/37692/1954?pf=true</a></p>
-
-<p>To get google mail to work with rails plugin: <a href="http://stackoverflow.com/questions/2492043/ruby-open-id-authentication-with-google-openid">http://stackoverflow.com/questions/2492043/ruby-open-id-authentication-with-google-openid</a></p>
-
-<p>To understand all possible AX schema fields: <a href="http://www.axschema.org/types/#sreg">http://www.axschema.org/types/#sreg</a></p>
-
-<p>Discovering end points: <a href="http://groups.google.com/group/google-federated-login-api/web/openid-discovery-for-hosted-domains">http://groups.google.com/group/google-federated-login-api/web/openid-discovery-for-hosted-domains</a></p>
-
-<p>Part 2</p>
-
-<p>If you get a warning message like this
-WARNING: making https request to <a href="https://www.google.com/accounts/o8/.well-known/host-meta?hd=">https://www.google.com/accounts/o8/.well-known/host-meta?hd=</a> without verifying server certificate; no CA path was specified.
-WARNING: making https request to <a href="https://www.google.com/accounts/o8/site-xrds?ns=2&amp;hd=">https://www.google.com/accounts/o8/site-xrds?ns=2&amp;hd=</a> without verifying server certificate; no CA path was specified.
-WARNING: making https request to <a href="https://www.google.com/a//o8/ud?be=o8">https://www.google.com/a//o8/ud?be=o8</a> without verifying server certificate; no CA path was specified.
-Generated checkid_setup request to <a href="https://www.google.com/a//o8/ud?be=o8">https://www.google.com/a//o8/ud?be=o8</a> with assocication AOQpcUfj9hGDs4DukDUrxhChnVBMbtoKAlXgvzQ1dp1L0yp6wCDxeFlx</p>
-
-<p>The fix is pretty simple.
-a) In your config/environment.rb file add the line
-OpenID.fetcher.ca_file = &ldquo;#{Rails.root}/config/ca-bundle.crt&rdquo;
-b) You&rsquo;ll need to get a ca-bundle.crt file. You should add in certificate authorities that you trust. If you are in a hurry, you can use the one in the ruby-openid-apps-discovery gem. Unpack it and find it in the lib directory. I copied mine to my application&rsquo;s config directory.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -769,7 +652,7 @@ b) You&rsquo;ll need to get a ca-bundle.crt file. You should add in certificate 
       </li>
     
       <li class="post">
-        <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
+        <a href="/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming.html">Sustainable Software Development Compared to Extreme Programming</a>
       </li>
     
   </ul>

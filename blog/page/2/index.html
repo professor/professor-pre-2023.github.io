@@ -9,8 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Performance pair programming is when one developer drives the entire implementation while the other watches.
-It is as if someone is solo programming &hellip;">
+  <meta name="description" content="The theory describes how teams can continue to deliver value in spite of team disruptions. The theory is a collection of synergistic principles, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +79,58 @@ It is as if someone is solo programming &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2016/04/14/theory-of-sustainable-software-development-through-team-code-ownership.html">Theory of Sustainable Software Development Through Team Code Ownership</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-04-14T20:43:00-07:00" pubdate data-updated="true">Apr 14<span>th</span>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The theory describes how teams can continue to deliver value in spite of team disruptions. The theory is a collection of synergistic principles, policies, and practices encouraging a positive attitude towards team disruption, knowledge sharing and continuity, as well as caring about code quality. The Theory of Sustainable Software Development through Team Code Ownership is fully presented in the paper.</p>
+
+<h2>Principles</h2>
+
+<p>The theory underlying principles are as follows: <strong>Keep a Positive Attitude Toward Team Disruption</strong> by recognizing the value that new team members bring with their fresh perspectives and challenging team assumptions; <strong>Encourage Knowledge Sharing and Continuity</strong> by enabling the knowledge to spread from one developer to the next, eventually reaching the entire team; and <strong>Care about Code Quality</strong> by recognizing that a well cared for code base makes modifications easier.</p>
+
+<h2>Policies</h2>
+
+<p><strong>Team Code Ownership</strong> empowers engineers to modify any part of the system under the team’s responsibility. When engineers agree that a section of the system needs to be changed, the team proactively and tacitly authorizes the change. <strong>Shared Schedule</strong> aligns the team’s work schedule to enable efficient daily rotation of the developers working on a track of feature development. <strong>Avoid Technical Debt</strong> enables a team to balance feature development with Continuous Refactoring. When a team is pressured to finish work by a deadline, it might be tempted to focus on feature delivery, stop refactoring, and hence take on technical debt. The team should prefer consistent software development by caretaking the code and leaving the code base in a state where any member of the team can pick up the next story for that part of the code base. This requires product and management support to avoid unnecessary thrashing of developers rushing incomplete work by taking on technical debt to deliver a feature early.</p>
+
+<h2>Removing Knowledge Silos Practices</h2>
+
+<p>By sharing knowledge throughout a team, any pair will have enough context to understand what needs to be done and know who to ask if they need more details. <strong>Continuous Pair Programming</strong> reinforces that there is no single owner for any line of written code. The team owns the code. As two developers collaborate, they generate shared context. That knowledge will spread around the team the following day via <strong>Overlapping Pair Rotation</strong> which explicitly rotates people off a track of work in order to cross-pollinate knowledge and avoid emergent knowledge silos and individual ownership. <strong>Knowledge Pollination</strong> is activities that promote knowledge sharing in unstructured ways between pairs and includes activities such as daily stand-ups, writing on whiteboards, overhearing a conversation, calling out an update to the team, or simply reaching out to others to ask questions as needed.</p>
+
+<h2>Caretaking the Code Practices</h2>
+
+<p>By caretaking the code, the team enables any pair to be able to work on any story in the backlog.  <strong>Test Driven Development (TDD) / Behavior Driven Development (BDD)</strong> creates a safety net of tests that give any pair the courage to modify the system without the fear of breaking some other part of the system unexpectedly. The tests become a specification on how each component is used. <strong>Continuous Refactoring</strong> increases code quality by increasing code discoverability (knowing where to find the responsible code), increasing code readability, and increasing the simplicity of design.  <strong>Live on Master</strong> enables the team to perform Continuous Refactoring as the code is easy to integrate. When teams have long running development branches, merge conflicts discourage Continuous Refactoring.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -654,166 +705,6 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2013/02/19/improving-code-readability-turning-comments-into-methods.html">Improving Code Readability &#8211; Turning Comments Into Methods</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-19T21:49:00-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&rsquo;m working with 21 developers to improve their code readability. Through a code read-through, they listen to another developer try and read their code. (See <a href="" title="http://sedano.org/journal/2011/3/30/code-readability-process.html">Code Readability Process</a> for more details.)</p>
-
-<p>In reviewing one programmer&rsquo;s code, a sixty line method had a visual rhythm to it. There would be a blank space, a comment, then about ten lines of code, and the cycle would repeat. The comment would explained the code just following it.</p>
-
-<p>The programmer realizes that the narrative is lost in their code, and feels compelled to add these comments to help the reader understand what is going on. These comments serve as section breaks or chapter headings.</p>
-
-<p>Instead, the code could be split up into smaller methods, where each method name would clearly revel the intent of the code. The comment would be better served as a method invocation.</p>
-
-<p>Here&rsquo;s the pattern</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>//determine interest rate  (comment about the code intention)
-</span><span class='line'>code
-</span><span class='line'>code
-</span><span class='line'>code</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Becomes</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>determine_interest_rate()</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here&rsquo;s the original code</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>        <span class="n">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>        <span class="n">int</span> <span class="n">i</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">row</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
-</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
-</span><span class='line'>           <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>           <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>           <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
-</span><span class='line'>               <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>                   <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
-</span><span class='line'>               <span class="p">}</span>
-</span><span class='line'>               <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>           <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="sr">//</span> <span class="no">Check</span> <span class="n">the</span> <span class="n">column</span> <span class="n">of</span> <span class="n">latest</span> <span class="n">play</span>
-</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">){</span>
-</span><span class='line'>            <span class="n">flag</span> <span class="o">=</span> <span class="kp">true</span><span class="p">;</span>
-</span><span class='line'>            <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">while</span><span class="p">((</span><span class="n">i</span><span class="o">&lt;</span><span class="n">dimension</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">flag</span><span class="o">==</span><span class="kp">true</span><span class="p">)){</span>
-</span><span class='line'>                <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">column</span><span class="o">]</span> <span class="o">!=</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>                    <span class="n">flag</span> <span class="o">=</span> <span class="kp">false</span><span class="p">;</span>
-</span><span class='line'>                <span class="p">}</span>
-</span><span class='line'>                <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span><span class='line'>            <span class="p">}</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>        <span class="o">.</span><span class="n">.</span><span class="o">.</span>
-</span><span class='line'>        <span class="k">return</span> <span class="n">flag</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Here&rsquo;s the revised code.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>     <span class="n">bool</span> <span class="ss">Tictactoe</span><span class="p">:</span><span class="ss">:determine_game</span><span class="p">(</span><span class="n">int</span> <span class="n">row</span><span class="p">,</span> <span class="n">int</span> <span class="n">column</span><span class="p">,</span> <span class="n">char</span> <span class="n">move</span><span class="p">){</span>
-</span><span class='line'>        <span class="n">bool</span> <span class="n">winner_found</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="n">winner_found</span> <span class="o">=</span> <span class="n">check_row_of_latest_play</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">||</span>
-</span><span class='line'>                       <span class="n">check_column_of_latest_play</span><span class="p">(</span><span class="n">column</span><span class="p">)</span> <span class="o">||</span>
-</span><span class='line'>                       <span class="n">check_</span><span class="o">.</span><span class="n">.</span><span class="o">.</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">return</span> <span class="n">winner_found</span><span class="p">;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>(Note that I have not shown other refactoring that I would do, as it would distract from the point.)</p>
-
-<p>By changing the comment to a method call, the code is now more &ldquo;self documenting&rdquo; and the intent is clear by the method call.</p>
-
-<p>When I suggested this to the programmer, she resisted the idea noting that a method call would affect performance. For a tic-tac-toe problem, this is a specious argument. However, is there merit to it? Will a modern compiler optimize this kind of refactoring? And this brings up a broader question, should we optimize code for performance or readability when we are writing it? Conventional wisdom says we should write code that is clean and easy to understand, and when we are done and have performance analysis with production data, then we know where to spend engineering effort to optimize critical sections. The one exception would be algorithm complexity and running times. (e.g. O(N) vs O(NxN)</p>
-
-<p>I&rsquo;m now curious, is this a &ldquo;comment smell&rdquo;? Can comments be indicators to us programmers that the code we just wrote isn&rsquo;t very clear. The comment itself my inform us on how we need to refactor the code to make it more readable.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -847,7 +738,7 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
       </li>
     
       <li class="post">
-        <a href="/toddsedano/2017/05/30/software-engineering-grounded-theory-research.html">Software Engineering Grounded Theory Research</a>
+        <a href="/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming.html">Sustainable Software Development Compared to Extreme Programming</a>
       </li>
     
   </ul>
