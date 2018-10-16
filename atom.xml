@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-10-16T08:16:18-07:00</updated>
+  <updated>2018-10-16T08:29:44-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -168,7 +168,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x70;&#114;&#111;&#102;&#101;&#115;&#115;&#x6f;&#x72;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#112;&#114;&#111;&#x66;&#101;&#115;&#x73;&#111;&#x72;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x70;&#114;&#111;&#102;&#x65;&#x73;&#x73;&#111;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#112;&#114;&#111;&#102;&#101;&#x73;&#115;&#x6f;&#x72;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -571,7 +571,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x70;&#114;&#x6f;&#x66;&#x65;&#x73;&#115;&#111;&#x72;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#112;&#x72;&#111;&#x66;&#101;&#x73;&#x73;&#x6f;&#114;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#109;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#x70;&#x72;&#111;&#x66;&#101;&#115;&#115;&#x6f;&#x72;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x70;&#x72;&#x6f;&#102;&#x65;&#x73;&#x73;&#111;&#x72;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -581,7 +581,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Sustainable Software Development compared to Extreme Programming]]></title>
+    <title type="html"><![CDATA[Sustainable Software Development]]></title>
     <link href="http://professor.github.io/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming.html"/>
     <updated>2017-07-14T08:05:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming</id>
@@ -589,183 +589,144 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <table>
   <tr>
-    <td>Sustainable Software Development</td>
-    <td>XP 1.0</td>
-    <td>XP 2.0 Primary Practices</td>
-  </tr>
-  <tr>
-    <td><evolved>
-      Shared Schedule, Be Present</td>
-    <td></td>
-    <td>Sit Together</td>
+    <th>Sustainable Software Development</th>
+    <th>XP Primary Practices</th>
   </tr>
   <tr>
     <td><same>
       Balanced Team</td>
-    <td></td>
     <td>Whole Team (Balanced Team)</td>
+  </tr>
+  <tr>
+    <td><evolved>
+      Shared Schedule, Be Present</td>
+    <td>Sit Together</td>
   </tr>
   <tr>
     <td><mostly missing>
       Managing a Backlog</td>
-    <td></td>
     <td>Informative Workspace</td>
   </tr>
   <tr>
-    <td> Share Schedule </td>
-    <td>40-hour week</td>
-    <td>Energized Work</td>
+    <td> Shared Schedule </td>
+    <td>Energized Work (<em>40-hr week)</em></td>
   </tr>
   <tr>
     <td>(Remove Knowledge Silos) Continuous Pair Programming</td>
-    <td>Pair Programming</td>
     <td>Pair Programming</td>
   </tr>
   <tr>
     <td>(Remove Knowledge Silos) Overlapping Pair Rotations</td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>(Remove Knowledge Silos) Knowledge Pollination</td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Managing a Backlog</td>
-    <td></td>
     <td>Stories</td>
   </tr>
   <tr>
-    <td>Shared Understanding Meetings</td>
-    <td>Iteration Planning Meetings</td>
-    <td>Weekly Cycle</td>
+    <td>Story Showcase  Meetings</td>
+    <td>Weekly Cycle (Iteration Planning Meetings)</td>
   </tr>
   <tr>
     <td><Road Mapping></td>
-    <td>Planning Game
-Small Releases</td>
-    <td>Quarterly Cycle</td>
+    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
   </tr>
   <tr>
     <td><Gone>
       not needed when there is no commitment to each week</td>
-    <td></td>
     <td>Slack</td>
   </tr>
   <tr>
     <td><Morphed into short feedback loops></td>
-    <td></td>
     <td>Ten-minute Build</td>
   </tr>
   <tr>
     <td>Live on Master</td>
     <td>Continuous Integration</td>
-    <td>Continuous Integration</td>
   </tr>
   <tr>
     <td>(Caretaking the Code) TDD / BDD</td>
-    <td>Testing</td>
-    <td>Test-First Programming</td>
+    <td>Test-First Programming </td>
   </tr>
   <tr>
     <td>(Caretaking the Code) Continuous Refactoring</td>
-    <td>Simple Design
-Refactoring</td>
-    <td>Incremental Design</td>
+    <td>Incremental Design (Simple Design
+Refactoring)</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>Metaphor</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Coding standards</td>
-    <td></td>
-  </tr>
+  
   <tr>
     <td>Retro</td>
     <td>N/A</td>
-    <td>N/A</td>
   </tr>
   <tr>
     <td></td>
-    <td>1.0</td>
     <td>2.0 Corollary Practices</td>
   </tr>
   <tr>
     <td><Morphed>
       User Research, User Interviews, User Validation
       <It is impractical to have an onsite customer. It is necessary to have an onsite product owner, covered in balanced team.></td>
-    <td>On-site customer</td>
-    <td>Real Customer Involvement</td>
+    <td>Real Customer Involvement (On-site customer)</td>
   </tr>
   <tr>
     <td><Gone>
       This is a specific tactic for replacing legacy systems</td>
-    <td></td>
     <td>Incremental Deployment</td>
   </tr>
   <tr>
     <td>????</td>
-    <td></td>
     <td>Team Continuity</td>
   </tr>
   <tr>
     <td><Replaced with moving engineers where needed.  Allocations and considerations for forming a team. This seems related to Balanced Team></td>
-    <td></td>
     <td>Shrinking Teams</td>
   </tr>
   <tr>
     <td>???? We rarely do this, it depends on situation.</td>
-    <td></td>
     <td>Root-cause analysis</td>
   </tr>
   <tr>
     <td>Team Code Ownership</td>
-    <td>Collective ownership</td>
-    <td>Shared Code</td>
+    <td>Shared Code (Collective ownership)</td>
   </tr>
   <tr>
     <td>Caring about Code Quality
       <Subsumed by synchronous communication, intention revealing code></td>
-    <td></td>
     <td>Code and Tests</td>
   </tr>
   <tr>
-    <td>Live on Master</td>
-    <td></td>
+    <td>Short-lived branches</td>
     <td>Single Code Base (branches live a few hours at most)</td>
   </tr>
   <tr>
     <td>Frequent Releases
       <Subsumed by short feedback cycles>
       Each team releases when features are done or at a given cadence</td>
-    <td></td>
     <td>Daily Deployment</td>
   </tr>
   <tr>
     <td>Flexible Scope Contracts </td>
-    <td></td>
     <td>Negotiated Scope Contract</td>
   </tr>
   <tr>
-    <td></td>
     <td></td>
     <td>Pay-per-use</td>
   </tr>
   <tr>
     <td>Avoid Technical Debt</td>
-    <td></td>
     <td>??</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
 </table>
+
+
 
 ]]></content>
   </entry>

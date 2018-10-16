@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Transitioning from MySQL to Postgresql - Todd Sedano</title>
+  <title>Category: Sustainable Software Development - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the &hellip;">
+  <meta name="description" content="Category: Sustainable Software Development">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html">
+  <link rel="canonical" href="http://professor.github.ioblog/categories/sustainable-software-development/index.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -78,98 +78,35 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Transitioning From MySQL to Postgresql</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-06-22T12:11:00-07:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2010</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Sustainable Software Development</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><p>Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the migration, I specified it as a VARCHAR. This generated this error.</p>
 
-<p>PGError: ERROR: operator does not exist: character varying = integer\nLINE 1: &hellip;n_id = u.id)</p>
+  
+  <h2>2017</h2>
 
-<p>Solving it was pretty simple. In my development and production databases I did the following commands. Then did a new data push to heroku&rsquo;s postresql database.</p>
+<article>
+  
+<h1><a href="/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming.html">Sustainable Software Development</a></h1>
+<time datetime="2017-07-14T08:05:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>14</span> <span class='year'>2017</span></time>
 
-<p>1) Create another column using the MySQL Administrator GUI tool. Ie year2 of type INTEGER</p>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/sustainable-software-development/'>Sustainable Software Development</a></span>
+</footer>
 
-<p>2) Run the following command from MySQL Query Browser &ldquo;update courses set year2 = year&rdquo;</p>
 
-<p>3) Drop the column year.</p>
+</article>
 
-<p>4) Rename column year2 to be year.5) heroku db:push mysql:&hellip;</p>
-
-<p>There are good documents here: <a href="http://docs.heroku.com/database">http://docs.heroku.com/database</a></p>
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Todd Sedano</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-06-22T12:11:00-07:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2010</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html" data-via="toddsedano" data-counturl="http://professor.github.io/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/toddsedano/2010/06/16/what-i-learned-at-railsconf-2010-presentation.html" title="Previous Post: What I learned at RailsConf 2010 presentation">&laquo; What I learned at RailsConf 2010 presentation</a>
-      
-      
-        <a class="basic-alignment right" href="/toddsedano/2010/11/18/rethinking-regex.html" title="Next Post: Rethinking regex">Rethinking regex &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>
