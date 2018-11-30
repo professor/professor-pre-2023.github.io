@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-10-16T08:29:44-07:00</updated>
+  <updated>2018-11-30T06:31:22-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -20,7 +20,11 @@
     <id>http://professor.github.io/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming</id>
     <content type="html"><![CDATA[<p>This table compares Sustainable Software Development to Extreme Programming</p>
 
-<table>
+
+
+
+
+<table class=comparison>
   <tr>
     <th>Sustainable Software Development</th>
     <th>XP Primary Practices</th>
