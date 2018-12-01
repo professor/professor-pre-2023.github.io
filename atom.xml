@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-01T09:58:05-08:00</updated>
+  <updated>2018-12-01T10:10:48-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -168,7 +168,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#112;&#114;&#x6f;&#x66;&#x65;&#x73;&#115;&#111;&#114;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#112;&#114;&#x6f;&#x66;&#x65;&#x73;&#115;&#111;&#x72;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#112;&#114;&#111;&#x66;&#101;&#x73;&#x73;&#111;&#114;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#112;&#114;&#x6f;&#x66;&#101;&#x73;&#115;&#x6f;&#x72;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -571,7 +571,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#x70;&#114;&#111;&#x66;&#x65;&#115;&#115;&#x6f;&#114;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#112;&#x72;&#x6f;&#x66;&#101;&#115;&#x73;&#x6f;&#114;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#99;&#111;&#109;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#112;&#x72;&#x6f;&#x66;&#101;&#115;&#x73;&#x6f;&#114;&#x40;&#x67;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#x70;&#114;&#111;&#x66;&#101;&#115;&#115;&#111;&#x72;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -634,7 +634,9 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
   </tr>
   <tr>
     <td class="ident">Road Mapping</td>
-    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
+    <td>Quarterly Cycle (Planning Game, Small Releases)<br/>
+        Each quarter, the team identifies the stories for the next quarter. During a meeting, the team identifies bottlenecks, initiates repairs, plans the feature sets for the quarter, and selects a quarter’s worth of stories.
+    </td>
   </tr>
   <tr>
     <td class="ident">Story writing</td>
@@ -666,11 +668,15 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
   </tr>
   <tr>
     <td class="ident2">Test Driven Development / BDD</td>
-    <td>Test-First Programming </td>
+    <td>Test-First Programming<br/>
+        The developers write tests before writing code. Every production line of code is preceded by a test. Test-first programming addresses several concerns: scope-creep, coupling and cohesion, trust, and rhythm. The practice mitigates against scope-creep; without a clear goal, a programmer can easily write more code than is necessary. The practice improves coupling and cohesion as easy-to-test code often has beneficial design qualities. The practice builds trust in the code as engineers trust tested code more than un-tested code. The practice produces rhythm as it provides a cadence of accomplishing goals.
+     </td>
   </tr>
   <tr>
     <td class="ident2">Team code ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
+    <td>Shared Code<sup>C</sup> (Collective ownership)<br/>
+        Everyone on the team can modify any of the system. When engineers sees something broken, they fix it.<br/>
+    </td>
   </tr>
   <tr>
     <td class="ident2"> Continuous refactoring</td>
@@ -738,7 +744,9 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident">Core work hours</td>
-    <td>Energized Work (<em>40-hr week)</em></td>
+    <td>Energized Work (<em>40-hr week)</em><br/>
+        “Work only as many hours as you can be productive and only as many hours as you can sustain” [1]. Working longer hours may make the team less productive. Team members need to take care of themselves; this includes staying home to rest when sick. The work patterns of the team should be sustainable in the long run.
+    </td>
   </tr>
   <tr>
     <td class="ident">Stand-up</td>
@@ -770,7 +778,9 @@ Refactoring)</td>
   <tr>
     <td>Not needed<br/>
         there is no commitment to each week</td>
-    <td>Slack</td>
+    <td>Slack<br/>
+        During the weekly cycle meeting, include tasks in the plan that the team can drop if the team gets behind. Adding slack to the schedule enables a sustainable work environment.
+    </td>
   </tr>
   <tr>
     <td>Not needed for all projects</td>
@@ -800,6 +810,234 @@ Refactoring)</td>
 
 
 <p><sup>C</sup> are optional XP 2.0 Corollary Practices</p>
+
+<p>For a team transitioning to Extreme Programming, Beck recommends starting with the primary practices. Beck claims that “the primary practices are useful independent of what else you are doing” resulting in an immediate improvement, whereas the corollary practices work well once a team has implemented the primary practices. Extreme programming is not dogmatic about the list of practices. The team chooses which practices to apply.</p>
+
+<p>Once a team has implemented the primary practices, then the team can start implementing the corollary practices. Beck says that it seems “difficult or dangerous to implement [the corollary practices] before completing the preliminary work of the primary practices” [1].</p>
+
+<br/>
+
+
+<table class=comparison>
+  <tr>
+    <th>Sustainable Software Development</th>
+    <th>Extreme Programming 2.0 (XP 1.0 names)</th>
+  </tr>
+  <tr>
+    <td><same>
+      Balanced Team</td>
+    <td>Whole Team (Balanced Team)<br/>
+        Whole team is also known as cross-functional teams. Include people on the team with the skills needed for success. Beck points out that a sense of team fulfills an individual’s psychological needs. “We belong. We are in this together. We support each others’ work, growth, and learning.” [1]
+    </td>
+  </tr>  
+  <tr>
+    <td>Track One Practices</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">User research</td>
+    <td>Real Customer Involvement<sup>C</sup> (On-site customer)<br/>
+        Make the customer a part of the team. “The point of customer involve- ment is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs” [1]. Even if a customer is busy, involving them whenever possible is preferred to not involving them at all. In this situation, the team needs to find alternative ways of validating features with users.<br/>    
+        It is impractical to have an onsite customer.
+    </td>
+  </tr>
+  <tr>
+    <td class="ident">User validation</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Road Mapping</td>
+    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
+  </tr>
+  <tr>
+    <td class="ident">Story writing</td>
+    <td>Stories
+        Stories are “units of customer-visible functionality” [1]. Stories have a name and a description or graphical depiction. Stories track the work to be done.
+    </td>
+  </tr>
+  <tr>
+    <td class="ident">Story refining</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Project startup</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Track Two Practices</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Caretaking the Code</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident2">Clean code</td>
+    <td>Code and Tests<sup>C</sup><br/>
+        The tests and code are the only permanent artifacts. Everything else (e.g. documentation) is generated from the code. Anything that contributes to what the system does today and what it will do tomorrow is valuable, “everything else is waste” [1].    
+    </td>
+  </tr>
+  <tr>
+    <td class="ident2">Fast test suite and builds</td>
+    <td>Ten-minute Build<br/>
+        Building the code and running the test suite should be automated and short. Longer builds increase the feedback loop.
+    </td>
+  </tr>
+  <tr>
+    <td class="ident2">Test Driven Development / BDD</td>
+    <td>Test-First Programming </td>
+  </tr>
+  <tr>
+    <td class="ident2">Team code ownership</td>
+    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
+  </tr>
+  <tr>
+    <td class="ident2"> Continuous refactoring</td>
+    <td>Incremental Design (Simple Design Refactoring)<br/>
+        Build the system incrementally and evolve the design every day. In the past, software teams might often had long design phases that assumed features would not change. When the team’s understanding of the system changes, make incremental changes to the system to align the code’s design with the team’s desired goal. Teams routinely remove duplication.
+   </td>
+  </tr>    
+  <tr>
+    <td class="ident2">Integrate frequently</td>
+    <td>Continuous Integration and <br/>
+        When working on new features, routinely integrate new code into the master code repository. Avoid long-lived branches. Beck suggests un-integrated code live on its own “no more than a couple of hours” [1]. The longer the team waits to integrate, the more unpredictable and expensive integration becomes.<br/> 
+        Single Code Base<sup>C</sup><br/>
+        Ideally there is only one branch of the code. Multiple branches, (e.g. for releases, or customers) creates extra work. Branches live a few hours at most.
+        branches live a few hours at most
+        </td>
+  </tr>  
+  <tr>
+    <td class="ident2">Frequent releases<br/>
+      Each team releases when features are done or at a given cadence</td>
+    <td>Daily Deployment<sup>C</sup><br/>
+        Every day put a new version of the code into production.
+    </td>
+  </tr>
+  <tr>
+    <td class="ident2">Acceptance / staging environment</td>
+    <td>(implied)</td>
+  </tr>
+  <tr>
+    <td class="ident2">Build system</td>
+    <td>(implied)</td>
+  </tr>
+  <tr>
+    <td class="ident2">Stop on red builds</td>
+    <td>(implied)</td>
+  </tr>
+  <tr>
+    <td class="ident">Remove Knowledge silos</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident2">Continuous pair programming</td>
+    <td>Pair Programming<br/>
+        Every part of a production system is written by two programmers sitting side by side. The pair works together to solve problems, keep each other on task, learn from each other, and abide by the team’s practices.
+    </td>
+  </tr>
+  <tr>
+    <td class="ident2"> Overlapping pair rotations</td>
+    <td>N/A</td>
+  </tr>
+
+
+  <tr>
+    <td>Boundary Spanning Practices</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Backlog grooming</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td class="ident">Accepting stories</td>
+    <td>(implied)</td>
+  </tr>
+  <tr>
+    <td class="ident">Story showcase meeting</td>
+    <td>Weekly Cycle (Iteration Planning Meetings)<br/>
+        Each week, the team accepts a certain amount of work to accomplish. During a meeting at the beginning of the week, the team reviews progress to date, the customer chooses a week’s worth of stories, and the engineers decompose the stories into tasks and individually estimate each task. “The goal is to have deployable software at the end of the week which everyone can celebrate as progress” [1].    
+    </td>
+  </tr>  
+
+
+  <tr>
+    <td>Project Management Practices</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Core work hours</td>
+    <td>Energized Work (<em>40-hr week)</em></td>
+  </tr>
+  <tr>
+    <td class="ident">Stand-up</td>
+    <td>N/A</td>
+  </tr>  
+  <tr>
+    <td class="ident">Retro</td>
+    <td>N/A</td>
+  </tr>  
+  <tr>
+    <td class="ident">Flexible scope contracts </td>
+    <td>Negotiated Scope Contract<sup>C</sup><br/>
+        “Write contracts for software development that fix time, costs, and quality but call for an ongoing negotiation of the precise scope of the system.” [1]
+    </td>
+  </tr>
+  <tr>
+    <td class="ident">No overtime</td>
+    <td>Energized Work (<em>40-hr week)</em></td>
+  </tr>
+  <tr>
+    <td>
+      Shared Schedule, Be Present</td>
+    <td>Sit Together<br/>
+        Software development is a collaborative endeavor. Co-locating teams increases collaboration. Distributed teams are still possible, yet “Sit Together predicts that the more face time you have, the more humane and productive the project” [1]
+    </td>
+  </tr>
+  <tr>
+    <td>Not needed<br/>
+      Agile project management tools (such a Pivotal Tracker) provide more value than a physical board showing project status. 
+      </td>
+    <td>Informative Workspace<br/>
+        “An interested observer should be able to walk into the team space and get a general idea of how the project is going in fifteen seconds” [1]. The team can modify the workspace to make it more conducive for their work.
+    </td>
+  </tr>
+  <tr>
+    <td>Not needed<br/>
+        there is no commitment to each week</td>
+    <td>Slack</td>
+  </tr>
+  <tr>
+    <td>Not needed for all projects</td>
+    <td>Incremental Deployment<sup>C</sup><br/>
+        Switch between a legacy system and a replacement system in incremental steps. Avoid a hard switch over from a legacy system to a new system.<br/>
+        slowly replace a legacy systems</td>
+  </tr>
+  <tr>
+    <td>Allocations<br/>
+        Move engineers where needed</td>
+    <td>Shrinking Teams<sup>C</sup><br/>
+        Try to improve team efficiency so that the team can shrink in size. When a team becomes more productive, re-allocated extraneous team members to other teams.<br/> 
+        Team Continuity<sup>C</sup><br/>
+        “Keep effective teams together” [1]. People are not fungible, and building relation- ships is part of creating a high performing team. Rotating people through teams helps spread knowledge.
+    </td>
+  </tr>
+  <tr>
+    <td>Optional, depends on situation</td>
+    <td>Root-cause analysis<sup>C</sup>
+        When a defect occurs, determine why it happened. Modify testing strategy to prevent that kind of mistake from happening again. Write an automated system test and an automated unit test then fix the code.<br/>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Pay-per-use<sup>C</sup><br/>
+        Pay-per-use provides alignment between revenue and the features that generate the rev- enue. “Connecting money flow directly to software development provides accurate, timely information with which to drive improvement” [1].
+    </td>
+  </tr>
+</table>
+
+
+<p>[1] K. Beck and C. Andres. Extreme Programming Explained: Embrace Change (2nd Edition). Addison-Wesley Professional, 2004.</p>
 ]]></content>
   </entry>
   
