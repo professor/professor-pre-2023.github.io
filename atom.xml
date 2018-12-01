@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-01T06:42:39-08:00</updated>
+  <updated>2018-12-01T09:42:26-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -168,7 +168,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#112;&#114;&#x6f;&#102;&#x65;&#x73;&#x73;&#x6f;&#114;&#64;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#x70;&#x72;&#x6f;&#102;&#101;&#x73;&#x73;&#x6f;&#114;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x70;&#114;&#x6f;&#102;&#x65;&#115;&#115;&#111;&#x72;&#x40;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x70;&#x72;&#x6f;&#x66;&#x65;&#115;&#x73;&#x6f;&#x72;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -571,7 +571,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x70;&#x72;&#x6f;&#x66;&#x65;&#115;&#x73;&#x6f;&#x72;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;">&#112;&#114;&#111;&#x66;&#x65;&#115;&#115;&#x6f;&#114;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x70;&#114;&#111;&#x66;&#101;&#115;&#115;&#x6f;&#114;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#x70;&#114;&#x6f;&#x66;&#101;&#115;&#x73;&#111;&#x72;&#x40;&#x67;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -585,12 +585,29 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
     <link href="http://professor.github.io/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming.html"/>
     <updated>2017-07-14T08:05:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2017/07/14/sustainable-software-development-compared-to-extreme-programming</id>
-    <content type="html"><![CDATA[<p>This table compares Sustainable Software Development to Extreme Programming</p>
+    <content type="html"><![CDATA[<p>There are several ways in which Sustainable Software Development has evolved from Extreme Programming (XP)</p>
+
+<ul>
+  <li>Sustainable Software Develpoment combines user cenetered design with agile software development. Product designers apply design thinking and user research to understand what product and features to build. Extreme Programming relies on an onsite customer to tell the developers what to build. This is problematic in two ways. Often an onsite customer is unaviable, impractical, or too expensive to have on a team. Onsite customers are not trained in design thinking and information architecture.</li>
+  <li>Sustainable Software Development reduces the commitment level of the team to the work in progress, the stories that each developer is currently working on. Unlike Extrmee Programming, the team does not commit to an amount of work to be done during a weekly cycle or iteration. There are no iterations in Sustinable Software Development.</li>
+  <li>Sustainable Software Development focuses the technical practices on two main goals
+      <ol>caretaking the code</ol>
+      <ol>removing knowledge silos</ol>
+      Extereme Programming has many practices around improving code quality, but removing knowledge silos is not an explicit goal.
+  </li>
+  <li>Sustainable Software Development replaces predictions with focusing on &#8220;what can we ship today?&#8221; and &#8220;what is the minimal left that is needed to ship?&#8221; Planning Extreme Programming utilizes the team&#8217;s velocity and backlog to create burn down charts for forecasting the team&#8217;s progress.
+  <li>Sustainable Software Development identifies software development waste through weekly retros and removes them from action items and chores.   
+</ul>
+
+
+<p>Both Sustainable Software Development and Extreme Programming deal with the tension of dates and features by asking &ldquo;how do we reduce scope?&rdquo; and &ldquo;what should be done first?&rdquo; In other words, developer happiness and sustainability is achieved by prioritizing the work.</p>
+
+<p>This table compares Sustainable Software Development to Extreme Programming (XP).</p>
 
 <table class=comparison>
   <tr>
     <th>Sustainable Software Development</th>
-    <th>XP 2.0 Primary Practices (XP 1.0 names)</th>
+    <th>Extreme Programming 2.0 (XP 1.0 names)</th>
   </tr>
   <tr>
     <td><same>
