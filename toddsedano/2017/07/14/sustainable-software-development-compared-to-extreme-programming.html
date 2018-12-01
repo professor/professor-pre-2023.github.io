@@ -107,22 +107,26 @@
 
 <div class="entry-content"><p>There are several ways in which Sustainable Software Development has evolved from Extreme Programming (XP)</p>
 
+<p>Sustainable Software Develpoment</p>
+
 <ul>
-  <li>Sustainable Software Develpoment combines user cenetered design with agile software development. Product designers apply design thinking and user research to understand what product and features to build. Extreme Programming relies on an onsite customer to tell the developers what to build. This is problematic in two ways. Often an onsite customer is unaviable, impractical, or too expensive to have on a team. Onsite customers are not trained in design thinking and information architecture.</li>
-  <li>Sustainable Software Development reduces the commitment level of the team to the work in progress, the stories that each developer is currently working on. Unlike Extrmee Programming, the team does not commit to an amount of work to be done during a weekly cycle or iteration. There are no iterations in Sustinable Software Development.</li>
-  <li>Sustainable Software Development focuses the technical practices on two main goals
-      <ol>caretaking the code</ol>
-      <ol>removing knowledge silos</ol>
-      Extereme Programming has many practices around improving code quality, but removing knowledge silos is not an explicit goal.
+  <li><em>combines user centered design with agile software development</em>. Product designers apply design thinking and user research to understand what product and features to build. Extreme Programming relies on an onsite customer to tell the developers what to build. This is problematic in two ways. Often an onsite customer is unaviable, impractical, or too expensive to have on a team. Onsite customers are not trained in design thinking and information architecture.</li>
+  <li><em>reduces the commitment level of the team to the work in progress</em>, the stories that each developer is currently working on. Unlike Extrmee Programming, the team does not commit to an amount of work to be done during a weekly cycle or iteration. There are no iterations in Sustinable Software Development.</li>
+  <li><em>focuses the technical practices on two main goals</em>
+      <ol>
+         <li>caretaking the code</li>
+          <li>removing knowledge silos</li>
+      </ol>
+      Extreme Programming has many practices around improving code quality, but removing knowledge silos is not an explicit goal.
   </li>
-  <li>Sustainable Software Development replaces predictions with focusing on &#8220;what can we ship today?&#8221; and &#8220;what is the minimal left that is needed to ship?&#8221; Planning Extreme Programming utilizes the team&#8217;s velocity and backlog to create burn down charts for forecasting the team&#8217;s progress.
-  <li>Sustainable Software Development identifies software development waste through weekly retros and removes them from action items and chores.   
+  <li><em>replaces predictions with focusing on &#8220;what is the minimal that we need to ship?&#8221;</em> Planning Extreme Programming utilizes the team&#8217;s velocity and backlog to create burn down charts for forecasting the team&#8217;s progress. Like Extreme Progamming, the team maintains a shippable product. 
+  <li><em>identifies and removes software development waste</em>. Weekly retros identify wastes and the team removes wastes with action items and chores.   
 </ul>
 
 
 <p>Both Sustainable Software Development and Extreme Programming deal with the tension of dates and features by asking &ldquo;how do we reduce scope?&rdquo; and &ldquo;what should be done first?&rdquo; In other words, developer happiness and sustainability is achieved by prioritizing the work.</p>
 
-<p>This table compares Sustainable Software Development to Extreme Programming (XP).</p>
+<p>This table compares Sustainable Software Development to Extreme Programming (XP). A more detailed analysis follows after the table.</p>
 
 <table class=comparison>
   <tr>
@@ -201,21 +205,20 @@ Refactoring)</td>
   </tr>  
   <tr>
     <td class="ident2">Frequent releases<br/>
-       subsumed by short feedback cycles<br/>
       Each team releases when features are done or at a given cadence</td>
     <td>Daily Deployment<sup>C</sup></td>
   </tr>
   <tr>
     <td class="ident2">Acceptance / staging environment</td>
-    <td></td>
+    <td>(implied)</td>
   </tr>
   <tr>
     <td class="ident2">Build system</td>
-    <td></td>
+    <td>(implied)</td>
   </tr>
   <tr>
     <td class="ident2">Stop on red builds</td>
-    <td></td>
+    <td>(implied)</td>
   </tr>
   <tr>
     <td class="ident">Remove Knowledge silos</td>
@@ -227,7 +230,7 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident2"> Overlapping pair rotations</td>
-    <td></td>
+    <td>N/A</td>
   </tr>
 
 
@@ -237,11 +240,11 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident">Backlog grooming</td>
-    <td></td>
+    <td>N/A</td>
   </tr>
   <tr>
     <td class="ident">Accepting stories</td>
-    <td></td>
+    <td>(implied)</td>
   </tr>
   <tr>
     <td class="ident">Story showcase meeting</td>
@@ -273,17 +276,15 @@ Refactoring)</td>
     <td class="ident">No overtime</td>
     <td>Energized Work (<em>40-hr week)</em></td>
   </tr>
-
-
-
   <tr>
     <td>
       Shared Schedule, Be Present</td>
     <td>Sit Together</td>
   </tr>
   <tr>
-    <td>(mostly missing)
-      Managing a Backlog</td>
+    <td>Not needed<br/>
+      Agile project management tools (such a Pivotal Tracker) provide more value than a physical board showing project status. 
+      </td>
     <td>Informative Workspace</td>
   </tr>
   <tr>
@@ -303,7 +304,7 @@ Refactoring)</td>
         Team Continuity<sup>C</sup></td>
   </tr>
   <tr>
-    <tdOptional, depends on situation</td>
+    <td>Optional, depends on situation</td>
     <td>Root-cause analysis<sup>C</sup></td>
   </tr>
   <tr>
