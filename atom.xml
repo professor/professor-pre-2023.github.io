@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-11-30T20:52:34-08:00</updated>
+  <updated>2018-12-01T06:37:06-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -168,7 +168,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#112;&#x72;&#x6f;&#102;&#101;&#x73;&#115;&#111;&#x72;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#109;">&#112;&#x72;&#x6f;&#x66;&#101;&#x73;&#x73;&#111;&#114;&#64;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x70;&#114;&#111;&#x66;&#101;&#x73;&#x73;&#x6f;&#x72;&#64;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;">&#112;&#x72;&#111;&#102;&#101;&#x73;&#x73;&#x6f;&#x72;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -571,7 +571,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#112;&#114;&#x6f;&#102;&#x65;&#115;&#115;&#x6f;&#114;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#112;&#x72;&#x6f;&#102;&#x65;&#x73;&#x73;&#x6f;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#111;&#109;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x70;&#114;&#x6f;&#102;&#x65;&#x73;&#115;&#x6f;&#x72;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;">&#x70;&#x72;&#x6f;&#102;&#x65;&#x73;&#115;&#x6f;&#114;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -596,89 +596,166 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
     <td><same>
       Balanced Team</td>
     <td>Whole Team (Balanced Team)</td>
-  </tr>
+  </tr>  
   <tr>
-    <td><evolved>
-      Shared Schedule, Be Present</td>
-    <td>Sit Together</td>
-  </tr>
-  <tr>
-    <td><mostly missing>
-      Managing a Backlog</td>
-    <td>Informative Workspace</td>
-  </tr>
-  <tr>
-    <td> Shared Schedule </td>
-    <td>Energized Work (<em>40-hr week)</em></td>
-  </tr>
-  <tr>
-    <td>Remove Knowledge Silos</td>
+    <td>Track One Practices</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Continuous Pair Programming</td>
-    <td>Pair Programming</td>
+    <td class="ident">User research</td>
+    <td>Real Customer Involvement<sup>C</sup> (On-site customer)<br/>
+        It is impractical to have an onsite customer.
+    </td>
   </tr>
   <tr>
-    <td class="ident"> Overlapping Pair Rotations</td>
+    <td class="ident">User validation</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Knowledge Pollination</td>
+    <td class="ident">Road Mapping</td>
+    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
+  </tr>
+  <tr>
+    <td class="ident">Story writing</td>
+    <td>Stories</td>
+  </tr>
+  <tr>
+    <td class="ident">Story refining</td>
     <td></td>
   </tr>
   <tr>
-    <td>Caretaking the Code</td>
+    <td class="ident">Project startup</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">TDD / BDD</td>
+    <td>Track Two Practices</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Caretaking the Code</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident2">Clean Code</td>
+    <td>Code and Tests<sup>C</sup></td>
+  </tr>
+  <tr>
+    <td class="ident2">Fast test suite and builds</td>
+    <td>Ten-minute Build</td>
+  </tr>
+  <tr>
+    <td class="ident2">Test Driven Development / BDD</td>
     <td>Test-First Programming </td>
   </tr>
   <tr>
-    <td class="ident"> Continuous Refactoring</td>
+    <td class="ident2">Team Code Ownership</td>
+    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
+  </tr>
+  <tr>
+    <td class="ident2"> Continuous Refactoring</td>
     <td>Incremental Design (Simple Design
 Refactoring)</td>
   </tr>    
   <tr>
-    <td>Managing a Backlog</td>
-    <td>Stories</td>
+    <td class="ident2">Integrate Frequently</td>
+    <td>Continuous Integration and <br/>
+        Single Code Base<sup>C</sup><br/>
+        branches live a few hours at most</td>
+  </tr>  
+  <tr>
+    <td class="ident2">Frequent Releases<br/>
+       subsumed by short feedback cycles<br/>
+      Each team releases when features are done or at a given cadence</td>
+    <td>Daily Deployment<sup>C</sup></td>
   </tr>
   <tr>
-    <td>Story Showcase  Meetings</td>
+    <td class="ident2">Acceptance / staging environment</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident2">Build system</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident2">Stop on red builds</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Remove Knowledge Silos</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident2">Continuous Pair Programming</td>
+    <td>Pair Programming</td>
+  </tr>
+  <tr>
+    <td class="ident2"> Overlapping Pair Rotations</td>
+    <td></td>
+  </tr>
+
+
+  <tr>
+    <td>Boundary Spanning Practices</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Backlog grooming</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Accepting stories</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">Story Showcase  Meetings</td>
     <td>Weekly Cycle (Iteration Planning Meetings)</td>
+  </tr>  
+
+
+  <tr>
+    <td>Project Management Practices</td>
+    <td></td>
   </tr>
   <tr>
-    <td><Road Mapping></td>
-    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
+    <td class="ident">Core work hours</td>
+    <td>Energized Work (<em>40-hr week)</em></td>
   </tr>
   <tr>
-    <td><Gone>
-      not needed when there is no commitment to each week</td>
+    <td class="ident">Stand-up</td>
+    <td>N/A</td>
+  </tr>  
+  <tr>
+    <td class="ident">Retro</td>
+    <td>N/A</td>
+  </tr>  
+  <tr>
+    <td>Flexible Scope Contracts </td>
+    <td>Negotiated Scope Contract<sup>C</sup></td>
+  </tr>
+  <tr>
+    <td class="ident">No overtime</td>
+    <td>Energized Work (<em>40-hr week)</em></td>
+  </tr>
+
+
+
+  <tr>
+    <td>
+      Shared Schedule, Be Present</td>
+    <td>Sit Together</td>
+  </tr>
+  <tr>
+    <td>(mostly missing)
+      Managing a Backlog</td>
+    <td>Informative Workspace</td>
+  </tr>
+  <tr>
+    <td>Not needed<br/>
+        there is no commitment to each week</td>
     <td>Slack</td>
   </tr>
   <tr>
-    <td><Morphed into short feedback loops></td>
-    <td>Ten-minute Build</td>
-  </tr>
-  <tr>
-    <td>Live on Master</td>
-    <td>Continuous Integration</td>
-  </tr>  
-
-  <tr>
-    <td></td>
-    <td>2.0 Corollary Practices</td>
-  </tr>
-  <tr>
-    <td><Morphed>
-      User Research, User Interviews, User Validation<br/>
-      It is impractical to have an onsite customer. <br/>
-      It is necessary to have an onsite product owner, covered in balanced team.</td>
-    <td>Real Customer Involvement<sup>C</sup> (On-site customer)</td>
-  </tr>
-  <tr>
-    <td><Gone></td>
+    <td>Not needed for all projects</td>
     <td>Incremental Deployment<sup>C</sup><br/>
         slowly replace a legacy systems</td>
   </tr>
@@ -687,59 +764,21 @@ Refactoring)</td>
     <td>Team Continuity<sup>C</sup></td>
   </tr>
   <tr>
-    <td><Replaced with moving engineers where needed.  Allocations and considerations for forming a team. This seems related to Balanced Team></td>
+    <td>Replaced with moving engineers where needed.  Allocations and considerations for forming a team. This seems related to Balanced Team</td>
     <td>Shrinking Teams<sup>C</sup></td>
   </tr>
   <tr>
-    <td>???? We rarely do this, it depends on situation.</td>
+    <tdOptional, depends on situation</td>
     <td>Root-cause analysis<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td>Team Code Ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
-  </tr>
-  <tr>
-    <td>Caring about Code Quality
-      <Subsumed by synchronous communication, intention revealing code></td>
-    <td>Code and Tests<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td>Short-lived branches</td>
-    <td>Single Code Base<sup>C</sup><br/>
-        branches live a few hours at most</td>
-  </tr>
-  <tr>
-    <td>Short Feedback Cycles</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Frequent Releases<br/>
-       subsumed by short feedback cycles<br/>
-      Each team releases when features are done or at a given cadence</td>
-    <td>Daily Deployment<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td>Retro</td>
-    <td>N/A</td>
-  </tr>  
-  <tr>
-    <td>Flexible Scope Contracts </td>
-    <td>Negotiated Scope Contract<sup>C</sup></td>
   </tr>
   <tr>
     <td></td>
     <td>Pay-per-use<sup>C</sup></td>
   </tr>
-  <tr>
-    <td>Avoid Technical Debt</td>
-    <td>??</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
 </table>
 
+
+<p><sup>C</sup> are optional XP 2.0 Corollary Practices</p>
 ]]></content>
   </entry>
   
