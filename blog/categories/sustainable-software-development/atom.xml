@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-11-30T20:31:49-08:00</updated>
+  <updated>2018-11-30T20:36:37-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -49,17 +49,30 @@
     <td></td>
   </tr>
   <tr>
-    <td>&nbsp;Continuous Pair Programming</td>
+    <td class="ident">Continuous Pair Programming</td>
     <td>Pair Programming</td>
   </tr>
   <tr>
-    <td>&nbsp; Overlapping Pair Rotations</td>
+    <td class="ident"> Overlapping Pair Rotations</td>
     <td></td>
   </tr>
   <tr>
-    <td>&nbsp;Knowledge Pollination</td>
+    <td class="ident">Knowledge Pollination</td>
     <td></td>
-  </tr>  
+  </tr>
+  <tr>
+    <td>Caretaking the Code</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ident">TDD / BDD</td>
+    <td>Test-First Programming </td>
+  </tr>
+  <tr>
+    <td class="ident"> Continuous Refactoring</td>
+    <td>Incremental Design (Simple Design
+Refactoring)</td>
+  </tr>    
   <tr>
     <td>Managing a Backlog</td>
     <td>Stories</td>
@@ -84,21 +97,7 @@
   <tr>
     <td>Live on Master</td>
     <td>Continuous Integration</td>
-  </tr>
-  <tr>
-    <td>Caretaking the Code</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>&nbsp; TDD / BDD</td>
-    <td>Test-First Programming </td>
-  </tr>
-  <tr>
-    <td>&nbsp; Continuous Refactoring</td>
-    <td>Incremental Design (Simple Design
-Refactoring)</td>
-  </tr>
-  
+  </tr>  
   <tr>
     <td>Retro</td>
     <td>N/A</td>
