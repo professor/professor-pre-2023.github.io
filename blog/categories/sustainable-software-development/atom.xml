@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-01T10:16:27-08:00</updated>
+  <updated>2018-12-01T10:23:11-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -260,7 +260,7 @@ Refactoring)</td>
   <tr>
     <td class="ident">User research</td>
     <td><b>Real Customer Involvement</b><sup>C</sup> (On-site customer)
-        Make the customer a part of the team. “The point of customer involve- ment is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs” [1]. Even if a customer is busy, involving them whenever possible is preferred to not involving them at all. In this situation, the team needs to find alternative ways of validating features with users.<br/>    
+        Make the customer a part of the team. “The point of customer involvement is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs” [1]. Even if a customer is busy, involving them whenever possible is preferred to not involving them at all. In this situation, the team needs to find alternative ways of validating features with users.<br/>    
         It is impractical to have an onsite customer.
     </td>
   </tr>
@@ -315,8 +315,8 @@ Refactoring)</td>
      </td>
   </tr>
   <tr>
-    <td class="ident2">Team code ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)<br/>
+    <td class="ident2"><b>Team code ownership</b> is the ability for any developer on a team to change any of the team’s code.</td>
+    <td><b>Shared Code</b><sup>C</sup> (Collective ownership)
         Everyone on the team can modify any of the system. When engineers sees something broken, they fix it.<br/>
     </td>
   </tr>
@@ -453,7 +453,7 @@ Refactoring)</td>
     <td>Shrinking Teams<sup>C</sup><br/>
         Try to improve team efficiency so that the team can shrink in size. When a team becomes more productive, re-allocated extraneous team members to other teams.<br/> 
         Team Continuity<sup>C</sup><br/>
-        “Keep effective teams together” [1]. People are not fungible, and building relation- ships is part of creating a high performing team. Rotating people through teams helps spread knowledge.
+        “Keep effective teams together” [1]. People are not fungible, and building relationships is part of creating a high performing team. Rotating people through teams helps spread knowledge.
     </td>
   </tr>
   <tr>
@@ -465,7 +465,7 @@ Refactoring)</td>
   <tr>
     <td></td>
     <td>Pay-per-use<sup>C</sup><br/>
-        Pay-per-use provides alignment between revenue and the features that generate the rev- enue. “Connecting money flow directly to software development provides accurate, timely information with which to drive improvement” [1].
+        Pay-per-use provides alignment between revenue and the features that generate the revenue. “Connecting money flow directly to software development provides accurate, timely information with which to drive improvement” [1].
     </td>
   </tr>
 </table>

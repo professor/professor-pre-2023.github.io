@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-01T10:16:27-08:00</updated>
+  <updated>2018-12-01T10:23:11-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -168,7 +168,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#112;&#114;&#x6f;&#102;&#x65;&#115;&#x73;&#111;&#x72;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#109;">&#x70;&#x72;&#111;&#102;&#101;&#115;&#115;&#x6f;&#x72;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x70;&#x72;&#111;&#x66;&#101;&#115;&#x73;&#111;&#114;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#112;&#114;&#111;&#102;&#x65;&#115;&#115;&#x6f;&#x72;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -571,7 +571,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x70;&#114;&#x6f;&#102;&#101;&#115;&#115;&#111;&#x72;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#x70;&#114;&#111;&#x66;&#x65;&#115;&#115;&#111;&#x72;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x70;&#114;&#x6f;&#102;&#x65;&#x73;&#x73;&#111;&#114;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;">&#112;&#x72;&#111;&#102;&#x65;&#x73;&#115;&#x6f;&#114;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -827,7 +827,7 @@ Refactoring)</td>
   <tr>
     <td class="ident">User research</td>
     <td><b>Real Customer Involvement</b><sup>C</sup> (On-site customer)
-        Make the customer a part of the team. “The point of customer involve- ment is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs” [1]. Even if a customer is busy, involving them whenever possible is preferred to not involving them at all. In this situation, the team needs to find alternative ways of validating features with users.<br/>    
+        Make the customer a part of the team. “The point of customer involvement is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs” [1]. Even if a customer is busy, involving them whenever possible is preferred to not involving them at all. In this situation, the team needs to find alternative ways of validating features with users.<br/>    
         It is impractical to have an onsite customer.
     </td>
   </tr>
@@ -882,8 +882,8 @@ Refactoring)</td>
      </td>
   </tr>
   <tr>
-    <td class="ident2">Team code ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)<br/>
+    <td class="ident2"><b>Team code ownership</b> is the ability for any developer on a team to change any of the team’s code.</td>
+    <td><b>Shared Code</b><sup>C</sup> (Collective ownership)
         Everyone on the team can modify any of the system. When engineers sees something broken, they fix it.<br/>
     </td>
   </tr>
@@ -1020,7 +1020,7 @@ Refactoring)</td>
     <td>Shrinking Teams<sup>C</sup><br/>
         Try to improve team efficiency so that the team can shrink in size. When a team becomes more productive, re-allocated extraneous team members to other teams.<br/> 
         Team Continuity<sup>C</sup><br/>
-        “Keep effective teams together” [1]. People are not fungible, and building relation- ships is part of creating a high performing team. Rotating people through teams helps spread knowledge.
+        “Keep effective teams together” [1]. People are not fungible, and building relationships is part of creating a high performing team. Rotating people through teams helps spread knowledge.
     </td>
   </tr>
   <tr>
@@ -1032,7 +1032,7 @@ Refactoring)</td>
   <tr>
     <td></td>
     <td>Pay-per-use<sup>C</sup><br/>
-        Pay-per-use provides alignment between revenue and the features that generate the rev- enue. “Connecting money flow directly to software development provides accurate, timely information with which to drive improvement” [1].
+        Pay-per-use provides alignment between revenue and the features that generate the revenue. “Connecting money flow directly to software development provides accurate, timely information with which to drive improvement” [1].
     </td>
   </tr>
 </table>
