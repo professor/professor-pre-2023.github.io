@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-01T06:37:06-08:00</updated>
+  <updated>2018-12-01T06:42:39-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -69,7 +69,7 @@
     <td></td>
   </tr>
   <tr>
-    <td class="ident2">Clean Code</td>
+    <td class="ident2">Clean code</td>
     <td>Code and Tests<sup>C</sup></td>
   </tr>
   <tr>
@@ -81,22 +81,22 @@
     <td>Test-First Programming </td>
   </tr>
   <tr>
-    <td class="ident2">Team Code Ownership</td>
+    <td class="ident2">Team code ownership</td>
     <td>Shared Code<sup>C</sup> (Collective ownership)</td>
   </tr>
   <tr>
-    <td class="ident2"> Continuous Refactoring</td>
+    <td class="ident2"> Continuous refactoring</td>
     <td>Incremental Design (Simple Design
 Refactoring)</td>
   </tr>    
   <tr>
-    <td class="ident2">Integrate Frequently</td>
+    <td class="ident2">Integrate frequently</td>
     <td>Continuous Integration and <br/>
         Single Code Base<sup>C</sup><br/>
         branches live a few hours at most</td>
   </tr>  
   <tr>
-    <td class="ident2">Frequent Releases<br/>
+    <td class="ident2">Frequent releases<br/>
        subsumed by short feedback cycles<br/>
       Each team releases when features are done or at a given cadence</td>
     <td>Daily Deployment<sup>C</sup></td>
@@ -114,15 +114,15 @@ Refactoring)</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Remove Knowledge Silos</td>
+    <td class="ident">Remove Knowledge silos</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident2">Continuous Pair Programming</td>
+    <td class="ident2">Continuous pair programming</td>
     <td>Pair Programming</td>
   </tr>
   <tr>
-    <td class="ident2"> Overlapping Pair Rotations</td>
+    <td class="ident2"> Overlapping pair rotations</td>
     <td></td>
   </tr>
 
@@ -140,7 +140,7 @@ Refactoring)</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Story Showcase  Meetings</td>
+    <td class="ident">Story showcase meeting</td>
     <td>Weekly Cycle (Iteration Planning Meetings)</td>
   </tr>  
 
@@ -162,7 +162,7 @@ Refactoring)</td>
     <td>N/A</td>
   </tr>  
   <tr>
-    <td>Flexible Scope Contracts </td>
+    <td class="ident">Flexible scope contracts </td>
     <td>Negotiated Scope Contract<sup>C</sup></td>
   </tr>
   <tr>
@@ -193,12 +193,10 @@ Refactoring)</td>
         slowly replace a legacy systems</td>
   </tr>
   <tr>
-    <td>????</td>
-    <td>Team Continuity<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td>Replaced with moving engineers where needed.  Allocations and considerations for forming a team. This seems related to Balanced Team</td>
-    <td>Shrinking Teams<sup>C</sup></td>
+    <td>Allocations<br/>
+        Move engineers where needed</td>
+    <td>Shrinking Teams<sup>C</sup><br/>
+        Team Continuity<sup>C</sup></td>
   </tr>
   <tr>
     <tdOptional, depends on situation</td>
@@ -209,6 +207,11 @@ Refactoring)</td>
     <td>Pay-per-use<sup>C</sup></td>
   </tr>
 </table>
+
+
+
+
+<br/>
 
 
 <p><sup>C</sup> are optional XP 2.0 Corollary Practices</p>
