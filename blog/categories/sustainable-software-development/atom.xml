@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-11-30T20:50:54-08:00</updated>
+  <updated>2018-11-30T20:52:34-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -28,7 +28,7 @@
   <tr>
     <td><same>
       Balanced Team</td>
-    <td>Whole Team [Balanced Team]</td>
+    <td>Whole Team (Balanced Team)</td>
   </tr>
   <tr>
     <td><evolved>
@@ -106,7 +106,8 @@ Refactoring)</td>
   <tr>
     <td><Morphed>
       User Research, User Interviews, User Validation<br/>
-      It is impractical to have an onsite customer. It is necessary to have an onsite product owner, covered in balanced team.</td>
+      It is impractical to have an onsite customer. <br/>
+      It is necessary to have an onsite product owner, covered in balanced team.</td>
     <td>Real Customer Involvement<sup>C</sup> (On-site customer)</td>
   </tr>
   <tr>
