@@ -346,34 +346,46 @@ Refactoring)</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">User research</td>
+    <td class="ident"><b>User research</b>
+        includes writing interview guides (questions), interviewing users and synthesizing the results.
+    </td>
     <td><b>Real Customer Involvement</b><sup>C</sup> (On-site customer)
         Make the customer a part of the team. “The point of customer involvement is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs” [1]. Even if a customer is busy, involving them whenever possible is preferred to not involving them at all. In this situation, the team needs to find alternative ways of validating features with users.<br/>    
         It is impractical to have an onsite customer.
     </td>
   </tr>
   <tr>
-    <td class="ident">User validation</td>
+    <td class="ident"><b>User validation</b>
+        checking whether ideas for the product resonate with users.
+    </td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Road Mapping</td>
+    <td class="ident"><b>Road Mapping</b>
+        the product manager diagrams his or her long term vision for the product.
+    </td>
     <td><b>Quarterly Cycle</b> (Planning Game, Small Releases)
         Each quarter, the team identifies the stories for the next quarter. During a meeting, the team identifies bottlenecks, initiates repairs, plans the feature sets for the quarter, and selects a quarter’s worth of stories.
     </td>
   </tr>
   <tr>
-    <td class="ident">Story writing</td>
+    <td class="ident"><b>Story writing</b>
+        literally writing stories that represent potential product features.
+    </td>
     <td><b>Stories</b>
         Stories are “units of customer-visible functionality” [1]. Stories have a name and a description or graphical depiction. Stories track the work to be done.
     </td>
   </tr>
   <tr>
-    <td class="ident">Story refining</td>
+    <td class="ident"><b>Story refining</b>
+        generating small, manageable stories from larger, epic stories.
+    </td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Project startup</td>
+    <td class="ident"><b>Project startup</b>
+        a special period of intensive user research and limited coding, typically taking four or more weeks at the beginning of a project or during a major shift in direction.
+    </td>
     <td></td>
   </tr>
   <tr>
@@ -385,19 +397,25 @@ Refactoring)</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident2">Clean code</td>
+    <td class="ident2"><b>Clean code</b>
+        means writing code that is easily understood, easily changed and complies with coding standards the team has adopted. Keeping the code clean requires continuous refactoring. Code craft encourages intention revealing names and discoverable code.
+    </td>
     <td><b>Code and Tests</b><sup>C</sup>
         The tests and code are the only permanent artifacts. Everything else (e.g. documentation) is generated from the code. Anything that contributes to what the system does today and what it will do tomorrow is valuable, “everything else is waste” [1].    
     </td>
   </tr>
   <tr class="same">
-    <td class="ident2">Fast test suite and builds</td>
+    <td class="ident2"><b>Fast test suite and builds</b>
+        means that the tests execute as quickly as possible. A fast test suite provides speedy feedback to the team when something breaks.
+    </td>
     <td>Ten-minute Build<br/>
         Building the code and running the test suite should be automated and short. Longer builds increase the feedback loop.
     </td>
   </tr>
   <tr>
-    <td class="ident2">Test Driven Development / BDD</td>
+    <td class="ident2"><b>Test Driven Development / BDD</b>
+        has the engineers incrementally build the software by always writing a failing test, then writing just enough code to get that test to pass.
+    </td>
     <td>Test-First Programming<br/>
         The developers write tests before writing code. Every production line of code is preceded by a test. Test-first programming addresses several concerns: scope-creep, coupling and cohesion, trust, and rhythm. The practice mitigates against scope-creep; without a clear goal, a programmer can easily write more code than is necessary. The practice improves coupling and cohesion as easy-to-test code often has beneficial design qualities. The practice builds trust in the code as engineers trust tested code more than un-tested code. The practice produces rhythm as it provides a cadence of accomplishing goals.
      </td>
@@ -424,22 +442,30 @@ Refactoring)</td>
         </td>
   </tr>  
   <tr>
-    <td class="ident2">Frequent releases<br/>
+    <td class="ident2"><b>Frequent releases</b>
+        means shipping or deploying the product frequently. For a website, “frequent” might mean several times a day; for enterprise software, “frequent” might mean once a month.
+    <br/>
       Each team releases when features are done or at a given cadence</td>
     <td>Daily Deployment<sup>C</sup><br/>
         Every day put a new version of the code into production.
     </td>
   </tr>
   <tr>
-    <td class="ident2">Acceptance / staging environment</td>
+    <td class="ident2"><b>Acceptance / staging environment</b>
+        means that the product manager accepts a story in another environment that closely resembles the user’s environment. For installed software, this is another machine or cluster. For web development, this is a staging server.
+    </td>
     <td>(implied)</td>
   </tr>
   <tr>
-    <td class="ident2">Build system</td>
+    <td class="ident2"><b>Build system</b>
+        is for continuous integration or continuous delivery. The build monitor indicates the status of running all the tests with the latest delivered code.
+    </td>
     <td>(implied)</td>
   </tr>
   <tr>
-    <td class="ident2">Stop on red builds</td>
+    <td class="ident2"><b>Stop on red builds</b>
+        means that when a build fails (the build monitor turns red), one pair immediately stops what they are doing and fixes the issue. This is not necessarily the pair that caused the build to fail. Shaming whoever introduced the change to cause the build to break is antithetical to the goals of sustainable development. The occasional failing test is not a big deal, the team handles it and moves on.
+    </td>
     <td>(implied)</td>
   </tr>
   <tr>
@@ -447,13 +473,17 @@ Refactoring)</td>
     <td></td>
   </tr>
   <tr class="same">
-    <td class="ident2">Continuous pair programming</td>
+    <td class="ident2"><b>Continuous pair programming</b>
+    refers to two engineers co-creating source code and tests on pairing workstation with two displays, two keyboards, two mice, and identical development environments. Other models of pair programming exist, but this setup reinforces the equality of the relationship.
+    </td>
     <td>Pair Programming<br/>
         Every part of a production system is written by two programmers sitting side by side. The pair works together to solve problems, keep each other on task, learn from each other, and abide by the team’s practices.
     </td>
   </tr>
   <tr>
-    <td class="ident2"> Overlapping pair rotations</td>
+    <td class="ident2"><b>Overlapping pair rotations</b>
+        means that, each day, engineers change pairs such that over time, everyone works with everyone else. One member of each pair always retains work in progress from the previous day.
+    </td>
     <td>N/A</td>
   </tr>
 
@@ -463,15 +493,21 @@ Refactoring)</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Backlog grooming</td>
+    <td class="ident"><b>Backlog grooming</b>
+        the product manager routinely re-sequences the stories in the backlog and verifies that stories at the top of the backlog are ready for engineers to start.
+    </td>
     <td>N/A</td>
   </tr>
   <tr>
-    <td class="ident">Accepting stories</td>
+    <td class="ident"><b>Accepting stories</b>
+        after the team delivers a story, the product manager verifies that the delivered work achieves the acceptance criteria. The product manager tries to break the feature with common unexpected input.
+    </td>
     <td>(implied)</td>
   </tr>
   <tr>
-    <td class="ident">Story showcase meeting</td>
+    <td class="ident"><b>Story showcase meeting</b>
+        a 60 minute weekly meeting to discuss stories that the team will be working on in the immediate future. The product manager describes upcoming stories and the engineers provides feedback on the expected difficulty of each story. The story showcase helps improve the team’s shared understanding of the product.
+    </td>
     <td>Weekly Cycle (Iteration Planning Meetings)<br/>
         Each week, the team accepts a certain amount of work to accomplish. During a meeting at the beginning of the week, the team reviews progress to date, the customer chooses a week’s worth of stories, and the engineers decompose the stories into tasks and individually estimate each task. “The goal is to have deployable software at the end of the week which everyone can celebrate as progress” [1].    
     </td>
@@ -483,25 +519,34 @@ Refactoring)</td>
     <td></td>
   </tr>
   <tr>
-    <td class="ident">Core work hours</td>
+    <td class="ident"><b>Core work hours</b>
+        the team prioritizes working together in the same office during the same hours. Flexibility with the schedule helps with outside of work constraints provided that the team has enough time in common.
+    </td>
     <td>Energized Work (<em>40-hr week)</em></td>
   </tr>
   <tr>
-    <td class="ident">Stand-up</td>
+    <td class="ident"><b>Stand-up</b>a 5-10 minute, daily meeting where team members discuss changes that affect the team from the previous day’s work and impediments to the current day’s work. If physically possible, people stand to encourage a short check-in. Usually this meeting is at the start of the day, otherwise it is a daily <b>spin-down meeting</b>..
+    </td>
     <td>N/A</td>
   </tr>  
   <tr>
-    <td class="ident">Retro</td>
+    <td class="ident"><b>Retro</b>
+        a 60 minute weekly meeting in which the team re- flects on the week, celebrates successes, and identifies ways to improve. The ideal retro is a safe environment where a team can discuss any topic constructively.
+    </td>
     <td>N/A</td>
   </tr>  
   <tr class="same">
-    <td class="ident">Flexible scope contracts </td>
+    <td class="ident"><b>Flexible scope contracts</b>
+    establish an ongoing relationship between a development organization and a client organization without unnecessary details. It might state that the client owns the code, that new releases are expected at most every two weeks, or the daily rate at which engineers are billed. It typically would not state a fixed scope, schedule or budget. If a schedule or budget is fixed, scope is not and vice versa.
+    </td>
     <td>Negotiated Scope Contract<sup>C</sup><br/>
         “Write contracts for software development that fix time, costs, and quality but call for an ongoing negotiation of the precise scope of the system.” [1]
     </td>
   </tr>
   <tr>
-    <td class="ident">No overtime</td>
+    <td class="ident"><b>No overtime</b>
+        no one is allowed to work overtime except in genuinely exceptional circumstances, such as solving a customer escalation.
+    </td>
     <td>Energized Work (<em>40-hr week)</em><br/>
         “Work only as many hours as you can be productive and only as many hours as you can sustain” [1]. Working longer hours may make the team less productive. Team members need to take care of themselves; this includes staying home to rest when sick. The work patterns of the team should be sustainable in the long run.
     </td>
