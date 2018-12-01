@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-01T10:30:50-08:00</updated>
+  <updated>2018-12-01T14:59:05-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -196,7 +196,8 @@ Refactoring)</td>
   </tr>
   <tr>
     <td>Not needed<br/>
-      Agile project management tools (such a Pivotal Tracker) provide more value than a physical board showing project status. 
+      Agile project management tools (such a Pivotal Tracker)<br/>
+       provide more value than a physical board showing project status. 
       </td>
     <td>Informative Workspace</td>
   </tr>
@@ -249,7 +250,7 @@ Refactoring)</td>
   <tr class="same">
     <td>
       Balanced Team</td>
-    <td>Whole Team (Balanced Team)<br/>
+    <td><b>Whole Team</b> (Balanced Team)
         Whole team is also known as cross-functional teams. Include people on the team with the skills needed for success. Beck points out that a sense of team fulfills an individual’s psychological needs. “We belong. We are in this together. We support each others’ work, growth, and learning.” [1]
     </td>
   </tr>  
