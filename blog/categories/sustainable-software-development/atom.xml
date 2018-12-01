@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-01T10:10:48-08:00</updated>
+  <updated>2018-12-01T10:16:27-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -67,9 +67,7 @@
   </tr>
   <tr>
     <td class="ident">Road Mapping</td>
-    <td>Quarterly Cycle (Planning Game, Small Releases)<br/>
-        Each quarter, the team identifies the stories for the next quarter. During a meeting, the team identifies bottlenecks, initiates repairs, plans the feature sets for the quarter, and selects a quarter’s worth of stories.
-    </td>
+    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
   </tr>
   <tr>
     <td class="ident">Story writing</td>
@@ -101,15 +99,11 @@
   </tr>
   <tr>
     <td class="ident2">Test Driven Development / BDD</td>
-    <td>Test-First Programming<br/>
-        The developers write tests before writing code. Every production line of code is preceded by a test. Test-first programming addresses several concerns: scope-creep, coupling and cohesion, trust, and rhythm. The practice mitigates against scope-creep; without a clear goal, a programmer can easily write more code than is necessary. The practice improves coupling and cohesion as easy-to-test code often has beneficial design qualities. The practice builds trust in the code as engineers trust tested code more than un-tested code. The practice produces rhythm as it provides a cadence of accomplishing goals.
-     </td>
+    <td>Test-First Programming</td>
   </tr>
   <tr>
     <td class="ident2">Team code ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)<br/>
-        Everyone on the team can modify any of the system. When engineers sees something broken, they fix it.<br/>
-    </td>
+    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
   </tr>
   <tr>
     <td class="ident2"> Continuous refactoring</td>
@@ -177,9 +171,7 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident">Core work hours</td>
-    <td>Energized Work (<em>40-hr week)</em><br/>
-        “Work only as many hours as you can be productive and only as many hours as you can sustain” [1]. Working longer hours may make the team less productive. Team members need to take care of themselves; this includes staying home to rest when sick. The work patterns of the team should be sustainable in the long run.
-    </td>
+    <td>Energized Work (<em>40-hr week)</em></td>
   </tr>
   <tr>
     <td class="ident">Stand-up</td>
@@ -211,9 +203,7 @@ Refactoring)</td>
   <tr>
     <td>Not needed<br/>
         there is no commitment to each week</td>
-    <td>Slack<br/>
-        During the weekly cycle meeting, include tasks in the plan that the team can drop if the team gets behind. Adding slack to the schedule enables a sustainable work environment.
-    </td>
+    <td>Slack</td>
   </tr>
   <tr>
     <td>Not needed for all projects</td>
@@ -269,7 +259,7 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident">User research</td>
-    <td>Real Customer Involvement<sup>C</sup> (On-site customer)<br/>
+    <td><b>Real Customer Involvement</b><sup>C</sup> (On-site customer)
         Make the customer a part of the team. “The point of customer involve- ment is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs” [1]. Even if a customer is busy, involving them whenever possible is preferred to not involving them at all. In this situation, the team needs to find alternative ways of validating features with users.<br/>    
         It is impractical to have an onsite customer.
     </td>
@@ -280,11 +270,13 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident">Road Mapping</td>
-    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
+    <td><b>Quarterly Cycle</b> (Planning Game, Small Releases)
+        Each quarter, the team identifies the stories for the next quarter. During a meeting, the team identifies bottlenecks, initiates repairs, plans the feature sets for the quarter, and selects a quarter’s worth of stories.
+    </td>
   </tr>
   <tr>
     <td class="ident">Story writing</td>
-    <td>Stories
+    <td><b>Stories</b>
         Stories are “units of customer-visible functionality” [1]. Stories have a name and a description or graphical depiction. Stories track the work to be done.
     </td>
   </tr>
@@ -306,7 +298,7 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident2">Clean code</td>
-    <td>Code and Tests<sup>C</sup><br/>
+    <td><b>Code and Tests</b><sup>C</sup>
         The tests and code are the only permanent artifacts. Everything else (e.g. documentation) is generated from the code. Anything that contributes to what the system does today and what it will do tomorrow is valuable, “everything else is waste” [1].    
     </td>
   </tr>
@@ -318,11 +310,15 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident2">Test Driven Development / BDD</td>
-    <td>Test-First Programming </td>
+    <td>Test-First Programming<br/>
+        The developers write tests before writing code. Every production line of code is preceded by a test. Test-first programming addresses several concerns: scope-creep, coupling and cohesion, trust, and rhythm. The practice mitigates against scope-creep; without a clear goal, a programmer can easily write more code than is necessary. The practice improves coupling and cohesion as easy-to-test code often has beneficial design qualities. The practice builds trust in the code as engineers trust tested code more than un-tested code. The practice produces rhythm as it provides a cadence of accomplishing goals.
+     </td>
   </tr>
   <tr>
     <td class="ident2">Team code ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
+    <td>Shared Code<sup>C</sup> (Collective ownership)<br/>
+        Everyone on the team can modify any of the system. When engineers sees something broken, they fix it.<br/>
+    </td>
   </tr>
   <tr>
     <td class="ident2"> Continuous refactoring</td>
@@ -332,9 +328,9 @@ Refactoring)</td>
   </tr>    
   <tr>
     <td class="ident2">Integrate frequently</td>
-    <td>Continuous Integration and <br/>
+    <td><b>Continuous Integration</b>
         When working on new features, routinely integrate new code into the master code repository. Avoid long-lived branches. Beck suggests un-integrated code live on its own “no more than a couple of hours” [1]. The longer the team waits to integrate, the more unpredictable and expensive integration becomes.<br/> 
-        Single Code Base<sup>C</sup><br/>
+        <b>Single Code Base</b><sup>C</sup>
         Ideally there is only one branch of the code. Multiple branches, (e.g. for releases, or customers) creates extra work. Branches live a few hours at most.
         branches live a few hours at most
         </td>
@@ -418,7 +414,9 @@ Refactoring)</td>
   </tr>
   <tr>
     <td class="ident">No overtime</td>
-    <td>Energized Work (<em>40-hr week)</em></td>
+    <td>Energized Work (<em>40-hr week)</em><br/>
+        “Work only as many hours as you can be productive and only as many hours as you can sustain” [1]. Working longer hours may make the team less productive. Team members need to take care of themselves; this includes staying home to rest when sick. The work patterns of the team should be sustainable in the long run.
+    </td>
   </tr>
   <tr>
     <td>
@@ -429,7 +427,8 @@ Refactoring)</td>
   </tr>
   <tr>
     <td>Not needed<br/>
-      Agile project management tools (such a Pivotal Tracker) provide more value than a physical board showing project status. 
+      Agile project management tools (such a Pivotal Tracker)<br/>
+      provide more value than a physical board showing project status. 
       </td>
     <td>Informative Workspace<br/>
         “An interested observer should be able to walk into the team space and get a general idea of how the project is going in fifteen seconds” [1]. The team can modify the workspace to make it more conducive for their work.
@@ -438,7 +437,9 @@ Refactoring)</td>
   <tr>
     <td>Not needed<br/>
         there is no commitment to each week</td>
-    <td>Slack</td>
+    <td>Slack<br/>
+        During the weekly cycle meeting, include tasks in the plan that the team can drop if the team gets behind. Adding slack to the schedule enables a sustainable work environment.
+    </td>
   </tr>
   <tr>
     <td>Not needed for all projects</td>
