@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2018-12-02T09:18:04-08:00</updated>
+  <updated>2018-12-02T09:18:36-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -490,7 +490,7 @@ Refactoring)</td>
   </tr>
   <tr>
     <td>Not needed for all projects</td>
-    <td>Incremental Deployment<sup>C</sup><br/>
+    <td><b.Incremental Deployment</b><sup>C</sup>
         Switch between a legacy system and a replacement system in incremental steps. Avoid a hard switch over from a legacy system to a new system.<br/>
         slowly replace a legacy systems</td>
   </tr>
