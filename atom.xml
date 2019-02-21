@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2019-01-14T11:06:18-08:00</updated>
+  <updated>2019-02-20T21:01:52-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -170,7 +170,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#x70;&#x72;&#x6f;&#102;&#x65;&#x73;&#115;&#x6f;&#114;&#64;&#x67;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#x70;&#114;&#x6f;&#102;&#101;&#115;&#115;&#x6f;&#114;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x70;&#114;&#111;&#102;&#101;&#x73;&#115;&#x6f;&#114;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#109;">&#112;&#114;&#111;&#102;&#101;&#x73;&#115;&#111;&#x72;&#x40;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -577,7 +577,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#112;&#x72;&#111;&#x66;&#x65;&#x73;&#x73;&#x6f;&#x72;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#x70;&#x72;&#x6f;&#x66;&#101;&#115;&#x73;&#111;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x70;&#114;&#111;&#102;&#x65;&#115;&#x73;&#x6f;&#x72;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;">&#x70;&#114;&#x6f;&#x66;&#101;&#x73;&#115;&#111;&#x72;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -612,205 +612,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>Both Sustainable Software Development and Extreme Programming deal with the tension of dates and features by asking &ldquo;how do we reduce scope?&rdquo; and &ldquo;what should be done first?&rdquo; In other words, developer happiness and sustainability is achieved by prioritizing the work.</p>
 
-<p>This table compares Sustainable Software Development to Extreme Programming (XP). A more detailed analysis follows after the table.</p>
-
-<table class=comparison>
-  <tr>
-    <th>Sustainable Software Development</th>
-    <th>Extreme Programming 2.0 (XP 1.0 names)</th>
-  </tr>
-  <tr class="same">
-    <td>
-      Balanced Team</td>
-    <td>Whole Team (Balanced Team)</td>
-  </tr>  
-  <tr>
-    <td>Track One Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">User research</td>
-    <td>Real Customer Involvement<sup>C</sup> (On-site customer)<br/>
-        It is impractical to have an onsite customer.
-    </td>
-  </tr>
-  <tr>
-    <td class="ident">User validation</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Road Mapping</td>
-    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
-  </tr>
-  <tr>
-    <td class="ident">Story writing</td>
-    <td>Stories</td>
-  </tr>
-  <tr>
-    <td class="ident">Story refining</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Project startup</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Track Two Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Caretaking the Code</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident2">Clean code</td>
-    <td>Code and Tests<sup>C</sup></td>
-  </tr>
-  <tr class="same">
-    <td class="ident2">Fast test suite and builds</td>
-    <td>Ten-minute Build</td>
-  </tr>
-  <tr>
-    <td class="ident2">Test Driven Development / BDD</td>
-    <td>Test-First Programming</td>
-  </tr>
-  <tr class="mostly-same">
-    <td class="ident2">Team code ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
-  </tr>
-  <tr>
-    <td class="ident2"> Continuous refactoring</td>
-    <td>Incremental Design (Simple Design
-Refactoring)</td>
-  </tr>    
-  <tr>
-    <td class="ident2">Integrate frequently</td>
-    <td>Continuous Integration and <br/>
-        Single Code Base<sup>C</sup><br/>
-        branches live a few hours at most</td>
-  </tr>  
-  <tr>
-    <td class="ident2">Frequent releases<br/>
-      Each team releases when features are done or at a given cadence</td>
-    <td>Daily Deployment<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td class="ident2">Acceptance / staging environment</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident2">Build system</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident2">Stop on red builds</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident">Remove Knowledge silos</td>
-    <td></td>
-  </tr>
-  <tr class="same">
-    <td class="ident2">Continuous pair programming</td>
-    <td>Pair Programming</td>
-  </tr>
-  <tr>
-    <td class="ident2"> Overlapping pair rotations</td>
-    <td>N/A</td>
-  </tr>
-
-
-  <tr>
-    <td>Boundary Spanning Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Backlog grooming</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td class="ident">Accepting stories</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident">Story showcase meeting</td>
-    <td>Weekly Cycle (Iteration Planning Meetings)</td>
-  </tr>  
-
-
-  <tr>
-    <td>Project Management Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Core work hours</td>
-    <td>Energized Work (<em>40-hr week)</em></td>
-  </tr>
-  <tr>
-    <td class="ident">Stand-up</td>
-    <td>Present in http://www.extremeprogramming.org/, but not in the books</td>
-  </tr>  
-  <tr>
-    <td class="ident">Retro</td>
-    <td>N/A</td>
-  </tr>  
-  <tr class="same">
-    <td class="ident">Flexible scope contracts </td>
-    <td>Negotiated Scope Contract<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td class="ident">No overtime</td>
-    <td>Energized Work (<em>40-hr week)</em></td>
-  </tr>
-  <tr>
-    <td>
-      Shared Schedule, Be Present</td>
-    <td>Sit Together</td>
-  </tr>
-  <tr>
-    <td>Not needed<br/>
-      Agile project management tools (such a Pivotal Tracker)<br/>
-       provide more value than a physical board showing project status. 
-      </td>
-    <td>Informative Workspace</td>
-  </tr>
-  <tr>
-    <td>Not needed<br/>
-        there is no commitment to each week</td>
-    <td>Slack</td>
-  </tr>
-  <tr>
-    <td>Not needed for all projects</td>
-    <td>Incremental Deployment<sup>C</sup><br/>
-        slowly replace a legacy systems</td>
-  </tr>
-  <tr>
-    <td>Allocations<br/>
-        Move engineers where needed</td>
-    <td>Shrinking Teams<sup>C</sup><br/>
-        Team Continuity<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td>Optional, depends on situation</td>
-    <td>Root-cause analysis<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Pay-per-use<sup>C</sup></td>
-  </tr>
-</table>
-
-
-
-
-<br/>
-
-
-<p><sup>C</sup> are optional XP 2.0 Corollary Practices</p>
-
-<p>For a team transitioning to Extreme Programming, Beck recommends starting with the primary practices. Beck claims that “the primary practices are useful independent of what else you are doing” resulting in an immediate improvement, whereas the corollary practices work well once a team has implemented the primary practices. Extreme programming is not dogmatic about the list of practices. The team chooses which practices to apply.</p>
-
-<p>Once a team has implemented the primary practices, then the team can start implementing the corollary practices. Beck says that it seems “difficult or dangerous to implement [the corollary practices] before completing the preliminary work of the primary practices” [1].</p>
+<p>This table compares Sustainable Software Development to Extreme Programming (XP).</p>
 
 <br/>
 
@@ -1090,6 +892,12 @@ Refactoring)</td>
   </tr>
 </table>
 
+
+<p><sup>C</sup> are optional XP 2.0 Corollary Practices</p>
+
+<p>For a team transitioning to Extreme Programming, Beck recommends starting with the primary practices. Beck claims that “the primary practices are useful independent of what else you are doing” resulting in an immediate improvement, whereas the corollary practices work well once a team has implemented the primary practices. Extreme programming is not dogmatic about the list of practices. The team chooses which practices to apply.</p>
+
+<p>Once a team has implemented the primary practices, then the team can start implementing the corollary practices. Beck says that it seems “difficult or dangerous to implement [the corollary practices] before completing the preliminary work of the primary practices” [1].</p>
 
 <p>[1] K. Beck and C. Andres. Extreme Programming Explained: Embrace Change (2nd Edition). Addison-Wesley Professional, 2004.</p>
 ]]></content>

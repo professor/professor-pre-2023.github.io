@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sustainable Software Development | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/sustainable-software-development/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2019-01-14T11:06:18-08:00</updated>
+  <updated>2019-02-20T21:01:52-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -39,205 +39,7 @@
 
 <p>Both Sustainable Software Development and Extreme Programming deal with the tension of dates and features by asking &ldquo;how do we reduce scope?&rdquo; and &ldquo;what should be done first?&rdquo; In other words, developer happiness and sustainability is achieved by prioritizing the work.</p>
 
-<p>This table compares Sustainable Software Development to Extreme Programming (XP). A more detailed analysis follows after the table.</p>
-
-<table class=comparison>
-  <tr>
-    <th>Sustainable Software Development</th>
-    <th>Extreme Programming 2.0 (XP 1.0 names)</th>
-  </tr>
-  <tr class="same">
-    <td>
-      Balanced Team</td>
-    <td>Whole Team (Balanced Team)</td>
-  </tr>  
-  <tr>
-    <td>Track One Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">User research</td>
-    <td>Real Customer Involvement<sup>C</sup> (On-site customer)<br/>
-        It is impractical to have an onsite customer.
-    </td>
-  </tr>
-  <tr>
-    <td class="ident">User validation</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Road Mapping</td>
-    <td>Quarterly Cycle (Planning Game, Small Releases)</td>
-  </tr>
-  <tr>
-    <td class="ident">Story writing</td>
-    <td>Stories</td>
-  </tr>
-  <tr>
-    <td class="ident">Story refining</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Project startup</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Track Two Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Caretaking the Code</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident2">Clean code</td>
-    <td>Code and Tests<sup>C</sup></td>
-  </tr>
-  <tr class="same">
-    <td class="ident2">Fast test suite and builds</td>
-    <td>Ten-minute Build</td>
-  </tr>
-  <tr>
-    <td class="ident2">Test Driven Development / BDD</td>
-    <td>Test-First Programming</td>
-  </tr>
-  <tr class="mostly-same">
-    <td class="ident2">Team code ownership</td>
-    <td>Shared Code<sup>C</sup> (Collective ownership)</td>
-  </tr>
-  <tr>
-    <td class="ident2"> Continuous refactoring</td>
-    <td>Incremental Design (Simple Design
-Refactoring)</td>
-  </tr>    
-  <tr>
-    <td class="ident2">Integrate frequently</td>
-    <td>Continuous Integration and <br/>
-        Single Code Base<sup>C</sup><br/>
-        branches live a few hours at most</td>
-  </tr>  
-  <tr>
-    <td class="ident2">Frequent releases<br/>
-      Each team releases when features are done or at a given cadence</td>
-    <td>Daily Deployment<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td class="ident2">Acceptance / staging environment</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident2">Build system</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident2">Stop on red builds</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident">Remove Knowledge silos</td>
-    <td></td>
-  </tr>
-  <tr class="same">
-    <td class="ident2">Continuous pair programming</td>
-    <td>Pair Programming</td>
-  </tr>
-  <tr>
-    <td class="ident2"> Overlapping pair rotations</td>
-    <td>N/A</td>
-  </tr>
-
-
-  <tr>
-    <td>Boundary Spanning Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Backlog grooming</td>
-    <td>N/A</td>
-  </tr>
-  <tr>
-    <td class="ident">Accepting stories</td>
-    <td>(implied)</td>
-  </tr>
-  <tr>
-    <td class="ident">Story showcase meeting</td>
-    <td>Weekly Cycle (Iteration Planning Meetings)</td>
-  </tr>  
-
-
-  <tr>
-    <td>Project Management Practices</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="ident">Core work hours</td>
-    <td>Energized Work (<em>40-hr week)</em></td>
-  </tr>
-  <tr>
-    <td class="ident">Stand-up</td>
-    <td>Present in http://www.extremeprogramming.org/, but not in the books</td>
-  </tr>  
-  <tr>
-    <td class="ident">Retro</td>
-    <td>N/A</td>
-  </tr>  
-  <tr class="same">
-    <td class="ident">Flexible scope contracts </td>
-    <td>Negotiated Scope Contract<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td class="ident">No overtime</td>
-    <td>Energized Work (<em>40-hr week)</em></td>
-  </tr>
-  <tr>
-    <td>
-      Shared Schedule, Be Present</td>
-    <td>Sit Together</td>
-  </tr>
-  <tr>
-    <td>Not needed<br/>
-      Agile project management tools (such a Pivotal Tracker)<br/>
-       provide more value than a physical board showing project status. 
-      </td>
-    <td>Informative Workspace</td>
-  </tr>
-  <tr>
-    <td>Not needed<br/>
-        there is no commitment to each week</td>
-    <td>Slack</td>
-  </tr>
-  <tr>
-    <td>Not needed for all projects</td>
-    <td>Incremental Deployment<sup>C</sup><br/>
-        slowly replace a legacy systems</td>
-  </tr>
-  <tr>
-    <td>Allocations<br/>
-        Move engineers where needed</td>
-    <td>Shrinking Teams<sup>C</sup><br/>
-        Team Continuity<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td>Optional, depends on situation</td>
-    <td>Root-cause analysis<sup>C</sup></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Pay-per-use<sup>C</sup></td>
-  </tr>
-</table>
-
-
-
-
-<br/>
-
-
-<p><sup>C</sup> are optional XP 2.0 Corollary Practices</p>
-
-<p>For a team transitioning to Extreme Programming, Beck recommends starting with the primary practices. Beck claims that “the primary practices are useful independent of what else you are doing” resulting in an immediate improvement, whereas the corollary practices work well once a team has implemented the primary practices. Extreme programming is not dogmatic about the list of practices. The team chooses which practices to apply.</p>
-
-<p>Once a team has implemented the primary practices, then the team can start implementing the corollary practices. Beck says that it seems “difficult or dangerous to implement [the corollary practices] before completing the preliminary work of the primary practices” [1].</p>
+<p>This table compares Sustainable Software Development to Extreme Programming (XP).</p>
 
 <br/>
 
@@ -517,6 +319,12 @@ Refactoring)</td>
   </tr>
 </table>
 
+
+<p><sup>C</sup> are optional XP 2.0 Corollary Practices</p>
+
+<p>For a team transitioning to Extreme Programming, Beck recommends starting with the primary practices. Beck claims that “the primary practices are useful independent of what else you are doing” resulting in an immediate improvement, whereas the corollary practices work well once a team has implemented the primary practices. Extreme programming is not dogmatic about the list of practices. The team chooses which practices to apply.</p>
+
+<p>Once a team has implemented the primary practices, then the team can start implementing the corollary practices. Beck says that it seems “difficult or dangerous to implement [the corollary practices] before completing the preliminary work of the primary practices” [1].</p>
 
 <p>[1] K. Beck and C. Andres. Extreme Programming Explained: Embrace Change (2nd Edition). Addison-Wesley Professional, 2004.</p>
 ]]></content>
