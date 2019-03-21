@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>TDD: small Ah-Ha moment on when to use a hash instead of an array - Todd Sedano</title>
+  <title>Every Story Refactor Quote - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="I&rsquo;m sharing a pleasant surprise I had during a recent Test Driven Development coding session. My tests had found a design that was delightful &hellip;">
+  <meta name="description" content="Every story is an opportunity to refactor &ndash; Todd Sedano
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.io/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html">
+  <link rel="canonical" href="http://professor.github.io/toddsedano/2019/03/01/every-story-refactor-quote.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -82,7 +83,7 @@
   
   <header>
     
-      <h1 class="entry-title">TDD: Small Ah-Ha Moment on When to Use a Hash Instead of an Array</h1>
+      <h1 class="entry-title">Every Story Refactor Quote</h1>
     
     
       <p class="meta">
@@ -98,38 +99,14 @@
   
 
 
-<time datetime="2012-07-20T13:34:00-07:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
+<time datetime="2019-03-01T14:22:00-08:00" pubdate data-updated="true">Mar 1<span>st</span>, 2019</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I&rsquo;m sharing a pleasant surprise I had during a recent Test Driven Development coding session. My tests had found a design that was delightful to me. TDD suggested that I use a hash where my natural tendency is to use an array.</p>
-
-<p>For the purpose of clarity, I&rsquo;m simplifying a very complicated data structure for this example. Let&rsquo;s say we wanted to show the user the most popular cheat codes for a set of video games. For the sake of the example, let&rsquo;s assume that this information is stored in the database in a way that is rather difficult to access. Thus the need for a method &ldquo;most_popular_cheats&rdquo; to do the heavy lifting.</p>
-
-<p>Let&rsquo;s recall some popular cheat codes. Contra&rsquo;s cheat code is &ldquo;UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START&rdquo;  and Mike Tyson&rsquo;s cheat code is &ldquo;007-373-5963&rdquo;</p>
-
-<p>From the control flow, I would already know the order of the video games that needed cheat codes, and expected that the method &ldquo;most_popular_cheats&rdquo; would just return an array.</p>
-
-<p>However, as I wrote the test first, I realized that the test wouldn&rsquo;t know the exact order of the video games. After I created some test data in the database, I wasn&rsquo;t certain how they would be retrieved, would the default sorting be by ID, or by name? The test didn&rsquo;t know and I didn&rsquo;t think the test should care. If the method returned a hash, I could just see if the hash contained the key->value pairs that I expected.</p>
-
-<pre><code>Hash: {contra.id =&gt; "UP, UP….", mike_tyson.id =&gt; "007-373-6963"}
-</code></pre>
-
-<p>On previous projects, following the traditional &ldquo;code then test&rdquo; development style, I have generated two parallel arrays to solve this problem kind of problem. One that contained the answer (what is my value in my hash), and the other that contained the index (what is my key in my hash.) On those projects, it had not occurred to me that a hash was a better data structure. My tests informed me on a programming nuance that I had previously missed.</p>
-
-<p>Here&rsquo;s the simplified version of test case that lead me to this small ah-ha moment.</p>
-
-<pre><code>contra = FactoryGirl.create(:video_game_with_popular_cheats)
-mike_tyson = FactoryGirl.create(:video_game_with_popular_cheats)
-
-popular_game_cheats = Game.most_popular_cheats
-popular_game_cheats = should be_a_kind_of(Hash)
-popular_game_cheats[contra.id].should = "UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START"
-popular_game_cheats[mike_tyson.id].should = "007-373-5963"
-</code></pre>
+<div class="entry-content"><p>Every story is an opportunity to refactor &ndash; Todd Sedano</p>
 </div>
 
 
@@ -152,12 +129,12 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
   
 
 
-<time datetime="2012-07-20T13:34:00-07:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
+<time datetime="2019-03-01T14:22:00-08:00" pubdate data-updated="true">Mar 1<span>st</span>, 2019</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/craft-of-software/'>Craft of Software</a>
+    <a class='category' href='/blog/categories/sedano-quotes/'>Sedano Quotes</a>
   
 </span>
 
@@ -166,7 +143,7 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html" data-via="toddsedano" data-counturl="http://professor.github.io/toddsedano/2012/07/20/tdd-small-ah-ha-moment-on-when-to-use-a-hash-instead-of-an-array.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2019/03/01/every-story-refactor-quote.html" data-via="toddsedano" data-counturl="http://professor.github.io/toddsedano/2019/03/01/every-story-refactor-quote.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -179,10 +156,8 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/toddsedano/2012/06/01/learning-test-driven-development-tdd-through-katas.html" title="Previous Post: Learning Test Driven Development (TDD) through katas">&laquo; Learning Test Driven Development (TDD) through katas</a>
+        <a class="basic-alignment left" href="/toddsedano/2018/02/19/illusion-of-requirements.html" title="Previous Post: illusion of requirements">&laquo; illusion of requirements</a>
       
-      
-        <a class="basic-alignment right" href="/toddsedano/2012/07/27/improv-game-for-software-engineers-program-counter.html" title="Next Post: Improv game for software engineers: Program Counter">Improv game for software engineers: Program Counter &raquo;</a>
       
     </p>
   </footer>

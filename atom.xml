@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2019-02-22T07:40:55-08:00</updated>
+  <updated>2019-03-21T09:36:36-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Every Story Refactor Quote]]></title>
+    <link href="http://professor.github.io/toddsedano/2019/03/01/every-story-refactor-quote.html"/>
+    <updated>2019-03-01T14:22:00-08:00</updated>
+    <id>http://professor.github.io/toddsedano/2019/03/01/every-story-refactor-quote</id>
+    <content type="html"><![CDATA[<p>Every story is an opportunity to refactor &ndash; Todd Sedano</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[illusion of requirements]]></title>
@@ -170,7 +179,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#112;&#x72;&#x6f;&#x66;&#x65;&#115;&#x73;&#111;&#114;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x70;&#114;&#x6f;&#102;&#x65;&#x73;&#x73;&#x6f;&#x72;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#x70;&#114;&#x6f;&#x66;&#x65;&#115;&#115;&#111;&#x72;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#x70;&#114;&#x6f;&#102;&#101;&#115;&#115;&#111;&#114;&#64;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -577,7 +586,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x70;&#114;&#111;&#x66;&#101;&#115;&#x73;&#x6f;&#x72;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#x70;&#114;&#x6f;&#x66;&#x65;&#x73;&#x73;&#111;&#114;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#112;&#x72;&#x6f;&#x66;&#x65;&#115;&#x73;&#111;&#114;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#x6d;">&#x70;&#x72;&#x6f;&#x66;&#x65;&#x73;&#x73;&#x6f;&#114;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -652,7 +661,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
   <tr>
     <td class="ident"><b>Road Mapping</b>
         the product manager diagrams his or her long term vision for the product.
-    </td>
+    </td>Quarterly
     <td><b>Quarterly Cycle</b> (Planning Game, Small Releases)
         Each quarter, the team identifies the stories for the next quarter. During a meeting, the team identifies bottlenecks, initiates repairs, plans the feature sets for the quarter, and selects a quarter’s worth of stories.
     </td>
@@ -727,7 +736,6 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
         When working on new features, routinely integrate new code into the master code repository. Avoid long-lived branches. Beck suggests un-integrated code live on its own “no more than a couple of hours” [1]. The longer the team waits to integrate, the more unpredictable and expensive integration becomes.<br/> 
         <b>Single Code Base</b><sup>C</sup>
         Ideally there is only one branch of the code. Multiple branches, (e.g. for releases, or customers) creates extra work. Branches live a few hours at most.
-        branches live a few hours at most
         </td>
   </tr>  
   <tr>
@@ -814,7 +822,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
     <td>Energized Work (<em>40-hr week)</em></td>
   </tr>
   <tr>
-    <td class="ident"><b>Stand-up</b> is a 5-10 minute, daily meeting where team members discuss changes that affect the team from the previous day’s work and impediments to the current day’s work. If physically possible, people stand to encourage a short check-in. Usually this meeting is at the start of the day, otherwise it is a daily <b>spin-down meeting</b>..
+    <td class="ident"><b>Stand-up</b> is a 5-10 minute, daily meeting where team members discuss changes that affect the team from the previous day’s work and impediments to the current day’s work. If physically possible, people stand to encourage a short check-in. Usually this meeting is at the start of the day, otherwise it is a daily <b>spin-down meeting</b>.
     </td>
     <td>Present in http://www.extremeprogramming.org/, but not in the 1999 or 2004 books</td>
   </tr>  
@@ -834,7 +842,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
   </tr>
   <tr>
     <td class="ident"><b>No overtime</b>
-        no one is allowed to work overtime except in genuinely exceptional circumstances, such as solving a customer escalation.
+        means no one is allowed to work overtime except in genuinely exceptional circumstances, such as solving a customer escalation.
     </td>
     <td><b>Energized Work</b> (<em>40-hr week)</em>
         “Work only as many hours as you can be productive and only as many hours as you can sustain” [1]. Working longer hours may make the team less productive. Team members need to take care of themselves; this includes staying home to rest when sick. The work patterns of the team should be sustainable in the long run.
@@ -1397,43 +1405,6 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
     <updated>2013-07-11T14:22:00-07:00</updated>
     <id>http://professor.github.io/toddsedano/2013/07/11/frustration-quote</id>
     <content type="html"><![CDATA[<p>I am frustrated when my expectations do not align with reality &ndash; Todd Sedano</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rethinking SEMAT card affordance]]></title>
-    <link href="http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance.html"/>
-    <updated>2013-05-22T01:19:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2013/05/22/rethinking-semat-card-affordance</id>
-    <content type="html"><![CDATA[<h3>A possible solution</h3>
-
-<p>While I&rsquo;m an avid player of card games and board games, the SEMAT card format does not reflect how I think about the alphas, which are a collection of states.</p>
-
-<p>Here is a mock prototype of an alternative physical format for the SEMAT alphas.</p>
-
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_strip_thumbnail.jpg" alt=""/></span></span></p>
-
-<p>Each alpha is a strip of cards folded much like a scroll with the &ldquo;highest&rdquo; state on the inside, and the lowest state on the outside. Starting with the &ldquo;lowest&rdquo; state, the user of SEMAT, can incrementally unfold the strip comparing the current state with the next possible state. If the next possible state is achieved, then the user can continue to unroll the strip.</p>
-
-<p><span class="thumbnail-image-block ssNonEditable"><span><img src="http://professor.github.io/images/semat_current_next_thumbnail.jpg" height=116 alt=""/></span></span></p>
-
-<p>Now it is impossible to accidentally loose a state in the alpha, and displaying the current state for all alphas in a project takes up roughly 1/6 of the room of the SEMAT board.</p>
-
-<p>So what do we call these new SEMAT cards? SEMAT strips, SEMAT rolls, SEMAT scrolls? I&rsquo;m open to suggestions.</p>
-
-<h3>Background &mdash; the problem</h3>
-
-<p>When I first saw a set of SEMAT cards, my instinct told me something wasn&rsquo;t quite right. I collect playing cards. I like unusual cards sets such as my agile estimation cards, XP training cards, improv feeling cards.</p>
-
-<p>When I laid out six cards for an alpha, it felt messy. I could easily get these out of order, and the order matters in a single alpha. If I piled up several alphas without a rubber band, I could easily mix them together.</p>
-
-<p>I pictured myself introducing this at a training session. With agile estimation cards, I just hand out a deck, yet for SEMAT I would want to hand one alpha at a time. If SEMAT cards were printed in a deck, taking out one alpha at a time would be time consuming.</p>
-
-<p>I do think agile estimation cards work well. There are four sets in one deck, just like regular playing cards. Assuming that my five year old daughter found the deck and randomized it, sorting it wouldn&rsquo;t take too long with four sets. However SEMAT cards, there are many alphas, and sorting it would be tedious.</p>
-
-<h3>Abacus as an alternative metaphor</h3>
-
-<p>I stared considering an abacus. Each rod of the abacus could represent an alpha. Each bead on a rod could represent a state card. The space between the beads on the left and the beads on the right could represent the current state. Yet creating an abacus for SEMAT seemed unfeasible. Then it occurred to me, I could tape the SEMAT cards into a strip.</p>
 ]]></content>
   </entry>
   
