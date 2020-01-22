@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Craft of Software | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/craft-of-software/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2019-11-04T08:41:38-08:00</updated>
+  <updated>2020-01-21T19:35:11-08:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -227,10 +227,10 @@ popular_game_cheats[mike_tyson.id].should = "007-373-5963"
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Career and Software Craftsmanship]]></title>
-    <link href="http://professor.github.io/toddsedano/2011/05/04/career-and-software-craftsmanship.html"/>
+    <title type="html"><![CDATA[Career and Craft of Software]]></title>
+    <link href="http://professor.github.io/toddsedano/2011/05/04/career-and-craft-of-software.html"/>
     <updated>2011-05-04T23:29:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2011/05/04/career-and-software-craftsmanship</id>
+    <id>http://professor.github.io/toddsedano/2011/05/04/career-and-craft-of-software</id>
     <content type="html"><![CDATA[<p>Students in the craft of software development course read Sections &ldquo;Walking the long road&rdquo; and &ldquo;Draw your own map&rdquo; in the Apprenticeship Patterns book. We then discussed whether their notions of their career had been affected by the course and the readings. During our conversation, some students talked about the idea that people can&rsquo;t stay technical their entire careers. (I see this as a misperception, and discussed several people I know who are still programming late into their careers.)
 My full time students are actively interviewing for jobs when they graduate. Most had not considered looking for a job that would enhance their software craftsmanship skills, while salary, prestige of the company, and projects they were working on dominated their searching process.
 From my Improv for Software Engineers course, I have noticed that my master students who are in their 20&rsquo;s and 30&rsquo;s have a hard time picturing their future in great detail and will actively refuse to consider life later on unless coached carefully to do so. They lump ages 50 to 80 in one bucket, the distant future. In my improv exercise, I have them walk around the room and I ask them to picture life as it was when they are a certain age. For the most part, they are able to recall and relive life at the age of 7, 12, 18, 23. However, as we get into the future, it&rsquo;s harder for them, and after the age of 60 most stop the exercise and resort to comedy to deal with the tension of thinking about the distant future.
