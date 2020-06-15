@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Waste | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/waste/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2020-06-15T10:45:45-07:00</updated>
+  <updated>2020-06-15T10:53:02-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -18,49 +18,47 @@
     <link href="http://professor.github.io/toddsedano/2016/12/09/evolution-of-lsd-waste-taxonomy.html"/>
     <updated>2016-12-09T22:35:00-08:00</updated>
     <id>http://professor.github.io/toddsedano/2016/12/09/evolution-of-lsd-waste-taxonomy</id>
-    <content type="html"><![CDATA[
-
-<table class="tg">
+    <content type="html"><![CDATA[<table>
 <thead>
   <tr>
-    <th class="tg-0pky">2002</th>
-    <th class="tg-0pky">2003</th>
-    <th class="tg-0pky">2006</th>
-    <th class="tg-0pky">2011</th>
+    <th>2002</th>
+    <th>2003</th>
+    <th>2006</th>
+    <th>2011</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">Requirements<br></td>
-    <td class="tg-0pky" colspan="2">Partially Done Work</td>
-    <td class="tg-0pky">Work in Progress</td>
+    <td>Requirements<br></td>
+    <td colspan="2">Partially Done Work</td>
+    <td>Work in Progress</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Extra Steps</td>
-    <td class="tg-0pky">Extra Processes</td>
-    <td class="tg-0pky">Relearning</td>
-    <td class="tg-0pky">Technical Debt</td>
+    <td>Extra Steps</td>
+    <td>Extra Processes</td>
+    <td>Relearning</td>
+    <td>Technical Debt</td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="4">Extra Features</td>
+    <td colspan="4">Extra Features</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Handoffs</td>
-    <td class="tg-0lax">Task Switching</td>
-    <td class="tg-0lax">Handoffs</td>
-    <td class="tg-0lax">Handovers</td>
+    <td>Handoffs</td>
+    <td>Task Switching</td>
+    <td>Handoffs</td>
+    <td>Handovers</td>
   </tr>
   <tr>
-    <td class="tg-0lax" colspan="4">Delays</td>
+    <td colspan="4">Delays</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Finding Information</td>
-    <td class="tg-0lax">Motion</td>
-    <td class="tg-0lax" colspan="2">Task Switching</td>
+    <td>Finding Information</td>
+    <td>Motion</td>
+    <td colspan="2">Task Switching</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Defects Not Caught by Tests</td>
-    <td class="tg-0lax" colspan="3">Defects</td>
+    <td>Defects Not Caught by Tests</td>
+    <td colspan="3">Defects</td>
   </tr>
 </tbody>
 </table>
