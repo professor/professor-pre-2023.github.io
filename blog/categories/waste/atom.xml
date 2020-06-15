@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Waste | Todd Sedano]]></title>
   <link href="http://professor.github.io/blog/categories/waste/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2020-06-15T10:53:02-07:00</updated>
+  <updated>2020-06-15T15:27:24-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Evolution of the Lean Software Development's Waste Taxonomy]]></title>
+    <title type="html"><![CDATA[Evolution of Lean Software Development's Waste Taxonomy]]></title>
     <link href="http://professor.github.io/toddsedano/2016/12/09/evolution-of-lsd-waste-taxonomy.html"/>
     <updated>2016-12-09T22:35:00-08:00</updated>
     <id>http://professor.github.io/toddsedano/2016/12/09/evolution-of-lsd-waste-taxonomy</id>
-    <content type="html"><![CDATA[<table>
+    <content type="html"><![CDATA[<table class="comparison">
 <thead>
   <tr>
     <th>2002</th>
@@ -63,6 +63,8 @@
 </tbody>
 </table>
 
+
+<p>If you are looking for a waste taxonomy grounded in empirical data, check out <a href="http://sedano.org/software-development-wastes/"> software development wastes</a></p>
 ]]></content>
   </entry>
   
