@@ -202,6 +202,12 @@
     </url>
     <url>
         <loc>
+            http://professor.github.io/toddsedano/2016/12/09/evolution-of-lsd-waste-taxonomy.html
+        </loc>
+        <lastmod>2020-06-15T10:43:37-07:00</lastmod>
+    </url>
+    <url>
+        <loc>
             http://professor.github.io/toddsedano/2017/02/08/we-know-the-way-phonetic-lyrics-moana.html
         </loc>
         <lastmod>2017-11-07T09:11:22-08:00</lastmod>
@@ -257,16 +263,16 @@
         <lastmod>2019-03-21T09:36:01-07:00</lastmod>
     </url>
     <url>
-        <loc>http://professor.github.io/workshops/</loc>
-        <lastmod>2019-11-04T08:41:33-08:00</lastmod>
+        <loc>http://professor.github.io/about-me/</loc>
+        <lastmod>2018-01-11T09:12:33-08:00</lastmod>
     </url>
     <url>
-        <loc>http://professor.github.io/summer-workshops/</loc>
-        <lastmod>2013-07-14T22:02:43-07:00</lastmod>
+        <loc>http://professor.github.io/blog/archives/</loc>
+        <lastmod>2020-06-15T10:43:37-07:00</lastmod>
     </url>
     <url>
-        <loc>http://professor.github.io/</loc>
-        <lastmod>2020-01-21T19:24:16-08:00</lastmod>
+        <loc>http://professor.github.io/book.html</loc>
+        <lastmod>2017-11-15T14:02:57-08:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/claire/cats.html</loc>
@@ -277,16 +283,8 @@
         <lastmod>2018-02-03T14:43:12-08:00</lastmod>
     </url>
     <url>
-        <loc>http://professor.github.io/sustainable-development/</loc>
-        <lastmod>2019-07-20T06:53:24-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://professor.github.io/blog/archives/</loc>
-        <lastmod>2020-01-21T19:24:16-08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://professor.github.io/about-me/</loc>
-        <lastmod>2018-01-11T09:12:33-08:00</lastmod>
+        <loc>http://professor.github.io/</loc>
+        <lastmod>2020-06-15T10:43:37-07:00</lastmod>
     </url>
     <url>
         <loc>http://professor.github.io/research.html</loc>
@@ -297,30 +295,10 @@
         <lastmod>2013-07-10T18:58:39-07:00</lastmod>
     </url>
     <url>
-        <loc>http://professor.github.io/software-development-wastes/knowledge-loss.html</loc>
-        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html
-        </loc>
-        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://professor.github.io/software-development-wastes/</loc>
-        <lastmod>2018-02-10T20:49:39-08:00</lastmod>
-    </url>
-    <url>
         <loc>
             http://professor.github.io/software-development-wastes/building-the-wrong-feature-or-product.html
         </loc>
         <lastmod>2018-02-10T20:48:03-08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://professor.github.io/software-development-wastes/waiting-and-multitasking.html
-        </loc>
-        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
     </url>
     <url>
         <loc>
@@ -329,14 +307,22 @@
         <lastmod>2018-02-10T21:35:58-08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://professor.github.io/software-development-wastes/unnecessarily-complicated-or-complex-solutions.html
-        </loc>
-        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
+        <loc>http://professor.github.io/software-development-wastes/</loc>
+        <lastmod>2018-02-10T20:49:39-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://professor.github.io/software-development-wastes/ineffective-communication.html
+        </loc>
+        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/software-development-wastes/knowledge-loss.html</loc>
+        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html
         </loc>
         <lastmod>2018-02-10T20:51:36-08:00</lastmod>
     </url>
@@ -351,7 +337,27 @@
         <lastmod>2018-02-10T20:51:36-08:00</lastmod>
     </url>
     <url>
-        <loc>http://professor.github.io/book.html</loc>
-        <lastmod>2017-11-15T14:02:57-08:00</lastmod>
+        <loc>
+            http://professor.github.io/software-development-wastes/unnecessarily-complicated-or-complex-solutions.html
+        </loc>
+        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://professor.github.io/software-development-wastes/waiting-and-multitasking.html
+        </loc>
+        <lastmod>2018-02-10T20:51:36-08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/summer-workshops/</loc>
+        <lastmod>2013-07-14T22:02:43-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/sustainable-development/</loc>
+        <lastmod>2019-07-20T06:53:24-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://professor.github.io/workshops/</loc>
+        <lastmod>2019-11-04T08:41:33-08:00</lastmod>
     </url>
 </urlset>

@@ -9,8 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="[https://docs.google.com/file/d/0B6uFDOj6cDrLNTdmYWJlZTgtZmMyNC00MzFjLTk3Y2YtZDA4MDNjMjIzMTQz/edit?pli=1&amp;hl=en#] (Please see this file)
-">
+  <meta name="description" content="Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,6 +80,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2010/06/22/transitioning-from-mysql-to-postgresql.html">Transitioning From MySQL to Postgresql</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-22T12:11:00-07:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the migration, I specified it as a VARCHAR. This generated this error.</p>
+
+<p>PGError: ERROR: operator does not exist: character varying = integer\nLINE 1: &hellip;n_id = u.id)</p>
+
+<p>Solving it was pretty simple. In my development and production databases I did the following commands. Then did a new data push to heroku&rsquo;s postresql database.</p>
+
+<p>1) Create another column using the MySQL Administrator GUI tool. Ie year2 of type INTEGER</p>
+
+<p>2) Run the following command from MySQL Query Browser &ldquo;update courses set year2 = year&rdquo;</p>
+
+<p>3) Drop the column year.</p>
+
+<p>4) Rename column year2 to be year.5) heroku db:push mysql:&hellip;</p>
+
+<p>There are good documents here: <a href="http://docs.heroku.com/database">http://docs.heroku.com/database</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -563,7 +612,7 @@ Included file &#8216;asides/pinned_content.html&#8217; not found in _includes di
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/collaborative-software-development/'>Collaborative Software Development (3)</a></li><li><a href='/blog/categories/craft-of-software/'>Craft of Software (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/pair-programming/'>Pair programming (5)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (5)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li><li><a href='/blog/categories/sustainable-software-development/'>Sustainable Software Development (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/code-readability/'>Code Readability (2)</a></li><li><a href='/blog/categories/collaborative-software-development/'>Collaborative Software Development (3)</a></li><li><a href='/blog/categories/craft-of-software/'>Craft of Software (6)</a></li><li><a href='/blog/categories/entrepreneurship/'>Entrepreneurship (3)</a></li><li><a href='/blog/categories/improv/'>Improv (4)</a></li><li><a href='/blog/categories/pair-programming/'>Pair programming (5)</a></li><li><a href='/blog/categories/sedano-quotes/'>Sedano Quotes (5)</a></li><li><a href='/blog/categories/semat/'>SEMAT (1)</a></li><li><a href='/blog/categories/software-engineering/'>Software Engineering (7)</a></li><li><a href='/blog/categories/sustainable-software-development/'>Sustainable Software Development (1)</a></li><li><a href='/blog/categories/waste/'>Waste (1)</a></li></ul>
 </section>
 
   
