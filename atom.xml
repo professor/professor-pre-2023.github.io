@@ -4,7 +4,7 @@
   <title><![CDATA[Todd Sedano]]></title>
   <link href="http://professor.github.io/atom.xml" rel="self"/>
   <link href="http://professor.github.io/"/>
-  <updated>2020-06-15T15:27:24-07:00</updated>
+  <updated>2020-06-21T19:00:45-07:00</updated>
   <id>http://professor.github.io/</id>
   <author>
     <name><![CDATA[Todd Sedano]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Renaming Scrum Master]]></title>
+    <link href="http://professor.github.io/toddsedano/2020/06/21/renaming-scrum-master.html"/>
+    <updated>2020-06-21T17:41:00-07:00</updated>
+    <id>http://professor.github.io/toddsedano/2020/06/21/renaming-scrum-master</id>
+    <content type="html"><![CDATA[<p>Renaming the Scrum Master role. On my team, we&rsquo;re discussing &ldquo;scrum facilitator&rdquo; or &ldquo;scrum enabler.&rdquo; I asked twitter for ideas and here&rsquo;s what you all came up with.</p>
+
+<p>Suggestions</p>
+
+<ul>
+<li>Scrum facilitator</li>
+<li>Scrum coach (Jay Bazuzi: I want to discourage thinking of the role as &ldquo;keeper of the backlog, scheduler of the meetings.&rdquo;)</li>
+<li>Scrum leader</li>
+<li>Scrum guide</li>
+<li>Scrum moderator</li>
+<li>Scrum wrangler</li>
+<li>Scrum navigator</li>
+<li>Scrum curator</li>
+<li>Scrum ordinator</li>
+<li>Scrum conductor</li>
+<li>Agile coach</li>
+<li>Flow coach</li>
+<li>Team facilitator</li>
+<li>Team coach</li>
+<li>Team enabler</li>
+<li>Team champion</li>
+<li>Process Guardian</li>
+<li>Value stream manager</li>
+<li>Driver</li>
+<li>Servant leader</li>
+<li>Scrum enabler</li>
+<li>Agility advocate</li>
+</ul>
+
+
+<p>And if you need a laugh, here are the more fun suggestions:
+* Ceremonial leader
+* Scrumpire
+* Scrummers
+* Scrummees
+* Scrum diddly umptuous
+* Scrum-i-kanban-agilistic-xp-lean-idocious, even though the sound of it is something quite precocious.
+* Scrumbag
+* Chief Cat Herder
+* Head Plate Spinner
+* Ringleader of the Process
+* Captain Delicious
+* S-crummy-licious</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Every Story Refactor Quote]]></title>
@@ -191,7 +242,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>We want to create a space that is welcoming for pair programming and treats each person as an equal.</p>
 
-<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#112;&#114;&#111;&#102;&#101;&#115;&#x73;&#111;&#114;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;">&#x70;&#114;&#111;&#x66;&#101;&#115;&#115;&#111;&#114;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>I started experimenting and developing these techniques when I suffered through some difficult pair programming experience. If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x70;&#114;&#111;&#x66;&#x65;&#115;&#115;&#111;&#x72;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#x70;&#x72;&#111;&#x66;&#101;&#x73;&#x73;&#111;&#114;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book3.png" alt="Brady Bunch View"/></a></p>
@@ -598,7 +649,7 @@ This is a variant of &ldquo;Make it work, make it right, make it fast.&rdquo;(<a
 
 <p>By using these strategies, some of my most challenging pairing relationships transformed into my most delightful and treasured relationship. Deep pairing trust forms when I can work through hard conversations successfully. We learned how to utilize our mutual strengths compensate for our individual weaknesses.</p>
 
-<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#112;&#x72;&#111;&#102;&#101;&#115;&#115;&#111;&#x72;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#109;">&#112;&#x72;&#111;&#102;&#101;&#x73;&#115;&#x6f;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>If you have had a challenging experience, I would like to hear what it was like for you and how you went about solving it. Email me at <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x70;&#114;&#111;&#102;&#x65;&#115;&#115;&#x6f;&#x72;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#112;&#x72;&#x6f;&#x66;&#x65;&#115;&#x73;&#111;&#x72;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a></p>
 
 <p>You might enjoy the <a href="http://sedano.org/book">book</a> I&rsquo;m working on. The book describes how Pivotal leverages pair programming and several other practices so that its teams can survive major disruptions.
 <a href="http://sedano.org/book"><img border="0" src="http://professor.github.io/images/book1.png" alt="Brady Bunch View"/></a></p>
@@ -1378,88 +1429,6 @@ ln -s /Volumes/CASE_SENSITIVE/workspace /Users/pivotal/workspace</p>
 <p>Step 6) install your project code in ~/workspace</p>
 
 <p>Note that everything in Applications et al.  will be typical Mac Setup, but we were fine with that.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Estimated vs actual story points]]></title>
-    <link href="http://professor.github.io/toddsedano/2015/05/11/estimated-vs-actual-story-points.html"/>
-    <updated>2015-05-11T21:14:00-07:00</updated>
-    <id>http://professor.github.io/toddsedano/2015/05/11/estimated-vs-actual-story-points</id>
-    <content type="html"><![CDATA[<p>On my last project, I tried an experiment looking at estimation accuracy.</p>
-
-<p>My results run counter the conventional wisdom of software engineering research and experience, but are consistent with my experience at Pivotal. Conventional wisdom says that engineers are optimistic and horrible at estimating work which is why some managers &ldquo;double&rdquo; estimates given to them.</p>
-
-<p>On my last team, we tended to be cautious in estimating work and not overly optimistic about the risk and complexity of our work. This is similar to the &ldquo;under commit, over deliver&rdquo; adage.</p>
-
-<p>Here is how we went about collecting the data
-1) We limited our pointing scale to &ldquo;Easy&rdquo;, &ldquo;Medium&rdquo; and &ldquo;Hard&rdquo; &mdash; one of the pivots advocated this scale and I liked the simplicity of it. We mapped &ldquo;Easy&rdquo; to 1 story point, &ldquo;Medium&rdquo; to 3 story points and &ldquo;Hard&rdquo; to 8 story points. In the meeting we would hold up 1, 2, or 3 fingers, I would call out Easy/Medium/Hard and the PM would record the correct story points.</p>
-
-<p>While I don&rsquo;t have evidence for this, I felt that the IPMs were very efficient as there was less quibbling over minor point differences. We went with the majority point value. If a large number of people said Easy and a large number of people said Medium, we&rsquo;d have a discussion. If most of the team said Easy and a few number of people said Hard, we&rsquo;d have a discussion.</p>
-
-<p>2) At the end of each story, the pair would assign a Pivotal Tracker label to reflect the actual point value. We used the labels &ldquo;Actual Easy Points&rdquo; &ldquo;Actual Medium Points&rdquo; &ldquo;Actual Hard Points&rdquo;, eventually we had to add a &ldquo;Actual Zero Points&rdquo;. I asked the pair not to look at the estimate on the story while recording the actual, but there could be some anchoring bias with the data.</p>
-
-<p>3) I monitored tracker and reminded developers to put labels on stories they had finished but had not labeled.</p>
-
-<p>Periodically, I would show results to the team. (After 1 month, 2 months, and end of project.)</p>
-
-<table>
-    <tr><td>&nbsp</td>
-        <td>We were&#8230; (number of stories)</td></tr>
-    <tr><td>Estimate</td>
-        <td>Conservative</td>
-        <td>Accurate</td>
-        <td>Optimistic</td>
-    </tr>
-    <tr><td>0</td>
-        <td></td>
-        <td>5</td>
-        <td>1</td>
-    </tr>
-    <tr><td>1</td>
-        <td>7</td>
-        <td>48</td>
-        <td>5</td>
-    </tr>
-    <tr><td>3</td>
-        <td>13</td>
-        <td>14</td>
-        <td>2</td>
-    </tr>
-    <tr><td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td></td>
-    </tr>
-    <tr><td>Estimate</td>
-        <td>Conservative</td>
-        <td>Accurate</td>
-        <td>Optimistic</td>
-    </tr>
-    <tr><td>0</td>
-        <td></td>
-        <td>83.33%</td>
-        <td>16.67%</td>
-    </tr>
-    <tr><td>1</td>
-        <td>11.48%</td>
-        <td>48.28%</td>
-        <td>6.90%</td>
-    </tr>
-    <tr><td>3</td>
-        <td>44.83%</td>
-        <td>48.28%</td>
-        <td>6.90%</td>
-    </tr>
-    <tr><td>8</td>
-        <td>0.00%</td>
-        <td>100.00%</td>
-        <td>0.00%</td>
-    </tr>
-</table>
-
-
-<p></p>
 ]]></content>
   </entry>
   

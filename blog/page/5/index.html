@@ -9,7 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Postgresql doesn&rsquo;t marshal data types like MySQL does. For many of my tables, I store year as an INTEGER. In one of my tables, when I did the &hellip;">
+  <meta name="description" content="What if regular expressions were easy to write? While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,65 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2010/11/18/rethinking-regex.html">Rethinking Regex</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-18T12:13:00-08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>What if regular expressions were easy to write?</p>
+
+<p>While attending the Golden Gate Ruby Conference 2010, I attended a session about Arel and how Rails was changing their ORM layer to make it easier to incrementally build the query.</p>
+
+<p>Old: Article.find(:all, :order => &ldquo;published_at desc&rdquo;, :limit => 10)</p>
+
+<p>New: Article.order(&ldquo;published_at desc&rdquo;).limit(10)</p>
+
+<p>It occurred to me that this concept of simplifying could be applied to regular expression.</p>
+
+<p>While I have time, I&rsquo;ll continue to build up examples of what the syntax could look like.</p>
+
+<p>Random thoughts:</p>
+
+<p>What: not a number</p>
+
+<ul>
+<li>ie a string that can&rsquo;t be convert to a number</li>
+<li>A string that contains at least on character</li>
+<li>Regex: /^.<em>\D+.</em>$/</li>
+<li>Positive examples: 113t23io10908-113</li>
+<li>Negative examples: 13431</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -576,6 +635,10 @@ Now your AJAX code will work.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2020/06/21/renaming-scrum-master.html">Renaming Scrum Master</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2019/03/01/every-story-refactor-quote.html">Every Story Refactor Quote</a>
       </li>
     
@@ -589,10 +652,6 @@ Now your AJAX code will work.</p>
     
       <li class="post">
         <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2017/10/23/considerate-pair-programming.html">Considerate Pair Programming - Part 2</a>
       </li>
     
   </ul>

@@ -9,8 +9,7 @@
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Software Development is a marathon, not a sprint
-">
+  <meta name="description" content="On my last project, I tried an experiment looking at estimation accuracy. My results run counter the conventional wisdom of software engineering &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,6 +80,115 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/toddsedano/2015/05/11/estimated-vs-actual-story-points.html">Estimated vs Actual Story Points</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-11T21:14:00-07:00" pubdate data-updated="true">May 11<span>th</span>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>On my last project, I tried an experiment looking at estimation accuracy.</p>
+
+<p>My results run counter the conventional wisdom of software engineering research and experience, but are consistent with my experience at Pivotal. Conventional wisdom says that engineers are optimistic and horrible at estimating work which is why some managers &ldquo;double&rdquo; estimates given to them.</p>
+
+<p>On my last team, we tended to be cautious in estimating work and not overly optimistic about the risk and complexity of our work. This is similar to the &ldquo;under commit, over deliver&rdquo; adage.</p>
+
+<p>Here is how we went about collecting the data
+1) We limited our pointing scale to &ldquo;Easy&rdquo;, &ldquo;Medium&rdquo; and &ldquo;Hard&rdquo; &mdash; one of the pivots advocated this scale and I liked the simplicity of it. We mapped &ldquo;Easy&rdquo; to 1 story point, &ldquo;Medium&rdquo; to 3 story points and &ldquo;Hard&rdquo; to 8 story points. In the meeting we would hold up 1, 2, or 3 fingers, I would call out Easy/Medium/Hard and the PM would record the correct story points.</p>
+
+<p>While I don&rsquo;t have evidence for this, I felt that the IPMs were very efficient as there was less quibbling over minor point differences. We went with the majority point value. If a large number of people said Easy and a large number of people said Medium, we&rsquo;d have a discussion. If most of the team said Easy and a few number of people said Hard, we&rsquo;d have a discussion.</p>
+
+<p>2) At the end of each story, the pair would assign a Pivotal Tracker label to reflect the actual point value. We used the labels &ldquo;Actual Easy Points&rdquo; &ldquo;Actual Medium Points&rdquo; &ldquo;Actual Hard Points&rdquo;, eventually we had to add a &ldquo;Actual Zero Points&rdquo;. I asked the pair not to look at the estimate on the story while recording the actual, but there could be some anchoring bias with the data.</p>
+
+<p>3) I monitored tracker and reminded developers to put labels on stories they had finished but had not labeled.</p>
+
+<p>Periodically, I would show results to the team. (After 1 month, 2 months, and end of project.)</p>
+
+<table>
+    <tr><td>&nbsp</td>
+        <td>We were&#8230; (number of stories)</td></tr>
+    <tr><td>Estimate</td>
+        <td>Conservative</td>
+        <td>Accurate</td>
+        <td>Optimistic</td>
+    </tr>
+    <tr><td>0</td>
+        <td></td>
+        <td>5</td>
+        <td>1</td>
+    </tr>
+    <tr><td>1</td>
+        <td>7</td>
+        <td>48</td>
+        <td>5</td>
+    </tr>
+    <tr><td>3</td>
+        <td>13</td>
+        <td>14</td>
+        <td>2</td>
+    </tr>
+    <tr><td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td></td>
+    </tr>
+    <tr><td>Estimate</td>
+        <td>Conservative</td>
+        <td>Accurate</td>
+        <td>Optimistic</td>
+    </tr>
+    <tr><td>0</td>
+        <td></td>
+        <td>83.33%</td>
+        <td>16.67%</td>
+    </tr>
+    <tr><td>1</td>
+        <td>11.48%</td>
+        <td>48.28%</td>
+        <td>6.90%</td>
+    </tr>
+    <tr><td>3</td>
+        <td>44.83%</td>
+        <td>48.28%</td>
+        <td>6.90%</td>
+    </tr>
+    <tr><td>8</td>
+        <td>0.00%</td>
+        <td>100.00%</td>
+        <td>0.00%</td>
+    </tr>
+</table>
+
+
+<p></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -672,62 +780,6 @@ Here is some of their feedback: (list is unsorted)</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/toddsedano/2011/06/16/improv-meets-software-engineering.html">Improv Meets Software Engineering, What Might the Intersection Look Like?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-06-16T21:32:00-07:00" pubdate data-updated="true">Jun 16<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When I first discovered improv, I enjoyed the creative play and sheer freedom it offered me. The basic tenets of improv gave me a safe place to unleash my creativity. The right side of my brain finally had an outlet. (I couldn&rsquo;t draw or play an instrument. I did enjoy singing, but I knew not to do that in a public setting!) I enjoyed every improv exercise that was introduced to me. Finally, I had an outlet to be creative and to play.</p>
-
-<p>For the longest time, I didn&rsquo;t see how this could apply to software development. Deep down, I knew there must be a connection, but how could doing quick, fun exercises relate to software?</p>
-
-<p>I did see how improv was affecting me and my style. My public speaking confidence was increasing. I was faster with responses to tough questions. My eye contact with others was on the rise. While I&rsquo;ve been an active listener, I noticed areas that I could grow. I saw how those skills translated directly to my work. Brainstorming was more effective when we bypass the critical analytical components of the brain. Teams could be more effective if they could more readily accept ideas from teammates. (If we don&rsquo;t agree with an idea, we tend not to accept it. However we can accept an offer from someone else without agreeing with it. Even with a ridiculous suggestion, good ideas can emerge.)</p>
-
-<p>In preparing for the Applied Improvisors Network (AIN) conference of 2011, I reflected on software development and its intersection with improv. I came to a new realization, are not the agile methods aligned with the notions of improv? Let&rsquo;s look at ideas from improv and see how they map into modern software development.</p>
-
-<p>The whole improve troop owns the show. If a performer steps out on stage, they are committing to the team that they have five seconds worth of an idea and trusts that the rest of the team will help them the rest. Agile methods encourage &ldquo;whole team&rdquo; where the entire team responsible for ownership of software development and management. This encourage collective owning of the source code repository where any member of the team can make changes as well as the notion that the team can manage itself. Improvisators set out to make their partner look good. Scene work happens when the entire troupe is helping and working together. This includes knowing when to go on stage in order to further a scene along and knowing when not to go on stage because everything is going to work out fine.Software developers want their team to look good.</p>
-
-<p>Change: Improv thrives in chaotic situations. Improvisers are trained to deal with change. When improvisers are operating at the speed of thought on stage, anything can happen, and improvers try to make sense of it all. Agile methods are more ideal than traditional methods in environments where the requirements are changing. Even Extreme Programming&rsquo;s slogan is &ldquo;embrace change&rdquo;</p>
-
-<p>Improvisers learn to be loose with their own ideas. In the dynamic environment of the stage, they need to be present in the moment, dealing with what is going on. If they are thinking too much about where they want the scene to head, they will miss out on where the scene is actually going. You can observe this when a performer says something that sounds like they weren&rsquo;t listening to what was just said. The performer was &ldquo;in their head&rdquo; trying to plan ahead and missed the last offer from their peer. We see this flexibility in the agile principals. With Test Driven Development, software developers hold the code loosely. Code written yesterday might be refactored and improved today. There isn&rsquo;t this notion of ideal or prefect software that never changes. As the situation changes, so does the code.</p>
-
-<p>Improvisers work on actively listening. Extreme Programming&rsquo;s on site customer provides a direct customer voice into the software development process. As the engineer understands in real time the requirements from the customer, software is developed and refined in quick coding cycles.</p>
-
-<p>Improvisers have techniques to celebrate failure. This is imperative because improvisers will fail. In warm up games, improvisers that aren&rsquo;t failing aren&rsquo;t playing them too safely. Agile methods have quick iterations and rapid software prototyping that allows for (in a software sense) for features to be explored and &ldquo;fail.&rdquo; If something isn&rsquo;t working right it is tweaked in the next iteration. Albeit the timeframe is different. Obviously improvisers fail numerous times during a warm up and might make unusual choices on stage, where as the timeframe on requirements churn might be the next iteration typically one week to four weeks. In a paired programming setting, ideas can be tried and experimented upon. Failure in this context may happen routinely during a coding session. Coder 1: Should this be a new class or should we modify an existing class? Coder 2: I don&rsquo;t know, let&rsquo;s try option 1. After a few minutes if option 1 isn&rsquo;t working out, they can quickly switch to option 2.</p>
-
-<p>Interestingly, the improv game &ldquo;word at a time&rdquo; maps into paired programming. In &ldquo;word at a time&rdquo; a group tells a story with each person saying only one word. This exercise teaches shared ownership and the frustration of planning ahead. Variants of the game include &ldquo;one sentence at a time&rdquo; or &ldquo;1, 2, 3, 4, 3, 2, 1 words at a time.&rdquo; In paired programming, developers work on the same code at the same time. Typically the code is shown on one monitor but there are two keyboards and two mice so that at any point in time, either developer can start typing what they are thinking. There are many benefits to paired programming including high quality product with less defects, a product that is ready to be shipped sooner, team ownership of the entire code based (as opposed to code silos owned by a single programmer), shared understanding of the code base (every line of code was written by two people, if one leaves the company someone else knows what that code was doing). Often in pair programming, developers may take turns. I&rsquo;ll write a test case and my partner will make the code work. They will then write a test case, and I&rsquo;ll then get it to work. This practice is called ping-pong paired programming. This is much like &ldquo;A paragraph at a time&rdquo; The emphasis is on the dialogue between the two engineers and the code is the artifact of the conversation that happened.</p>
-
-<p>Today, I see many similarities between improv and software development. I suspect that there are new concepts in software development that might be explored given insights in improv. That is a topic of more future research.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -745,6 +797,10 @@ Here is some of their feedback: (list is unsorted)</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/toddsedano/2020/06/21/renaming-scrum-master.html">Renaming Scrum Master</a>
+      </li>
+    
+      <li class="post">
         <a href="/toddsedano/2019/03/01/every-story-refactor-quote.html">Every Story Refactor Quote</a>
       </li>
     
@@ -758,10 +814,6 @@ Here is some of their feedback: (list is unsorted)</p>
     
       <li class="post">
         <a href="/toddsedano/2017/10/24/considerate-pair-programming.html">Considerate Pair Programming - Part 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/toddsedano/2017/10/23/considerate-pair-programming.html">Considerate Pair Programming - Part 2</a>
       </li>
     
   </ul>
