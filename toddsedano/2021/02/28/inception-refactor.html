@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mismanaging the backlog - Todd Sedano</title>
+  <title>Inception Refactor - Todd Sedano</title>
   <meta name="author" content="Todd Sedano">
 
   
-  <meta name="description" content="Mismanaging the Backlog The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes. Mismanaging the backlog &hellip;">
+  <meta name="description" content="While working on a feature or a refactor, sometimes we wished that the code looked differently. A developer might think, \quotes{If only the code &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html">
+  <link rel="canonical" href="http://professor.github.io/toddsedano/2021/02/28/inception-refactor.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/professor/atom.xml" rel="alternate" title="Todd Sedano" type="application/atom+xml">
@@ -79,75 +79,86 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Mismanaging the Backlog</h1>
     
-  </header>
-  
-  <p><em>The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.</em></p>
-
-<p>Mismanaging the backlog includes all the waste associated with poor prioritization. One kind of prioritization problem specific to agile software development is <em>backlog inversion</em>, which occurs when the team starts working on stories that have not been prioritized recently.  For instance, on Monday, the product manager examines the backlog and re-prioritizes the next seven stories. The team finishes those seven stories and begins working on stories eight, nine and ten. Since these stories have not been prioritized recently, the team might unknowingly be working on low priority stories.</p>
-
-<p>We observed the following causes of &ldquo;mismanaging the backlog&rdquo; waste:</p>
-
-<ul>
-<li><p>Backlog inversion</p></li>
-<li><p>Working on too many features simultaneously</p></li>
-<li><p>Duplicated work</p></li>
-<li><p>Not enough ready stories</p></li>
-<li><p>Imbalance of feature work and bug fixing</p></li>
-<li><p>Delaying testing or critical bug fixing</p></li>
-<li><p>Capricious thrashing</p></li>
-</ul>
-
-
-<p>Duplication of work can happen when individuals and teams are not effectively communicating. For one project&mdash;-a multi-node database cluster&mdash;-coordination happened between 15 development teams with 74 software engineers. Over time, they developed 16 different ways to provision a cluster using scripts, docker, custom tools, bosh, and terraform. Developing a single comprehensive solution would have taken one team slightly more time but save substantial resources overall.</p>
-
-<p>At Pivotal, product managers typically write the user stories. We observed engineers sometimes resorting to writing stories instead of the product manager. This happened when the backlog was empty or when they knew something needed to be done, but no corresponding story had been written. Here, engineers writing stories often indicated prioritization problems, or the product manager not staying far enough ahead of development.</p>
-
-<p>Solutions for avoiding or reducing this waste include:</p>
-
-<ul>
-<li><p>Prioritizing the backlog several times a week</p></li>
-<li><p>Minimizing work in progress by finishing features before starting new ones</p></li>
-<li><p>Updating the backlog with current work in progress</p></li>
-<li><p>Writing enough stories to stay ahead of development</p></li>
-<li><p>Routinely working on bug fixes while doing feature development</p></li>
-<li><p>Receiving feedback from users before making changes</p></li>
-</ul>
-
-
-<p>This waste is also related a tension: <strong>intransigence versus capricious trashing</strong>. Responding to change quickly is a core tenet of agile development and often thought of as the opposite of refusing to change. However, responding to change is more like a middle ground between intransigence (unreasonably refusing to change) and thrashing (changing features too often, especially arbitrarily alternating between equally good alternatives). As an example of trashing, on one project, the launch was delayed while the business fiddled with the sequence and number of steps in the user registration process.</p>
-
-<p>For more details, read this <a href="https://www.researchgate.net/publication/313360479_Software_Development_Waste">ICSE paper</a> or return to the list <a href="index">software development wastes</a></p>
-
-  
-    <footer>
+      <h1 class="entry-title">Inception Refactor</h1>
+    
+    
       <p class="meta">
         
+
+
+
+
+
+
+
+
   
 
-<span class="byline author vcard">Posted by <span class="fn">Todd Sedano, Paul Ralph, Cécile Péraire</span></span>
 
-        
-
-
-
-
-
-
-
-
-
-
+<time datetime="2021-02-28T07:36:00-08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2021</time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>While working on a feature or a refactor, sometimes we wished that the code looked differently. A developer might think, \quotes{If only the code than this interface or this structure, then my work would be easier.} When this happens, we could either do all the refactorings at once or sequence the work with an Inception Refactor.</p>
+
+<p>Here are the steps:
+   * We stash or hide all the changes we&rsquo;ve made, placing us back into a green state.
+   * We make the modification we wish we had.
+   * We verify that the tests are all green.
+   * We commit the change to version control.
+   * We unstash or bring back the original refactor.</p>
+
+<p>The key here is to start at a green state where all the tests pass, shift the code into a more desirable position, verify that we are still green, and carry on with the original work.</p>
+
+<p>Note that it is possible to have multiple Inception Refactorings happening at the same time. Much like the movie Inception, having too many layers can get overwhelming, so try to stick to one Inception Refactor at a time.</p>
+
+<p>This refactor technique is inspired by the Mikado Method [1], a way to sequence incremental refactors by systematically and quickly identifying what will break with a change and then building a grapth of all the necessary changes.</p>
+
+<p>[1] <a href="https://www.amazon.com/Mikado-Method-Ola-Ellnestam/dp/1617291218">https://www.amazon.com/Mikado-Method-Ola-Ellnestam/dp/1617291218</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" data-via="toddsedano" data-counturl="http://professor.github.io/software-development-wastes/mismanaging-the-backlog.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Todd Sedano</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2021-02-28T07:36:00-08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2021</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/refactoring/'>Refactoring</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://professor.github.io/toddsedano/2021/02/28/inception-refactor.html" data-via="toddsedano" data-counturl="http://professor.github.io/toddsedano/2021/02/28/inception-refactor.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -157,9 +168,14 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/toddsedano/2020/06/21/renaming-scrum-master.html" title="Previous Post: Renaming Scrum Master">&laquo; Renaming Scrum Master</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
